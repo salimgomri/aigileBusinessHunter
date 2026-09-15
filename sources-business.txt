@@ -1,0 +1,119 @@
+# SOURCES BUSINESS — AIgile Business Hunter
+# Règle : ne jamais inventer une URL RSS/Atom. Les URLs ci-dessous sont soit vérifiées, soit explicitement marquées WEB/PLATEFORME.
+# Priorité : Luxembourg > Belgique/Bruxelles > Grand Est > France > Europe.
+
+## RSS / ATOM VÉRIFIÉS
+RTL Today Luxembourg RSS:
+https://today.rtl.lu/news/luxembourg.rss
+Note: usage commercial du RSS soumis à autorisation de RTL Today. La routine peut utiliser la page/source web si l'autorisation n'est pas obtenue.
+
+## SOURCES WEB / PLATEFORMES À CONSULTER
+Malt:
+https://www.malt.fr/
+Recherche: Agile Coach, Senior Agile Coach, Scrum Master, SAFe, Transformation Coach, Transformation Manager, Agile Consultant, Product Coach, Delivery Manager, Program Manager, Project Manager, Change Manager, Organizational Change, Leadership Coach, AI Transformation, AI Adoption.
+
+Freelancers.lu:
+https://freelancers.lu/fr/missions
+Priorité Luxembourg. Missions freelance actualisées les jours ouvrés.
+
+Free-Work:
+https://www.free-work.com/fr/tech-it/jobs/coach-agile
+https://www.free-work.com/fr/tech-it/jobs/scrum-master
+https://www.free-work.com/fr/tech-it/jobs/agile-scrum
+Priorité aux missions Luxembourg / Belgique / France.
+
+Collective.work:
+https://www.collective.work/
+Rechercher Senior Project Manager, Agile Coach, Transformation, Program Manager, Change Manager, Delivery Manager.
+
+FreelanceScope:
+https://www.freelancescope.com/
+Utiliser comme agrégateur ; remonter vers la source originale avant qualification.
+
+Freelance-Day:
+https://www.freelance-day.com/
+Utiliser pour les missions et signaux freelance.
+
+Paperjam:
+https://paperjam.lu/
+WEB. Rechercher transformation, digital, IT, management, recruitment, AI, restructuring, new CIO/CTO/CPO/COO.
+
+Delano:
+https://delano.lu/
+WEB. Même logique.
+
+Silicon Luxembourg:
+https://www.siliconluxembourg.lu/
+WEB. Priorité tech, transformation, digital, startups/scale-ups, IT leadership.
+
+Luxembourg Chronicle:
+https://chronicle.lu/
+WEB.
+
+Luxemburger Wort:
+https://www.wort.lu/
+WEB.
+
+Luxembourg Times:
+https://www.luxtimes.lu/
+WEB.
+
+L'essentiel:
+https://www.lessentiel.lu/
+WEB.
+
+ITnation:
+https://www.itnation.lu/
+WEB. Priorité IT, digital, transformation.
+
+Luxembourg for Finance:
+https://www.luxembourgforfinance.com/
+WEB. Priorité finance, transformation et programmes sectoriels.
+
+ABBL:
+https://www.abbl.lu/
+WEB. Priorité bancaire/finance.
+
+FEDIL:
+https://fedil.lu/
+WEB. Priorité industrie, technologie, transformation.
+
+House of Entrepreneurship:
+https://www.houseofentrepreneurship.lu/
+WEB.
+
+Luxinnovation:
+https://luxinnovation.lu/
+WEB. Innovation, digitalisation, AI, transformation.
+
+STATEC:
+https://statistiques.public.lu/
+WEB. Contexte économique uniquement ; jamais suffisant seul pour qualifier un prospect.
+
+CSSF:
+https://www.cssf.lu/
+WEB. Signaux réglementaires/transformations du secteur financier.
+
+BCL:
+https://www.bcl.lu/
+WEB. Contexte macro/finance ; jamais suffisant seul.
+
+SIMAP Luxembourg:
+https://simap.gouvernement.lu/
+WEB. Marchés publics et appels d'offres.
+
+TED EU:
+https://ted.europa.eu/
+WEB. Marchés publics européens.
+
+EIB:
+https://www.eib.org/
+WEB. Rechercher procurement, transformation, digital, IT, consulting et programmes pertinents.
+
+Commission européenne / TED:
+https://commission.europa.eu/
+WEB.
+
+## RÈGLE DE QUALIFICATION
+Une source seule ne suffit pas à conclure qu'une entreprise est acheteuse.
+Chercher le signal concret, sa date, le contexte, puis le décideur.
