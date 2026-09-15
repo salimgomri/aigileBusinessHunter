@@ -1,0 +1,215 @@
+# SOURCES BUSINESS — WEBSEARCH PLAYBOOK
+Version: 2.0
+Environment: Claude Cloud / WebSearch-first
+
+IMPORTANT:
+The URLs below are target domains, not evidence of access.
+Direct HTTP access may be blocked. Use WebSearch.
+Never claim direct consultation unless content was actually retrieved directly.
+
+## PRIORITY 1 — FREELANCE MISSIONS
+
+### Malt
+Domain: malt.fr
+Priority: VERY HIGH
+
+Searches:
+site:malt.fr "Agile Coach" Luxembourg
+site:malt.fr "Senior Agile Coach" Luxembourg
+site:malt.fr SAFe Luxembourg
+site:malt.fr "Agile Transformation" Luxembourg
+site:malt.fr "Scrum Master" Luxembourg
+site:malt.fr "Project Manager" Luxembourg transformation
+
+Extract when available:
+- mission title
+- client/company
+- location/remote
+- start date
+- duration
+- TJM
+- required skills
+- URL
+- publication/freshness evidence
+
+Limitation:
+Search-indexed results are not proof that the mission remains open.
+
+### Free-Work
+Domain: free-work.com
+Priority: VERY HIGH
+
+Searches:
+site:free-work.com "Agile Coach" Luxembourg
+site:free-work.com "Scrum Master" Luxembourg
+site:free-work.com SAFe Luxembourg
+site:free-work.com "Project Manager" Luxembourg
+site:free-work.com "Agile Transformation" Luxembourg
+
+### Collective.work
+Domain: collective.work
+Priority: HIGH
+
+Searches:
+site:collective.work "Agile Coach" Luxembourg
+site:collective.work "Scrum Master" Luxembourg
+site:collective.work SAFe Luxembourg
+site:collective.work transformation Luxembourg
+
+### Freelancers.lu
+Domain: freelancers.lu
+Priority: HIGH
+
+Searches:
+site:freelancers.lu mission "Agile"
+site:freelancers.lu "Scrum Master"
+site:freelancers.lu "Project Manager"
+site:freelancers.lu transformation
+
+If no useful indexed result is returned, do not infer availability.
+
+### FreelanceScope
+Domain: freelancescope.com
+Priority: LOW
+
+Use only if WebSearch returns useful evidence.
+Do not spend excessive queries on an unindexed source.
+
+## PRIORITY 2 — BUSINESS SIGNALS
+
+### Paperjam
+site:paperjam.lu "digital transformation" Luxembourg
+site:paperjam.lu "new CIO" Luxembourg
+site:paperjam.lu "new CTO" Luxembourg
+site:paperjam.lu "transformation" Luxembourg
+site:paperjam.lu "technology" Luxembourg
+
+### Delano
+site:delano.lu "digital transformation" Luxembourg
+site:delano.lu "new CIO" Luxembourg
+site:delano.lu "new CTO" Luxembourg
+site:delano.lu transformation Luxembourg
+
+### ITnation
+site:itnation.lu "Agile" Luxembourg
+site:itnation.lu "transformation" Luxembourg
+site:itnation.lu CIO Luxembourg
+site:itnation.lu CTO Luxembourg
+site:itnation.lu "SAFe" Luxembourg
+
+## PRIORITY 3 — INSTITUTIONAL / PROCUREMENT
+
+### SIMAP Luxembourg
+Domain: simap.gouvernement.lu
+Search via:
+site:simap.gouvernement.lu transformation Luxembourg
+site:simap.gouvernement.lu informatique Luxembourg
+site:simap.gouvernement.lu agile Luxembourg
+
+If direct domain is unavailable but government.lu results surface the tender, identify it as indirect/indexed evidence.
+
+### TED
+site:ted.europa.eu Luxembourg agile
+site:ted.europa.eu Luxembourg digital transformation
+site:ted.europa.eu Luxembourg project management
+site:ted.europa.eu Luxembourg change management
+
+### FEDIL
+site:fedil.lu transformation Luxembourg
+site:fedil.lu digital Luxembourg
+site:fedil.lu technology Luxembourg
+
+### Luxinnovation
+site:luxinnovation.lu digital transformation Luxembourg
+site:luxinnovation.lu AI transformation Luxembourg
+site:luxinnovation.lu technology Luxembourg
+
+### House of Entrepreneurship
+site:houseofentrepreneurship.lu digital Luxembourg
+site:houseofentrepreneurship.lu transformation Luxembourg
+
+### Luxembourg for Finance
+site:luxembourgforfinance.com digital transformation
+site:luxembourgforfinance.com technology Luxembourg
+site:luxembourgforfinance.com AI Luxembourg
+
+### Luxembourg Business Registers
+site:lbr.lu Luxembourg company director
+site:lbr.lu Luxembourg company
+
+Use only when the result provides a concrete, relevant business signal.
+
+## SIGNAL PRIORITY
+
+VERY STRONG:
+- explicit Agile Coach / Agile Transformation / SAFe need
+- freelance mission matching Salim
+- Agile at Scale / CoE / transformation programme
+- explicit change/transformation mandate
+- tender clearly involving transformation, delivery, project/programme/change management
+- new CIO/CTO/CPO/COO connected to a concrete transformation context
+
+MEDIUM:
+- major digital transformation
+- reorganisation
+- migration / modernization
+- new transformation leadership
+- strong technology change with an identifiable owner
+
+WEAK — DO NOT QUALIFY ALONE:
+- generic AI article
+- fundraising alone
+- generic company growth
+- isolated technical recruitment
+- generic digitalisation news
+
+## BUSINESS QUALIFICATION
+
+Mandatory chain:
+SIGNAL → PROOF → WHY NOW → PROBABLE PROBLEM → DECISION MAKER → OFFER → APPROACH
+
+No PROOF = no HOT.
+
+A company is not a prospect merely because it appears in an article.
+
+## CONTACT
+
+Prioritize the person who owns the problem:
+- CIO
+- CTO
+- CPO
+- COO
+- Head of Transformation
+- Head of Agile
+- Transformation Director
+- HR/Talent Acquisition when the signal is an explicit hiring need
+
+Do not automatically target the CEO.
+
+Never guess an email.
+
+## REPORT LIMITS
+
+Maximum:
+- 3 HOT
+- 5 WARM
+- 8 new qualified prospects total
+
+Do not fill quotas artificially.
+
+Add "À VÉRIFIER" for promising but insufficiently verified signals.
+À VÉRIFIER does not count as HOT/WARM.
+
+## GMAIL
+
+Maximum 3 drafts per run.
+One prospect = one draft.
+Never auto-send.
+
+A successful draft must be reported with:
+- recipient
+- exact subject
+- status
+
+If draft creation fails, say so.
+Never simulate success.

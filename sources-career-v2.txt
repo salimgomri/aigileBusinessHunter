@@ -1,0 +1,197 @@
+# SOURCES CAREER — WEBSEARCH PLAYBOOK
+Version: 2.0
+Environment: Claude Cloud / WebSearch-first
+
+IMPORTANT:
+The URLs below are target domains, not evidence of access.
+Direct HTTP access may be blocked. Use WebSearch as the primary discovery mechanism.
+Never claim direct consultation unless content was actually retrieved directly.
+
+## PRIORITY 1 — LUXEMBOURG / EUROPE
+
+### GovJobs Luxembourg
+Domain: govjobs.public.lu
+Priority: VERY HIGH
+
+Searches:
+site:govjobs.public.lu "Agile Coach"
+site:govjobs.public.lu "Chef de projet" informatique
+site:govjobs.public.lu "Project Manager" Luxembourg
+site:govjobs.public.lu transformation
+site:govjobs.public.lu "digital"
+site:govjobs.public.lu "change"
+
+### EIB Careers
+Domain: eib.org
+Priority: VERY HIGH
+
+Searches:
+site:eib.org/en/about/careers "Agile"
+site:eib.org/en/about/careers "Project Manager"
+site:eib.org/en/about/careers "Programme Manager"
+site:eib.org/en/about/careers transformation
+site:eib.org/en/about/careers "Change"
+site:eib.org/en/about/careers "Product Manager"
+
+### EPSO / EU Institutions
+Searches:
+site:epso.europa.eu project manager digital transformation
+site:epso.europa.eu agile
+site:commission.europa.eu jobs transformation project manager
+site:europarl.europa.eu jobs project manager IT
+site:consilium.europa.eu jobs project manager IT
+site:curia.europa.eu jobs IT project manager
+site:eca.europa.eu jobs project manager IT
+site:ecb.europa.eu careers agile transformation
+site:eu-careers.europa.eu agile project manager
+
+## PRIORITY 2 — GENERAL JOB PLATFORMS
+
+### LinkedIn Jobs
+site:linkedin.com/jobs "Senior Agile Coach" Luxembourg
+site:linkedin.com/jobs "Agile Transformation" Luxembourg
+site:linkedin.com/jobs "Senior Project Manager" Luxembourg
+site:linkedin.com/jobs "Program Manager" Luxembourg
+site:linkedin.com/jobs "Transformation Manager" Luxembourg
+site:linkedin.com/jobs "Change Manager" Luxembourg
+
+### Indeed
+site:indeed.com "Senior Agile Coach" Luxembourg
+site:indeed.com "Agile Transformation" Luxembourg
+site:indeed.com "Senior Project Manager" Luxembourg
+site:indeed.com "Program Manager" Luxembourg
+
+### APEC
+site:apec.fr "Agile Coach" Luxembourg
+site:apec.fr "Transformation Manager" Luxembourg
+site:apec.fr "Senior Project Manager" Luxembourg
+site:apec.fr "Program Manager" Luxembourg
+
+### Welcome to the Jungle
+site:welcometothejungle.com "Agile Coach" Luxembourg
+site:welcometothejungle.com "Project Manager" Luxembourg
+site:welcometothejungle.com transformation Luxembourg
+
+### StepStone
+site:stepstone.lu "Agile Coach"
+site:stepstone.lu "Project Manager" Luxembourg
+site:stepstone.lu transformation Luxembourg
+
+### Jobat
+site:jobat.be "Agile Coach" Brussels
+site:jobat.be "Project Manager" Brussels
+site:jobat.be transformation Brussels
+
+### Hellowork
+site:hellowork.com "Agile Coach" Grand Est
+site:hellowork.com "Project Manager" Grand Est
+site:hellowork.com transformation Grand Est
+
+### LesJeudis
+site:lesjeudis.com "Agile Coach"
+site:lesjeudis.com "Project Manager"
+site:lesjeudis.com transformation
+
+## TARGET ROLES
+
+Search for:
+- Senior Agile Coach
+- Agile Transformation Lead
+- Agile Transformation Manager
+- Head of Agile
+- Head of Transformation
+- Transformation Manager
+- Transformation Lead
+- Change Manager
+- Change Lead
+- Senior Project Manager
+- Program Manager
+- Programme Manager
+- Delivery Manager
+- Delivery Lead
+- Product Manager
+- Product Lead
+- PMO / Transformation PMO
+- Organizational Change
+- Agile Delivery
+- SAFe transformation
+
+## GEOGRAPHY
+
+Prioritize:
+1. Luxembourg
+2. Brussels / Belgium
+3. Grand Est / Metz
+4. Paris / Île-de-France
+5. France
+6. Europe
+7. Remote Europe
+
+## QUALIFICATION
+
+Evaluate:
+- seniority
+- responsibilities
+- Agile/Scrum/SAFe relevance
+- transformation scope
+- coaching/facilitation
+- project/programme management
+- delivery
+- banking/financial-services relevance
+- stakeholder/executive exposure
+- location
+- language requirements
+- mandatory requirements
+- major gaps
+
+Do not use a score unless the score is reproducible from explicit criteria.
+Prefer a concise compatibility assessment.
+
+## FRESHNESS
+
+Classify:
+- CONFIRMED RECENT
+- RECENTLY INDEXED
+- DATE UNKNOWN
+- OLD
+
+Rules:
+- OLD cannot be HOT.
+- DATE UNKNOWN cannot be HOT.
+- An offer with uncertain active status goes to À VÉRIFIER.
+- Never claim an offer is still open unless the available evidence supports that claim.
+
+## CONTACTS
+
+Look for:
+- recruiter
+- Talent Acquisition
+- hiring manager
+- Head of Transformation
+- relevant business owner
+
+Never guess an email.
+A name found in an article is not automatically a recruiter or hiring manager.
+
+## REPORT LIMITS
+
+Maximum 5 main opportunities.
+Separate:
+- HOT
+- WARM
+- À VÉRIFIER
+
+À VÉRIFIER does not count as a qualified opportunity.
+
+## GMAIL
+
+Maximum 3 drafts per run.
+One opportunity = one draft.
+Never auto-send.
+
+Report:
+- recipient
+- exact subject
+- draft status
+
+Never simulate draft creation.
