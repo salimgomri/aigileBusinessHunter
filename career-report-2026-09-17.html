@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 17 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence — AIgile</div></div></div>
+<div class="badge">Career Hunter · 17 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>1 piste HOT, 3 WARM, 2 à vérifier</h1>
+<p class="lede">Recherche ciblée WebSearch sur Luxembourg, Bruxelles, Grand Est, Paris et institutions européennes. Une piste senior forte identifiée (Lombard Odier), trois pistes WARM avec incertitude à traiter, et deux offres de la fonction publique luxembourgeoise nécessitant une vérification d'éligibilité avant toute candidature. Aucune exhaustivité revendiquée — résultats issus de recherches indexées (WebSearch), accès direct aux portails bloqué dans cet environnement.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Europe</span><span class="pill">Agile Coach</span><span class="pill">Transformation</span><span class="pill">Change Management</span><span class="pill">Program/PMO</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">6</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>1</strong></div>
+<div class="kpi"><small>WARM</small><strong>3</strong></div>
+<div class="kpi"><small>Contacts</small><strong>1</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>1</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards">
+
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">Head of Transformation - Project Manager</div><div class="meta">Lombard Odier (Europe) S.A. · Luxembourg</div></div>
+<div class="score-badge">FORT<small>Fit</small></div>
+</div>
+<div class="tags"><span class="tag">HOT</span><span class="tag neutral">Preuve B — INDEXED</span><span class="tag warn">Date non confirmée</span><span class="tag neutral">Private Banking</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Agrégateurs (Talentify, Hirebase) référençant l'offre Workday réf. R0005227</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Non identifié publiquement</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Program leadership, change &amp; team management, stakeholder mgmt</div>
+<div class="step"><b>Preuve</b>B — INDEXED (aggrégateurs, page Workday non consultée)</div>
+<div class="step"><b>Fraîcheur</b>Date inconnue — non éliminatoire</div>
+<div class="step"><b>Fit</b>Fort : transformation, TOM, coaching dirigeants, finance</div>
+<div class="step"><b>Écarts</b>Master requis à vérifier ; réglementation private banking</div>
+<div class="step"><b>Contact</b>Aucun nom identifié</div>
+<div class="step"><b>Postuler</b>Portail carrière officiel Lombard Odier</div>
+<div class="step"><b>Action</b>Rechercher réf. R0005227 sur le portail officiel</div>
+</div>
+<div class="message"><strong>Où postuler ?</strong> Portail carrière officiel Lombard Odier (lombardodier.com/home/careers.html) — rechercher la référence R0005227. Lien de candidature exact non identifié (accès direct au portail Workday bloqué depuis cet environnement).</div>
+<div class="actions">
+<a class="btn secondary" href="https://www.talentify.io/job/head-of-transformation-project-manager-luxembourg-luxembourg-lombard-odier-r0005227" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn secondary" href="https://www.lombardodier.com/home/careers.html" target="_blank" rel="noopener">PORTAIL CARRIÈRE OFFICIEL</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Transformation Project Manager (M/F) - CDI</div><div class="meta">AXA Assurances Luxembourg / AXA Wealth Europe · Luxembourg</div></div>
+<div class="score-badge">BON<small>Fit</small></div>
+</div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B — INDEXED</span><span class="tag warn">Ancien (&gt;90j)</span><span class="tag neutral">Assurance</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Portail carrière officiel axa.lu (+ LinkedIn, Glassdoor, Moovijob)</strong></div>
+<div class="field"><small>Date</small><strong>Dernière mise à jour indexée : 27/12/2025</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Non identifié publiquement</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Pilotage de projets, Direction Transformation AXA</div>
+<div class="step"><b>Preuve</b>B — INDEXED (page axa.lu non consultée directement)</div>
+<div class="step"><b>Fraîcheur</b>Ancien (&gt;90 jours) — toujours listée sur portail officiel</div>
+<div class="step"><b>Fit</b>Bon : delivery/transformation, gestion parties prenantes</div>
+<div class="step"><b>Écarts</b>Séniorité PM (pas Head/Lead) ; fraîcheur à vérifier</div>
+<div class="step"><b>Contact</b>Aucun nom identifié</div>
+<div class="step"><b>Postuler</b>Portail carrière officiel AXA Luxembourg</div>
+<div class="step"><b>Action</b>Vérifier statut avant candidature</div>
+</div>
+<div class="message"><strong>Où postuler ?</strong> Directement sur le portail carrière officiel AXA Luxembourg (axa.lu/en/jobs). Vérifier au préalable que l'annonce est toujours active.</div>
+<div class="actions">
+<a class="btn secondary" href="https://axa.lu/en/jobs/transformation-project-manager-mf-cdi" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://axa.lu/en/jobs/transformation-project-manager-mf-cdi" target="_blank" rel="noopener">POSTULER</a>
+</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Expert Agile Coach – Product-Centric Transformation</div><div class="meta">Pauwels Consulting · Etterbeek (Bruxelles), Belgique</div></div>
+<div class="score-badge">FORT<small>Fit</small></div>
+</div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B — INDEXED</span><span class="tag warn">Ancien (~4 mois)</span><span class="tag neutral">Bruxelles</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>LinkedIn Jobs</strong></div>
+<div class="field"><small>Date</small><strong>Indexée comme publiée le 11/05/2026</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Boîte de recrutement générale (publiée officiellement)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Agile Coach expert, transformation orientée produit</div>
+<div class="step"><b>Preuve</b>B — INDEXED (annonce LinkedIn)</div>
+<div class="step"><b>Fraîcheur</b>~4 mois — ancien, statut à confirmer</div>
+<div class="step"><b>Fit</b>Fort : titre quasi-identique au profil cible, zone Bruxelles</div>
+<div class="step"><b>Écarts</b>Ancienneté annonce ; modalités contractuelles à valider</div>
+<div class="step"><b>Contact</b>jobs@pauwelsconsulting.com (générique)</div>
+<div class="step"><b>Postuler</b>LinkedIn ou email direct</div>
+<div class="step"><b>Action</b>Candidature + brouillon Gmail préparé</div>
+</div>
+<div class="message"><strong>Où postuler ?</strong> Via l'annonce LinkedIn Jobs, ou par email direct à jobs@pauwelsconsulting.com en citant l'intitulé du poste.</div>
+<div class="actions">
+<a class="btn secondary" href="https://be.linkedin.com/jobs/view/expert-agile-coach-%E2%80%93-product-centric-transformation-at-pauwels-consulting-4412733903" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://be.linkedin.com/jobs/view/expert-agile-coach-%E2%80%93-product-centric-transformation-at-pauwels-consulting-4412733903" target="_blank" rel="noopener">POSTULER</a>
+<a class="btn secondary" href="mailto:jobs@pauwelsconsulting.com">CONTACTER</a>
+</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Senior Project and Portfolio Management Expert — Governance &amp; Transformation Services (ESCB/IO)</div><div class="meta">Banque centrale européenne (BCE/ECB) · Francfort</div></div>
+<div class="score-badge">BON<small>Fit</small></div>
+</div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B — INDEXED</span><span class="tag warn">Date non confirmée</span><span class="tag neutral">Institution UE</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>talent.ecb.europa.eu (résultat indexé)</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Non identifié publiquement</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Renforcement de la culture/cadre de livraison de projets</div>
+<div class="step"><b>Preuve</b>B — INDEXED (portail BCE non consulté directement)</div>
+<div class="step"><b>Fraîcheur</b>Date inconnue — non éliminatoire</div>
+<div class="step"><b>Fit</b>Bon : gouvernance de programme, coaching de chefs de projet</div>
+<div class="step"><b>Écarts</b>Localisation Francfort ; exigences linguistiques/nationalité UE</div>
+<div class="step"><b>Contact</b>Aucun nom identifié</div>
+<div class="step"><b>Postuler</b>Portail officiel talent.ecb.europa.eu</div>
+<div class="step"><b>Action</b>Confirmer statut et localisation exacte</div>
+</div>
+<div class="message"><strong>Où postuler ?</strong> Directement sur le portail carrière officiel de la BCE (talent.ecb.europa.eu), page de l'offre.</div>
+<div class="actions">
+<a class="btn secondary" href="https://talent.ecb.europa.eu/careers/JobDetail/ESCB-IO-Senior-Project-and-Portfolio-Management-Expert-Governance-Transformation-Services/3450" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://talent.ecb.europa.eu/careers/JobDetail/ESCB-IO-Senior-Project-and-Portfolio-Management-Expert-Governance-Transformation-Services/3450" target="_blank" rel="noopener">POSTULER</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">2 Project Managers (m/f) — réf. E00044054 / F00044055 / M00044056</div><div class="meta">État luxembourgeois (fonction publique) · Luxembourg</div></div>
+<div class="score-badge">À CONFIRMER<small>Fit</small></div>
+</div>
+<div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Preuve B — INDEXED</span><span class="tag warn">Éligibilité fonctionnaire</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>govjobs.public.lu (résultat indexé)</strong></div>
+<div class="field"><small>Date</small><strong>28/07/2026 selon l'URL (≈51 jours)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Non identifié — procédure centralisée GovJobs</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Modernisation/digitalisation des processus, accompagnement du changement</div>
+<div class="step"><b>Preuve</b>B — INDEXED (portail non consulté directement, accès bloqué)</div>
+<div class="step"><b>Fraîcheur</b>≈51 jours — tranche « à vérifier »</div>
+<div class="step"><b>Fit</b>Bon : transformation organisationnelle, digitalisation</div>
+<div class="step"><b>Écarts</b>Poste de fonctionnaire — conditions de nationalité/éligibilité et concours statutaire à vérifier impérativement</div>
+<div class="step"><b>Contact</b>Non identifié</div>
+<div class="step"><b>Postuler</b>Portail GovJobs (page = page de candidature)</div>
+<div class="step"><b>Action</b>Vérifier éligibilité fonctionnaire avant toute candidature</div>
+</div>
+<div class="message"><strong>Où postuler ?</strong> Candidature directement sur le portail GovJobs — la page de l'offre est elle-même la page « Postuler ». Vérifier au préalable les conditions d'éligibilité au statut de fonctionnaire luxembourgeois.</div>
+<div class="actions">
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">POSTULER</a>
+</div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Chargé de conduite du changement et de communication — réf. E00042694 / F00042695 / M00042696</div><div class="meta">État luxembourgeois (fonction publique) · Luxembourg</div></div>
+<div class="score-badge">À CONFIRMER<small>Fit</small></div>
+</div>
+<div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Preuve B — INDEXED</span><span class="tag warn">Ancien (&gt;90j)</span><span class="tag warn">Éligibilité fonctionnaire</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>govjobs.public.lu (résultat indexé)</strong></div>
+<div class="field"><small>Date</small><strong>27/05/2026 selon l'URL (≈113 jours)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Non identifié — procédure centralisée GovJobs</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Conduite du changement et communication, Agile/Kanban requis</div>
+<div class="step"><b>Preuve</b>B — INDEXED (portail non consulté directement, accès bloqué)</div>
+<div class="step"><b>Fraîcheur</b>≈113 jours — ancien</div>
+<div class="step"><b>Fit</b>Fort : Agile/Kanban et change management explicitement demandés</div>
+<div class="step"><b>Écarts</b>Poste de fonctionnaire — même réserve d'éligibilité ; annonce ancienne</div>
+<div class="step"><b>Contact</b>Non identifié</div>
+<div class="step"><b>Postuler</b>Portail GovJobs (page = page de candidature)</div>
+<div class="step"><b>Action</b>Vérifier statut d'ouverture et éligibilité</div>
+</div>
+<div class="message"><strong>Où postuler ?</strong> Candidature directement sur le portail GovJobs. Vérifier impérativement le statut d'ouverture actuel (annonce ancienne) et les conditions d'éligibilité fonctionnaire.</div>
+<div class="actions">
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">POSTULER</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">AXA Luxembourg — Direction Transformation active</div><div class="meta">AXA Assurances Luxembourg / AXA Wealth Europe · Luxembourg</div></div></div>
+<div class="tags"><span class="tag neutral">Signal</span><span class="tag neutral">Preuve B — INDEXED</span></div>
+<p class="meta">L'annonce "Transformation Project Manager" décrit une Direction Transformation dédiée chez AXA Luxembourg / AXA Wealth Europe, créée pour accélérer la création de valeur pour clients et distributeurs. Signal d'investissement continu dans la transformation susceptible de générer d'autres postes futurs dans cette direction.</p>
+<div class="actions"><a class="btn secondary" href="https://axa.lu/en/jobs/transformation-project-manager-mf-cdi" target="_blank" rel="noopener">SOURCE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">BCE — Création d'un "Head of ECB Artificial Intelligence Office"</div><div class="meta">Banque centrale européenne · Francfort</div></div></div>
+<div class="tags"><span class="tag neutral">Signal</span><span class="tag neutral">Preuve B — INDEXED</span></div>
+<p class="meta">Un poste "Head of ECB Artificial Intelligence Office" (réf. 9093) a été repéré sur le portail carrière de la BCE, exigeant une expérience de gestion de programmes complexes avec des pratiques agiles. Signal d'une dynamique de transformation IA à la BCE, potentiellement pertinente pour l'axe "AI adoption / AI transformation" du profil de Salim — à surveiller, sans correspondance directe au niveau senior aujourd'hui.</p>
+<div class="actions"><a class="btn secondary" href="https://talent.ecb.europa.eu/careers/JobDetail/Head-of-ECB-Artificial-Intelligence-Office/9093" target="_blank" rel="noopener">SOURCE</a></div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="message"><strong>Action :</strong> chaque opportunité fournit le lien exact vers l'offre et, lorsqu'il est identifié, le lien exact pour postuler ainsi que la méthode de candidature. Aucun lien n'a été inventé — voir les sections Priorités, WARM et À vérifier ci-dessus pour le détail complet de chaque offre.</div>
+<table>
+<tr><th>Titre</th><th>Entreprise</th><th>Lieu</th><th>Classe</th><th>Voir l'offre</th><th>Postuler</th></tr>
+<tr><td>Head of Transformation - Project Manager</td><td>Lombard Odier</td><td>Luxembourg</td><td>HOT</td><td><a href="https://www.talentify.io/job/head-of-transformation-project-manager-luxembourg-luxembourg-lombard-odier-r0005227" target="_blank" rel="noopener">Lien</a></td><td>Non identifié — portail officiel</td></tr>
+<tr><td>Transformation Project Manager (M/F)</td><td>AXA Luxembourg</td><td>Luxembourg</td><td>WARM</td><td><a href="https://axa.lu/en/jobs/transformation-project-manager-mf-cdi" target="_blank" rel="noopener">Lien</a></td><td><a href="https://axa.lu/en/jobs/transformation-project-manager-mf-cdi" target="_blank" rel="noopener">Lien</a></td></tr>
+<tr><td>Expert Agile Coach – Product-Centric Transformation</td><td>Pauwels Consulting</td><td>Etterbeek (Bruxelles)</td><td>WARM</td><td><a href="https://be.linkedin.com/jobs/view/expert-agile-coach-%E2%80%93-product-centric-transformation-at-pauwels-consulting-4412733903" target="_blank" rel="noopener">Lien</a></td><td><a href="https://be.linkedin.com/jobs/view/expert-agile-coach-%E2%80%93-product-centric-transformation-at-pauwels-consulting-4412733903" target="_blank" rel="noopener">Lien</a></td></tr>
+<tr><td>Senior Project and Portfolio Management Expert</td><td>BCE (ECB)</td><td>Francfort</td><td>WARM</td><td><a href="https://talent.ecb.europa.eu/careers/JobDetail/ESCB-IO-Senior-Project-and-Portfolio-Management-Expert-Governance-Transformation-Services/3450" target="_blank" rel="noopener">Lien</a></td><td><a href="https://talent.ecb.europa.eu/careers/JobDetail/ESCB-IO-Senior-Project-and-Portfolio-Management-Expert-Governance-Transformation-Services/3450" target="_blank" rel="noopener">Lien</a></td></tr>
+<tr><td>2 Project Managers (m/f)</td><td>État luxembourgeois</td><td>Luxembourg</td><td>À VÉRIFIER</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">Lien</a></td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">Lien</a></td></tr>
+<tr><td>Chargé de conduite du changement et de communication</td><td>État luxembourgeois</td><td>Luxembourg</td><td>À VÉRIFIER</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">Lien</a></td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">Lien</a></td></tr>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards">
+
+<div class="card">
+<div class="card-top"><div><div class="title">Brouillon — Candidature Pauwels Consulting</div><div class="meta">Destinataire : jobs@pauwelsconsulting.com</div></div><span class="status ok">Brouillon créé</span></div>
+<p class="meta"><strong>Objet :</strong> Candidature — Expert Agile Coach – Product-Centric Transformation (Etterbeek)</p>
+<p class="meta">Brouillon personnalisé préparé dans Gmail à partir du profil de Salim (20+ ans d'expérience, PSM I, expertise Agile at Scale/SAFe/transformation produit), référençant l'annonce LinkedIn. Reste en brouillon — aucun envoi automatique. À relire et valider avant envoi.</p>
+</div>
+
+<div class="card">
+<div class="card-top"><div><div class="title">Lombard Odier, AXA, BCE, GovJobs ×2</div><div class="meta">0 brouillon préparé</div></div><span class="status no">Aucun contact vérifié</span></div>
+<p class="meta">Aucun brouillon préparé pour ces 5 opportunités : aucun nom de recruteur / hiring manager avec email publiquement vérifié n'a été identifié. Conformément à la règle "sans email vérifié, 0 brouillon est acceptable", aucun email n'a été deviné.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table>
+<tr><th>Domaine</th><th>Usage</th><th>Méthode</th><th>Preuve</th></tr>
+<tr><td>govjobs.public.lu</td><td>Postes fonction publique Luxembourg</td><td>WebSearch (site:)</td><td>B — INDEXED (accès direct bloqué)</td></tr>
+<tr><td>eib.org/en/about/careers</td><td>Postes EIB</td><td>WebSearch (site:)</td><td>B — INDEXED, aucune offre Agile/PM explicite trouvée aujourd'hui</td></tr>
+<tr><td>talent.ecb.europa.eu</td><td>Postes BCE (ECB)</td><td>WebSearch (site:)</td><td>B — INDEXED (accès direct bloqué)</td></tr>
+<tr><td>linkedin.com/jobs</td><td>Postes Agile/Transformation Luxembourg, Bruxelles</td><td>WebSearch (site:)</td><td>B — INDEXED</td></tr>
+<tr><td>axa.lu</td><td>Portail carrière officiel AXA Luxembourg</td><td>WebSearch</td><td>B — INDEXED (accès direct bloqué), métadonnée Glassdoor : mise à jour 27/12/2025</td></tr>
+<tr><td>talentify.io / hirebase.org</td><td>Agrégateurs référençant l'offre Lombard Odier</td><td>WebSearch</td><td>B — INDEXED (accès direct bloqué)</td></tr>
+<tr><td>lombardodier.com</td><td>Portail carrière officiel Lombard Odier</td><td>WebSearch</td><td>B — INDEXED, page non consultée directement</td></tr>
+<tr><td>pauwelsconsulting.com</td><td>Contact officiel (email de candidature générique)</td><td>WebSearch</td><td>B — INDEXED, page Contact officielle</td></tr>
+<tr><td>indeed.com, apec.fr, welcometothejungle.com, glassdoor.com</td><td>Recherches complémentaires Paris/Grand Est/marché</td><td>WebSearch</td><td>B — INDEXED, aucune offre suffisamment qualifiée retenue aujourd'hui</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Recherches WebSearch effectuées</td><td>17</td></tr>
+<tr><td>Opportunités qualifiées (total)</td><td>6</td></tr>
+<tr><td>HOT</td><td>1</td></tr>
+<tr><td>WARM</td><td>3</td></tr>
+<tr><td>À vérifier</td><td>2</td></tr>
+<tr><td>Signaux corporate identifiés</td><td>2</td></tr>
+<tr><td>Contacts avec email vérifié</td><td>1 (boîte générique publiée officiellement)</td></tr>
+<tr><td>Brouillons Gmail créés</td><td>1 / 3 maximum</td></tr>
+<tr><td>Nouvelles lignes ajoutées à career-history.csv</td><td>6</td></tr>
+<tr><td>Rapport interne envoyé à salimdulux@gmail.com</td><td>Voir statut d'envoi ci-dessous</td></tr>
+</table>
+</section>
+
+<footer class="footer">Gomri.coach Career Intelligence Assistant — recherche ciblée WebSearch, sans revendication d'exhaustivité. Fichiers utilisés : sources-career-v2.txt, career-history.csv, search-strategy.md, ai-gile-intelligence-report-template-v3.html. Généré le 17 septembre 2026.</footer>
+</main>
+</body>
+</html>
