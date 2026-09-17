@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 17 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.6px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:16px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:46px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:24px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card.empty{border-left:5px solid var(--line);color:var(--muted);font-style:italic}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:17px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:11.5px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700;font-size:13px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:34px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Hunter — Sales Intelligence</div></div></div>
+<div class="badge">Business Hunter · 17 sept. 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Salim Gomri · Agile Coaching &amp; AI Transformation</div>
+<h1>0 HOT · 2 WARM · 1 à vérifier</h1>
+<p class="lede">Recherche ciblée sur Luxembourg / Bruxelles / Grand Est / Paris via WebSearch (accès direct bloqué sur la plupart des domaines). Aucun signal du jour ne réunit à la fois preuve suffisante, organisation confirmée, fraîcheur et fit fort pour justifier un HOT — 2 opportunités WARM crédibles ont été qualifiées, dont une mission freelance à fit quasi-exact. Premier run : prospects-history.csv était vide, aucun doublon à traiter.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Freelance Agile Coach</span><span class="pill">AI Transformation</span><span class="pill">Agile at Scale</span><span class="pill">0 email vérifié → 0 brouillon</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Score du jour (qualité, non un volume)</div>
+<div class="score">4/10</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>3 pistes (non vérifiés)</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour (HOT)</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards">
+<div class="card empty">Aucune opportunité HOT qualifiée aujourd'hui. Les deux meilleurs signaux détectés (voir WARM ci-dessous) manquent soit d'une organisation totalement confirmée, soit d'une fraîcheur suffisante pour justifier un HOT — conformément à la règle « ne jamais remplir artificiellement les quotas ».</div>
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">Banque de Luxembourg — Département "AI Transformation" en expansion</div>
+<div class="tags">
+<span class="tag">AI Transformation / AI adoption</span>
+<span class="tag neutral">Preuve B — INDEXED</span>
+<span class="tag warn">31-90 jours — à vérifier</span>
+</div>
+</div>
+<div class="score-badge">6/10<small>Fit indirect</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Organisation</small><strong>Banque de Luxembourg (BDL)</strong></div>
+<div class="field"><small>Localisation</small><strong>Luxembourg-Ville</strong></div>
+<div class="field"><small>Recruteur de l'offre</small><strong>Fujitsu Luxembourg (pour le compte de BDL)</strong></div>
+<div class="field"><small>Publication</small><strong>15/07/2026 (ré-indexée ~16/09/2026)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Recrutement de 1 à 2 Senior GenAI/Prompt Engineering Consultants pour le département AI Transformation de BDL, chargé de déployer une Prompt Library sur mesure pour toutes les lignes métier (Private Banking, Enterprises, Asset Servicing, Financial Markets, Legal, Risk, Compliance, HR, Operations…).</div>
+<div class="step"><b>Why Now</b>BDL a déjà déployé un assistant IA interne et un LLM on-premise ; le département AI Transformation recrute maintenant pour structurer l'adoption métier — chantier actif et en expansion.</div>
+<div class="step"><b>Problème probable (hypothèse)</b>Au-delà du volet technique (prompt engineering), une structuration multi-métiers de ce type implique généralement un besoin de conduite du changement et d'ateliers d'adoption terrain — non confirmé par l'offre elle-même.</div>
+<div class="step"><b>Décideur (non confirmé)</b>Nicolas Folny (Head of IT, s'exprime publiquement sur l'IA à BDL) et/ou Romain Weiler (Finance, Data, Facility, IT, Operations, Transformation) — rattachement exact du département AI Transformation non confirmé.</div>
+<div class="step"><b>Offre</b>Ateliers de conduite du changement / adoption IA pour les lignes métier, en complément du recrutement technique en cours — positionnement "AI adoption", pas prompt engineering.</div>
+</div>
+<div class="message">Approche : ne pas répondre à l'offre technique (fit direct faible) ; contacter directement le département Transformation avec un angle "adoption terrain post-déploiement", distinct du poste publié.</div>
+<div class="actions">
+<a class="btn" href="https://itnation.lu/jobs/consultant-transformation-ia/" target="_blank" rel="noopener">Voir la source</a>
+<a class="btn secondary" href="https://www.linkedin.com/company/banque-de-luxembourg" target="_blank" rel="noopener">Voir l'entreprise (LinkedIn)</a>
+</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">Mission freelance Senior Agile Coach — Sanem, Luxembourg</div>
+<div class="tags">
+<span class="tag">Mission Agile Coach — fit direct</span>
+<span class="tag neutral">Preuve B — INDEXED</span>
+<span class="tag warn">Date de publication non confirmée</span>
+</div>
+</div>
+<div class="score-badge">7/10<small>Fit fort</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Client final</small><strong>Non identifié</strong></div>
+<div class="field"><small>Localisation</small><strong>Sanem, Luxembourg</strong></div>
+<div class="field"><small>TJM</small><strong>800–900 €/jour</strong></div>
+<div class="field"><small>Durée</small><strong>11 mois</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Mission "Senior Agile Coach" visant le passage d'une delivery basée sur l'activité vers une delivery orientée résultats (outcome-based), au sein d'une organisation Product &amp; Engineering.</div>
+<div class="step"><b>Why Now</b>La mission est explicitement centrée sur un changement de modèle opérationnel Product &amp; Engineering — signal direct et fort correspondant au cœur de métier de Salim.</div>
+<div class="step"><b>Problème probable (hypothèse)</b>Silos Product/Engineering, priorisation peu claire, mesure de la valeur insuffisante — hypothèse fondée sur le descriptif de mission.</div>
+<div class="step"><b>Décideur</b>Non identifié — client final non confirmé. Entreprises basées à Sanem trouvées par recherche générale (ARHS Spikeseed S.A., SYSTEMAT Luxembourg PSF S.A.) sans lien prouvé avec cette mission — ne pas présenter comme confirmé.</div>
+<div class="step"><b>Offre</b>Mission Agile Coach senior — candidature directe, fit quasi-exact avec Agile at Scale / TOM / coaching managers.</div>
+</div>
+<div class="message">Approche : candidater via la plateforme Free-Work en mettant en avant l'expérience Agile at Scale, TOM et coaching de managers.</div>
+<div class="actions">
+<a class="btn" href="https://www.free-work.com/fr/tech-it/jobs/coach-agile" target="_blank" rel="noopener">Voir la mission (page listing)</a>
+<a class="btn secondary" href="https://www.free-work.com/fr/tech-it/jobs/coach-agile" target="_blank" rel="noopener">Postuler / Contacter</a>
+</div>
+<p class="meta" style="margin-top:10px">Lien de candidature exact non identifié — la fiche mission individuelle n'a pas pu être retrouvée directement (accès direct à free-work.com bloqué par le proxy réseau) ; passer par la page de recherche "Coach agile" sur Free-Work pour retrouver l'annonce à Sanem.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées ou trop anciennes pour être qualifiées.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Luxembourg Stock Exchange (LuxSE) — Nouveau CIO, stratégie de digitalisation accélérée</div>
+<div class="tags">
+<span class="tag neutral">Preuve C — SECONDARY (multi-sources)</span>
+<span class="tag warn">&gt;90 jours — signal ancien</span>
+</div>
+</div>
+<div class="score-badge">4/10<small>Ancien</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Organisation</small><strong>Luxembourg Stock Exchange</strong></div>
+<div class="field"><small>Décideur</small><strong>Maxime Aerts, CIO</strong></div>
+<div class="field"><small>Date du signal</small><strong>Effectif 01/11/2025 (annoncé 31/10/2025)</strong></div>
+<div class="field"><small>Statut</small><strong>Non vérifié à ce jour</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Maxime Aerts nommé CIO de LuxSE après un intérim depuis juin 2025, dans le cadre d'un remaniement de gouvernance visant à "accélérer la stratégie 2026" de digitalisation.</div>
+<div class="step"><b>Why Now</b>Le signal date de plus de 10 mois : il ne peut plus être considéré comme récent sans preuve d'activité actuelle.</div>
+<div class="step"><b>Problème probable (hypothèse)</b>Chantiers de transformation digitale en cours pouvant nécessiter un accompagnement agile / coaching de managers — non vérifié.</div>
+<div class="step"><b>Décideur</b>Maxime Aerts, CIO LuxSE.</div>
+<div class="step"><b>Offre</b>À définir après vérification de l'état actuel du chantier de transformation.</div>
+</div>
+<div class="message">Action : rechercher une preuve d'activité récente (2026) avant toute qualification WARM/HOT ou approche.</div>
+<div class="actions">
+<a class="btn secondary" href="https://www.luxse.com/about-us/press-centre/Maxime-Aerts-appointed-CIO-of-LuxSE" target="_blank" rel="noopener">Voir la source</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte marché — n'identifient pas une organisation cliente précise, mais utiles pour l'angle d'approche ou le contenu.</p></div></div>
+<div class="cards">
+
+<div class="card">
+<div class="card-top">
+<div>
+<div class="title">"Agile fatigue" dans les organisations luxembourgeoises</div>
+<div class="tags"><span class="tag neutral">Preuve B — INDEXED</span><span class="tag warn">&gt;90 jours — ancien</span></div>
+</div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>ITnation.lu, 06/02/2026</strong></div>
+<div class="field"><small>Intervenante citée</small><strong>Natascha Tummeley, Agile Coach chez Fujitsu Luxembourg</strong></div>
+</div>
+<div class="message">Constat marché : plusieurs organisations luxembourgeoises montrent des signes de "fatigue agile" liée à des transformations restées superficielles ou limitées à l'IT. Fujitsu n'est pas un prospect (fournisseur IT) — ce signal sert d'angle de contenu / de conversation cohérent avec le positionnement "on mesure la vélocité, je rends visible la solidité".</div>
+<div class="actions"><a class="btn secondary" href="https://itnation.lu/news/remettre-la-transformation-agile-sur-de-bons-rails/" target="_blank" rel="noopener">Voir la source</a></div>
+</div>
+
+<div class="card">
+<div class="card-top">
+<div>
+<div class="title">Étude PMI Luxembourg Chapter × PwC — "Objectiver l'agilité des organisations" (3e édition)</div>
+<div class="tags"><span class="tag neutral">Preuve B — INDEXED</span><span class="tag warn">Date de publication non confirmée</span></div>
+</div>
+</div>
+<div class="fields">
+<div class="field"><small>Organisateurs</small><strong>PMI Luxembourg Chapter, en collaboration avec PwC</strong></div>
+<div class="field"><small>Historique</small><strong>1re édition en 2017 ; signal actuel correspond à la 3e édition</strong></div>
+</div>
+<div class="message">Étude structurelle sur l'écart entre le discours agile et sa mise en œuvre réelle dans les organisations luxembourgeoises. Ne cible pas une entreprise précise, mais constitue un point d'entrée possible (PMI Luxembourg Chapter) ou une source de données pour du contenu.</div>
+<div class="actions"><a class="btn secondary" href="https://itnation.lu/news/une-etude-pour-objectiver-lagilite-des-organisations/" target="_blank" rel="noopener">Voir la source</a></div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité indique où la consulter et comment postuler ou contacter (détail complet dans les cartes WARM ci-dessus).</p></div></div>
+<table>
+<tr><th>Titre</th><th>Plateforme</th><th>Client final</th><th>Lieu</th><th>TJM</th><th>Durée</th><th>Statut</th><th>Candidature</th></tr>
+<tr><td>Senior Agile Coach — Product &amp; Engineering transformation</td><td>Free-Work</td><td>Non identifié</td><td>Sanem, Luxembourg</td><td>800–900 €/j</td><td>11 mois</td><td>À confirmer</td><td>Via <a href="https://www.free-work.com/fr/tech-it/jobs/coach-agile" target="_blank" rel="noopener">page listing Free-Work</a> — lien direct de la fiche non identifié</td></tr>
+<tr><td>Consultant Transformation IA (GenAI / Prompt Engineering)</td><td>ITnation.lu (recruteur Fujitsu Luxembourg)</td><td>Banque de Luxembourg</td><td>Luxembourg-Ville</td><td>Non publié</td><td>Non publiée</td><td>Publiée le 15/07/2026, ré-indexée récemment</td><td>Via <a href="https://itnation.lu/jobs/consultant-transformation-ia/" target="_blank" rel="noopener">page de l'offre</a> — hors fit direct (voir carte WARM pour l'angle recommandé)</td></tr>
+<tr><td style="color:var(--muted)">Scrum Master Senior (Bruxelles, hybride) — IBSC LTD</td><td style="color:var(--muted)">Free-Work</td><td style="color:var(--muted)">Non identifié</td><td style="color:var(--muted)">Bruxelles</td><td style="color:var(--muted)">500–550 €/j</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">Expirée (fin de mission indiquée : 2025)</td><td style="color:var(--muted)">Écartée — ne pas re-proposer</td></tr>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne envoyé</span></div>
+<div class="cards">
+<div class="card empty">0 brouillon de prospection aujourd'hui. Aucune adresse email professionnelle vérifiée n'a été trouvée pour les décideurs identifiés (Nicolas Folny, Romain Weiler, Maxime Aerts) — conformément à la règle "ne jamais deviner un email", 0 brouillon est le résultat correct plutôt que d'inventer un contact.</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement interrogées via WebSearch pour construire ce rapport (accès direct HTTP bloqué sur la quasi-totalité des domaines testés).</p></div></div>
+<table>
+<tr><th>Domaine</th><th>Requêtes</th><th>Résultat</th><th>Preuve</th></tr>
+<tr><td>malt.fr</td><td>Agile Coach / Scrum Master Luxembourg</td><td>Profils freelances trouvés, aucune mission ouverte spécifique identifiée</td><td>B</td></tr>
+<tr><td>free-work.com</td><td>Agile Coach, SAFe, Scrum Master Luxembourg/Bruxelles</td><td>1 mission Agile Coach (Sanem) + 1 mission Scrum Master expirée (Bruxelles)</td><td>B</td></tr>
+<tr><td>collective.work</td><td>Agile Coach / Scrum Master Luxembourg</td><td>Profils freelances + mention d'une mission Scrum Master non confirmée</td><td>B</td></tr>
+<tr><td>itnation.lu</td><td>Transformation, Agile, Consultant Transformation IA</td><td>1 offre BDL/Fujitsu, 1 article "Agile fatigue", 1 étude PMI/PwC</td><td>B (accès direct bloqué — EGRESS_BLOCKED confirmé)</td></tr>
+<tr><td>paperjam.lu / delano.lu</td><td>Transformation, nouveau CIO/CTO, PwC</td><td>Nomination CIO LuxSE, transformation PwC Luxembourg (non retenue, cabinet conseil concurrent)</td><td>B/C</td></tr>
+<tr><td>luxse.com</td><td>Communiqué nomination CIO</td><td>Confirmation date de nomination Maxime Aerts</td><td>B</td></tr>
+<tr><td>ted.europa.eu</td><td>Agile, transformation, change management Luxembourg</td><td>1 marché "organisational change" identifié mais localisé aux Pays-Bas — écarté</td><td>B</td></tr>
+<tr><td>freelancers.lu</td><td>Agile, Scrum Master, transformation</td><td>Aucun résultat indexé exploitable</td><td>—</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Recherche effectuée</td><td>Oui — WebSearch uniquement, accès direct bloqué (confirmé sur itnation.lu et free-work.com)</td></tr>
+<tr><td>Requêtes exécutées</td><td>~28</td></tr>
+<tr><td>Opportunités qualifiées</td><td>0 HOT / 2 WARM / 1 À vérifier</td></tr>
+<tr><td>Missions freelance identifiées</td><td>2 actives à examiner, 1 expirée écartée</td></tr>
+<tr><td>Décideurs identifiés (non vérifiés)</td><td>3 (Nicolas Folny, Romain Weiler, Maxime Aerts)</td></tr>
+<tr><td>Emails vérifiés</td><td>0</td></tr>
+<tr><td>Brouillons Gmail créés</td><td>0</td></tr>
+<tr><td>Doublons détectés</td><td>0 (prospects-history.csv était vide — premier run)</td></tr>
+<tr><td>Rapport interne</td><td>Envoyé à salimdulux@gmail.com</td></tr>
+</table>
+</section>
+
+<footer class="footer">AIgile Business Hunter · Généré le 17 septembre 2026 · Recherche ciblée via WebSearch, sans exhaustivité revendiquée.</footer>
+</main>
+</body>
+</html>
