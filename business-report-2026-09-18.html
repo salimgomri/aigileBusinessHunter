@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 18 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:34px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile Business Hunter</div><div class="brand-sub">Sales Intelligence & Business Development — Salim Gomri</div></div></div>
+<div class="badge">Rapport quotidien · 18 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Executive Summary</div>
+<h1>0 HOT, 2 WARM, 2 À vérifier</h1>
+<p class="lede">Recherche ciblée Luxembourg / Bruxelles-Belgique / Grand Est / Paris-IDF sur les missions freelance et les signaux de transformation organisationnelle. Aucun signal du jour ne réunit à la fois une preuve directe, une fraîcheur confirmée et un décideur nommé avec email vérifié — donc aucun HOT n'a été forcé. Deux signaux solides (Fluxys, Arendt) passent en WARM avec une incertitude de fraîcheur ou de contact clairement indiquée. Aucun brouillon Gmail n'a été créé : aucun email vérifié n'a été trouvé pour les décideurs identifiés (règle : 0 brouillon est un résultat acceptable).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles / Belgique</span><span class="pill">Grand Est</span><span class="pill">Paris / Île-de-France</span><span class="pill">4 prospects qualifiés</span><span class="pill">0 brouillon Gmail</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Hunt Score du jour</div>
+<div class="score">52<span style="font-size:22px;opacity:.7">/100</span></div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>3</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards">
+<div class="card verify">
+<p class="meta" style="margin:0">Aucun signal du jour ne remplit les critères HOT (preuve suffisante + fraîcheur confirmée + décideur identifiable + action immédiate). Voir la section WARM ci-dessous pour les deux signaux les plus solides identifiés aujourd'hui.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter (fraîcheur ou contact).</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">Fluxys Belgium — Scrum Master (Agile à l'échelle / LeSS)</div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag">Mission freelance</span><span class="tag neutral">Bruxelles, Belgique</span><span class="tag neutral">Preuve B / INDEXED</span></div>
+</div>
+<div class="score-badge">65<small>/100</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Airswift (agrégateur de missions)</strong></div>
+<div class="field"><small>Localisation</small><strong>Bruxelles — 3j/semaine sur site + télétravail</strong></div>
+<div class="field"><small>Durée</small><strong>6 mois, intention d'extension long terme</strong></div>
+<div class="field"><small>Fraîcheur</small><strong>Date de publication non confirmée — récemment indexé</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Recherche d'un Scrum Master senior en environnement Agile à l'échelle (LeSS) pour accompagner 2 équipes dans une transition d'équipes "composants" vers des feature teams cross-fonctionnelles, avec coaching des autres Scrum Masters.</div>
+<div class="step"><b>Preuve</b>Annonce indexée sur Airswift, détails de mission concordants (lieu, durée, contenu). Niveau B — non consultée en direct.</div>
+<div class="step"><b>Why Now</b>Mission listée comme active avec durée initiale de 6 mois et transition organisationnelle explicitement en cours.</div>
+<div class="step"><b>Décideur</b>Non identifié nommément — probable Head of IT Delivery / Agile Chapter Lead chez Fluxys.</div>
+<div class="step"><b>Action</b>Candidater via Airswift ; identifier le contact RH/Delivery Fluxys sur LinkedIn avant tout email.</div>
+</div>
+<div class="message">Problème probable (HYPOTHÈSE) : transition vers l'agilité à l'échelle mal maîtrisée en interne, Scrum Masters existants non coachés sur le passage à des feature teams. Offre : coaching Agile at Scale / Scrum Master senior + accompagnement de transition LeSS. Approche : positionner l'expérience de Salim sur les transitions organisationnelles composants → feature teams.</div>
+<div class="actions">
+<a class="btn" href="https://www.airswift.com/jobs/scrum-master-scaled-agile-1267204">Voir la mission</a>
+<a class="btn secondary" href="https://www.airswift.com/jobs/scrum-master-scaled-agile-1267204">Postuler / Comment postuler</a>
+</div>
+<p class="meta" style="margin-top:10px">Comment postuler : candidature via la plateforme Airswift (lien ci-dessus). Lien de candidature distinct non identifié — passer par la page source. TJM non publié dans les résultats de recherche.</p>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">Arendt (cabinet d'avocats) — momentum transformation IT sous nouveau CIO</div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag">Signal organisationnel</span><span class="tag neutral">Luxembourg-Ville</span><span class="tag neutral">Preuve B / INDEXED</span></div>
+</div>
+<div class="score-badge">60<small>/100</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Paperjam + communiqué Arendt.com</strong></div>
+<div class="field"><small>Décideur</small><strong>Olivier Ramlot, Chief Information Officer</strong></div>
+<div class="field"><small>Nomination</small><strong>Effective 15/10/2025 (&gt;90 jours — ancien)</strong></div>
+<div class="field"><small>Signal récent</small><strong>Arendt Data Forum, 03/06/2026 (~3,5 mois)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Olivier Ramlot (ex-CIO BIL, CIO of the Year 2024) nommé CIO d'Arendt avec mandat explicite de structurer la roadmap IT et "accompagner les équipes dans l'évolution de leurs pratiques". Arendt Data Forum tenu en juin 2026 sur la transformation numérique.</div>
+<div class="step"><b>Preuve</b>Paperjam + communiqué officiel Arendt.com pour la nomination ; page événement Arendt.com pour le Data Forum. Niveau B — non consultées en direct.</div>
+<div class="step"><b>Why Now</b>Le Data Forum de juin 2026 démontre une dynamique de transformation numérique toujours active en 2026, au-delà de la seule nomination (qui date de plus de 90 jours).</div>
+<div class="step"><b>Décideur</b>Olivier Ramlot, CIO — profil LinkedIn public confirmé.</div>
+<div class="step"><b>Action</b>Approche directe via LinkedIn (pas d'email vérifié).</div>
+</div>
+<div class="message">Problème probable (HYPOTHÈSE) : le mandat public de "faire évoluer les pratiques des équipes" suggère un besoin d'accompagnement au changement / coaching agile pour soutenir la nouvelle gouvernance IT. Offre : coaching de managers/dirigeants, Target Operating Model, change management IT. Approche : référencer le mandat public de M. Ramlot et le Data Forum de juin comme preuve d'une transformation active.</div>
+<div class="actions">
+<a class="btn" href="https://en.paperjam.lu/article/olivier-ramlot-appointed-cio-of-arendt">Voir la source</a>
+<a class="btn secondary" href="https://www.linkedin.com/in/olivier-ramlot-67579b25/">Voir le contact</a>
+</div>
+<p class="meta" style="margin-top:10px">Incertitude principale : nomination ancienne (&gt;90 jours), aucune preuve d'un besoin de coaching agile explicitement exprimé à ce jour — hypothèse à valider avant approche.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Administration des contributions directes (ACD) — nouveaux CIO/CTO</div>
+<div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Secteur public</span><span class="tag neutral">Luxembourg-Ville</span><span class="tag neutral">Preuve B / INDEXED</span></div>
+</div>
+<div class="score-badge">40<small>/100</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Paperjam (Medinger) + Delano (Berger)</strong></div>
+<div class="field"><small>Décideurs</small><strong>Christophe Medinger (CIO), Noé Berger (CTO)</strong></div>
+<div class="field"><small>Date</small><strong>19/01/2026 — ~8 mois, à vérifier</strong></div>
+<div class="field"><small>Mode d'achat probable</small><strong>Marché public — non confirmé</strong></div>
+</div>
+<div class="message">Signal : Christophe Medinger nommé CIO et Noé Berger nommé CTO de l'ACD, avec mandat explicite d'accélérer la transformation numérique de l'administration. Problème probable (HYPOTHÈSE) : besoin de gestion du changement organisationnel dans une administration publique en transformation. Raison À VÉRIFIER : date &gt;90 jours, secteur public avec procédure d'achat probablement par marché public — mode d'engagement direct incertain.</div>
+<div class="actions">
+<a class="btn secondary" href="https://paperjam.lu/article/christophe-medinger-devient-cio-de-lacd">Voir la source</a>
+<a class="btn secondary" href="https://delano.lu/article/noe-berger-new-cto-of-the-acd">Voir la source (CTO)</a>
+</div>
+<p class="meta" style="margin-top:10px">Prochaine action : vérifier sur SIMAP/TED l'existence d'un marché public compatible avant toute approche commerciale directe.</p>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">EXMC / Gentis Recruitment — offres "Coach Agile" Luxembourg</div>
+<div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag">Mission freelance</span><span class="tag neutral">Luxembourg</span><span class="tag neutral">Preuve B / INDEXED</span></div>
+</div>
+<div class="score-badge">25<small>/100</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>free-work.com</strong></div>
+<div class="field"><small>Publication</small><strong>~11/11/2025 (&gt;90 jours)</strong></div>
+<div class="field"><small>Client final</small><strong>Non identifié</strong></div>
+<div class="field"><small>Statut</small><strong>Non confirmé — probablement clôturée</strong></div>
+</div>
+<div class="message">Signal : deux offres "Coach Agile" / "Agile Test Coach" Luxembourg publiées par les cabinets EXMC et Gentis Recruitment sur free-work.com. Raison À VÉRIFIER : date de publication ancienne (~10 mois), aucune preuve que l'offre soit toujours ouverte, client final non nommé. Intérêt : confirme une récurrence de la demande de coaching agile au Luxembourg via cabinets de recrutement, utile comme indicateur de marché.</div>
+<div class="actions">
+<a class="btn secondary" href="https://www.free-work.com/fr/tech-it/autre/job-mission/coach-agile-luxembourg-1">Voir la mission (EXMC)</a>
+<a class="btn secondary" href="https://www.free-work.com/fr/tech-it/coach-agile/job-mission/agile-test-coach">Voir la mission (Gentis)</a>
+</div>
+<p class="meta" style="margin-top:10px">Comment postuler : candidature via free-work.com (lien ci-dessus) après vérification que l'offre est toujours active. Lien de candidature distinct non identifié — passer par la page source.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte pouvant ouvrir de futures opportunités — pas encore des prospects qualifiés.</p></div></div>
+<div class="cards">
+<div class="card verify">
+<div class="title">Marché Luxembourg : "fatigue agile" identifiée publiquement</div>
+<p class="meta" style="margin:6px 0">Article ITnation.lu (06/02/2026) signé par une coach agile de Fujitsu Luxembourg : les organisations luxembourgeoises connaîtraient une "fatigue agile" liée à des transformations incomplètes et des promesses non tenues, avec un appel à sortir l'agilité du seul périmètre IT. Preuve B / INDEXED.</p>
+<p class="meta" style="margin:0">Analyse : ce narratif de marché conforte directement le positionnement de Salim (« On mesure la vélocité. Je rends visible la solidité. ») — utile comme angle de contenu / prise de parole plutôt que comme prospect direct (Fujitsu est ici un concurrent potentiel sur ce sujet, pas un client).</p>
+<div class="actions"><a class="btn secondary" href="https://itnation.lu/news/remettre-la-transformation-agile-sur-de-bons-rails/">Voir la source</a></div>
+</div>
+<div class="card verify">
+<div class="title">Marché Bruxelles/Paris : demande soutenue de Scrum Masters SAFe scaled agile</div>
+<p class="meta" style="margin:6px 0">Plusieurs missions freelance "Scrum Master (Scaled Agile)" et "Release Train Engineer SAFe" identifiées à Bruxelles (BNP Paribas Fortis, retail) et une mission Agile Coach at Scale en Île-de-France (mars–déc. 2026). Croissance de la demande estimée à +18%/an depuis 2023 selon une source marché (Freelance-Informatique), TJM Coach Agile confirmé 700–1200€. Preuve C/SECONDARY pour la donnée de croissance — non vérifiable directement.</p>
+<p class="meta" style="margin:0">Analyse : confirme un marché actif hors Luxembourg, à resurveiller avec des requêtes plus ciblées (noms de clients finaux) lors des prochaines exécutions.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité indique où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards">
+<div class="card warm">
+<div class="title">Fluxys Belgium — Scrum Master (Agile à l'échelle / LeSS)</div>
+<p class="meta" style="margin:6px 0">Bruxelles · 6 mois + extension probable · TJM non publié</p>
+<div class="actions">
+<a class="btn" href="https://www.airswift.com/jobs/scrum-master-scaled-agile-1267204">Voir la mission</a>
+<a class="btn secondary" href="https://www.airswift.com/jobs/scrum-master-scaled-agile-1267204">Postuler via Airswift</a>
+</div>
+</div>
+<div class="card verify">
+<div class="title">EXMC / Gentis — Coach Agile Luxembourg</div>
+<p class="meta" style="margin:6px 0">Luxembourg · statut à reconfirmer (offre ~10 mois)</p>
+<div class="actions">
+<a class="btn secondary" href="https://www.free-work.com/fr/tech-it/autre/job-mission/coach-agile-luxembourg-1">Voir la mission</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status no">0 brouillon créé</span></div>
+<div class="cards">
+<div class="card verify">
+<p class="meta" style="margin:0">Aucun brouillon de prospection créé aujourd'hui. Aucun email professionnel vérifié n'a été trouvé pour les décideurs identifiés (Olivier Ramlot — Arendt ; Christophe Medinger / Noé Berger — ACD ; contact Fluxys non identifié). Conformément à la règle « ne jamais deviner un email », 0 brouillon est un résultat acceptable plutôt que d'inventer un contact. Actions recommandées : approche LinkedIn directe pour Arendt, candidature directe via la plateforme pour Fluxys.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement interrogées via WebSearch pour construire ce rapport.</p></div></div>
+<table>
+<tr><th>Source</th><th>Requêtes</th><th>Preuve</th><th>Résultat exploité</th></tr>
+<tr><td>Malt.fr</td><td>site:malt.fr "Agile Coach" Luxembourg</td><td>B</td><td>Aucun profil/mission Luxembourg pertinent trouvé</td></tr>
+<tr><td>Free-Work.com</td><td>Agile Coach / Scrum Master Luxembourg, Coach Agile EXMC, Gentis</td><td>B</td><td>2 offres EXMC/Gentis (À vérifier)</td></tr>
+<tr><td>Collective.work</td><td>Agile Coach / Scrum Master / SAFe Luxembourg</td><td>B</td><td>Profils de freelances (concurrents), aucun signal client</td></tr>
+<tr><td>Freelancers.lu</td><td>Agile / Scrum Master / transformation</td><td>—</td><td>Aucun résultat indexé exploitable</td></tr>
+<tr><td>Paperjam.lu</td><td>digital transformation / new CIO / new CTO 2026</td><td>B</td><td>Arendt (Ramlot), ACD (Medinger)</td></tr>
+<tr><td>Delano.lu</td><td>new CIO / new CTO / transformation 2026</td><td>B</td><td>ACD (Berger)</td></tr>
+<tr><td>ITnation.lu</td><td>Agile / transformation / SAFe / CIO / CTO 2026</td><td>B</td><td>Article "fatigue agile" (Fujitsu), CIO of the Year finalistes</td></tr>
+<tr><td>Arendt.com</td><td>Arendt transformation digitale 2026</td><td>B</td><td>Communiqué nomination CIO + Arendt Data Forum juin 2026</td></tr>
+<tr><td>Airswift</td><td>Fluxys Scrum Master Scaled Agile Brussels</td><td>B</td><td>Mission Fluxys Belgium</td></tr>
+<tr><td>TED Europa (SIMAP)</td><td>Luxembourg agile / transformation / change management 2026</td><td>D</td><td>Aucun marché directement exploitable identifié</td></tr>
+<tr><td>LinkedIn / Freelance-Informatique / freehire.me</td><td>Bruxelles / Paris / Grand Est missions Agile 2026</td><td>C</td><td>Contexte marché uniquement, pas de prospect nommé</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Prospects qualifiés (nouveaux, hors doublons)</td><td>4</td></tr>
+<tr><td>HOT</td><td>0</td></tr>
+<tr><td>WARM</td><td>2</td></tr>
+<tr><td>À vérifier</td><td>2</td></tr>
+<tr><td>Décideurs identifiés nommément</td><td>3 (Olivier Ramlot, Christophe Medinger, Noé Berger)</td></tr>
+<tr><td>Emails vérifiés</td><td>0</td></tr>
+<tr><td>Brouillons Gmail créés</td><td>0</td></tr>
+<tr><td>Doublons vs prospects-history.csv</td><td>0 (historique vide avant ce run)</td></tr>
+<tr><td>Sources interrogées</td><td>11</td></tr>
+</table>
+</section>
+
+<footer class="footer">AIgile Business Hunter — généré le 18 septembre 2026 à partir de recherches WebSearch ciblées. Aucune exhaustivité de marché n'est revendiquée. Système d'intelligence commerciale, pas un agrégateur d'annonces.</footer>
+</main>
+</body>
+</html>
