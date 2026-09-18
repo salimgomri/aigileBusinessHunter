@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 18 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.6px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:16px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:40px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:24px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.title{font-size:17px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:96px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand);font-size:12px}.score-badge small{display:block;font-size:9px;color:var(--muted);font-weight:800}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:11px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700;font-size:13px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.btn.disabled{background:#edf0ee;color:#8b9690;cursor:default}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+.empty{padding:16px;background:var(--surface2);border-radius:12px;font-size:13px;color:var(--muted)}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:32px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence — AIgile</div></div></div>
+<div class="badge">Career Hunter · 18 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Intelligence carrière quotidienne</div>
+<h1>0 HOT aujourd'hui — 1 piste WARM chez PwC Luxembourg, 4 pistes à vérifier</h1>
+<p class="lede">Recherche ciblée sur Luxembourg, Bruxelles, Grand Est, Paris et Europe. Aucune offre ne réunit fit fort + preuve forte + fraîcheur confirmée aujourd'hui : la piste la plus solide (PwC Luxembourg, Finance Transformation Senior Manager) est classée WARM par prudence sur la date et le domaine finance. 4 autres offres réelles sont identifiées mais présentent des écarts ou une fraîcheur/statut non confirmés. Accès direct aux sites bloqué dans cet environnement : toutes les preuves sont de niveau B (résultats indexés WebSearch), jamais présentées comme consultation directe.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles/Belgique</span><span class="pill">Grand Est</span><span class="pill">Paris/IDF</span><span class="pill">Europe</span><span class="pill">Remote Europe</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Hunt Score</div>
+<div class="score">Qualité &gt; volume</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>1</strong></div>
+<div class="kpi"><small>Contacts vérifiés</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour (HOT)</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards">
+<div class="empty">Aucune offre HOT aujourd'hui. Pour éviter toute exagération, aucune opportunité n'a été forcée dans cette catégorie : la meilleure piste du jour (PwC Luxembourg) est classée WARM faute de date de publication confirmée et de clarté sur l'exigence de bagage finance. Voir section WARM.</div>
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunité crédible avec une incertitude à traiter.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Finance Transformation (Senior) Manager (m/f/d)</div><div class="meta">PwC Luxembourg · Luxembourg-ville</div></div>
+<div class="score-badge">Fit : Fort<small>Transformation / AI / Delivery</small></div>
+</div>
+<div class="tags"><span class="tag">Preuve B — indexé</span><span class="tag warn">Date non confirmée</span><span class="tag neutral">Statut à confirmer</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Portail carrières PwC (Workday) — pwc.wd3.myworkdayjobs.com</strong></div>
+<div class="field"><small>Preuve</small><strong>Description du poste retrouvée de façon cohérente sur le portail Workday officiel et un miroir d'indexation indépendant (TheMuse)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer — offre visible dans les résultats de recherche actuels du portail PwC</strong></div>
+<div class="field"><small>Contact</small><strong>Équipe Finance Advisory &amp; Transformation identifiée publiquement (ex. profils LinkedIn de l'équipe) ; aucun recruteur/hiring manager nommément confirmé pour cette offre précise</strong></div>
+<div class="field"><small>Email vérifié</small><strong>Aucun</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Finance Transformation Senior Manager</div>
+<div class="step"><b>Preuve</b>B — indexé (2 sources concordantes)</div>
+<div class="step"><b>Fraîcheur</b>Non confirmée</div>
+<div class="step"><b>Fit</b>Transformation, TOM, AI adoption, delivery</div>
+<div class="step"><b>Écarts</b>Domaine Finance/CFO, langue non précisée</div>
+</div>
+<div class="message">Points forts : transformation organisationnelle, redesign d'operating model, GenAI/Agentic AI, pilotage d'équipes de delivery, environnement international — cœur du positionnement AIgile. Écarts : l'offre est logée dans une practice "Finance Advisory" ; un ancrage finance/comptabilité n'est pas confirmé dans le profil de Salim et devra être clarifié en entretien ou via une accroche orientée "transformation & AI adoption" plutôt que finance pure.</div>
+<div class="actions">
+<a class="btn" href="https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Finance-Transformation--Senior--Manager--m-f-d-_711472WD" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Finance-Transformation--Senior--Manager--m-f-d-_711472WD" target="_blank" rel="noopener">POSTULER</a>
+<span class="btn secondary">Comment postuler : candidature directement sur le portail carrière PwC (Workday), bouton Apply sur la page</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Offres réelles mais avec fraîcheur, statut ou écarts insuffisamment confirmés.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Finance Transformation Senior Manager, EPM (Bilingual FR/EN)</div><div class="meta">PwC Luxembourg · Luxembourg-ville</div></div>
+<div class="score-badge">Fit : Moyen<small>EPM spécifique</small></div>
+</div>
+<div class="tags"><span class="tag">Preuve B — indexé</span><span class="tag warn">Date non confirmée</span><span class="tag neutral">Bilingue FR/EN exigé</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Portail carrières PwC (Workday)</strong></div>
+<div class="field"><small>Preuve</small><strong>Description retrouvée sur le portail Workday officiel de PwC</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun nommé et confirmé</strong></div>
+<div class="field"><small>Email vérifié</small><strong>Aucun</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Finance Transformation Sr Manager EPM</div>
+<div class="step"><b>Preuve</b>B — indexé</div>
+<div class="step"><b>Fraîcheur</b>Inconnue</div>
+<div class="step"><b>Fit</b>Transformation finance, delivery</div>
+<div class="step"><b>Écarts</b>EPM spécifique + bilingue exigé</div>
+</div>
+<div class="message">Écart principal : expertise EPM (Enterprise Performance Management) et bilinguisme FR/EN explicitement requis — non démontrés dans le profil de Salim tel que documenté. Signal de marché intéressant (2e poste Finance Transformation ouvert chez PwC en parallèle), mais à traiter comme piste secondaire.</div>
+<div class="actions">
+<a class="btn secondary" href="https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Finance-Transformation-Senior-Manager--EPM--Bilingual-FR-EN-_709461WD" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<span class="btn disabled">Lien de candidature exact : identique à l'offre (portail Workday)</span>
+</div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">IT Senior Project Manager</div><div class="meta">lux-Airport · Luxembourg (Findel)</div></div>
+<div class="score-badge">Fit : Bon<small>PM / gouvernance IT</small></div>
+</div>
+<div class="tags"><span class="tag">Preuve B — indexé</span><span class="tag warn">Fraîcheur suspecte</span><span class="tag neutral">Statut à confirmer</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>LinkedIn Jobs (résultat indexé)</strong></div>
+<div class="field"><small>Preuve</small><strong>Description de poste retrouvée via LinkedIn (organisation/planification de projets IT, conformité sécurité IT, gestion parties prenantes)</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée. Analyse (non un fait confirmé) : l'identifiant d'offre LinkedIn appartient à une plage généralement associée à des publications plus anciennes — à vérifier avant toute action.</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer directement sur lux-airport.lu/corporate/open-positions/</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun nommé</strong></div>
+<div class="field"><small>Email vérifié</small><strong>Aucun</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>IT Senior Project Manager</div>
+<div class="step"><b>Preuve</b>B — indexé</div>
+<div class="step"><b>Fraîcheur</b>Suspecte, à vérifier</div>
+<div class="step"><b>Fit</b>Program/Delivery Management</div>
+<div class="step"><b>Écarts</b>Orienté IT/infra plus que coaching Agile</div>
+</div>
+<div class="message">Ne pas candidater avant d'avoir confirmé le statut réel de l'offre sur la page carrières officielle de lux-Airport : l'ancienneté probable de l'identifiant de l'offre fait peser un doute sérieux sur son actualité.</div>
+<div class="actions">
+<a class="btn secondary" href="https://lu.linkedin.com/jobs/view/it-senior-project-manager-at-lux-airport-3804503236" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<span class="btn disabled">Lien de candidature exact non identifié — candidature via LinkedIn avec redirection annoncée vers le portail Skeeled de lux-Airport</span>
+</div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">IT Project Manager – 100% (m/f/d)</div><div class="meta">Bank Julius Baer Europe S.A. · Luxembourg</div></div>
+<div class="score-badge">Fit : Bon<small>PM bancaire</small></div>
+</div>
+<div class="tags"><span class="tag">Preuve B — indexé</span><span class="tag warn">Fraîcheur suspecte</span><span class="tag neutral">Écart technique</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>LinkedIn Jobs + Monster.lu (résultats indexés)</strong></div>
+<div class="field"><small>Preuve</small><strong>Description cohérente sur deux sources indépendantes (pilotage de projets IT, reporting, montée en compétence de l'équipe projet)</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée ; identifiant LinkedIn dans une plage potentiellement ancienne (analyse, non confirmée)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun nommé</strong></div>
+<div class="field"><small>Email vérifié</small><strong>Aucun</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>IT Project Manager 100%</div>
+<div class="step"><b>Preuve</b>B — indexé</div>
+<div class="step"><b>Fraîcheur</b>Suspecte, à vérifier</div>
+<div class="step"><b>Fit</b>PM bancaire, stakeholders</div>
+<div class="step"><b>Écarts</b>Temenos T24/Triple'A non démontré</div>
+</div>
+<div class="message">Écart principal : la maîtrise de Temenos Core Banking (T24 et/ou Triple'A) est mentionnée comme un atout dans l'offre et n'est pas documentée dans le profil de Salim. À vérifier avant candidature.</div>
+<div class="actions">
+<a class="btn secondary" href="https://lu.linkedin.com/jobs/view/it-project-manager-100%25-m-f-d-at-julius-baer-3816162584" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<span class="btn disabled">Lien de candidature exact non identifié — candidature annoncée via le portail de recrutement en ligne Julius Baer</span>
+</div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">2 Project Managers (m/f) — réf. E00044054 / F00044055 / M00044056</div><div class="meta">Administration de la navigation aérienne (État luxembourgeois) · Findel</div></div>
+<div class="score-badge">Fit : Moyen<small>Écarts réglementaires</small></div>
+</div>
+<div class="tags"><span class="tag">Preuve B — indexé</span><span class="tag warn">~52 jours</span><span class="tag neutral">Fonctionnaire A1</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>govjobs.public.lu (résultat indexé ; accès direct bloqué dans cet environnement)</strong></div>
+<div class="field"><small>Preuve</small><strong>Référence, intitulé et contenu de poste retrouvés de façon cohérente via WebSearch (moovijob.com corrobore)</strong></div>
+<div class="field"><small>Date de publication</small><strong>28 juillet 2026 (visible dans la référence de publication) — environ 52 jours avant ce rapport, tranche "31-90 jours : à vérifier"</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer (recrutement statutaire, calendrier généralement long)</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun nommé</strong></div>
+<div class="field"><small>Email vérifié</small><strong>Aucun</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>2 Project Managers ANA</div>
+<div class="step"><b>Preuve</b>B — indexé</div>
+<div class="step"><b>Fraîcheur</b>~52 jours, à vérifier</div>
+<div class="step"><b>Fit</b>Gestion de projet, transformation numérique ATM</div>
+<div class="step"><b>Écarts</b>Langues admin., citoyenneté UE, master spécifique</div>
+</div>
+<div class="message">Écarts majeurs à clarifier avant toute candidature : connaissance des trois langues administratives du groupe A1 (généralement luxembourgeois/français/allemand) non confirmée pour Salim ; citoyenneté d'un État membre de l'UE requise ; master en ingénierie/aviation/gestion de projet/systèmes d'information/management/transport aérien exigé — compatibilité du diplôme de Salim avec ce référentiel non confirmée dans les fichiers disponibles.</div>
+<div class="actions">
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">POSTULER (sous réserve des conditions statutaires)</a>
+<span class="btn secondary">Comment postuler : candidature directement sur le portail GovJobs Luxembourg</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Career Signals</h2><p class="meta">Signaux de contexte pouvant ouvrir de futures opportunités — pas des offres directes.</p></div></div>
+<div class="cards">
+<div class="card verify">
+<div class="card-top"><div><div class="title">PwC Luxembourg renforce sa practice Finance Advisory &amp; Transformation</div><div class="meta">PwC Luxembourg · Luxembourg-ville</div></div></div>
+<div class="tags"><span class="tag">Preuve B — indexé</span><span class="tag neutral">Septembre 2026</span></div>
+<div class="message"><strong>Événement :</strong> deux postes de (Senior) Manager sont ouverts simultanément dans la practice Finance Advisory &amp; Transformation de PwC Luxembourg (transformation généraliste orientée GenAI/Agentic AI, et EPM bilingue FR/EN). <strong>Pourquoi ce signal compte :</strong> un recrutement double sur une même practice, en pleine bascule vers l'IA générative appliquée à la transformation finance, indique un investissement actif dans la capacité de delivery/transformation — un terrain propice à une prise de contact directe sur le positionnement "transformation organisationnelle + AI adoption" de Salim, même en dehors de ces deux postes précis. <strong>Source :</strong> pwc.wd3.myworkdayjobs.com (résultats de recherche indexés, réf. 711472WD et 709461WD).</div>
+</div>
+<div class="empty">Recherches complémentaires effectuées sans signal concret exploitable : GovJobs — "Chargé de conduite du changement et de communication" (réf. E00042694, publié 27 mai 2026, ~114 jours → tranche ancienne, et niveau probablement junior/intermédiaire par rapport au profil senior de Salim) ; GovJobs — "Senior Business Analyst" (réf. E00044257, publié 4 août 2026, ~45 jours, mais profil orienté analyse métier plus que coaching Agile/transformation). Non retenus comme opportunités qualifiées pour respecter la limite de 5 opportunités principales et éviter tout remplissage artificiel.</div>
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions — synthèse candidature</h2><p class="meta">Où et comment postuler pour chaque opportunité retenue aujourd'hui.</p></div></div>
+<table>
+<tr><th>Offre</th><th>Entreprise</th><th>Où postuler</th><th>Comment postuler</th></tr>
+<tr><td>Finance Transformation (Senior) Manager</td><td>PwC Luxembourg</td><td><a href="https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Finance-Transformation--Senior--Manager--m-f-d-_711472WD" target="_blank" rel="noopener">Portail Workday PwC</a></td><td>Candidature directement sur le portail carrière (bouton Apply)</td></tr>
+<tr><td>Finance Transformation Sr Manager, EPM</td><td>PwC Luxembourg</td><td><a href="https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Finance-Transformation-Senior-Manager--EPM--Bilingual-FR-EN-_709461WD" target="_blank" rel="noopener">Portail Workday PwC</a></td><td>Candidature directement sur le portail carrière (bouton Apply)</td></tr>
+<tr><td>IT Senior Project Manager</td><td>lux-Airport</td><td><a href="https://lu.linkedin.com/jobs/view/it-senior-project-manager-at-lux-airport-3804503236" target="_blank" rel="noopener">LinkedIn Jobs</a></td><td>Lien de candidature exact non identifié — LinkedIn indique une redirection vers le portail Skeeled de lux-Airport</td></tr>
+<tr><td>IT Project Manager 100%</td><td>Julius Baer</td><td><a href="https://lu.linkedin.com/jobs/view/it-project-manager-100%25-m-f-d-at-julius-baer-3816162584" target="_blank" rel="noopener">LinkedIn Jobs</a></td><td>Lien de candidature exact non identifié — portail de recrutement en ligne Julius Baer annoncé</td></tr>
+<tr><td>2 Project Managers ANA</td><td>Administration de la navigation aérienne</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">GovJobs Luxembourg</a></td><td>Candidature directement sur GovJobs, sous réserve des conditions statutaires (langues, citoyenneté, diplôme)</td></tr>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne envoyé séparément</span></div>
+<div class="cards">
+<div class="empty">0 brouillon préparé aujourd'hui. Aucune adresse email professionnelle publiquement vérifiée n'a été identifiée pour un recruteur ou hiring manager sur les 5 opportunités ci-dessus — conformément à la règle « ne jamais deviner un email », 0 brouillon est le résultat correct plutôt que d'inventer un contact. Des profils LinkedIn d'équipes pertinentes (ex. Finance Advisory &amp; Transformation chez PwC) ont été repérés mais aucun n'est confirmé comme recruteur/hiring manager de ces offres précises ni ne fournit d'email public.</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement interrogées via WebSearch pour construire ce rapport (accès direct bloqué dans cet environnement).</p></div></div>
+<table>
+<tr><th>Source</th><th>Usage</th><th>Niveau de preuve</th></tr>
+<tr><td>govjobs.public.lu</td><td>Recherche postes fonctionnaires/employés État luxembourgeois</td><td>B — indexé</td></tr>
+<tr><td>eib.org / erecruitment.eib.org</td><td>Recherche postes EIB — aucune offre PM/Agile/transformation actuellement indexée trouvée</td><td>B — indexé (pages catégories seulement)</td></tr>
+<tr><td>linkedin.com/jobs</td><td>Recherche Senior Project Manager, IT Project Manager, Agile Coach (Luxembourg/Bruxelles)</td><td>B — indexé</td></tr>
+<tr><td>pwc.wd3.myworkdayjobs.com</td><td>Recherche Finance Transformation Manager/Senior Manager</td><td>B — indexé</td></tr>
+<tr><td>monster.lu, moovijob.com</td><td>Corroboration secondaire des offres Julius Baer et GovJobs</td><td>C — secondaire</td></tr>
+<tr><td>indeed.com (fr/lu/be), apec.fr, glassdoor</td><td>Recherche volumes de marché Agile Coach / Transformation Manager (Luxembourg, Bruxelles, Metz/Grand Est, Paris/IDF)</td><td>B — indexé, données de marché générales</td></tr>
+<tr><td>lux-airport.lu</td><td>Vérification de statut de l'offre IT Senior Project Manager — non confirmée directement (accès bloqué)</td><td>D — non confirmé pour le statut</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Opportunités HOT</td><td>0</td></tr>
+<tr><td>Opportunités WARM</td><td>1</td></tr>
+<tr><td>Opportunités à vérifier</td><td>4</td></tr>
+<tr><td>Career signals</td><td>1</td></tr>
+<tr><td>Contacts nommés confirmés (recruteur/hiring manager avec email vérifié)</td><td>0</td></tr>
+<tr><td>Brouillons Gmail préparés</td><td>0 / 3 max</td></tr>
+<tr><td>Doublons détectés vs career-history.csv</td><td>0 (historique vide avant ce run)</td></tr>
+<tr><td>Lignes ajoutées à career-history.csv</td><td>5</td></tr>
+<tr><td>Requêtes WebSearch exécutées</td><td>13</td></tr>
+<tr><td>Tentatives WebFetch (accès direct)</td><td>3 — toutes bloquées par le proxy réseau (EGRESS_BLOCKED)</td></tr>
+</table>
+</section>
+
+<footer class="footer">Gomri.coach Career Intelligence — généré le 18 septembre 2026. Aucune donnée n'a été inventée : dates, contacts, emails, URLs et statuts sont soit sourcés, soit explicitement marqués comme non confirmés.</footer>
+</main>
+</body>
+</html>
