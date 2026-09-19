@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 19 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Sales Intelligence & Business Development</div></div></div>
+<div class="badge">Rapport quotidien · 19 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Business Hunter — 19 septembre 2026</div>
+<h1>3 signaux WARM à travailler, aucun HOT confirmé aujourd'hui</h1>
+<p class="lede">Recherche ciblée du jour (WebSearch, sources-business-v2.txt) : 0 opportunité HOT, 3 signaux WARM avec décideur identifié ou fortement probable (Proximus NXT Luxembourg, EIB, Atdomco), et 3 missions freelance à vérifier avant toute candidature. Aucune exhaustivité du marché n'est revendiquée.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles / Belgique</span><span class="pill">Grand Est</span><span class="pill">Paris / Île-de-France</span><span class="pill">France</span><span class="pill">Europe / Remote</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Hunt Score</div>
+<div class="score">54</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>3</strong></div>
+<div class="kpi"><small>Contacts</small><strong>2</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucun HOT aujourd'hui</div><div class="message">Aucune opportunité ne réunit à la fois preuve suffisante, fraîcheur confirmée et décideur identifié pour justifier un statut HOT. Les 3 meilleurs signaux du jour sont classés WARM ci-dessous — quantité volontairement limitée pour préserver la qualité de qualification.</div></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm">
+<div class="card-top">
+<div><div class="title">Proximus NXT Luxembourg — pilotage de l'adoption SAFe</div><div class="tags"><span class="tag">SAFe / Agile at Scale</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Preuve B</span></div></div>
+<div class="score-badge">62/100<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Recrutement d'un Program Manager (« Project Manager – N ») chargé de piloter l'adoption et le déploiement du Scaled Agile Framework (SAFe) à travers plusieurs équipes.</strong></div><div class="field"><small>Preuve</small><strong>B / INDEXED — offre relayée sur itnation.lu (page carrière non consultée directement dans son intégralité).</strong></div><div class="field"><small>Fraîcheur</small><strong>Publication datée du 22 avril 2026 (~5 mois) — au-delà de 90 jours : À VÉRIFIER, statut d'ouverture actuel non confirmé.</strong></div><div class="field"><small>Why now (FAIT)</small><strong>L'entreprise recrute explicitement sur un mandat de leadership SAFe multi-équipes, preuve d'un chantier d'agilité à l'échelle en cours.</strong></div><div class="field"><small>Problème probable (HYPOTHÈSE)</small><strong>Un déploiement SAFe piloté en interne par un seul Program Manager peut manquer de renfort en coaching agile de terrain pour ancrer l'adoption réelle au-delà du cadre formel.</strong></div><div class="field"><small>Décideur identifié</small><strong>Magali Pernoud — Deputy Director, Transformation &amp; Excellence, Proximus Luxembourg (profil LinkedIn public ; lien direct avec le poste Program Manager non confirmé).</strong></div><div class="field"><small>Offre Salim</small><strong>Coaching Agile / SAFe, accompagnement des managers pendant le déploiement, structuration de la Communauté de pratique Agile.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Recrutement Program Manager SAFe</div><div class="step"><b>Preuve</b>B — itnation.lu</div><div class="step"><b>Why now</b>Mandat SAFe multi-équipes</div><div class="step"><b>Décideur</b>M. Pernoud (Transformation &amp; Excellence)</div><div class="step"><b>Offre</b>Coaching SAFe / managers</div></div>
+<div class="message"><strong>Approche :</strong> message LinkedIn à Magali Pernoud sur le retour d'expérience terrain de déploiement SAFe et l'accompagnement des managers pendant la phase d'adoption — sans référence directe à l'offre d'emploi.</div>
+<div class="actions"><a class="btn" href="https://itnation.lu/jobs/project-manager-n/" target="_blank" rel="noopener">Voir la source</a><a class="btn secondary" href="https://www.linkedin.com/in/magali-pernoud/" target="_blank" rel="noopener">Voir le contact</a></div>
+</div><div class="card warm">
+<div class="card-top">
+<div><div class="title">European Investment Bank (EIB) — nouvelle Change Management Programme Unit</div><div class="tags"><span class="tag">Change Management</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Preuve B</span><span class="tag warn">Décideur non confirmé</span></div></div>
+<div class="score-badge">58/100<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Création/renforcement d'une « Change Management Programme Unit » au sein du département Digital Transformation &amp; Innovation (GIS), avec recrutement d'un « Senior Head of Change Management Programme Unit » chargé de définir la stratégie de conduite du changement à l'échelle du groupe.</strong></div><div class="field"><small>Preuve</small><strong>B / INDEXED — avis de vacance EIB relayé par UNjobs.org et Unjobnet.org (page carrière EIB officielle non consultée directement).</strong></div><div class="field"><small>Fraîcheur</small><strong>Process de recrutement avec assessment centres prévus avril/mai 2026 et entretiens mai/juin 2026 — publication antérieure probable (T1 2026), donc À VÉRIFIER ; prise de poste effective non confirmée à ce jour.</strong></div><div class="field"><small>Why now (FAIT)</small><strong>Le descriptif du poste mentionne explicitement l'implémentation de la stratégie de transformation digitale à l'échelle du groupe et le partenariat avec les équipes de delivery — mandat de transformation organisationnelle actif.</strong></div><div class="field"><small>Problème probable (HYPOTHÈSE)</small><strong>La structuration d'une nouvelle unité de conduite du changement à l'échelle d'un groupe nécessite souvent un appui externe pour les ateliers, le coaching des managers et la méthodologie de déploiement (TOM).</strong></div><div class="field"><small>Décideur</small><strong>Titulaire du poste « Senior Head of Change Management Programme Unit » — nom non identifié publiquement à ce stade (recherche LinkedIn ciblée n'a pas permis de le confirmer).</strong></div><div class="field"><small>Offre Salim</small><strong>Accompagnement Change Management / Agile Transformation, structuration de Target Operating Model, coaching des managers.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Nouvelle Change Mgmt Unit</div><div class="step"><b>Preuve</b>B — UNjobs / Unjobnet</div><div class="step"><b>Why now</b>Mandat transformation groupe</div><div class="step"><b>Décideur</b>Non identifié</div><div class="step"><b>Offre</b>Change Mgmt / TOM</div></div>
+<div class="message"><strong>Approche :</strong> recherche LinkedIn ciblée « EIB » + « Change Management Programme Unit » pour identifier nommément le titulaire avant toute prise de contact.</div>
+<div class="actions"><a class="btn" href="https://unjobs.org/vacancies/1775765426089" target="_blank" rel="noopener">Voir la source</a></div>
+</div><div class="card warm">
+<div class="card-top">
+<div><div class="title">Atdomco (Luxembourg) — création d'un poste « Head of CEO Office / Transformation Lead »</div><div class="tags"><span class="tag">Transformation organisationnelle</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Preuve B</span><span class="tag warn">Date non confirmée</span></div></div>
+<div class="score-badge">55/100<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Publication d'une offre « Head of CEO Office / Transformation Lead » sur le portail carrière d'Atdomco (fiduciaire / administration corporate &amp; fonds), rattachée directement au CEO.</strong></div><div class="field"><small>Preuve</small><strong>B / INDEXED — offre référencée via recherche indexée pointant vers atdomco-1739192595.teamtailor.com/jobs (contenu détaillé du poste non consulté directement).</strong></div><div class="field"><small>Fraîcheur</small><strong>Date de publication non confirmée.</strong></div><div class="field"><small>Why now (FAIT)</small><strong>La création d'un poste de « Transformation Lead » rattaché directement au CEO indique un chantier de transformation organisationnelle piloté au plus haut niveau de l'entreprise.</strong></div><div class="field"><small>Problème probable (HYPOTHÈSE)</small><strong>Une société de taille intermédiaire qui structure une fonction transformation au niveau du CEO a probablement besoin d'un cadrage méthodologique (TOM, gouvernance agile) que ce futur Transformation Lead devra déployer — un accompagnement externe peut appuyer sa prise de poste.</strong></div><div class="field"><small>Décideur identifié</small><strong>Florian Rickal — Chief Executive Officer, Atdomco (profil LinkedIn public ; sponsor probable du poste).</strong></div><div class="field"><small>Offre Salim</small><strong>Cadrage du Target Operating Model, coaching du futur Transformation Lead, appui méthodologique Agile / Change Management.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Création poste Transfo. Lead</div><div class="step"><b>Preuve</b>B — Teamtailor</div><div class="step"><b>Why now</b>Poste rattaché au CEO</div><div class="step"><b>Décideur</b>F. Rickal (CEO)</div><div class="step"><b>Offre</b>Cadrage TOM</div></div>
+<div class="message"><strong>Approche :</strong> message LinkedIn à Florian Rickal évoquant la création du poste de Transformation Lead et une proposition de cadrage TOM / accompagnement du futur titulaire pendant sa prise de poste.</div>
+<div class="actions"><a class="btn" href="https://atdomco-1739192595.teamtailor.com/jobs" target="_blank" rel="noopener">Voir la source</a><a class="btn secondary" href="https://www.linkedin.com/in/florian-rickal-797436163/" target="_blank" rel="noopener">Voir le contact</a></div>
+</div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify">
+<div class="card-top">
+<div><div class="title">EXMC — Offre « Coach Agile » (Luxembourg)</div><div class="tags"><span class="tag">Freelance / mission</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Preuve B</span></div></div>
+<div class="score-badge">À vérifier<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Offre publiée par EXMC (ESN / prestataire IT) pour un Coach Agile devant renforcer la culture qualité et la transformation des pratiques de test au sein d'équipes agiles.</strong></div><div class="field"><small>Preuve</small><strong>B / INDEXED — free-work.com.</strong></div><div class="field"><small>Fraîcheur</small><strong>Date de publication non confirmée.</strong></div><div class="field"><small>Statut</small><strong>Client final non identifié ; TJM, durée et date de démarrage non confirmés — À VÉRIFIER avant toute action.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Coach Agile / qualité test</div><div class="step"><b>Preuve</b>B — free-work.com</div><div class="step"><b>Why now</b>Non confirmé</div><div class="step"><b>Décideur</b>Non identifié (EXMC = intermédiaire)</div><div class="step"><b>Offre</b>Agile Coaching</div></div>
+<div class="message"><strong>Statut :</strong> orientation « qualité logicielle / test » plus que coaching agile pur — fit partiel avec le profil de Salim. À qualifier via la page source avant toute candidature.</div>
+<div class="actions"><a class="btn" href="https://www.free-work.com/fr/tech-it/autre/job-mission/coach-agile-luxembourg-1" target="_blank" rel="noopener">Voir la mission</a><div class="field" style="margin-top:8px;flex-basis:100%"><small>Comment postuler</small><strong>Candidature via free-work.com (candidature directe sur la plateforme). Lien de candidature distinct non identifié — utiliser la page source.</strong></div></div>
+</div><div class="card verify">
+<div class="card-top">
+<div><div class="title">Gentis Recruitment SAS — Mission freelance « Agile Test Coach » (Luxembourg)</div><div class="tags"><span class="tag">Freelance / mission</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Preuve B</span></div></div>
+<div class="score-badge">À vérifier<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Mission freelance publiée par Gentis Recruitment SAS pour un Agile Test Coach chargé d'intégrer la gouvernance de test et de renforcer l'agilité du processus de test global chez un client au Luxembourg.</strong></div><div class="field"><small>Preuve</small><strong>B / INDEXED — free-work.com.</strong></div><div class="field"><small>Fraîcheur</small><strong>Date de publication non confirmée.</strong></div><div class="field"><small>Statut</small><strong>Client final non identifié ; TJM, durée et date de démarrage non confirmés — À VÉRIFIER avant toute action.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Agile Test Coach</div><div class="step"><b>Preuve</b>B — free-work.com</div><div class="step"><b>Why now</b>Non confirmé</div><div class="step"><b>Décideur</b>Non identifié (Gentis = intermédiaire)</div><div class="step"><b>Offre</b>Agile Coaching / gouvernance de test</div></div>
+<div class="message"><strong>Statut :</strong> orientation test/qualité plus que coaching agile généraliste — fit partiel. À qualifier via la page source avant toute candidature.</div>
+<div class="actions"><a class="btn" href="https://www.free-work.com/fr/tech-it/coach-agile/job-mission/agile-test-coach" target="_blank" rel="noopener">Voir la mission</a><div class="field" style="margin-top:8px;flex-basis:100%"><small>Comment postuler</small><strong>Candidature via free-work.com. Lien de candidature exact non identifié — utiliser la page source / plateforme.</strong></div></div>
+</div><div class="card verify">
+<div class="card-top">
+<div><div class="title">Mission « Coach Agile » Paris — Agile Center of Competence grand compte (Freelance-Informatique)</div><div class="tags"><span class="tag">Freelance / mission</span><span class="tag neutral">Paris</span><span class="tag warn">Ancienneté probable</span></div></div>
+<div class="score-badge">À vérifier<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Mission pour un Agile Center of Competence d'un grand compte parisien, accompagnement du management client sur trois axes : culture et pratiques agiles, performance produit, excellence opérationnelle. Compétences requises : Scrum, Kanban. Durée 12 mois renouvelable, démarrage ASAP.</strong></div><div class="field"><small>Preuve</small><strong>B / INDEXED — freelance-informatique.fr, référence de mission 251002C003.</strong></div><div class="field"><small>Fraîcheur</small><strong>La référence de mission (format 25-10-02) suggère une publication autour du 2 octobre 2025, soit près de 12 mois — HYPOTHÈSE d'ancienneté, à vérifier ; le statut actuel (ouverte, pourvue ou en renouvellement) n'est pas confirmé.</strong></div><div class="field"><small>Client final</small><strong>Non identifié dans les résultats indexés.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Agile CoE grand compte Paris</div><div class="step"><b>Preuve</b>B — freelance-informatique.fr</div><div class="step"><b>Why now</b>Ancienneté probable, à vérifier</div><div class="step"><b>Décideur</b>Client final non identifié</div><div class="step"><b>Offre</b>Agile Coaching / CoE</div></div>
+<div class="message"><strong>Statut :</strong> le fit thématique (Agile CoE / Agile at Scale) est fort, mais la fraîcheur est incertaine — probable publication ancienne (~11-12 mois). Ne pas présenter comme une mission active sans vérification directe de la page.</div>
+<div class="actions"><a class="btn" href="https://www.freelance-informatique.fr/mission-coach-agile-sur-paris-251002C003" target="_blank" rel="noopener">Voir la mission</a><div class="field" style="margin-top:8px;flex-basis:100%"><small>Comment postuler</small><strong>Candidature via freelance-informatique.fr. Lien de candidature exact non identifié — utiliser la page source / plateforme.</strong></div></div>
+</div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card verify">
+<div class="card-top">
+<div><div class="title">« Remettre la transformation Agile sur de bons rails » — ITnation.lu</div><div class="tags"><span class="tag neutral">Signal de marché</span><span class="tag neutral">Luxembourg</span><span class="tag">Preuve A</span></div></div>
+<div class="score-badge">Contexte<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Tribune publiée le 6 février 2026 par Natascha Tummeley (coach Agile, Fujitsu Luxembourg) sur la « fatigue agile » observée dans les organisations luxembourgeoises et la nécessité de repositionner les transformations en cours plutôt que de les traiter comme des projets à durée limitée.</strong></div><div class="field"><small>Preuve</small><strong>A / DIRECT — article consulté sur itnation.lu.</strong></div><div class="field"><small>Fraîcheur</small><strong>Publication confirmée : 6 février 2026 (~7 mois, hors fenêtre « exploitable » mais toujours pertinente comme signal de marché).</strong></div><div class="field"><small>Analyse</small><strong>HYPOTHÈSE / ANALYSE — ce signal ne désigne pas une organisation acheteuse précise (l'auteure est une coach interne chez un acteur potentiellement concurrent). Il confirme cependant un besoin de marché récurrent au Luxembourg : relance de transformations agiles essoufflées — un angle de positionnement direct pour Salim (« On mesure la vélocité. Je rends visible la solidité »).</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Fatigue agile Luxembourg</div><div class="step"><b>Preuve</b>A — itnation.lu</div><div class="step"><b>Why now</b>Publication récente (marché)</div><div class="step"><b>Décideur</b>Aucun (signal de marché)</div><div class="step"><b>Offre</b>Positionnement AIgile</div></div>
+<div class="message"><strong>Usage recommandé :</strong> signal de contexte à réutiliser dans du contenu AIgile (LinkedIn/newsletter) plutôt qu'en approche commerciale directe — aucune organisation acheteuse identifiée ici.</div>
+<div class="actions"><a class="btn" href="https://itnation.lu/news/remettre-la-transformation-agile-sur-de-bons-rails/" target="_blank" rel="noopener">Voir la source</a></div>
+</div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucun HOT aujourd'hui</div><div class="message">Aucune opportunité ne réunit à la fois preuve suffisante, fraîcheur confirmée et décideur identifié pour justifier un statut HOT. Les 3 meilleurs signaux du jour sont classés WARM ci-dessous — quantité volontairement limitée pour préserver la qualité de qualification.</div></div><div class="card warm">
+<div class="card-top">
+<div><div class="title">Proximus NXT Luxembourg — pilotage de l'adoption SAFe</div><div class="tags"><span class="tag">SAFe / Agile at Scale</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Preuve B</span></div></div>
+<div class="score-badge">62/100<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Recrutement d'un Program Manager (« Project Manager – N ») chargé de piloter l'adoption et le déploiement du Scaled Agile Framework (SAFe) à travers plusieurs équipes.</strong></div><div class="field"><small>Preuve</small><strong>B / INDEXED — offre relayée sur itnation.lu (page carrière non consultée directement dans son intégralité).</strong></div><div class="field"><small>Fraîcheur</small><strong>Publication datée du 22 avril 2026 (~5 mois) — au-delà de 90 jours : À VÉRIFIER, statut d'ouverture actuel non confirmé.</strong></div><div class="field"><small>Why now (FAIT)</small><strong>L'entreprise recrute explicitement sur un mandat de leadership SAFe multi-équipes, preuve d'un chantier d'agilité à l'échelle en cours.</strong></div><div class="field"><small>Problème probable (HYPOTHÈSE)</small><strong>Un déploiement SAFe piloté en interne par un seul Program Manager peut manquer de renfort en coaching agile de terrain pour ancrer l'adoption réelle au-delà du cadre formel.</strong></div><div class="field"><small>Décideur identifié</small><strong>Magali Pernoud — Deputy Director, Transformation &amp; Excellence, Proximus Luxembourg (profil LinkedIn public ; lien direct avec le poste Program Manager non confirmé).</strong></div><div class="field"><small>Offre Salim</small><strong>Coaching Agile / SAFe, accompagnement des managers pendant le déploiement, structuration de la Communauté de pratique Agile.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Recrutement Program Manager SAFe</div><div class="step"><b>Preuve</b>B — itnation.lu</div><div class="step"><b>Why now</b>Mandat SAFe multi-équipes</div><div class="step"><b>Décideur</b>M. Pernoud (Transformation &amp; Excellence)</div><div class="step"><b>Offre</b>Coaching SAFe / managers</div></div>
+<div class="message"><strong>Approche :</strong> message LinkedIn à Magali Pernoud sur le retour d'expérience terrain de déploiement SAFe et l'accompagnement des managers pendant la phase d'adoption — sans référence directe à l'offre d'emploi.</div>
+<div class="actions"><a class="btn" href="https://itnation.lu/jobs/project-manager-n/" target="_blank" rel="noopener">Voir la source</a><a class="btn secondary" href="https://www.linkedin.com/in/magali-pernoud/" target="_blank" rel="noopener">Voir le contact</a></div>
+</div><div class="card warm">
+<div class="card-top">
+<div><div class="title">European Investment Bank (EIB) — nouvelle Change Management Programme Unit</div><div class="tags"><span class="tag">Change Management</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Preuve B</span><span class="tag warn">Décideur non confirmé</span></div></div>
+<div class="score-badge">58/100<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Création/renforcement d'une « Change Management Programme Unit » au sein du département Digital Transformation &amp; Innovation (GIS), avec recrutement d'un « Senior Head of Change Management Programme Unit » chargé de définir la stratégie de conduite du changement à l'échelle du groupe.</strong></div><div class="field"><small>Preuve</small><strong>B / INDEXED — avis de vacance EIB relayé par UNjobs.org et Unjobnet.org (page carrière EIB officielle non consultée directement).</strong></div><div class="field"><small>Fraîcheur</small><strong>Process de recrutement avec assessment centres prévus avril/mai 2026 et entretiens mai/juin 2026 — publication antérieure probable (T1 2026), donc À VÉRIFIER ; prise de poste effective non confirmée à ce jour.</strong></div><div class="field"><small>Why now (FAIT)</small><strong>Le descriptif du poste mentionne explicitement l'implémentation de la stratégie de transformation digitale à l'échelle du groupe et le partenariat avec les équipes de delivery — mandat de transformation organisationnelle actif.</strong></div><div class="field"><small>Problème probable (HYPOTHÈSE)</small><strong>La structuration d'une nouvelle unité de conduite du changement à l'échelle d'un groupe nécessite souvent un appui externe pour les ateliers, le coaching des managers et la méthodologie de déploiement (TOM).</strong></div><div class="field"><small>Décideur</small><strong>Titulaire du poste « Senior Head of Change Management Programme Unit » — nom non identifié publiquement à ce stade (recherche LinkedIn ciblée n'a pas permis de le confirmer).</strong></div><div class="field"><small>Offre Salim</small><strong>Accompagnement Change Management / Agile Transformation, structuration de Target Operating Model, coaching des managers.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Nouvelle Change Mgmt Unit</div><div class="step"><b>Preuve</b>B — UNjobs / Unjobnet</div><div class="step"><b>Why now</b>Mandat transformation groupe</div><div class="step"><b>Décideur</b>Non identifié</div><div class="step"><b>Offre</b>Change Mgmt / TOM</div></div>
+<div class="message"><strong>Approche :</strong> recherche LinkedIn ciblée « EIB » + « Change Management Programme Unit » pour identifier nommément le titulaire avant toute prise de contact.</div>
+<div class="actions"><a class="btn" href="https://unjobs.org/vacancies/1775765426089" target="_blank" rel="noopener">Voir la source</a></div>
+</div><div class="card warm">
+<div class="card-top">
+<div><div class="title">Atdomco (Luxembourg) — création d'un poste « Head of CEO Office / Transformation Lead »</div><div class="tags"><span class="tag">Transformation organisationnelle</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Preuve B</span><span class="tag warn">Date non confirmée</span></div></div>
+<div class="score-badge">55/100<small>Score</small></div>
+</div>
+<div class="fields"><div class="field"><small>Signal</small><strong>Publication d'une offre « Head of CEO Office / Transformation Lead » sur le portail carrière d'Atdomco (fiduciaire / administration corporate &amp; fonds), rattachée directement au CEO.</strong></div><div class="field"><small>Preuve</small><strong>B / INDEXED — offre référencée via recherche indexée pointant vers atdomco-1739192595.teamtailor.com/jobs (contenu détaillé du poste non consulté directement).</strong></div><div class="field"><small>Fraîcheur</small><strong>Date de publication non confirmée.</strong></div><div class="field"><small>Why now (FAIT)</small><strong>La création d'un poste de « Transformation Lead » rattaché directement au CEO indique un chantier de transformation organisationnelle piloté au plus haut niveau de l'entreprise.</strong></div><div class="field"><small>Problème probable (HYPOTHÈSE)</small><strong>Une société de taille intermédiaire qui structure une fonction transformation au niveau du CEO a probablement besoin d'un cadrage méthodologique (TOM, gouvernance agile) que ce futur Transformation Lead devra déployer — un accompagnement externe peut appuyer sa prise de poste.</strong></div><div class="field"><small>Décideur identifié</small><strong>Florian Rickal — Chief Executive Officer, Atdomco (profil LinkedIn public ; sponsor probable du poste).</strong></div><div class="field"><small>Offre Salim</small><strong>Cadrage du Target Operating Model, coaching du futur Transformation Lead, appui méthodologique Agile / Change Management.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Création poste Transfo. Lead</div><div class="step"><b>Preuve</b>B — Teamtailor</div><div class="step"><b>Why now</b>Poste rattaché au CEO</div><div class="step"><b>Décideur</b>F. Rickal (CEO)</div><div class="step"><b>Offre</b>Cadrage TOM</div></div>
+<div class="message"><strong>Approche :</strong> message LinkedIn à Florian Rickal évoquant la création du poste de Transformation Lead et une proposition de cadrage TOM / accompagnement du futur titulaire pendant sa prise de poste.</div>
+<div class="actions"><a class="btn" href="https://atdomco-1739192595.teamtailor.com/jobs" target="_blank" rel="noopener">Voir la source</a><a class="btn secondary" href="https://www.linkedin.com/in/florian-rickal-797436163/" target="_blank" rel="noopener">Voir le contact</a></div>
+</div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card verify">
+<div class="card-top"><div><div class="title">Aucun brouillon de prospection créé aujourd'hui</div></div></div>
+<div class="message">Conformément à la règle « jamais deviner un email », aucune adresse professionnelle vérifiée n'a été obtenue pour les décideurs identifiés (Magali Pernoud — Proximus NXT ; Florian Rickal — Atdomco ; titulaire EIB non identifié). L'approche recommandée pour ces trois prospects WARM passe par LinkedIn, pas par email. 0 brouillon Gmail est un résultat conforme au protocole (section GMAIL : « 0 brouillon est acceptable »).</div>
+</div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><thead><tr><th>Source</th><th>Utilisation</th><th>Niveau de preuve</th><th>Fraîcheur</th></tr></thead><tbody><tr><td>itnation.lu</td><td>Offre Program Manager (SAFe) Proximus NXT ; article fatigue agile</td><td>B (offre) / A (article)</td><td>Publication 22/04/2026 (offre) ; 06/02/2026 (article)</td></tr><tr><td>unjobs.org / unjobnet.org</td><td>Avis de vacance EIB — Senior Head of Change Management Programme Unit</td><td>B</td><td>Process avril–juin 2026 mentionné ; publication exacte non confirmée</td></tr><tr><td>atdomco-1739192595.teamtailor.com</td><td>Offre Head of CEO Office / Transformation Lead</td><td>B</td><td>Non confirmée</td></tr><tr><td>free-work.com</td><td>Offres Coach Agile (EXMC) et Agile Test Coach (Gentis Recruitment SAS)</td><td>B</td><td>Non confirmée</td></tr><tr><td>freelance-informatique.fr</td><td>Mission Coach Agile Paris — Agile CoE grand compte (réf. 251002C003)</td><td>B</td><td>Référence suggérant ~02/10/2025 — à vérifier</td></tr><tr><td>linkedin.com</td><td>Profils publics : Magali Pernoud (Proximus Luxembourg), Florian Rickal (Atdomco)</td><td>B</td><td>Non confirmée</td></tr><tr><td>malt.fr / malt.be</td><td>Recherche missions Agile Coach / Scrum Master Luxembourg, Bruxelles, Paris</td><td>B</td><td>Non confirmée — aucune mission individuelle qualifiée retenue</td></tr><tr><td>paperjam.lu</td><td>Recherche transformation / programme 2026</td><td>B</td><td>Résultats génériques — aucun signal spécifique qualifié</td></tr></tbody></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><thead><tr><th>Indicateur</th><th>Valeur</th></tr></thead><tbody><tr><td>Recherches effectuées</td><td>~20 requêtes WebSearch ciblées (search-strategy.md, sources-business-v2.txt)</td></tr><tr><td>Prospects qualifiés (total)</td><td>6 (3 WARM + 3 À vérifier)</td></tr><tr><td>HOT</td><td>0 — aucun signal ne réunit preuve + fraîcheur + décideur confirmé au niveau requis</td></tr><tr><td>WARM</td><td>3 (Proximus NXT Luxembourg, EIB, Atdomco)</td></tr><tr><td>À vérifier</td><td>3 (EXMC, Gentis Recruitment, mission Paris Agile CoE)</td></tr><tr><td>Décideurs nommés identifiés</td><td>2 (Magali Pernoud, Florian Rickal)</td></tr><tr><td>Brouillons Gmail de prospection</td><td>0 (aucun email vérifié obtenu — conforme au protocole)</td></tr><tr><td>Doublons détectés vs. prospects-history.csv</td><td>0 — historique vide avant ce run</td></tr></tbody></table>
+</section>
+
+<footer class="footer">AIgile Business Hunter — généré automatiquement le 19 septembre 2026. Aucune information n'a été inventée ; toute donnée non confirmée est explicitement signalée.</footer>
+</main>
+</body>
+</html>
