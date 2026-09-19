@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 19 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:36px;font-weight:900;line-height:1.15;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card.empty{border-left:5px solid var(--line);color:var(--muted)}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:32px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Sales Intelligence &amp; Business Development</div></div></div>
+<div class="badge">Business Hunter · 19 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>Journée calme : 0 HOT, 1 mission WARM solide, 2 à vérifier</h1>
+<p class="lede">Recherche ciblée sur le Luxembourg (missions freelance + signaux de transformation). Aucun décideur d'entreprise n'a pu être confirmé aujourd'hui pour un besoin frais et daté : la priorité du jour est une mission Agile Coach anonymisée via plateforme, à sécuriser rapidement en dépit d'un client final non divulgué.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Agile at Scale</span><span class="pill">Product &amp; Engineering Operating Model</span><span class="pill">Missions freelance</span><span class="pill">CIO watch</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Lecture du jour</div>
+<div class="score">Marché calme</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>1</strong></div>
+<div class="kpi"><small>Contacts</small><strong>2</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards">
+<div class="card empty">
+<div class="title">Aucun HOT aujourd'hui</div>
+<p style="margin:8px 0 0">Aucun signal détecté ne réunit les 5 critères HOT (besoin concret + preuve suffisante + organisation identifiable + fit fort + action immédiate possible). Les missions freelance identifiées ont un client final anonymisé par la plateforme (pas de décideur confirmé) ; les signaux CIO identifiés (Moventum, Cyberr) datent de plus d'un an et n'ont pas de déclencheur de transformation daté et actuel. Classer HOT aurait exigé de fabriquer une certitude que la recherche ne permet pas.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">Senior Agile Coach — Product &amp; Engineering Operating Model</div>
+<div class="tags"><span class="tag">Mission freelance</span><span class="tag">Agile at Scale</span><span class="tag warn">Fraîcheur à confirmer</span><span class="tag neutral">Client final anonymisé</span></div>
+</div>
+<div class="score-badge">WARM<small>preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Plateforme</small><strong>free-work.com</strong></div>
+<div class="field"><small>Localisation</small><strong>Sanem, Luxembourg (remote partiel)</strong></div>
+<div class="field"><small>TJM</small><strong>800–900 € / jour</strong></div>
+<div class="field"><small>Durée</small><strong>11 mois</strong></div>
+<div class="field"><small>Démarrage</small><strong>Non confirmé (annonce : « dès que possible »)</strong></div>
+<div class="field"><small>Publication</small><strong>09/08/2026 (indexé — 41 jours, hors fenêtre « exploitable »)</strong></div>
+<div class="field"><small>Client final</small><strong>Non identifié — anonymisé par la plateforme</strong></div>
+<div class="field"><small>Statut</small><strong>Récemment indexé — statut actif non confirmé directement</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Mission Senior Agile Coach ciblant le déploiement d'un operating model Product &amp; Engineering, hors cérémonies classiques.</div>
+<div class="step"><b>Preuve</b>B / INDEXED — résultat WebSearch sur free-work.com, catégorie Coach Agile ; page mission exacte non consultée directement.</div>
+<div class="step"><b>Why now</b>Annonce publiée le 09/08/2026, TJM et durée précis (11 mois) — signe d'un besoin budgété, mais fraîcheur de 41 jours à vérifier.</div>
+<div class="step"><b>Problème probable (hypothèse)</b>Manque d'alignement Product/Engineering autour d'un nouveau modèle opérationnel ; ceremonies agiles sans impact mesurable.</div>
+<div class="step"><b>Décideur</b>Non identifié — client final non divulgué par la plateforme.</div>
+<div class="step"><b>Offre</b>Coaching Agile at Scale + structuration d'un Target Operating Model Product &amp; Engineering, facilitation inter-équipes, KPIs de collaboration.</div>
+<div class="step"><b>Approche</b>Candidature directe sur la plateforme en mettant en avant l'expérience TOM + coaching de managers + PSM I, plutôt qu'un email à froid (décideur inconnu).</div>
+<div class="step"><b>Action</b>Se connecter à free-work.com, retrouver l'annonce via la catégorie « Coach Agile » et postuler avant expiration ; vérifier si la mission est toujours ouverte.</div>
+</div>
+<div class="message">Analyse : fit fort sur le papier (Agile at Scale, TOM, coaching), mais deux inconnues empêchent le HOT — fraîcheur (41 jours) et décideur (anonymisé). À traiter comme une candidature plateforme, pas comme une approche commerciale directe.</div>
+<div class="actions">
+<a class="btn secondary" href="https://www.free-work.com/fr/tech-it/jobs/coach-agile" target="_blank" rel="noopener">Voir la mission (catégorie)</a>
+<a class="btn" href="https://www.free-work.com/fr/tech-it/jobs/coach-agile" target="_blank" rel="noopener">Postuler via free-work.com</a>
+</div>
+<p class="meta" style="margin-top:8px">Lien de candidature exact non identifié — l'URL précise de l'annonce n'a pas pu être isolée par la recherche ; utiliser la page source / la plateforme (recherche « Senior Agile Coach » + Luxembourg dans la catégorie Coach Agile de free-work.com).</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Agile Test Coach — Gentis Recruitment SAS</div>
+<div class="tags"><span class="tag neutral">Mission freelance</span><span class="tag warn">Date inconnue</span><span class="tag neutral">Fit partiel</span></div>
+</div>
+<div class="score-badge">À VÉRIFIER<small>preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Plateforme</small><strong>free-work.com</strong></div>
+<div class="field"><small>Localisation</small><strong>Luxembourg</strong></div>
+<div class="field"><small>TJM</small><strong>Non publié dans les extraits indexés</strong></div>
+<div class="field"><small>Client final</small><strong>Non identifié (agence : Gentis Recruitment SAS)</strong></div>
+<div class="field"><small>Publication</small><strong>Date non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Récemment indexé — date exacte non confirmée</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Coach agile pour accompagner la transformation des pratiques de test et la culture qualité en équipes agiles.</div>
+<div class="step"><b>Preuve</b>B / INDEXED — extrait WebSearch, page mission non consultée directement.</div>
+<div class="step"><b>Why now</b>Non déterminable : aucune date de publication confirmée dans les résultats disponibles.</div>
+<div class="step"><b>Problème probable (hypothèse)</b>Pratiques de test non alignées avec les objectifs métier/techniques dans des équipes agiles.</div>
+<div class="step"><b>Décideur</b>Non identifié.</div>
+<div class="step"><b>Offre</b>Coaching agile appliqué à la qualité / facilitation, en positionnant l'angle transformation plutôt que le pur volet test.</div>
+<div class="step"><b>Approche</b>À ne pas prioriser tant que la fraîcheur et le client final ne sont pas confirmés — fit plus périphérique au positionnement de Salim (Agile Coaching généraliste, pas QA).</div>
+<div class="step"><b>Action</b>Ouvrir la page directement pour confirmer date de publication et statut avant toute candidature.</div>
+</div>
+<div class="actions">
+<a class="btn secondary" href="https://www.free-work.com/fr/tech-it/coach-agile/job-mission/agile-test-coach" target="_blank" rel="noopener">Voir la mission</a>
+</div>
+<p class="meta" style="margin-top:8px">Candidature via free-work.com (plateforme). Aucun lien de candidature distinct identifié.</p>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Coach Agile (Luxembourg) — EXMC</div>
+<div class="tags"><span class="tag neutral">Mission freelance</span><span class="tag warn">Date inconnue</span><span class="tag neutral">Fit partiel</span></div>
+</div>
+<div class="score-badge">À VÉRIFIER<small>preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Plateforme</small><strong>free-work.com</strong></div>
+<div class="field"><small>Localisation</small><strong>Luxembourg</strong></div>
+<div class="field"><small>TJM</small><strong>Non publié dans les extraits indexés</strong></div>
+<div class="field"><small>Client final</small><strong>Non identifié (annonceur : EXMC)</strong></div>
+<div class="field"><small>Publication</small><strong>Date non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Récemment indexé — date exacte non confirmée</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Intégration à une équipe de gouvernance des tests, approche « Shift Left », promotion d'une culture qualité en équipes agiles.</div>
+<div class="step"><b>Preuve</b>B / INDEXED — extrait WebSearch, page mission non consultée directement.</div>
+<div class="step"><b>Why now</b>Non déterminable : aucune date de publication confirmée.</div>
+<div class="step"><b>Problème probable (hypothèse)</b>Organisation en transformation qualité, cherchant à structurer le test au sein de ses équipes agiles.</div>
+<div class="step"><b>Décideur</b>Non identifié.</div>
+<div class="step"><b>Offre</b>Coaching agile / accompagnement organisationnel autour de la qualité, en complément d'une expertise test déjà en place.</div>
+<div class="step"><b>Approche</b>À vérifier avant action : possible chevauchement avec l'annonce Gentis (même typologie de besoin).</div>
+<div class="step"><b>Action</b>Ouvrir la page directement pour confirmer date, client final et unicité de l'annonce vs. la mission Gentis.</div>
+</div>
+<div class="actions">
+<a class="btn secondary" href="https://www.free-work.com/fr/tech-it/autre/job-mission/coach-agile-luxembourg-1" target="_blank" rel="noopener">Voir la mission</a>
+</div>
+<p class="meta" style="margin-top:8px">Candidature via free-work.com (plateforme). Aucun lien de candidature distinct identifié.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards">
+
+<div class="card">
+<div class="card-top">
+<div>
+<div class="title">Moventum (Luxembourg) — nouveau CIO, Stefan Steil</div>
+<div class="tags"><span class="tag neutral">Signal de contexte</span><span class="tag warn">Déclencheur ancien</span></div>
+</div>
+<div class="score-badge">Contexte<small>preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Secteur</small><strong>Fund &amp; finance platform, Luxembourg</strong></div>
+<div class="field"><small>Décideur nommé</small><strong>Stefan Steil, CIO &amp; membre du comité exécutif</strong></div>
+<div class="field"><small>Nomination</small><strong>CIO depuis décembre 2024 ; annonce relayée en juillet 2025</strong></div>
+<div class="field"><small>Statut</small><strong>Ancien (&gt;90 jours) sauf preuve d'activité actuelle</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Renforcement du comité exécutif avec un CIO dédié, mandat explicite de piloter la transformation IT / plateforme technologique.</div>
+<div class="step"><b>Preuve</b>B / INDEXED — Paperjam et Delano, articles relayant l'annonce de Moventum.</div>
+<div class="step"><b>Why now</b>Aucun déclencheur actuel confirmé : la nomination date de fin 2024, l'article le plus récent trouvé date de juillet 2025. Pas de preuve d'un programme de transformation actif aujourd'hui.</div>
+<div class="step"><b>Analyse</b>À surveiller plutôt qu'à approcher maintenant : un CIO en poste depuis ~9 mois peut avoir lancé un programme de transformation non encore public. Ne pas fabriquer de Why Now à partir de cette hypothèse.</div>
+</div>
+<div class="actions">
+<a class="btn secondary" href="https://delano.lu/article/moventum-expands-executive-committee-with-new-cio-and-head-of-legal" target="_blank" rel="noopener">Voir la source</a>
+</div>
+</div>
+
+<div class="card">
+<div class="card-top">
+<div>
+<div class="title">Cyberr (Luxembourg) — nouveau CIO, Jérôme Pinneau</div>
+<div class="tags"><span class="tag neutral">Signal de contexte</span><span class="tag warn">Déclencheur ancien</span></div>
+</div>
+<div class="score-badge">Contexte<small>preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Secteur</small><strong>Plateforme cybersécurité, Luxembourg</strong></div>
+<div class="field"><small>Décideur nommé</small><strong>Jérôme Pinneau, CIO</strong></div>
+<div class="field"><small>Nomination</small><strong>22 février 2025</strong></div>
+<div class="field"><small>Statut</small><strong>Ancien (&gt;90 jours) sauf preuve d'activité actuelle</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Arrivée d'un CIO au profil produit / big data / IA / gestion de la donnée.</div>
+<div class="step"><b>Preuve</b>B / INDEXED — Paperjam et Delano, articles relayant l'annonce de Cyberr.</div>
+<div class="step"><b>Why now</b>Nomination datée de février 2025, aucune preuve d'un chantier de transformation agile ou organisationnelle actuel.</div>
+<div class="step"><b>Analyse</b>Signal trop ancien pour justifier une approche datée « why now » ; à repositionner dans un futur cycle si un signal de transformation plus récent apparaît (recrutement, appel d'offres, changement d'organigramme).</div>
+</div>
+<div class="actions">
+<a class="btn secondary" href="https://en.paperjam.lu/article/jerome-pinneau-joins-cyberr-as" target="_blank" rel="noopener">Voir la source</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards">
+<div class="card warm">
+<div class="card-top"><div class="title">Senior Agile Coach — Product &amp; Engineering Operating Model (Sanem, LU)</div><div class="score-badge">WARM<small>preuve B</small></div></div>
+<p style="margin:8px 0">TJM 800–900 €/j · 11 mois · publié le 09/08/2026 · client final non divulgué.</p>
+<div class="actions">
+<a class="btn secondary" href="https://www.free-work.com/fr/tech-it/jobs/coach-agile" target="_blank" rel="noopener">Voir la mission (catégorie)</a>
+<a class="btn" href="https://www.free-work.com/fr/tech-it/jobs/coach-agile" target="_blank" rel="noopener">Postuler via free-work.com</a>
+</div>
+</div>
+<div class="card verify">
+<div class="card-top"><div class="title">Agile Test Coach — Gentis Recruitment SAS (Luxembourg)</div><div class="score-badge">À VÉRIFIER<small>preuve B</small></div></div>
+<p style="margin:8px 0">Date de publication non confirmée · client final non divulgué.</p>
+<div class="actions"><a class="btn secondary" href="https://www.free-work.com/fr/tech-it/coach-agile/job-mission/agile-test-coach" target="_blank" rel="noopener">Voir la mission</a></div>
+</div>
+<div class="card verify">
+<div class="card-top"><div class="title">Coach Agile (Luxembourg) — EXMC</div><div class="score-badge">À VÉRIFIER<small>preuve B</small></div></div>
+<p style="margin:8px 0">Date de publication non confirmée · client final non divulgué.</p>
+<div class="actions"><a class="btn secondary" href="https://www.free-work.com/fr/tech-it/autre/job-mission/coach-agile-luxembourg-1" target="_blank" rel="noopener">Voir la mission</a></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards">
+<div class="card empty">
+<div class="title">0 brouillon créé aujourd'hui</div>
+<p style="margin:8px 0 0">Aucun décideur avec email professionnel public vérifié n'a été identifié pour les prospects du jour (missions freelance anonymisées par les plateformes ; CIO identifiés sans email public confirmé et sans déclencheur actuel). Conformément à la règle « aucun email deviné », 0 brouillon est le résultat correct aujourd'hui plutôt qu'un remplissage artificiel.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport (recherche WebSearch, résultats indexés).</p></div></div>
+<table>
+<tr><th>Source</th><th>Usage</th><th>Preuve</th></tr>
+<tr><td>free-work.com</td><td>Missions Agile Coach / Agile Test Coach Luxembourg (Sanem, Gentis, EXMC)</td><td>B / INDEXED</td></tr>
+<tr><td>malt.fr</td><td>Recherche profils Agile Coach Luxembourg — aucune mission active exploitable trouvée</td><td>B / INDEXED</td></tr>
+<tr><td>collective.work</td><td>Recherche profils Agile Coach / Scrum Master Luxembourg — profils freelances, pas de mission corporate qualifiable</td><td>B / INDEXED</td></tr>
+<tr><td>paperjam.lu / delano.lu</td><td>Nominations CIO Moventum (Stefan Steil) et Cyberr (Jérôme Pinneau)</td><td>B / INDEXED</td></tr>
+<tr><td>itnation.lu</td><td>Contexte marché transformation digitale/IA Luxembourg 2026 (signal générique, non qualifiable seul)</td><td>B / INDEXED</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>HOT</td><td>0</td></tr>
+<tr><td>WARM</td><td>1</td></tr>
+<tr><td>À vérifier</td><td>2</td></tr>
+<tr><td>Signaux de contexte</td><td>2</td></tr>
+<tr><td>Nouveaux prospects qualifiés (total)</td><td>3</td></tr>
+<tr><td>Décideurs nommés identifiés</td><td>2 (aucun email vérifié)</td></tr>
+<tr><td>Brouillons Gmail créés</td><td>0</td></tr>
+<tr><td>Doublons vs. historique</td><td>0 (prospects-history.csv était vide — premier run)</td></tr>
+<tr><td>Sources interrogées</td><td>5 (free-work.com, malt.fr, collective.work, paperjam.lu/delano.lu, itnation.lu)</td></tr>
+</table>
+</section>
+
+<footer class="footer">AIgile Business Hunter — généré automatiquement le 19 septembre 2026. Recherche ciblée, non exhaustive. Aucune information n'a été inventée : dates, contacts et URLs non confirmés sont signalés comme tels.</footer>
+</main>
+</body>
+</html>
