@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 19 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:34px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Sales Intelligence &amp; Business Development — Salim Gomri</div></div></div>
+<div class="badge">Business Hunter · 19 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>1 mission concrète à saisir, 2 pistes Target Operating Model à creuser</h1>
+<p class="lede">Recherche ciblée (non exhaustive) sur Luxembourg, Bruxelles/Belgique, Grand Est, Paris/Île-de-France et Europe remote. 5 opportunités qualifiées (1 HOT, 2 WARM, 2 À VÉRIFIER) + 1 signal de marché contextuel. Aucun contact email vérifié trouvé aujourd'hui → 0 brouillon de prospection créé (règle : jamais d'email deviné).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles / Belgique</span><span class="pill">Freelance</span><span class="pill">Target Operating Model</span><span class="pill">Agile at Scale</span><span class="pill">Coaching dirigeants</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Score qualité du jour</div>
+<div class="score">62<span style="font-size:20px;font-weight:800">/100</span></div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>1</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts nommés</small><strong>1</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards">
+
+<div class="card hot">
+<div class="card-top">
+<div>
+<div class="title">Agile Transformation Coach — mission client à Bruxelles (via Keystone Solutions)</div>
+<div class="tags"><span class="tag">HOT</span><span class="tag neutral">Mission freelance / consultance</span><span class="tag neutral">Bruxelles, Belgique</span></div>
+</div>
+<div class="score-badge">A/B<small>preuve</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Client final</small><strong>Non nommé (mission via ESN Keystone Solutions)</strong></div>
+<div class="field"><small>Localisation</small><strong>Bruxelles, Belgique</strong></div>
+<div class="field"><small>Durée</small><strong>13 mois (22/10/2026 → 31/10/2027)</strong></div>
+<div class="field"><small>TJM</small><strong>Non publié</strong></div>
+<div class="field"><small>Démarrage</small><strong>22/10/2026</strong></div>
+<div class="field"><small>Fraîcheur</small><strong>Récemment indexé — date de publication exacte non confirmée ; démarrage confirmé</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Recherche d'un Agile Transformation Coach pour audit de maturité agile + gouvernance IT sur 13 mois</div>
+<div class="step"><b>Preuve</b>B — INDEXED (LinkedIn + WeAreDevelopers, contenu identique)</div>
+<div class="step"><b>Why now</b>Mission à pourvoir avec date de démarrage ferme (22/10/2026), recrutement manifestement en cours</div>
+<div class="step"><b>Décideur</b>Non identifié nommément — probablement Direction IT du client final ou practice lead Keystone Solutions</div>
+<div class="step"><b>Offre</b>Assessment de maturité agile + coaching des managers IT + accompagnement gouvernance/décision</div>
+</div>
+<div class="message">Approche : candidature directe positionnée sur l'assessment de maturité + coaching des managers IT, en cohérence avec « On mesure la vélocité. Je rends visible la solidité. »</div>
+<div class="actions">
+<a class="btn" href="https://be.linkedin.com/jobs/view/agile-coach-at-keystone-solutions-4413586014" target="_blank" rel="noopener">Voir la mission (LinkedIn)</a>
+<a class="btn secondary" href="https://www.wearedevelopers.com/jobs/ext/2836382-agile-transformation-coach" target="_blank" rel="noopener">Voir la mission (WeAreDevelopers)</a>
+<span class="status no">Lien de candidature exact non identifié — postuler via le portail carrière Keystone Solutions</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude de preuve, de fraîcheur ou de décideur à traiter.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">Senior Agile Coach — Product &amp; Engineering Transformation (Sanem, Luxembourg)</div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Free-Work</span><span class="tag neutral">Sanem, Luxembourg · Remote</span></div>
+</div>
+<div class="score-badge">B<small>preuve</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Client final</small><strong>Non nommé dans l'annonce</strong></div>
+<div class="field"><small>Localisation</small><strong>Sanem, Luxembourg (télétravail)</strong></div>
+<div class="field"><small>Durée</small><strong>11 mois</strong></div>
+<div class="field"><small>TJM</small><strong>800–900 €/jour</strong></div>
+<div class="field"><small>Démarrage</small><strong>Non publié</strong></div>
+<div class="field"><small>Fraîcheur</small><strong>Date non confirmée</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Mission Senior Agile Coach ciblant la transition delivery basé activité → delivery basé résultats entre Product &amp; Engineering</div>
+<div class="step"><b>Preuve</b>B — INDEXED (Free-Work, page catégorie ; annonce individuelle non retrouvée avec URL propre)</div>
+<div class="step"><b>Why now</b>Annonce indexée décrivant un besoin actif de renforcement de la collaboration Product/Engineering et d'un modèle opérationnel outcome-based</div>
+<div class="step"><b>Décideur</b>Non identifié — client final non nommé</div>
+<div class="step"><b>Offre</b>Coaching agile Product &amp; Engineering + appui au rollout d'un modèle opérationnel orienté résultats</div>
+</div>
+<div class="message">Approche : positionner l'expérience TOM/Agile at Scale de Salim sur la bascule activité → résultats, dès identification du client final via la plateforme.</div>
+<div class="actions">
+<a class="btn secondary" href="https://www.free-work.com/fr/tech-it/jobs/coach-agile" target="_blank" rel="noopener">Voir la catégorie Free-Work</a>
+<span class="status no">Lien de candidature exact non identifié — utiliser la page source / plateforme Free-Work.</span>
+</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">Agile Coach / Transfo Lead — Target Operating Model (via Wemanity Belgium)</div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Beelance.io</span><span class="tag neutral">Belgique</span></div>
+</div>
+<div class="score-badge">B<small>preuve</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Client final</small><strong>Entreprise belge du secteur transport (non nommée)</strong></div>
+<div class="field"><small>Localisation</small><strong>Belgique</strong></div>
+<div class="field"><small>Durée</small><strong>Non publiée</strong></div>
+<div class="field"><small>TJM</small><strong>Non publié</strong></div>
+<div class="field"><small>Démarrage</small><strong>Non publié</strong></div>
+<div class="field"><small>Fraîcheur</small><strong>Date non confirmée</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Implémentation opérationnelle d'un Target Operating Model au sein du département Infrastructure, aux côtés d'un Transformation Lead</div>
+<div class="step"><b>Preuve</b>B — INDEXED (beelance.io)</div>
+<div class="step"><b>Why now</b>Annonce active décrivant un chantier TOM en cours nécessitant un renfort de coaching agile</div>
+<div class="step"><b>Décideur</b>Transformation Lead côté client (non nommé) ; point d'entrée = Wemanity Belgium</div>
+<div class="step"><b>Offre</b>Coaching TOM + accompagnement des équipes multidisciplinaires du département Infrastructure</div>
+</div>
+<div class="message">Approche : le TOM est une expertise nommément citée par Salim — angle direct sur l'accompagnement du Transformation Lead.</div>
+<div class="actions">
+<a class="btn secondary" href="https://beelance.io/missions/agile-coach---transfo-lead-sa-wemanity-belgium" target="_blank" rel="noopener">Voir la mission (Beelance)</a>
+<span class="status no">Candidature via la plateforme Beelance.io — lien de contact direct non identifié.</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées (fraîcheur, statut ou fit incertains).</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Agile Coach &amp; Transformation Lead — Data &amp; Analytics (Arhs Group, Bruxelles)</div>
+<div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Jooble</span><span class="tag neutral">Bruxelles, Belgique</span></div>
+</div>
+<div class="score-badge">B<small>preuve</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Client final</small><strong>Arhs Group (direct)</strong></div>
+<div class="field"><small>Localisation</small><strong>Bruxelles, Belgique</strong></div>
+<div class="field"><small>Fraîcheur</small><strong>Publication estimée mi-mai 2026 — non confirmée formellement ; &gt;90 jours au 19/09/2026 → à vérifier avant qualification HOT/WARM</strong></div>
+<div class="field"><small>Statut</small><strong>Actif indexé, statut actuel non confirmé</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Coaching de 6 équipes agiles + gouvernance transformation Business/IT/Data</div>
+<div class="step"><b>Preuve</b>B — INDEXED (Jooble, listant Arhs Group)</div>
+<div class="step"><b>Why now</b>Transformation agile à grande échelle mentionnée comme en cours, mais date de publication ancienne non reconfirmée</div>
+<div class="step"><b>Décideur</b>Non identifié nommément</div>
+<div class="step"><b>Offre</b>Coaching multi-équipes + facilitation gouvernance Business/IT</div>
+</div>
+<div class="actions">
+<a class="btn secondary" href="https://be.jooble.org/jdp/-1479817056825098716" target="_blank" rel="noopener">Voir la source (Jooble)</a>
+<span class="status no">Statut actuel à reconfirmer avant toute action commerciale.</span>
+</div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Deloitte Luxembourg — Patrick Laurent nommé Chief Technology &amp; Transformation Officer</div>
+<div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Signal corporate</span><span class="tag neutral">Luxembourg</span></div>
+</div>
+<div class="score-badge">A/B<small>preuve</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Organisation</small><strong>Deloitte Luxembourg</strong></div>
+<div class="field"><small>Prise de fonction</small><strong>1er juin 2026</strong></div>
+<div class="field"><small>Fraîcheur</small><strong>Exploitable (annonce du comité exécutif, quelques mois)</strong></div>
+<div class="field"><small>Fit</small><strong>Incertain — grand cabinet disposant déjà d'une practice interne de transformation/agile</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Nomination d'un Chief Technology &amp; Transformation Officer avec mandat explicite d'unifier les fonctions technologiques et de piloter la stratégie AI-first du cabinet</div>
+<div class="step"><b>Preuve</b>A — DIRECT (page profil Deloitte.com) + B — INDEXED (Paperjam, comité exécutif)</div>
+<div class="step"><b>Why now</b>Prise de fonction effective au 1er juin 2026, mandat de transformation à l'échelle du cabinet</div>
+<div class="step"><b>Décideur</b>Patrick Laurent, Partner — Chief Technology &amp; Transformation Officer</div>
+<div class="step"><b>Offre</b>HYPOTHÈSE : coaching de dirigeants sur la solidité de la transformation, en complément — pas en concurrence — des équipes internes</div>
+</div>
+<div class="message">ANALYSE : Deloitte dispose d'une practice de transformation interne conséquente ; le besoin d'un intervenant externe freelance n'est pas démontré aujourd'hui. Signal à surveiller plutôt qu'à approcher immédiatement.</div>
+<div class="actions">
+<a class="btn secondary" href="https://www.deloitte.com/lu/en/about/people/profiles.palaurent+a09e3cf5.html" target="_blank" rel="noopener">Voir la source (Deloitte)</a>
+<a class="btn secondary" href="https://en.paperjam.lu/article/new-composition-of-the-executive-committee-of-deloitte-luxembourg" target="_blank" rel="noopener">Voir la source (Paperjam)</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte de marché qui peuvent nourrir l'argumentaire, sans être des prospects nommés.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">« Agile fatigue » — thème de marché discuté par Fujitsu Luxembourg</div>
+<div class="tags"><span class="tag neutral">Signal de marché</span><span class="tag neutral">ITnation.lu</span><span class="tag neutral">Luxembourg</span></div>
+</div>
+<div class="score-badge">B<small>preuve</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>ITnation.lu, 6 février 2026</strong></div>
+<div class="field"><small>Fraîcheur</small><strong>&gt;90 jours au 19/09/2026 → ancien sauf preuve d'activité actuelle</strong></div>
+<div class="field"><small>Nature</small><strong>Fujitsu Luxembourg (fournisseur, non prospect) évoque une lassitude agile chez ses propres clients, sans nommer d'organisation précise</strong></div>
+</div>
+<div class="message">ANALYSE : aucune organisation cliente nommée → non qualifiable comme prospect. Utile comme validation de marché du positionnement « On mesure la vélocité. Je rends visible la solidité. », qui répond directement au narratif de fatigue agile évoqué.</div>
+<div class="actions">
+<a class="btn secondary" href="https://itnation.lu/news/remettre-la-transformation-agile-sur-de-bons-rails/" target="_blank" rel="noopener">Voir la source</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité indique où la consulter et comment postuler ou contacter — voir cartes HOT et WARM ci-dessus pour le détail complet.</p></div></div>
+<table>
+<tr><th>Mission</th><th>Plateforme</th><th>Lieu</th><th>Où postuler</th></tr>
+<tr><td>Agile Transformation Coach (Keystone Solutions)</td><td>LinkedIn / WeAreDevelopers</td><td>Bruxelles</td><td>Portail carrière Keystone Solutions (lien exact non identifié)</td></tr>
+<tr><td>Senior Agile Coach — Product &amp; Engineering (Sanem)</td><td>Free-Work</td><td>Sanem, Luxembourg</td><td>Plateforme Free-Work (lien exact non identifié)</td></tr>
+<tr><td>Agile Coach / Transfo Lead — TOM (Wemanity)</td><td>Beelance.io</td><td>Belgique</td><td>Plateforme Beelance.io</td></tr>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards">
+<div class="card verify">
+<div class="card-top"><div><div class="title">0 brouillon de prospection créé aujourd'hui</div></div></div>
+<div class="message">Aucun email professionnel vérifié n'a été trouvé pour les décideurs identifiés (Patrick Laurent — Deloitte) ni pour les missions freelance, qui se candidatent via plateforme et non par email direct. Conformément à la règle « ne jamais deviner un email », 0 brouillon est le résultat correct aujourd'hui plutôt qu'un brouillon fabriqué.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement interrogées via WebSearch pour construire ce rapport (résultats indexés, non consultation directe sauf mention contraire).</p></div></div>
+<table>
+<tr><th>Source</th><th>Requêtes</th><th>Preuve</th><th>Résultat exploité</th></tr>
+<tr><td>malt.fr</td><td>Agile Coach / SAFe Luxembourg &amp; Paris</td><td>B</td><td>Contexte tarifs, pas de mission LU exploitable</td></tr>
+<tr><td>free-work.com</td><td>Agile Coach Luxembourg</td><td>B</td><td>Mission Sanem (WARM)</td></tr>
+<tr><td>collective.work</td><td>Agile Coach / Scrum Master Luxembourg</td><td>B</td><td>Profils uniquement, pas de prospect retenu</td></tr>
+<tr><td>be.linkedin.com / wearedevelopers.com</td><td>Agile Transformation Coach Brussels</td><td>B</td><td>Mission Keystone Solutions (HOT)</td></tr>
+<tr><td>be.jooble.org</td><td>Agile Coach Transformation Lead Bruxelles</td><td>B</td><td>Arhs Group (À VÉRIFIER)</td></tr>
+<tr><td>beelance.io</td><td>Agile Coach Transfo Lead Belgium</td><td>B</td><td>Wemanity (WARM)</td></tr>
+<tr><td>paperjam.lu / delano.lu</td><td>new CIO/CTO Luxembourg, transformation digitale</td><td>A/B</td><td>Deloitte Luxembourg — Patrick Laurent (À VÉRIFIER)</td></tr>
+<tr><td>deloitte.com</td><td>Patrick Laurent Chief Technology &amp; Transformation Officer</td><td>A</td><td>Confirmation directe du mandat</td></tr>
+<tr><td>itnation.lu</td><td>transformation agile Luxembourg</td><td>B</td><td>Signal de marché « Agile fatigue » (Fujitsu)</td></tr>
+<tr><td>ted.europa.eu</td><td>Luxembourg agile / transformation / project management</td><td>B</td><td>Aucun résultat exploitable directement lié à l'agilité</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Recherches ciblées effectuées</td><td>19</td></tr>
+<tr><td>Sources interrogées</td><td>10 domaines</td></tr>
+<tr><td>Prospects/missions qualifiés (HOT+WARM+À VÉRIFIER)</td><td>5</td></tr>
+<tr><td>HOT</td><td>1</td></tr>
+<tr><td>WARM</td><td>2</td></tr>
+<tr><td>À vérifier</td><td>2</td></tr>
+<tr><td>Signaux de marché (non-prospects)</td><td>1</td></tr>
+<tr><td>Décideurs nommés identifiés</td><td>1 (Patrick Laurent — Deloitte Luxembourg)</td></tr>
+<tr><td>Brouillons Gmail créés</td><td>0 — aucun email vérifié disponible</td></tr>
+<tr><td>Doublons détectés vs. historique</td><td>0 (prospects-history.csv vide avant ce run)</td></tr>
+<tr><td>Historique mis à jour</td><td>Oui — 5 lignes ajoutées à prospects-history.csv</td></tr>
+<tr><td>Exclusion employeur actuel</td><td>Non applicable — aucune donnée sur l'employeur actuel de Salim disponible dans les fichiers du dépôt ; aucune exclusion n'a donc pu être appliquée aujourd'hui</td></tr>
+</table>
+</section>
+
+<footer class="footer">AIgile Business Hunter — généré automatiquement le 19 septembre 2026 · Recherche ciblée via WebSearch, non exhaustive · Aucune information inventée (dates, emails, contacts, URLs).</footer>
+</main>
+</body>
+</html>
