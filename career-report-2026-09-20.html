@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-09-20</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.subtitle{font-size:13px;color:var(--muted);font-weight:700;margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:84px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:34px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence — Salim Gomri</div></div></div>
+<div class="badge">Career Hunter · 2026-09-20</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien — opportunités salariées</div>
+<h1>3 opportunités qualifiées, 3 à vérifier, 2 signaux de marché</h1>
+<p class="lede">Recherche ciblée WebSearch-first sur Luxembourg / Belgique / Grand Est / France / Europe. Accès direct aux sites bloqué dans cet environnement : toutes les preuves ci-dessous sont de niveau B (résultat indexé), sauf mention contraire. Aucune exhaustivité n'est revendiquée.</p>
+<div class="pills"><span class="pill">1 HOT</span><span class="pill">2 WARM</span><span class="pill">3 À vérifier</span><span class="pill">2 signaux</span><span class="pill">0 brouillon Gmail (aucun email vérifié par accès direct)</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">3</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>1</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>1</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Jobs</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">1 opportunité HOT — fit fort, preuve indexée, action immédiate possible.</p></div></div>
+<div class="cards">
+
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">Senior Business Analyst (m/f) — réf. E00044257</div><div class="subtitle">Administration des contributions directes (ACD) · Ministère des Finances · Hesperange, Luxembourg</div></div>
+<div class="score-badge">FIT FORT<small>Employé de l'État</small></div>
+</div>
+<div class="tags"><span class="tag">Transformation digitale</span><span class="tag">Project Management</span><span class="tag">Change Management</span><span class="tag warn">À vérifier : fraîcheur 31-90j</span><span class="tag neutral">Preuve niveau B</span></div>
+<div class="fields">
+<div class="field"><small>SOURCE</small><strong>GovJobs Luxembourg (govjobs.public.lu), relayé par moovijob.com</strong></div>
+<div class="field"><small>DATE</small><strong>Indexée le 2026-08-04 — Date de publication non confirmée par accès direct</strong></div>
+<div class="field"><small>STATUT</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>FIT</small><strong>+5 ans sur projets IT significatifs, rôle de PM sur initiatives moyennes, participation à la conduite du changement, contexte de transformation digitale de l'ACD</strong></div>
+<div class="field"><small>ÉCARTS</small><strong>Intitulé "Business Analyst" (pas "Agile Coach"), aucune mention Agile/Scrum/SAFe trouvée ; statut "employé de l'État" suppose la nationalité d'un État membre UE (à vérifier selon la situation de Salim)</strong></div>
+<div class="field"><small>CONTACT</small><strong>Non identifié nommément — candidature via portail uniquement</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Preuve</b>Niveau B — extrait WebSearch, govjobs.public.lu + moovijob.com</div>
+<div class="step"><b>Fraîcheur</b>~47 jours — tranche "à vérifier"</div>
+<div class="step"><b>Fit</b>PM + transformation + change mgmt</div>
+<div class="step"><b>Écarts</b>Pas d'Agile explicite ; condition nationalité UE</div>
+<div class="step"><b>Action</b>Candidater via GovJobs, mettre en avant delivery + transformation</div>
+</div>
+<div class="message">Signal de contexte corroborant : l'ACD se dote d'un 5ᵉ directeur pour piloter sa transformation digitale (voir Signaux ci-dessous) — renforce la crédibilité du besoin de PM/transformation à l'ACD.</div>
+<div class="actions">
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank" rel="noopener">POSTULER</a>
+</div>
+<p class="meta" style="margin-top:10px"><strong>Où postuler ?</strong> Directement sur le portail GovJobs Luxembourg (page ci-dessus, filière "employés"). <strong>Comment postuler ?</strong> Formulaire de candidature en ligne sur govjobs.public.lu — CV + lettre de motivation en français ou anglais.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Fit fort mais incertitude de fraîcheur, de statut ou de procédure d'accès.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Coach Agile au sein du CoE Agile (H/F)</div><div class="subtitle">BGL BNP Paribas · Luxembourg · CDI</div></div>
+<div class="score-badge">FIT TRÈS FORT<small>Fraîcheur incertaine</small></div>
+</div>
+<div class="tags"><span class="tag">Agile at Scale</span><span class="tag">Agile Coaching</span><span class="tag warn">Date ancienne (>90j)</span><span class="tag neutral">Preuve niveau B</span></div>
+<div class="fields">
+<div class="field"><small>SOURCE</small><strong>group.bnpparibas — page carrière officielle, indexée</strong></div>
+<div class="field"><small>DATE</small><strong>Date indexée : 05/05/2025 — ancienne, statut actuel à confirmer</strong></div>
+<div class="field"><small>STATUT</small><strong>Statut actuel à confirmer — possible reconduction ou clôture</strong></div>
+<div class="field"><small>FIT</small><strong>Accompagnement des équipes dans la transformation agile, déploiement du modèle Agile@Scale de BGL BNP Paribas — correspondance directe avec l'expertise Agile at Scale / SAFe / coaching de Salim</strong></div>
+<div class="field"><small>ÉCARTS</small><strong>Date de publication ancienne non reconfirmée ; contact recruteur non identifié</strong></div>
+<div class="field"><small>CONTACT</small><strong>Non identifié — candidature via portail carrière BNP Paribas</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Preuve</b>Niveau B — group.bnpparibas indexé</div>
+<div class="step"><b>Fraîcheur</b>Date ancienne (mai 2025) — à reconfirmer</div>
+<div class="step"><b>Fit</b>Agile@Scale, coaching — correspondance maximale</div>
+<div class="step"><b>Écarts</b>Statut réel de l'annonce non confirmé</div>
+<div class="step"><b>Action</b>Vérifier l'annonce sur le portail avant candidature</div>
+</div>
+<div class="message">Meilleur alignement de titre/compétences trouvé aujourd'hui (Agile Coach, Agile@Scale) — priorité de vérification avant les autres WARM.</div>
+<div class="actions">
+<a class="btn secondary" href="https://group.bnpparibas/emploi-carriere/offre-emploi/coach-agile-au-sein-du-coe-agile-h-f-2" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://group.bnpparibas/emploi-carriere/offre-emploi/coach-agile-au-sein-du-coe-agile-h-f-2" target="_blank" rel="noopener">POSTULER</a>
+</div>
+<p class="meta" style="margin-top:10px"><strong>Où postuler ?</strong> Portail carrière officiel BNP Paribas Group (lien ci-dessus). <strong>Comment postuler ?</strong> Vérifier d'abord que l'annonce est toujours ouverte, puis candidature en ligne via le portail.</p>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">2 Project Managers (m/f) — réf. E00044054 / F00044055 / M00044056</div><div class="subtitle">Administration de la Navigation Aérienne (ANA) · Findel, Luxembourg</div></div>
+<div class="score-badge">FIT BON<small>Filière fonctionnaire</small></div>
+</div>
+<div class="tags"><span class="tag">Project Management</span><span class="tag">Transformation organisationnelle</span><span class="tag warn">Examen-concours requis</span><span class="tag neutral">Preuve niveau B</span></div>
+<div class="fields">
+<div class="field"><small>SOURCE</small><strong>GovJobs Luxembourg, relayé par moovijob.com</strong></div>
+<div class="field"><small>DATE</small><strong>Indexée le 2026-07-28 — ~54 jours avant le rapport</strong></div>
+<div class="field"><small>STATUT</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>FIT</small><strong>Gestion de projets stratégiques/transversaux (modernisation, digitalisation de la navigation aérienne, innovation, transformation organisationnelle) sous l'autorité du PMO — cohérence opérationnelle/réglementaire/budgétaire</strong></div>
+<div class="field"><small>ÉCARTS</small><strong>Poste de la filière "fonctionnaire" : admission via examen-concours (procédure plus longue) ; pas de mention Agile/Scrum explicite</strong></div>
+<div class="field"><small>CONTACT</small><strong>personnel@airport.etat.lu (adresse repérée dans un résultat indexé — non consultée directement, à revérifier avant tout envoi)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Preuve</b>Niveau B — govjobs.public.lu indexé</div>
+<div class="step"><b>Fraîcheur</b>~54 jours — tranche "à vérifier"</div>
+<div class="step"><b>Fit</b>PM stratégique, transformation, PMO</div>
+<div class="step"><b>Écarts</b>Filière fonctionnaire = examen-concours</div>
+<div class="step"><b>Action</b>Se renseigner sur la procédure avant de se positionner</div>
+</div>
+<div class="message">Contact générique publié sur l'annonce (non vérifié par accès direct dans cet environnement) — à confirmer avant toute prise de contact.</div>
+<div class="actions">
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">POSTULER</a>
+</div>
+<p class="meta" style="margin-top:10px"><strong>Où postuler ?</strong> Portail GovJobs Luxembourg, filière fonctionnaire. <strong>Comment postuler ?</strong> Candidature en ligne + vérification préalable des conditions d'admission (examen-concours, nationalité/langues).</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Fit intéressant mais preuve, fraîcheur, statut ou éligibilité insuffisamment confirmés. Ne comptent pas comme opportunités qualifiées.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">ESCB/IO Senior Project and Portfolio Management Expert — Governance &amp; Transformation Services</div><div class="subtitle">Banque centrale européenne (BCE) · Francfort, Allemagne</div></div>
+<div class="score-badge">ÉCART MAJEUR<small>Éligibilité</small></div>
+</div>
+<div class="tags"><span class="tag warn">Éligibilité restreinte ESCB/IO</span><span class="tag neutral">Preuve niveau B</span></div>
+<div class="fields">
+<div class="field"><small>SOURCE</small><strong>talent.ecb.europa.eu, indexé</strong></div>
+<div class="field"><small>DATE</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>STATUT</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>FIT</small><strong>Thématiquement très fort : coaching de managers/chefs de projet sur les méthodes projet, renforcement de la culture de delivery, gouvernance &amp; transformation</strong></div>
+<div class="field"><small>ÉCART MAJEUR</small><strong>Poste réservé (contrat ESCB/IO) aux salariés d'une banque centrale nationale de l'Eurosystème/ESCB ou d'organisations internationales assimilées — condition d'éligibilité que le profil fourni ne semble pas remplir</strong></div>
+</div>
+<div class="message">À vérifier en priorité : confirmer l'éligibilité réelle avant tout investissement de temps. Utile comme signal de marché sur la valorisation du coaching de transformation, même si non actionnable en l'état.</div>
+<div class="actions"><a class="btn secondary" href="https://talent.ecb.europa.eu/careers/JobDetail/ESCB-IO-Senior-Project-and-Portfolio-Management-Expert-Governance-Transformation-Services/3450" target="_blank" rel="noopener">VOIR L'OFFRE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Chargé de conduite du changement et de communication (m/f)</div><div class="subtitle">GovJobs Luxembourg · Filière fonctionnaire</div></div>
+<div class="score-badge">ANCIEN<small>&gt;90 jours</small></div>
+</div>
+<div class="tags"><span class="tag warn">Date ancienne</span><span class="tag neutral">Preuve niveau B</span></div>
+<div class="fields">
+<div class="field"><small>SOURCE</small><strong>govjobs.public.lu, indexé</strong></div>
+<div class="field"><small>DATE</small><strong>Indexée le 2026-05-27 — ~116 jours avant le rapport</strong></div>
+<div class="field"><small>STATUT</small><strong>Statut actuel à confirmer, probablement clôturé</strong></div>
+<div class="field"><small>FIT</small><strong>Change management + communication interne — chevauchement partiel avec le profil</strong></div>
+<div class="field"><small>ÉCARTS</small><strong>Filière fonctionnaire (examen-concours) ; composante communication non centrale à l'expertise de Salim ; fraîcheur insuffisante sans preuve actuelle</strong></div>
+</div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">VOIR L'OFFRE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Business Transformation Manager</div><div class="subtitle">Revolut · Luxembourg</div></div>
+<div class="score-badge">PREUVE FAIBLE<small>Niveau C</small></div>
+</div>
+<div class="tags"><span class="tag warn">Annonce probablement expirée</span><span class="tag neutral">Preuve niveau C</span></div>
+<div class="fields">
+<div class="field"><small>SOURCE</small><strong>LinkedIn Jobs (lu.linkedin.com), indexé</strong></div>
+<div class="field"><small>DATE</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>STATUT</small><strong>Statut actuel à confirmer — identifiants d'annonce suggérant une offre ancienne/expirée</strong></div>
+<div class="field"><small>FIT</small><strong>Équipe transverse de rationalisation des processus — bon fit sur le papier</strong></div>
+<div class="field"><small>ÉCARTS</small><strong>Preuve insuffisante de fraîcheur ; à revérifier directement sur le site carrière Revolut</strong></div>
+</div>
+<div class="actions"><a class="btn secondary" href="https://www.revolut.com/en-LU/careers/" target="_blank" rel="noopener">VOIR LE PORTAIL CARRIÈRE</a></div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte concrets pouvant ouvrir de futures opportunités — pas des offres d'emploi.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">L'ACD se dote d'un 5ᵉ directeur pour piloter sa transformation digitale</div><div class="subtitle">Administration des contributions directes · Luxembourg · 2026</div></div></div>
+<div class="fields">
+<div class="field"><small>ÉVÉNEMENT</small><strong>Nomination d'un 5ᵉ directeur à l'ACD, en charge de la transformation digitale de l'administration</strong></div>
+<div class="field"><small>SOURCE</small><strong>paperjam.lu — « L'ACD gagne un cinquième directeur »</strong></div>
+<div class="field"><small>POURQUOI</small><strong>Corrobore et renforce la crédibilité du besoin de PM/transformation à l'ACD (voir opportunité HOT ci-dessus) et signale une possible vague de recrutement à venir dans cette administration</strong></div>
+</div>
+<div class="actions"><a class="btn secondary" href="https://paperjam.lu/article/lacd-gagne-un-cinquieme-directeur" target="_blank" rel="noopener">VOIR L'ARTICLE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">Cyril Molitor devient COO de Kneip, après un parcours en direction de la transformation</div><div class="subtitle">Kneip · Luxembourg · Juillet 2026</div></div></div>
+<div class="fields">
+<div class="field"><small>ÉVÉNEMENT</small><strong>Nomination de Cyril Molitor au poste de COO de Kneip, après avoir occupé un poste de directeur de la transformation ailleurs</strong></div>
+<div class="field"><small>SOURCE</small><strong>paperjam.lu — « Cyril Molitor devient COO de Kneip »</strong></div>
+<div class="field"><small>POURQUOI</small><strong>Illustre que le marché luxembourgeois valorise les parcours "transformation" pour des nominations à des postes de direction opérationnelle — signal de positionnement pour AIgile plutôt qu'une offre directe</strong></div>
+</div>
+<div class="actions"><a class="btn secondary" href="https://paperjam.lu/article/cyril-molitor-devient-coo-knei" target="_blank" rel="noopener">VOIR L'ARTICLE</a></div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions — récapitulatif</h2><p class="meta">Chaque opportunité qualifiée avec où la consulter et comment postuler.</p></div></div>
+<table>
+<tr><th>Titre</th><th>Entreprise</th><th>Lieu</th><th>Classification</th><th>Où postuler</th><th>Lien</th></tr>
+<tr><td>Senior Business Analyst</td><td>ACD (État luxembourgeois)</td><td>Hesperange, LU</td><td>HOT</td><td>Portail GovJobs</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank" rel="noopener">Lien</a></td></tr>
+<tr><td>Coach Agile — CoE Agile</td><td>BGL BNP Paribas</td><td>Luxembourg</td><td>WARM</td><td>Portail carrière BNP Paribas</td><td><a href="https://group.bnpparibas/emploi-carriere/offre-emploi/coach-agile-au-sein-du-coe-agile-h-f-2" target="_blank" rel="noopener">Lien</a></td></tr>
+<tr><td>2 Project Managers</td><td>ANA (État luxembourgeois)</td><td>Findel, LU</td><td>WARM</td><td>Portail GovJobs (fonctionnaire)</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">Lien</a></td></tr>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status no">0 brouillon aujourd'hui</span></div>
+<div class="cards">
+<div class="card verify">
+<div class="title">Aucun brouillon de candidature préparé aujourd'hui</div>
+<p class="meta" style="margin-top:8px">Règle appliquée : « Sans email vérifié : 0 brouillon est acceptable. » L'accès direct aux pages sources étant bloqué dans cet environnement, aucune adresse email de recruteur/hiring manager n'a pu être vérifiée par consultation directe aujourd'hui. Une adresse générique (personnel@airport.etat.lu) a été repérée dans un résultat indexé pour l'annonce ANA — elle nécessite une vérification manuelle avant toute utilisation et n'a donc pas servi de base à un brouillon.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement interrogées via WebSearch pour construire ce rapport. Accès direct bloqué dans cet environnement (proxy réseau) — toutes les preuves sont de niveau B sauf mention contraire.</p></div></div>
+<table>
+<tr><th>Source</th><th>Domaine</th><th>Résultats utiles</th><th>Niveau de preuve</th></tr>
+<tr><td>GovJobs Luxembourg</td><td>govjobs.public.lu</td><td>5 postes identifiés (1 HOT, 2 WARM/À vérifier)</td><td>B — indexé</td></tr>
+<tr><td>EIB Careers</td><td>eib.org</td><td>Aucun poste Agile/PM spécifique trouvé aujourd'hui</td><td>—</td></tr>
+<tr><td>EU Careers</td><td>eu-careers.europa.eu</td><td>Postes PM identifiés hors cible géographique/thématique</td><td>B — indexé</td></tr>
+<tr><td>Banque centrale européenne</td><td>talent.ecb.europa.eu</td><td>1 poste transformation (éligibilité restreinte)</td><td>B — indexé</td></tr>
+<tr><td>LinkedIn Jobs</td><td>linkedin.com/jobs</td><td>Revolut (à vérifier), pages de recherche Coach Agile Luxembourg</td><td>B/C — indexé</td></tr>
+<tr><td>BNP Paribas Group Careers</td><td>group.bnpparibas</td><td>1 poste Coach Agile CoE (WARM)</td><td>B — indexé</td></tr>
+<tr><td>ictjob.lu</td><td>ictjob.lu</td><td>Page de recherche "Agile Trainer/Coach Luxembourg" à surveiller (pas d'offre individuelle confirmée)</td><td>B — indexé</td></tr>
+<tr><td>StepStone / Jobat / APEC / Welcome to the Jungle / Malt</td><td>stepstone.lu, jobat.be, apec.fr, welcometothejungle.com, malt.fr</td><td>Aucun résultat Luxembourg/Grand Est directement exploitable aujourd'hui</td><td>—</td></tr>
+<tr><td>Paperjam</td><td>paperjam.lu</td><td>2 signaux de marché (ACD, Kneip)</td><td>B — indexé</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Requêtes WebSearch exécutées</td><td>~20</td></tr>
+<tr><td>Opportunités qualifiées (HOT + WARM)</td><td>3</td></tr>
+<tr><td>Dont HOT</td><td>1</td></tr>
+<tr><td>Dont WARM</td><td>2</td></tr>
+<tr><td>À vérifier (non qualifiées)</td><td>3</td></tr>
+<tr><td>Signaux de marché</td><td>2</td></tr>
+<tr><td>Contacts identifiés (non vérifiés par accès direct)</td><td>1</td></tr>
+<tr><td>Brouillons Gmail préparés</td><td>0</td></tr>
+<tr><td>Accès direct aux sources</td><td>Bloqué (proxy réseau) — recherche 100% WebSearch-indexée</td></tr>
+<tr><td>Doublons avec career-history.csv</td><td>0 (historique vide avant ce run)</td></tr>
+</table>
+</section>
+
+<footer class="footer">Gomri.coach Career Intelligence — généré le 2026-09-20. Aucune donnée n'a été inventée ; toute incertitude de date, statut, contact ou méthode de candidature est explicitement signalée ci-dessus.</footer>
+</main>
+</body>
+</html>
