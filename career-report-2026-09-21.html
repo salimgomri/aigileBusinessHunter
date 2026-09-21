@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 21 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:42px;line-height:1.05;letter-spacing:-1.5px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:16px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:24px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:90px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand);font-size:11px}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:11px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700;font-size:13px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:32px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence</div></div></div>
+<div class="badge">Career Hunter · 21 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Intelligence de carrière quotidienne</div>
+<h1>3 opportunités HOT identifiées au Luxembourg</h1>
+<p class="lede">Recherche ciblée (45 requêtes WebSearch) sur Luxembourg, Bruxelles, Grand Est, Paris/IDF et institutions européennes. Accès direct (WebFetch) bloqué aujourd'hui sur tous les domaines cibles : toutes les preuves ci-dessous sont de niveau B (indexées), aucune n'est une consultation directe. Deux signaux de transformation forts chez Aztec Group (Target Operating Model + changement de CEO) et un signal macro Luxembourg (stratégie Gouvernement numérique 2026-2030). Aucune donnée inventée ; statuts et dates à confirmer manuellement avant toute candidature.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Agile Transformation</span><span class="pill">Change Management</span><span class="pill">Target Operating Model</span><span class="pill">Bruxelles</span><span class="pill">Preuve niveau B uniquement</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités HOT</div>
+<div class="score">3</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>3</strong></div>
+<div class="kpi"><small>WARM</small><strong>3</strong></div>
+<div class="kpi"><small>Contacts</small><strong>1</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Jobs</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour — HOT</h2><p class="meta">Fit fort, source officielle, action immédiate possible. Fraîcheur non confirmée directement (preuve niveau B) — statut à reconfirmer avant candidature.</p></div></div>
+<div class="cards">
+
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">Group Head of the Process Optimisation and Digitisation Capability Centre</div><div class="meta">Aztec Group · Luxembourg</div></div>
+<div class="score-badge">FIT FORT<small>Head of Transformation</small></div>
+</div>
+<div class="tags"><span class="tag">Transformation organisationnelle</span><span class="tag">Target Operating Model</span><span class="tag">Leadership groupe</span><span class="tag neutral">Preuve B — indexée</span><span class="tag warn">Date non confirmée</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>aztec.group (portail carrière officiel)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun contact nommé identifié</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Leadership du centre de capacité Process Optimisation &amp; Digitisation au niveau Groupe</div>
+<div class="step"><b>Preuve</b>Page carrière officielle Aztec Group (indexée)</div>
+<div class="step"><b>Fraîcheur</b>Non confirmée</div>
+<div class="step"><b>Fit</b>Transformation, TOM, coaching dirigeants</div>
+<div class="step"><b>Écart</b>Séniorité "Group Head" et secteur fund administration à valider</div>
+</div>
+<div class="message">Correspond directement au positionnement Head of Transformation / TOM de Salim, dans un groupe déjà engagé dans un programme de transformation actif (voir Signaux).</div>
+<div class="actions">
+<a class="btn secondary" href="https://aztec.group/vacancy/luxembourg/5502782003/group-head-of-the-process-optimisation-and-digitisation-capability-centre" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://aztec.group/vacancy/luxembourg/5502782003/group-head-of-the-process-optimisation-and-digitisation-capability-centre" target="_blank" rel="noopener">POSTULER</a>
+</div>
+<div class="message" style="margin-top:8px;background:var(--surface2)">Comment postuler : candidature via le portail carrière officiel Aztec Group (aztec.group/careers). URL de candidature distincte non confirmée — probablement intégrée à la page de l'offre.</div>
+</div>
+
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">Senior Change Manager – Process Optimisation &amp; Digitisation (POD) — 12-month FTC</div><div class="meta">Aztec Group (via AP Executive) · Luxembourg</div></div>
+<div class="score-badge">FIT FORT<small>Change / TOM</small></div>
+</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag">Target Operating Model</span><span class="tag">Contact identifié</span><span class="tag neutral">Preuve B — indexée</span><span class="tag warn">CDD 12 mois</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>LinkedIn (posté par AP Executive)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Shenaaz Bhima — AP Executive (nom trouvé dans contenu indexé, non vérifié directement)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Pilotage du change dans le Group Transformation Programme d'Aztec</div>
+<div class="step"><b>Preuve</b>Annonce LinkedIn AP Executive (indexée)</div>
+<div class="step"><b>Fraîcheur</b>À vérifier, possiblement &gt;30j</div>
+<div class="step"><b>Fit</b>TOM, change, coaching managérial</div>
+<div class="step"><b>Action</b>Contacter la recruteuse pour confirmer statut</div>
+</div>
+<div class="message">Exige 10+ ans d'expérience en environnement de change — largement dépassé par les 20+ ans de Salim. Contrat à durée déterminée (12 mois) à évaluer.</div>
+<div class="actions">
+<a class="btn secondary" href="https://lu.linkedin.com/jobs/view/12m-ftc-senior-change-manager-pod-luxembourg-at-ap-executive-global-executive-search-agency-3765216135" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<span class="status no">Lien de candidature exact non identifié</span>
+</div>
+<div class="message" style="margin-top:8px;background:var(--surface2)">Comment postuler : via LinkedIn Jobs (annonce publiée par AP Executive – Global Executive Search Agency) ou contact direct de la recruteuse. Un email (shenaaz.bhima@ap-executive.com) apparaît dans le contenu indexé mais n'a pas été vérifié par consultation directe — à confirmer avant tout envoi (aucun brouillon Gmail créé sur cette base).</div>
+</div>
+
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">Deloitte Digital – Digital Transformation Lead/Manager (m/f)</div><div class="meta">Deloitte Luxembourg (practice Deloitte Digital) · Luxembourg</div></div>
+<div class="score-badge">FIT FORT<small>Transformation digitale</small></div>
+</div>
+<div class="tags"><span class="tag">Transformation digitale</span><span class="tag">Program Management</span><span class="tag neutral">Preuve B — indexée</span><span class="tag warn">Positionnement technique à vérifier</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>jobs2.deloitte.com (portail officiel Deloitte)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun contact nommé identifié</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Leadership de transformation digitale, Deloitte Digital Luxembourg</div>
+<div class="step"><b>Preuve</b>Portail carrière officiel Deloitte (indexé)</div>
+<div class="step"><b>Fraîcheur</b>Non confirmée</div>
+<div class="step"><b>Fit</b>Transformation digitale, AI adoption, program management</div>
+<div class="step"><b>Écart</b>Classé "Information Technology" — vérifier volet technique vs managérial</div>
+</div>
+<div class="message">Aligné avec l'expertise transformation digitale / AI adoption de Salim ; à clarifier si le rôle est hands-on technique ou managérial/coaching.</div>
+<div class="actions">
+<a class="btn secondary" href="https://jobs2.deloitte.com/lu/en/job/DELOA003X219946/Deloitte-Digital-Digital-Transformation-Lead-Manager-m-f-Job-based-in-Luxembourg" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://jobs2.deloitte.com/lu/en/job/DELOA003X219946/Deloitte-Digital-Digital-Transformation-Lead-Manager-m-f-Job-based-in-Luxembourg" target="_blank" rel="noopener">POSTULER</a>
+</div>
+<div class="message" style="margin-top:8px;background:var(--surface2)">Comment postuler : portail carrière officiel Deloitte (jobs2.deloitte.com / jobs.deloitte.lu), candidature en ligne intégrée à la page de l'offre.</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Fit intéressant, incertitude sur fraîcheur, séniorité ou statut à lever avant priorisation.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Manager / Senior Manager – Digital Transformation in Fund Industry</div><div class="meta">Deloitte Luxembourg · Luxembourg</div></div>
+<div class="score-badge">FIT MODÉRÉ<small>Secteur spécifique</small></div>
+</div>
+<div class="tags"><span class="tag">Transformation digitale</span><span class="tag neutral">Preuve B — indexée</span><span class="tag warn">Secteur fund industry non démontré</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>jobs.deloitte.lu (portail officiel)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun contact nommé identifié</strong></div>
+</div>
+<div class="message">Accompagnement de clients internationaux du secteur fonds sur leur transformation digitale — bon fit Program/Delivery/Product mais expertise sectorielle spécifique non démontrée dans le profil de Salim.</div>
+<div class="actions">
+<a class="btn secondary" href="https://jobs.deloitte.lu/job/Luxembourg-ManagerSenior-Manager-Digital-Transformation-in-Fund-Industry/1178453401/" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://jobs.deloitte.lu/job/Luxembourg-ManagerSenior-Manager-Digital-Transformation-in-Fund-Industry/1178453401/" target="_blank" rel="noopener">POSTULER</a>
+</div>
+<div class="message" style="margin-top:8px;background:var(--surface2)">Comment postuler : portail carrière officiel Deloitte Luxembourg (jobs.deloitte.lu).</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">(Senior) Squad Leader (Product Manager) — Bespoke Banking Applications Unit, Lending Division</div><div class="meta">Banque européenne d'investissement (EIB) · Luxembourg</div></div>
+<div class="score-badge">FIT MODÉRÉ<small>Institution prestigieuse</small></div>
+</div>
+<div class="tags"><span class="tag">Product Management</span><span class="tag">Institution européenne</span><span class="tag neutral">Preuve B — via agrégateurs</span><span class="tag warn">Profil technique attendu</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>erecruitment.eib.org + agrégateurs (unjobnet.org)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun contact nommé identifié</strong></div>
+</div>
+<div class="message">Poste permanent, grade 5/6, dans une institution européenne au Luxembourg (priorité géographique n°1). Exige diplôme informatique et 5+ ans d'expérience IT produit — le profil de Salim est plus orienté coaching/transformation que pilotage technique de squad ; à positionner en conséquence.</div>
+<div class="actions">
+<a class="btn secondary" href="https://erecruitment.eib.org/psc/hr/EIBJOBS/CAREERS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&amp;focus=Applicant" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<span class="status no">Lien de candidature exact non identifié</span>
+</div>
+<div class="message" style="margin-top:8px;background:var(--surface2)">Comment postuler : exclusivement via le portail e-recrutement officiel de l'EIB (erecruitment.eib.org) — la référence individuelle de l'offre n'a pas pu être isolée directement aujourd'hui.</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Agile Coach</div><div class="meta">Wemanity · Bruxelles, Belgique</div></div>
+<div class="score-badge">FIT À CONFIRMER<small>Séniorité incertaine</small></div>
+</div>
+<div class="tags"><span class="tag">Agile Coaching</span><span class="tag">Bruxelles / priorité #2</span><span class="tag neutral">Preuve B — indexée</span><span class="tag warn">Possible poste junior (2-5 ans) ou VIE</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>careers.wemanity.com (portail officiel)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun contact nommé identifié</strong></div>
+</div>
+<div class="message">Intitulé "Agile Coach" correspond directement au cœur de cible, mais une source tierce (WIZBII) évoque un profil 2-5 ans et un possible VIE — à clarifier avant de prioriser, car incompatible avec la séniorité de Salim si confirmé.</div>
+<div class="actions">
+<a class="btn secondary" href="https://careers.wemanity.com/job-offers/agile-coach-brussels/" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://careers.wemanity.com/job-offers/agile-coach-brussels/" target="_blank" rel="noopener">POSTULER</a>
+</div>
+<div class="message" style="margin-top:8px;background:var(--surface2)">Comment postuler : portail carrière officiel Wemanity.</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Source secondaire ou fraîcheur trop incertaine pour classer en HOT/WARM aujourd'hui.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Project Manager (M/F) – Business Transformation</div><div class="meta">Grant Thornton Luxembourg · Luxembourg</div></div>
+<div class="score-badge">À CONFIRMER<small>Ancienneté probable</small></div>
+</div>
+<div class="tags"><span class="tag neutral">Preuve B — LinkedIn</span><span class="tag warn">Possiblement &gt;90 jours</span></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>LinkedIn</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée (ID d'offre suggérant une ancienneté significative)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun contact nommé identifié</strong></div>
+</div>
+<div class="message">Rôle de PM pour un projet de mutualisation d'activités entre entités luxembourgeoises — bon fit Program/Delivery, mais l'ancienneté probable de l'annonce doit être vérifiée en priorité avant tout envoi de candidature.</div>
+<div class="actions">
+<a class="btn secondary" href="https://lu.linkedin.com/jobs/view/project-manager-m-f-%E2%80%93-business-transformation-at-grant-thornton-luxembourg-2901739363" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<span class="status no">Lien de candidature exact non identifié</span>
+</div>
+<div class="message" style="margin-top:8px;background:var(--surface2)">Comment postuler : LinkedIn Jobs ou portail carrière Grant Thornton Luxembourg (à confirmer si l'offre est toujours ouverte).</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux de carrière</h2><p class="meta">Événements concrets pouvant générer de futures opportunités — ce ne sont pas des offres.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">Stratégie « Gouvernement numérique 2026-2030 » — Luxembourg</div><div class="meta">Ministère de la Digitalisation / CTIE · Adoptée le 17 décembre 2025, mise en œuvre en cours (ex. Guichet.lu, 6 juillet 2026)</div></div></div>
+<div class="message">Nouvelle feuille de route pluriannuelle (digitalisation, souveraineté, compétences) succédant à la stratégie 2021-2025 — terreau probable de futurs postes Chef de Projet / Transformation / Change Management côté secteur public luxembourgeois.</div>
+<div class="actions"><a class="btn secondary" href="https://mindigital.gouvernement.lu/fr/dossiers/2025/strategie-gouvernement-numerique-2026-2030.html" target="_blank" rel="noopener">VOIR LA SOURCE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">Nouveau CEO chez Aztec Group</div><div class="meta">Aztec Group · Benjamin Lucas nommé CEO, mai 2026 (source Tracxn — non recoupée avec communiqué officiel)</div></div></div>
+<div class="message">Combiné au Group Transformation Programme et au Target Operating Model déjà en cours (voir opportunités HOT/WARM ci-dessus), un changement de direction précède souvent une accélération des initiatives de transformation — à surveiller pour de nouveaux postes Change/Transformation.</div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">Group Transformation Programme &amp; Target Operating Model chez Aztec Group</div><div class="meta">Aztec Group · Programme en cours, période exacte non confirmée</div></div></div>
+<div class="message">Programme de transformation actif à l'échelle du groupe avec volet TOM explicite — correspond exactement à l'expertise Target Operating Model de Salim ; source probable de futurs postes Change Manager / PMO transformation au-delà des deux offres déjà identifiées.</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Jobs — vue consolidée</h2><p class="meta">7 opportunités qualifiées aujourd'hui (3 HOT, 3 WARM, 1 à vérifier). 2 candidates supplémentaires (Keyteo Agile Test Coach, lux-Airport IT Senior PM) écartées pour écart de fit trop important — non affichées pour éviter le remplissage artificiel.</p></div></div>
+<p class="meta">Voir sections Priorités, WARM et À vérifier ci-dessus pour le détail complet de chaque offre.</p>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne envoyé</span></div>
+<div class="cards">
+<div class="card verify">
+<div class="card-top"><div><div class="title">0 brouillon créé aujourd'hui</div><div class="meta">Règle appliquée : sans email publiquement vérifié, 0 brouillon est la sortie correcte.</div></div></div>
+<div class="message">Un seul contact a été identifié (Shenaaz Bhima, AP Executive, pour l'offre Aztec Senior Change Manager POD), avec une adresse email trouvée uniquement dans un contenu indexé (non vérifiée par consultation directe). Conformément à la règle de véracité, aucun brouillon n'a été préparé sur cette base. Action recommandée : vérifier manuellement ce contact (profil LinkedIn public / site AP Executive) avant tout envoi.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement interrogées via WebSearch aujourd'hui. WebFetch bloqué sur tous les domaines testés — aucune consultation directe (niveau A) n'a été possible.</p></div></div>
+<table>
+<tr><th>Source</th><th>Type</th><th>Résultats exploitables</th><th>Preuve max</th></tr>
+<tr><td>LinkedIn Jobs</td><td>Plateforme d'emploi</td><td>Oui — source la plus productive</td><td>B</td></tr>
+<tr><td>aztec.group</td><td>Portail carrière officiel</td><td>Oui</td><td>B</td></tr>
+<tr><td>jobs.deloitte.lu / jobs2.deloitte.com</td><td>Portail carrière officiel</td><td>Oui</td><td>B</td></tr>
+<tr><td>keyteo.com</td><td>Portail carrière officiel</td><td>Oui (candidate écartée)</td><td>B</td></tr>
+<tr><td>careers.wemanity.com</td><td>Portail carrière officiel</td><td>Oui</td><td>B</td></tr>
+<tr><td>erecruitment.eib.org (+ unjobnet.org, unjobs.org)</td><td>Institution européenne / agrégateurs</td><td>Oui</td><td>B</td></tr>
+<tr><td>govjobs.public.lu</td><td>Emploi public Luxembourg</td><td>Contexte seulement (pas de poste Agile Coach direct)</td><td>B</td></tr>
+<tr><td>mindigital.gouvernement.lu</td><td>Source gouvernementale officielle</td><td>Oui — signal de carrière</td><td>B</td></tr>
+<tr><td>apec.fr, welcometothejungle.com, stepstone.lu, jobat.be, hellowork.com, lesjeudis.com</td><td>Plateformes d'emploi</td><td>Non — pages d'agrégation génériques uniquement</td><td>—</td></tr>
+<tr><td>eu-careers.europa.eu</td><td>Institutions UE</td><td>Résultats génériques non ciblés Agile/Transformation</td><td>—</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Requêtes WebSearch effectuées</td><td>45</td></tr>
+<tr><td>Candidates brutes identifiées</td><td>9</td></tr>
+<tr><td>Opportunités qualifiées affichées</td><td>7 (3 HOT / 3 WARM / 1 à vérifier)</td></tr>
+<tr><td>Candidates écartées (fit insuffisant)</td><td>2</td></tr>
+<tr><td>Signaux de carrière identifiés</td><td>3</td></tr>
+<tr><td>Contacts identifiés</td><td>1 (email non vérifié directement)</td></tr>
+<tr><td>Brouillons Gmail créés</td><td>0</td></tr>
+<tr><td>Preuve niveau A (consultation directe)</td><td>0 — WebFetch bloqué aujourd'hui sur tous les domaines cibles</td></tr>
+</table>
+</section>
+
+<footer class="footer">Gomri.coach Career Intelligence — généré automatiquement le 21 septembre 2026. Toujours vérifier statut, fraîcheur et contact avant toute candidature. « On mesure la vélocité. Je rends visible la solidité. »</footer>
+</main>
+</body>
+</html>
