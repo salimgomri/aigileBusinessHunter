@@ -68,6 +68,31 @@ site:freelancers.lu transformation
 
 If no useful indexed result is returned, do not infer availability.
 
+### GetYourJob.pro
+Domain: getyourjob.pro
+Priority: HIGH
+
+Searches:
+site:getyourjob.pro "Agile Coach" Luxembourg
+site:getyourjob.pro "Scrum Master" Luxembourg
+site:getyourjob.pro SAFe Luxembourg
+site:getyourjob.pro "Agile Transformation" Luxembourg
+site:getyourjob.pro "Project Manager" Luxembourg transformation
+
+Extract when available:
+- mission/job title
+- client/company
+- location/remote
+- start date
+- duration
+- TJM/rate
+- required skills
+- URL
+- publication/freshness evidence
+
+Limitation:
+Search-indexed results are not proof that the mission remains open.
+
 ### FreelanceScope
 Domain: freelancescope.com
 Priority: LOW
