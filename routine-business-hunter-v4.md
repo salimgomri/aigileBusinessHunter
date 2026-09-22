@@ -389,12 +389,24 @@ Le corps Gmail doit conserver autant que possible :
 
 Adapter uniquement le CSS nécessaire à Gmail.
 
+### RÈGLE TECHNIQUE OBLIGATOIRE (retour d'expérience 2026-09-22)
+
+Le corps Gmail NE DOIT JAMAIS utiliser de variables CSS (`var(--x)`, `:root{}`).
+Gmail (notamment l'application mobile) ignore les custom properties CSS : tout le style s'effondre silencieusement et le mail arrive en texte brut, sans que l'échec soit visible côté génération.
+
+Pour le corps Gmail (htmlBody), obligatoirement :
+- toutes les couleurs en valeurs hexadécimales directement dans l'attribut `style=""` de chaque élément ;
+- mise en page par `<table role="presentation">`, jamais par CSS grid ou flexbox ;
+- aucune dépendance à un bloc `<style>` en `<head>` pour l'affichage de base ;
+- le fichier HTML autonome (`business-report-YYYY-MM-DD.html`, ouvert dans un navigateur) peut conserver `var(--x)` normalement — cette contrainte concerne uniquement le corps de l'email.
+
 INTERDIT :
 transformer le rapport en :
 - texte brut ;
 - titres + paragraphes ;
 - simple liste ;
-- Markdown converti sommairement.
+- Markdown converti sommairement ;
+- variables CSS (`var(--x)`) dans le corps de l'email.
 
 ---
 
@@ -443,6 +455,8 @@ Si le HTML n'est pas réellement généré ou si le mail ne peut pas reprendre l
 ---
 
 ## 20. TEST DE RENDU
+
+Avant tout envoi, vérifier que le htmlBody ne contient aucune occurrence de `var(--` (variable CSS). Si c'est le cas : corriger en inlinant les valeurs hexadécimales avant d'envoyer.
 
 Si le corps Gmail final ressemble seulement à :
 - titre ;
