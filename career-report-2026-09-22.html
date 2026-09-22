@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 22 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:44px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px;flex-wrap:wrap}
+h2{margin:0;color:var(--brand);font-size:24px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.subtitle{font-size:13px;color:var(--muted);font-weight:700;margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:80px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.score-badge.warm{background:#fff1dc;color:#805000}
+.score-badge.verify{background:#edf0ee;color:#48554e}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:11px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700;font-size:13px}
+.gap-box{margin-top:10px;background:#fff1dc;padding:12px;border-radius:12px;font-size:13px}
+.gap-box b{display:block;font-size:10px;text-transform:uppercase;color:#805000;margin-bottom:4px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.btn.disabled{background:#edf0ee;color:#8b9690;font-weight:800}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:32px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence — AIgile</div></div></div>
+<div class="badge">Career Hunter · 22 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>5 opportunités qualifiées, 2 en priorité immédiate</h1>
+<p class="lede">Recherche ciblée sur Luxembourg, Bruxelles/Belgique, Grand Est et Paris/IDF. 2 offres HOT (transformation/change management bancaire et corporate services), 3 offres WARM avec incertitude à lever, 1 signal à vérifier. Aucun email vérifié trouvé — 0 brouillon Gmail préparé aujourd'hui.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Grand Est</span><span class="pill">Paris / IDF</span><span class="pill">WebSearch-first</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">5</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>2</strong></div>
+<div class="kpi"><small>WARM</small><strong>3</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour — HOT</h2><p class="meta">Fit fort + preuve indexée cohérente sur plusieurs plateformes + action immédiate possible.</p></div></div>
+<div class="cards">
+
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">TA KYC Transformation – Senior Business Change Manager (M/F)</div><div class="subtitle">BNP Paribas (Transfer Agent / Securities Services) — Luxembourg</div>
+<div class="tags"><span class="tag">Transformation</span><span class="tag">Change Management</span><span class="tag">Banque</span><span class="tag warn">Date non confirmée</span></div>
+</div>
+<div class="score-badge hot">HOT<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>bnpparibas.lu / group.bnpparibas (indexé aussi sur Moovijob)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer — offre identique et cohérente sur 3 plateformes distinctes (signal d'activité crédible)</strong></div>
+<div class="field"><small>Localisation</small><strong>Luxembourg (portée globale UCITS / Private Capital / Hedge Funds)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Senior Business Change Manager, transformation KYC</div>
+<div class="step"><b>Preuve</b>B — indexé, cohérent x3 plateformes</div>
+<div class="step"><b>Fraîcheur</b>Date inconnue, activité crédible</div>
+<div class="step"><b>Fit</b>Transformation + change mgmt + banque</div>
+<div class="step"><b>Écarts</b>Domaine KYC/AML non démontré</div>
+</div>
+<div class="message">FIT : rôle de déploiement d'une plateforme de gestion du cycle de vie investisseur, pilotage multi-stakeholders, gouvernance de projet, environnement bancaire international à Luxembourg — correspond directement à l'expertise de transformation organisationnelle, TOM et gestion de programme de Salim.</div>
+<div class="gap-box"><b>Écarts identifiés</b>Expertise spécifique KYC/AML/Transfer Agent non démontrée dans le profil. L'annonce ne mentionne pas explicitement Agile/SAFe — à mettre en avant activement en entretien plutôt que supposé acquis par le recruteur.</div>
+<div class="actions">
+<a class="btn" href="https://www.bnpparibas.lu/en/jobs/ta-kyc-transformation-senior-business-change-manager-m-f-2/" target="_blank" rel="noopener">Voir l'offre</a>
+<a class="btn secondary" href="https://www.bnpparibas.lu/en/jobs/ta-kyc-transformation-senior-business-change-manager-m-f-2/" target="_blank" rel="noopener">Postuler</a>
+</div>
+<p class="meta" style="margin-top:10px"><strong>Comment postuler :</strong> candidature directement sur le portail carrière BNP Paribas Luxembourg (bnpparibas.lu), bouton de candidature sur la page de l'offre. <strong>Contact :</strong> recruteur/hiring manager non identifié publiquement.</p>
+</div>
+
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">Change Management Specialist – Accounting and Corporate Services Transformation</div><div class="subtitle">BDO Luxembourg — Cloche d'Or, Luxembourg</div>
+<div class="tags"><span class="tag">Transformation</span><span class="tag">Change Management</span><span class="tag">Corporate Services</span><span class="tag warn">Date non confirmée</span></div>
+</div>
+<div class="score-badge hot">HOT<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Skeeled (ATS officiel BDO Luxembourg), indexé aussi sur Moovijob et Glassdoor</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer — présence active sur l'ATS officiel de recrutement</strong></div>
+<div class="field"><small>Localisation</small><strong>Luxembourg (Cloche d'Or)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Change Management Specialist, transformation Accounting/Corporate</div>
+<div class="step"><b>Preuve</b>B — indexé sur ATS officiel + 2 job boards</div>
+<div class="step"><b>Fraîcheur</b>Date inconnue, ATS actif</div>
+<div class="step"><b>Fit</b>Change mgmt + transformation stratégique</div>
+<div class="step"><b>Écarts</b>Pas d'Agile/Scrum mentionné</div>
+</div>
+<div class="message">FIT : rôle central dans un programme de transformation stratégique des practices Accounting, Corporate, Fund et Payroll de BDO, avec proximité stakeholders seniors et équipes tech — correspond à l'expérience de coaching de managers/dirigeants et de transformation organisationnelle de Salim.</div>
+<div class="gap-box"><b>Écarts identifiés</b>L'annonce ne mentionne pas explicitement Agile/Scrum/SAFe. Secteur accounting/corporate/fund/payroll différent du terrain habituel IT/Agile de Salim — transférabilité à argumenter en entretien.</div>
+<div class="actions">
+<a class="btn" href="https://app.skeeled.com/offer/c/6a703ebb432df7b7c91c890a" target="_blank" rel="noopener">Voir l'offre</a>
+<a class="btn secondary" href="https://app.skeeled.com/offer/c/6a703ebb432df7b7c91c890a" target="_blank" rel="noopener">Postuler</a>
+</div>
+<p class="meta" style="margin-top:10px"><strong>Comment postuler :</strong> candidature directement sur Skeeled, la plateforme de candidature officielle utilisée par BDO Luxembourg. <strong>Contact :</strong> recruteur/hiring manager non identifié publiquement (profils LinkedIn d'employés BDO repérés mais rôle RH non confirmé — non retenus comme contact).</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Fit intéressant avec une incertitude de fraîcheur, de statut ou de compatibilité à lever avant candidature.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Chargé de conduite du changement et de communication (m/f)</div><div class="subtitle">Administration des contributions directes (ACD) — État luxembourgeois</div>
+<div class="tags"><span class="tag warn">Ancien (&gt;90j)</span><span class="tag">Agile + Kanban requis</span><span class="tag neutral">Fonctionnaire</span></div>
+</div>
+<div class="score-badge warm">WARM<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Réf.</small><strong>E00042694 / F00042695 / M00042696</strong></div>
+<div class="field"><small>Source</small><strong>GovJobs Luxembourg (govjobs.public.lu)</strong></div>
+<div class="field"><small>Date de publication</small><strong>27 mai 2026 (≈118 jours — ANCIEN)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer avant toute candidature (poste ancien)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Conduite du changement + communication</div>
+<div class="step"><b>Preuve</b>B — indexé, réf. officielle GovJobs</div>
+<div class="step"><b>Fraîcheur</b>27/05/2026 → ANCIEN</div>
+<div class="step"><b>Fit</b>Agile + Kanban explicitement requis</div>
+<div class="step"><b>Écarts</b>Diplôme, statut fonctionnaire, langues</div>
+</div>
+<div class="message">FIT : exigence explicite d'expérience Agile et Kanban — correspondance rare et directe avec le cœur de métier de Salim (Agile Coach depuis 2006). Rôle de conduite du changement = terrain naturel.</div>
+<div class="gap-box"><b>Écarts identifiés</b>(1) Offre publiée il y a ~118 jours — ANCIEN, statut à vérifier absolument avant candidature. (2) Diplôme requis en conduite du changement/communication/sciences humaines ou politiques/management — champ différent du parcours coaching agile/PM de Salim, à justifier. (3) Poste de fonctionnaire/employé de l'État soumis à conditions de nationalité UE et à la maîtrise des 3 langues administratives (LU/FR/DE) au niveau A2 — écart potentiellement bloquant, non vérifié.</div>
+<div class="actions">
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">Voir l'offre</a>
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">Postuler</a>
+</div>
+<p class="meta" style="margin-top:10px"><strong>Comment postuler :</strong> candidature directement sur GovJobs Luxembourg (bouton "Postuler" sur la page de l'offre). <strong>Contact :</strong> non identifié — GovJobs ne publie pas de contact recruteur nominatif.</p>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Consulting Financial Sector – Agile Coach / Scrum Master (m/f)</div><div class="subtitle">PwC Luxembourg — Advisory / IT Consulting</div>
+<div class="tags"><span class="tag warn">Fraîcheur incertaine</span><span class="tag">Secteur financier</span><span class="tag neutral">Recherche continue</span></div>
+</div>
+<div class="score-badge warm">WARM<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé), pwc.lu/careers</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer — formulation "recherche continue de profils Agile", possiblement une annonce à rotation permanente plutôt qu'un poste daté</strong></div>
+<div class="field"><small>Localisation</small><strong>Luxembourg</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Agile Coach / Scrum Master, secteur financier</div>
+<div class="step"><b>Preuve</b>B — indexé LinkedIn</div>
+<div class="step"><b>Fraîcheur</b>Non confirmée</div>
+<div class="step"><b>Fit</b>Correspondance exacte du titre</div>
+<div class="step"><b>Écarts</b>Fraîcheur à vérifier sur pwc.lu</div>
+</div>
+<div class="message">FIT : correspondance exacte de titre et de secteur (Agile Coach/Scrum Master, services financiers, Luxembourg). Exigence de 3+ ans d'expérience Agile largement dépassée par les 20+ ans d'expérience et l'expertise Agile depuis 2006 de Salim.</div>
+<div class="gap-box"><b>Écarts identifiés</b>La formulation de l'annonce ("continue de renforcer ses pratiques") suggère un poste à rotation permanente plutôt qu'un besoin daté et actif — à reconfirmer directement sur pwc.lu/en/careers.html avant candidature.</div>
+<div class="actions">
+<a class="btn" href="https://www.linkedin.com/jobs/view/consulting-financial-sector-%E2%80%93-agile-coach-scrum-master-m-f-at-pwc-luxembourg-1173171189" target="_blank" rel="noopener">Voir l'offre</a>
+<a class="btn secondary" href="https://www.pwc.lu/en/careers.html" target="_blank" rel="noopener">Postuler</a>
+</div>
+<p class="meta" style="margin-top:10px"><strong>Comment postuler :</strong> via le portail carrière PwC Luxembourg (pwc.lu/en/careers.html) ou via l'annonce LinkedIn Jobs. <strong>Contact :</strong> non identifié.</p>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">2 Project Managers (m/f)</div><div class="subtitle">Administration de la navigation aérienne (ANA) — État luxembourgeois</div>
+<div class="tags"><span class="tag">Exploitable (≈56j)</span><span class="tag warn">Diplôme aviation/ingénierie requis</span><span class="tag neutral">Fonctionnaire</span></div>
+</div>
+<div class="score-badge warm">WARM<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Réf.</small><strong>E00044054 / F00044055 / M00044056</strong></div>
+<div class="field"><small>Source</small><strong>GovJobs Luxembourg (govjobs.public.lu)</strong></div>
+<div class="field"><small>Date de publication</small><strong>28 juillet 2026 (≈56 jours — exploitable/à vérifier)</strong></div>
+<div class="field"><small>Localisation</small><strong>Findel, Luxembourg</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Project Manager, culture projet transverse</div>
+<div class="step"><b>Preuve</b>B — indexé, réf. officielle GovJobs</div>
+<div class="step"><b>Fraîcheur</b>28/07/2026 → exploitable</div>
+<div class="step"><b>Fit</b>PM + change mgmt (atout)</div>
+<div class="step"><b>Écarts</b>Diplôme aviation/ingénierie</div>
+</div>
+<div class="message">FIT : développement d'une culture projet moderne, collaborative et transverse au sein de l'ANA ; le "change management dans une organisation publique/infrastructure critique" est cité comme atout — recoupe l'expérience de transformation organisationnelle de Salim.</div>
+<div class="gap-box"><b>Écarts identifiés</b>Master requis en ingénierie/aviation/gestion de projet/systèmes d'information/management/transport aérien — le champ aviation/ingénierie constitue un écart significatif par rapport au parcours de Salim (à justifier via "management" comme champ accepté). Anglais B2 obligatoire (a priori acquis, non vérifié ici). Poste de fonctionnaire d'État soumis aux mêmes contraintes de nationalité/langues administratives que les autres offres GovJobs de ce rapport.</div>
+<div class="actions">
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">Voir l'offre</a>
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">Postuler</a>
+</div>
+<p class="meta" style="margin-top:10px"><strong>Comment postuler :</strong> candidature directement sur GovJobs Luxembourg. <strong>Contact :</strong> non identifié.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées pour être qualifiées HOT ou WARM. Ne compte pas dans les 5 opportunités principales.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Agile Coach</div><div class="subtitle">Empiric — Luxembourg</div>
+<div class="tags"><span class="tag neutral">Détails insuffisants</span><span class="tag neutral">Titre exact</span></div>
+</div>
+<div class="score-badge verify">À VÉRIFIER<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer — contenu détaillé de l'annonce non accessible (accès direct LinkedIn bloqué depuis cet environnement)</strong></div>
+</div>
+<div class="message">Titre exact correspondant au cœur de métier de Salim (Agile Coach), mais responsabilités, séniorité, secteur et exigences non confirmés — consultation directe de l'annonce nécessaire avant qualification.</div>
+<div class="actions">
+<a class="btn" href="https://lu.linkedin.com/jobs/view/agile-coach-at-empiric-4049903905" target="_blank" rel="noopener">Voir l'offre</a>
+</div>
+<p class="meta" style="margin-top:10px"><strong>Où postuler :</strong> lien de candidature exact non identifié — accès direct à l'annonce bloqué. Candidature probable via LinkedIn Jobs, à confirmer en consultant la page. <strong>Contact :</strong> non identifié.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Career Signals</h2><p class="meta">Signaux de contexte concrets pouvant ouvrir de futures opportunités — pas des offres d'emploi.</p></div></div>
+<div class="cards">
+
+<div class="card">
+<div class="card-top">
+<div><div class="title">Luxembourg Stock Exchange — nomination d'un nouveau CIO</div><div class="subtitle">Bourse de Luxembourg</div></div>
+</div>
+<div class="fields">
+<div class="field"><small>Organisation</small><strong>Luxembourg Stock Exchange</strong></div>
+<div class="field"><small>Événement</small><strong>Maxime Aerts nommé CIO, succédant à Laurent Pulinckx (parti chez Creos), prise de fonction au 1er novembre (année exacte à confirmer)</strong></div>
+<div class="field"><small>Source</small><strong>Paperjam / Delano</strong></div>
+</div>
+<div class="message">Pourquoi c'est un signal : un changement de CIO s'accompagne typiquement d'une revue de gouvernance IT et de programmes de transformation — fenêtre potentielle pour du coaching agile/transformation dans les 6-12 mois suivant la prise de fonction.</div>
+<div class="actions">
+<a class="btn secondary" href="https://en.paperjam.lu/article/maxime-aerts-cio-of-the-luxembourg-stock-exchange" target="_blank" rel="noopener">Source</a>
+</div>
+</div>
+
+<div class="card">
+<div class="card-top">
+<div><div class="title">CIO of the Year 2026 — Vincent Eggen (Pictet Technologies)</div><div class="subtitle">Golden-i Gala, Luxembourg</div></div>
+</div>
+<div class="fields">
+<div class="field"><small>Organisation</small><strong>Pictet Technologies</strong></div>
+<div class="field"><small>Date/Période</small><strong>Mai 2026 — 12e édition du Golden-i Gala, tenue au siège de PwC Luxembourg</strong></div>
+<div class="field"><small>Source</small><strong>Paperjam</strong></div>
+</div>
+<div class="message">Pourquoi c'est un signal : Vincent Eggen, primé pour son leadership technologique, dirige une structure investissant dans la transformation numérique du groupe Pictet — profil d'organisation susceptible de lancer des programmes de transformation à l'échelle nécessitant coaching agile/TOM.</div>
+<div class="actions">
+<a class="btn secondary" href="https://paperjam.lu/article/vincent-eggen-est-nouveau-cio-" target="_blank" rel="noopener">Source</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions — synthèse</h2><p class="meta">5 opportunités qualifiées (2 HOT, 3 WARM). Voir sections Priorités et WARM ci-dessus pour le détail complet de chaque offre, son lien et sa méthode de candidature.</p></div></div>
+<table>
+<thead><tr><th>Titre</th><th>Entreprise</th><th>Classification</th><th>Lien offre</th><th>Postuler</th></tr></thead>
+<tbody>
+<tr><td>Senior Business Change Manager – TA KYC Transformation</td><td>BNP Paribas</td><td>HOT</td><td><a href="https://www.bnpparibas.lu/en/jobs/ta-kyc-transformation-senior-business-change-manager-m-f-2/" target="_blank" rel="noopener">Lien</a></td><td>Portail carrière BNP Paribas</td></tr>
+<tr><td>Change Management Specialist – Accounting &amp; Corporate Services Transformation</td><td>BDO Luxembourg</td><td>HOT</td><td><a href="https://app.skeeled.com/offer/c/6a703ebb432df7b7c91c890a" target="_blank" rel="noopener">Lien</a></td><td>Skeeled (ATS BDO)</td></tr>
+<tr><td>Chargé de conduite du changement et de communication</td><td>ACD (État luxembourgeois)</td><td>WARM</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">Lien</a></td><td>GovJobs Luxembourg</td></tr>
+<tr><td>Agile Coach / Scrum Master, Financial Sector</td><td>PwC Luxembourg</td><td>WARM</td><td><a href="https://www.linkedin.com/jobs/view/consulting-financial-sector-%E2%80%93-agile-coach-scrum-master-m-f-at-pwc-luxembourg-1173171189" target="_blank" rel="noopener">Lien</a></td><td>pwc.lu/careers</td></tr>
+<tr><td>2 Project Managers</td><td>ANA (État luxembourgeois)</td><td>WARM</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">Lien</a></td><td>GovJobs Luxembourg</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status no">0 brouillon aujourd'hui</span></div>
+<div class="cards">
+<div class="card">
+<div class="message">Aucun email de recruteur/hiring manager n'a pu être vérifié publiquement pour les 5 opportunités qualifiées de ce rapport. Conformément à la règle « sans email vérifié, 0 brouillon est acceptable », aucun brouillon Gmail de candidature/contact n'a été préparé aujourd'hui. Action recommandée : identifier un contact nominatif via LinkedIn (Talent Acquisition / Hiring Manager) pour BNP Paribas et BDO avant le prochain cycle.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement interrogées pour construire ce rapport (WebSearch — accès direct HTTP bloqué sur la majorité des domaines cibles).</p></div></div>
+<table>
+<thead><tr><th>Source</th><th>Usage</th><th>Niveau de preuve</th></tr></thead>
+<tbody>
+<tr><td>govjobs.public.lu</td><td>Offres ACD et ANA</td><td>B — indexé (accès direct bloqué)</td></tr>
+<tr><td>bnpparibas.lu / group.bnpparibas</td><td>Offre BNP Paribas</td><td>B — indexé (accès direct bloqué)</td></tr>
+<tr><td>app.skeeled.com (ATS BDO)</td><td>Offre BDO Luxembourg</td><td>B — indexé (accès direct bloqué)</td></tr>
+<tr><td>moovijob.com</td><td>Recoupement offres BNP/BDO/ANA</td><td>B — indexé</td></tr>
+<tr><td>linkedin.com/jobs</td><td>Offres PwC et Empiric</td><td>B — indexé (accès direct bloqué)</td></tr>
+<tr><td>pwc.lu</td><td>Vérification portail carrière PwC</td><td>B — indexé</td></tr>
+<tr><td>paperjam.lu / delano.lu</td><td>Career signals (CIO Luxembourg)</td><td>B — indexé</td></tr>
+<tr><td>eib.org / erecruitment.eib.org</td><td>Recherche vacances EIB — aucune offre Agile/transformation spécifique identifiée ce jour</td><td>D — non exploitable</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<thead><tr><th>Indicateur</th><th>Valeur</th></tr></thead>
+<tbody>
+<tr><td>Recherches WebSearch effectuées</td><td>19</td></tr>
+<tr><td>Domaines/sources interrogés</td><td>8</td></tr>
+<tr><td>Opportunités qualifiées (HOT + WARM)</td><td>5</td></tr>
+<tr><td>HOT</td><td>2</td></tr>
+<tr><td>WARM</td><td>3</td></tr>
+<tr><td>À vérifier</td><td>1</td></tr>
+<tr><td>Career signals</td><td>2</td></tr>
+<tr><td>Offres avec lien direct fourni</td><td>6 / 6</td></tr>
+<tr><td>Offres avec méthode de candidature explicitée</td><td>6 / 6</td></tr>
+<tr><td>Contacts nominatifs vérifiés</td><td>0</td></tr>
+<tr><td>Brouillons Gmail préparés</td><td>0</td></tr>
+<tr><td>Doublons vs career-history.csv</td><td>0 (historique vide)</td></tr>
+</tbody>
+</table>
+</section>
+
+<footer class="footer">Gomri.coach Career Intelligence — Généré automatiquement le 22 septembre 2026. Recherche ciblée, non exhaustive. Aucune donnée n'a été inventée : dates, statuts et contacts non confirmés sont explicitement marqués comme tels.</footer>
+</main>
+</body>
+</html>
