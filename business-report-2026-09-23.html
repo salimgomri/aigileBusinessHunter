@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 23 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#FEDB10;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:16px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:24px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card.empty{border-left:5px solid var(--line);color:var(--muted);font-style:italic}
+.card-top{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.title{font-size:17px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:34px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Sales Intelligence &amp; Business Development</div></div></div>
+<div class="badge">Business Hunter · 23/09/2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>0 HOT, 2 WARM, 2 À vérifier — 1 nouvelle mission Paris/IDF identifiée</h1>
+<p class="lede">Recherche ciblée sur Luxembourg (priorité), Bruxelles/Belgique, Grand Est, Paris/Île-de-France et remote Europe. Une nouvelle mission Coach Agile (Issy-les-Moulineaux) a été identifiée et un brouillon de candidature préparé. Le signal Vivid Resourcing (Bruxelles) se confirme via plusieurs plateformes indépendantes mais reste en attente de réponse (brouillon déjà envoyé hier) — aucune relance prématurée. Accès HTTP direct toujours bloqué : toutes les preuves sont de niveau B (indexé) sauf mention contraire. Aucune information n'a été inventée. Salim exerçant en indépendant (Founder AIgile), la règle d'exclusion « employeur actuel » ne s'applique à aucune organisation de ce jour.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles / Belgique</span><span class="pill">Grand Est</span><span class="pill">Paris / IDF</span><span class="pill">Remote Europe</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Qualité du jour</div>
+<div class="score">2/8</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>2</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>1</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour (HOT)</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards">
+<div class="card empty">Aucun signal HOT aujourd'hui. Les deux signaux WARM identifiés sont médiés par un intermédiaire/agence (décideur final non nommé) et/ou de fraîcheur incertaine — classés WARM par prudence, conformément à la règle « statut douteux → WARM/À VÉRIFIER ».</div>
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Besoin crédible, fit fort, mais timing, preuve ou décideur à confirmer.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Senior Agile Coach — Product &amp; Engineering Transformation</div>
+<div class="tags"><span class="tag">Mission freelance</span><span class="tag warn">Fraîcheur ~62 jours</span><span class="tag neutral">Client final masqué</span><span class="tag neutral">Suivi J+1</span></div></div>
+<div class="score-badge">WARM<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Localisation</small><strong>Sanem, Luxembourg (remote possible)</strong></div>
+<div class="field"><small>Plateforme / Intermédiaire</small><strong>free-work.com · publié par emagine Consulting SARL</strong></div>
+<div class="field"><small>TJM</small><strong>800–900 €/jour</strong></div>
+<div class="field"><small>Durée</small><strong>11 mois</strong></div>
+<div class="field"><small>Date de publication</small><strong>23/07/2026 (résultat indexé)</strong></div>
+<div class="field"><small>Statut</small><strong>Inchangé depuis le run du 22/09/2026 — non revérifiable en direct (accès HTTP bloqué)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Mission Senior Agile Coach ciblant la transformation du modèle opérationnel Product &amp; Engineering, toujours indexée aujourd'hui.</div>
+<div class="step"><b>Preuve</b>B — INDEXED (WebSearch, free-work.com, agence emagine Consulting SARL nommée). Aucune consultation directe possible.</div>
+<div class="step"><b>Why now</b>Mission publiée fin juillet 2026 (rollout d'un modèle opérationnel Product/Engineering avec KPIs) ; toujours indexée à J+62, sans confirmation de clôture.</div>
+<div class="step"><b>Décideur</b>Non nommé (client final masqué par l'intermédiaire) — probable Head of Product/Engineering ou Delivery Director côté client.</div>
+<div class="step"><b>Offre</b>Coaching Agile at Scale + facilitation Product↔Engineering + KPIs de collaboration.</div>
+</div>
+<div class="message">Analyse : aucune donnée nouvelle ce jour. Le dossier reste ouvert car indexé sans preuve de clôture, mais approche la limite « 31–90 jours = à vérifier ». Action : ne pas relancer de brouillon (aucun contact nommé/vérifié disponible côté client) ; revérifier au prochain run — si &gt;90 jours sans nouvelle preuve, reclasser en historique.</div>
+<div class="actions">
+<a class="btn" href="https://www.free-work.com/fr/tech-it/jobs/coach-agile">Voir la mission (page source)</a>
+<span class="btn secondary">Lien de candidature exact non identifié — utiliser la page source / contacter emagine Consulting SARL.</span>
+</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Scrum Master / SAFe Scrum Master — Bruxelles (campagne multi-missions Vivid Resourcing)</div>
+<div class="tags"><span class="tag">Mission freelance</span><span class="tag warn">Date non confirmée</span><span class="tag neutral">Contact déjà sollicité</span></div></div>
+<div class="score-badge">WARM<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Localisation</small><strong>Bruxelles (région) — hybride</strong></div>
+<div class="field"><small>Plateforme / Intermédiaire</small><strong>LinkedIn, ictjob.be, Totaljobs · Vivid Resourcing</strong></div>
+<div class="field"><small>TJM</small><strong>Non publié</strong></div>
+<div class="field"><small>Durée</small><strong>12 mois+ (plusieurs variantes publiées)</strong></div>
+<div class="field"><small>Date de publication</small><strong>Récemment indexé — date exacte non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Signal renforcé — une 2e mission distincte du même recruteur identifiée aujourd'hui</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Vivid Resourcing publie plusieurs missions Scrum Master/SAFe freelance à Bruxelles sur des comptes finaux différents : une mission retail (connue depuis le 22/09) et une nouvelle mission CRM/Customer Care pour une organisation logistique internationale, avec cérémonies Scrum, PI Planning et coordination CRM/IT/Data/Business/Operations.</div>
+<div class="step"><b>Preuve</b>B — INDEXED (LinkedIn pulse Aharon Michel, ictjob.be, Totaljobs — 3 sources indépendantes convergentes). Aucune page consultée directement.</div>
+<div class="step"><b>Why now</b>Volume de publications actives et récurrentes par le même recruteur, sur des clients finaux différents = campagne de recrutement freelance réelle et en cours sur ce créneau (SAFe/Scrum Master).</div>
+<div class="step"><b>Décideur</b>Clients finaux non nommés ; point de contact confirmé = Aharon Michel, recruteur Vivid Resourcing (email public vérifié).</div>
+<div class="step"><b>Offre</b>Scrum Master / coaching Agile — cérémonies, Product Owner, gouvernance backlog/Jira, coordination multi-équipes SAFe.</div>
+</div>
+<div class="message">Analyse : un brouillon de candidature a déjà été créé le 22/09/2026 pour ce recruteur (réf. r-2164151760178908824), toujours sans réponse à J+1. Conformément à la règle de non-duplication, aucun nouveau brouillon n'est créé aujourd'hui pour ce même contact. Action : relancer uniquement si aucune réponse d'ici le 27–29/09/2026 (J+5 à J+7), en mentionnant éventuellement la 2e mission (logistique/CRM) repérée aujourd'hui si pertinente à ce moment-là.</div>
+<div class="actions">
+<a class="btn" href="https://www.linkedin.com/pulse/agile-safe-scrum-master-brussels-belgium-freelance-aharon-michel">Voir la source (mission retail)</a>
+<a class="btn secondary" href="https://www.ictjob.be/en/job/vivid-resourcing-scrum-master/2-342336">Voir la source (mission CRM/logistique)</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées ou trop anciennes pour être qualifiées activement.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Trait d'Union Consulting — Mission Coach Agile Senior, Issy-les-Moulineaux</div>
+<div class="tags"><span class="tag neutral">Nouveau signal</span><span class="tag warn">Date non confirmée</span><span class="tag neutral">TJM/durée non publiés</span></div></div>
+<div class="score-badge">À VÉRIFIER<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Localisation</small><strong>Issy-les-Moulineaux (92), Paris / Île-de-France</strong></div>
+<div class="field"><small>Plateforme / Intermédiaire</small><strong>free-work.com · agence Trait d'Union Consulting</strong></div>
+<div class="field"><small>TJM</small><strong>Non confirmé directement (fourchette générale marché citée par des sources tierces, non spécifique à cette mission — non retenue)</strong></div>
+<div class="field"><small>Durée / démarrage</small><strong>Non publiés dans les résultats indexés</strong></div>
+<div class="field"><small>Date de publication</small><strong>Date non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>À confirmer — client final masqué par l'agence, un seul résultat indexé exploitable</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Signal</b>Mission « Coach Agile » senior, environnements complexes, maîtrise SAFe/Scrum/Kanban/Lean-DevOps, accompagnement de plusieurs équipes produit dans leur transformation agile.</div>
+<div class="step"><b>Preuve</b>B — INDEXED (WebSearch, free-work.com, agence Trait d'Union Consulting nommée). Accès direct bloqué, contenu non consulté en direct.</div>
+<div class="step"><b>Why now</b>Mission active indexée aujourd'hui sur free-work.com ; aucun élément de date ne permet de confirmer la fraîcheur exacte — traité comme signal à vérifier plutôt que comme fait établi.</div>
+<div class="step"><b>Décideur</b>Client final non nommé (masqué par l'agence). Contact confirmé côté agence : Trait d'Union Consulting.</div>
+<div class="step"><b>Offre</b>Coaching Agile senior multi-équipes produit (SAFe/Scrum/Kanban/Lean-DevOps), formation et suivi opérationnel.</div>
+</div>
+<div class="message">Analyse : classé À VÉRIFIER (source unique, date inconnue, décideur non confirmé, TJM/durée non publiés — plusieurs critères d'incertitude cumulés). Action : un brouillon de candidature a été préparé vers l'adresse générique publique de l'agence pour obtenir les détails manquants (client, TJM, durée) et manifester l'intérêt de Salim. Ne pas classer HOT tant que ces éléments ne sont pas confirmés.</div>
+<div class="actions">
+<a class="btn" href="https://www.free-work.com/fr/tech-it/autre/job-mission/coach-agile-266">Voir la mission (page source)</a>
+<a class="btn secondary" href="mailto:hello@tduconsulting.com">Contacter l'agence (adresse publique)</a>
+</div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Creos — nomination CIO et évolution de la gouvernance IT</div>
+<div class="tags"><span class="tag neutral">Signal &gt; 90 jours</span><span class="tag neutral">Reporté depuis le 22/09</span></div></div>
+<div class="score-badge">À VÉRIFIER<small>Preuve B</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Organisation</small><strong>Creos (gestionnaire de réseaux, Luxembourg)</strong></div>
+<div class="field"><small>Décideur identifié</small><strong>Laurent Pulinckx, CIO (nommé juillet 2025)</strong></div>
+<div class="field"><small>Source</small><strong>Paperjam / Delano (indexé)</strong></div>
+<div class="field"><small>Statut</small><strong>Aucune preuve d'activité 2026 trouvée aujourd'hui — signal conservé sans changement depuis le 22/09/2026</strong></div>
+</div>
+<div class="message">Analyse : revérifié ce jour, aucune nouvelle preuve d'activité 2026 (recrutement, appel d'offres, communication) trouvée. Statut inchangé : signal historique &gt; 90 jours, ne pas approcher sur cette seule base. Contexte complémentaire trouvé aujourd'hui (non qualifiant) : la Bourse de Luxembourg a nommé Maxime Aerts CIO en remplacement de L. Pulinckx (effectif 1er novembre) — confirme le contexte de succession IT mais n'ajoute pas de Why Now exploitable pour Creos.</div>
+<div class="actions">
+<a class="btn secondary" href="https://en.paperjam.lu/article/laurent-pulinckx-to-leave-luxembourg-stock-exchange-for-creos">Voir la source</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte marché — pas des prospects nommés, mais utiles pour l'approche et le contenu.</p></div></div>
+<div class="cards">
+<div class="card empty">
+<div class="title" style="color:var(--brand);font-style:normal">Moventum (Luxembourg) — nomination CIO Stefan Steil</div>
+<p style="margin:8px 0 0">Delano/Paperjam (indexé) : Stefan Steil nommé CIO de Moventum, annonce datée du 7 juillet 2025 — signal &gt; 90 jours, aucune preuve d'activité de transformation actuelle en 2026. Conservé comme contexte uniquement, non qualifié comme prospect actif ce jour.</p>
+</div>
+<div class="card empty">
+<div class="title" style="color:var(--brand);font-style:normal">Marché Luxembourg — « fatigue agile » (signal déjà reporté le 22/09/2026)</div>
+<p style="margin:8px 0 0">Article ITnation toujours indexé aujourd'hui (publication estimée février 2026, donc &gt; 90 jours) citant Natascha Tummeley (Fujitsu Luxembourg) sur les transformations agiles incomplètes. Aucun élément nouveau ce jour ; conservé comme contexte de marché pour l'approche et le contenu, pas comme prospect.</p>
+<p style="margin:8px 0 0"><a href="https://itnation.lu/news/remettre-la-transformation-agile-sur-de-bons-rails/">Voir la source</a></p>
+</div>
+<div class="card empty">Grand Est, Paris/Île-de-France (hors mission Trait d'Union ci-dessus) et Belgique (hors Bruxelles) : recherche ciblée effectuée (Malt, Free-Work, Collective.work, GetYourJob.pro) — uniquement des pages d'agrégateurs génériques ou profils freelances, sans mission ou organisation supplémentaire attribuable identifiée aujourd'hui. Aucune opportunité fabriquée pour combler ces zones.</div>
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions — où et comment postuler</h2><p class="meta">Chaque opportunité indique où la consulter et comment postuler ou contacter.</p></div></div>
+<table>
+<tr><th>Mission</th><th>Source</th><th>Lieu</th><th>TJM</th><th>Candidature</th></tr>
+<tr><td>Senior Agile Coach — Product &amp; Engineering (emagine Consulting SARL)</td><td><a href="https://www.free-work.com/fr/tech-it/jobs/coach-agile">free-work.com</a></td><td>Sanem, LU</td><td>800–900 €/j</td><td>Lien de candidature exact non identifié — passer par la page source / emagine Consulting SARL.</td></tr>
+<tr><td>Scrum Master / SAFe — Bruxelles (retail + nouvelle mission logistique/CRM)</td><td><a href="https://www.linkedin.com/pulse/agile-safe-scrum-master-brussels-belgium-freelance-aharon-michel">LinkedIn</a> / <a href="https://www.ictjob.be/en/job/vivid-resourcing-scrum-master/2-342336">ictjob.be</a> — Vivid Resourcing</td><td>Bruxelles, BE</td><td>Non publié</td><td>Déjà candidaté (brouillon 22/09, réf. r-2164151760178908824) — pas de nouvelle action avant J+5-7.</td></tr>
+<tr><td>Coach Agile Senior — multi-équipes produit (Trait d'Union Consulting)</td><td><a href="https://www.free-work.com/fr/tech-it/autre/job-mission/coach-agile-266">free-work.com</a></td><td>Issy-les-Moulineaux, FR</td><td>Non publié</td><td>Candidature via email agence : hello@tduconsulting.com (brouillon préparé aujourd'hui)</td></tr>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne envoyé</span></div>
+<div class="cards">
+<div class="card">
+<div class="card-top"><div class="title">Brouillon de candidature — Trait d'Union Consulting (Coach Agile, Issy-les-Moulineaux)</div><span class="status ok">Brouillon créé</span></div>
+<div class="fields">
+<div class="field"><small>Destinataire</small><strong>hello@tduconsulting.com</strong></div>
+<div class="field"><small>Objet</small><strong>Candidature — Coach Agile Senior (Issy-les-Moulineaux) — Salim Gomri</strong></div>
+<div class="field"><small>Statut</small><strong>Brouillon Gmail — non envoyé, à valider par Salim</strong></div>
+</div>
+</div>
+<div class="card">
+<div class="card-top"><div class="title">Vivid Resourcing (Bruxelles) — brouillon existant, aucune nouvelle action</div><span class="status ok">Brouillon du 22/09 conservé</span></div>
+<div class="fields">
+<div class="field"><small>Destinataire</small><strong>aharon.michel@vividresourcing.com</strong></div>
+<div class="field"><small>Statut</small><strong>Envoyé aucune réponse à J+1 — relance prévue au plus tôt le 27–29/09/2026</strong></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement interrogées (WebSearch — accès HTTP direct confirmé bloqué ce jour, y compris via WebFetch).</p></div></div>
+<table>
+<tr><th>Source</th><th>Requêtes</th><th>Résultat</th></tr>
+<tr><td>free-work.com</td><td>Agile Coach Luxembourg / Paris-IDF</td><td>1 mission connue confirmée toujours indexée (Sanem) + 1 nouvelle mission identifiée (Issy-les-Moulineaux, Trait d'Union Consulting)</td></tr>
+<tr><td>malt.fr</td><td>Agile Coach / Scrum Master Luxembourg, Strasbourg</td><td>Profils freelances génériques uniquement, aucune mission attribuable</td></tr>
+<tr><td>collective.work</td><td>Agile Coach / Scrum Master / SAFe Luxembourg</td><td>Profils freelances uniquement, aucune mission Luxembourg confirmée</td></tr>
+<tr><td>getyourjob.pro</td><td>Agile Coach / Scrum Master SAFe Luxembourg</td><td>Aucun résultat Luxembourg spécifique retourné</td></tr>
+<tr><td>paperjam.lu / delano.lu</td><td>new CIO/CTO, digital transformation Luxembourg</td><td>Creos (reporté, &gt; 90 jours) ; nouveau signal Moventum CIO identifié (&gt; 90 jours, non qualifiant)</td></tr>
+<tr><td>itnation.lu</td><td>Agile, transformation, SAFe Luxembourg</td><td>Signal marché « fatigue agile » toujours indexé (reporté du 22/09, &gt; 90 jours)</td></tr>
+<tr><td>ictjob.be / Totaljobs / LinkedIn (posts publics)</td><td>Scrum Master SAFe Brussels freelance</td><td>Campagne Vivid Resourcing confirmée sur 3 sources indépendantes ; 1 mission logistique/CRM supplémentaire identifiée</td></tr>
+<tr><td>ted.europa.eu</td><td>Luxembourg agile / transformation / change management 2026</td><td>Aucun résultat directement pertinent pour Salim</td></tr>
+<tr><td>WebFetch direct (free-work.com, vividresourcing.com, linkedin.com)</td><td>Vérification d'accès direct</td><td>EGRESS_BLOCKED confirmé — environnement WebSearch-only, comme documenté dans search-strategy.md</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Recherches WebSearch effectuées</td><td>~14</td></tr>
+<tr><td>Tentatives WebFetch (toutes bloquées)</td><td>4</td></tr>
+<tr><td>Sources interrogées</td><td>9 domaines/plateformes</td></tr>
+<tr><td>Prospects/missions HOT</td><td>0</td></tr>
+<tr><td>Prospects/missions WARM</td><td>2 (dont 1 signal renforcé)</td></tr>
+<tr><td>À vérifier</td><td>2 (1 nouveau, 1 reporté sans changement)</td></tr>
+<tr><td>Signaux de marché (non prospects)</td><td>3</td></tr>
+<tr><td>Nouveaux prospects qualifiés ce jour</td><td>1 (Trait d'Union Consulting)</td></tr>
+<tr><td>Contacts identifiés</td><td>2 (1 email personnel vérifié, 1 email d'agence publique)</td></tr>
+<tr><td>Brouillons Gmail créés</td><td>1 / 3 max</td></tr>
+<tr><td>Emails externes envoyés automatiquement</td><td>0</td></tr>
+<tr><td>Doublons évités vs prospects-history.csv</td><td>2 (emagine Sanem, Vivid Resourcing retail)</td></tr>
+</table>
+</section>
+
+<footer class="footer">AIgile Business Hunter — généré le 23/09/2026 · Système d'intelligence commerciale, pas un agrégateur d'annonces.</footer>
+</main>
+</body>
+</html>
