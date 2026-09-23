@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 23 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:16px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:34px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence — AIgile.lu</div></div></div>
+<div class="badge">Career Hunter · 23 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>4 opportunités qualifiées, 1 à vérifier, 0 brouillon envoyé</h1>
+<p class="lede">Recherche ciblée menée aujourd'hui sur les portails carrière Luxembourg / Bruxelles / Grand Est / Paris (GovJobs, portails carrière d'entreprises, agences spécialisées, LinkedIn, Indeed). L'accès direct aux pages est bloqué dans cet environnement : toutes les preuves ci-dessous sont de niveau B (résultats indexés WebSearch), jamais de niveau A. Aucun email professionnel vérifié n'a été trouvé aujourd'hui pour les contacts identifiés : 0 brouillon Gmail créé (candidatures à déposer via les portails officiels indiqués).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Transformation</span><span class="pill">Agile Coach</span><span class="pill">Senior PM</span><span class="pill">Recherche non exhaustive</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées (HOT+WARM)</div>
+<div class="score">4</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>3</strong></div>
+<div class="kpi"><small>WARM</small><strong>1</strong></div>
+<div class="kpi"><small>Contacts</small><strong>1</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour (HOT)</h2><p class="meta">Fit fort + preuve indexée sur le portail carrière officiel + action immédiate possible.</p></div></div>
+<div class="cards">
+
+<div class="card hot">
+<div class="card-top">
+<div>
+<div class="title">Operations Transformation Manager – International Securities Issuance (f/m/d)</div>
+<div class="tags"><span class="tag">Luxembourg</span><span class="tag neutral">Transformation</span><span class="tag neutral">Post-trade / Titres</span></div>
+</div>
+<div class="score-badge">HOT<small>Fit fort</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>Clearstream Banking S.A. (Deutsche Börse Group)</strong></div>
+<div class="field"><small>Localisation</small><strong>Luxembourg</strong></div>
+<div class="field"><small>Source</small><strong>Portail carrière officiel Deutsche Börse Group</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Poste listé sur careers.deutsche-boerse.com, repéré comme « NEW » dans un résultat indexé</div>
+<div class="step"><b>Preuve</b>B / INDEXED — résultat WebSearch pointant vers le domaine officiel ; accès direct bloqué (proxy réseau)</div>
+<div class="step"><b>Fraîcheur</b>Date de publication non confirmée — marqueur « NEW » observé, à valider</div>
+<div class="step"><b>Fit</b>Fort : rôle Transformation Manager, opérations, secteur financier, Luxembourg — cohérent avec TOM, transformation, delivery, coaching de managers</div>
+<div class="step"><b>Écarts</b>Connaissance métier « International Securities Issuance » (post-trade) non confirmée dans le profil de Salim — à clarifier en entretien</div>
+<div class="step"><b>Contact</b>Aucun recruteur/hiring manager nommé identifié publiquement pour ce poste précis</div>
+<div class="step"><b>Postuler</b>Via le bouton de candidature sur la page officielle de l'offre</div>
+<div class="step"><b>Action</b>Vérifier la page directement puis candidater via le portail</div>
+</div>
+<div class="message">Points forts : intitulé « Transformation Manager » aligné avec le positionnement de Salim ; employeur majeur de la place financière luxembourgeoise ; équipe Transformation Enablement de Clearstream visiblement en expansion (voir Signaux).</div>
+<div class="actions">
+<a class="btn" href="https://careers.deutsche-boerse.com/offer/operations-transformation-manager-i/b95e98fe-379e-42af-89b7-369adf9054e5" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://careers.deutsche-boerse.com/offer/operations-transformation-manager-i/b95e98fe-379e-42af-89b7-369adf9054e5" target="_blank" rel="noopener">POSTULER</a>
+<span class="btn secondary">CONTACT NON CONFIRMÉ</span>
+</div>
+</div>
+
+<div class="card hot">
+<div class="card-top">
+<div>
+<div class="title">Manager Financial Services Industry (M/F/X) — Banking & Financial Transformation</div>
+<div class="tags"><span class="tag">Luxembourg</span><span class="tag neutral">Conseil</span><span class="tag neutral">Transformation bancaire</span></div>
+</div>
+<div class="score-badge">HOT<small>Fit fort</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>BearingPoint Luxembourg</strong></div>
+<div class="field"><small>Localisation</small><strong>Luxembourg</strong></div>
+<div class="field"><small>Source</small><strong>Portail carrière officiel BearingPoint Luxembourg</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Listée parmi les « Current job openings » du portail carrière BearingPoint Luxembourg (réf. 4720923)</div>
+<div class="step"><b>Preuve</b>B / INDEXED — un résultat indexé secondaire évoque une publication autour du 13 mai 2026, non confirmée directement</div>
+<div class="step"><b>Fraîcheur</b>Si la date évoquée est exacte : plus de 90 jours → à vérifier / ancienne, mais toujours listée comme ouverte au moment de la recherche</div>
+<div class="step"><b>Fit</b>Fort : Manager en transformation bancaire/financière, cabinet de conseil positionné coaching de managers et TOM — proche du positionnement de Salim</div>
+<div class="step"><b>Écarts</b>Poste en cabinet de conseil (rythme, structure de progression) à comparer avec le positionnement plutôt coach/freelance de Salim</div>
+<div class="step"><b>Contact</b>Aucun recruteur nommé identifié pour ce poste précis ; un poste générique « Talent Acquisition Specialist » existe chez BearingPoint LU (pas de nom individuel confirmé)</div>
+<div class="step"><b>Postuler</b>Via le bouton de candidature sur la page officielle de l'offre</div>
+<div class="step"><b>Action</b>Vérifier le statut réel de l'offre puis candidater via le portail</div>
+</div>
+<div class="message">Points forts : BearingPoint LU compte ~70 consultants Financial Services (régulation, operating model, opérations, technologie, data) — écosystème directement pertinent pour l'expertise TOM et transformation de Salim.</div>
+<div class="actions">
+<a class="btn" href="https://carrieresluxembourg.bearingpoint.com/jobs/4720923-manager-financial-services-industry-m-f-x" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://carrieresluxembourg.bearingpoint.com/jobs/4720923-manager-financial-services-industry-m-f-x" target="_blank" rel="noopener">POSTULER</a>
+<span class="btn secondary">CONTACT NON CONFIRMÉ</span>
+</div>
+</div>
+
+<div class="card hot">
+<div class="card-top">
+<div>
+<div class="title">Senior Scrum Master / Agile Coach — Client bancaire</div>
+<div class="tags"><span class="tag">Bruxelles</span><span class="tag neutral">Agile Coach</span><span class="tag neutral">Secteur bancaire</span></div>
+</div>
+<div class="score-badge">HOT<small>Fit fort</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise / Agence</small><strong>Salt (agence de recrutement) — client bancaire non nommé</strong></div>
+<div class="field"><small>Localisation</small><strong>Bruxelles, Belgique (hybride)</strong></div>
+<div class="field"><small>Source</small><strong>Portail officiel welovesalt.com</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>« Senior Scrum Master / Agile Coach (Belgium-Based) » — également indexée sous une variante « Banking Client - Brussels »</div>
+<div class="step"><b>Preuve</b>B / INDEXED — résultat WebSearch pointant vers le domaine officiel de l'agence ; accès direct bloqué</div>
+<div class="step"><b>Fraîcheur</b>Date de publication non confirmée</div>
+<div class="step"><b>Fit</b>Fort : correspondance directe de titre (Agile Coach / Scrum Master senior), secteur bancaire, format hybride</div>
+<div class="step"><b>Écarts</b>Mission intermédiée par une agence — nature du contrat (freelance / intérim / salarié) non confirmée</div>
+<div class="step"><b>Contact</b>Consultant Salt en charge non identifié nommément pour cette offre précise</div>
+<div class="step"><b>Postuler</b>Via le bouton de candidature sur la page officielle de l'offre</div>
+<div class="step"><b>Action</b>Candidater via le portail puis clarifier les conditions contractuelles avec le consultant Salt</div>
+</div>
+<div class="message">Points forts : TJM/rémunération indiqué dans un résultat indexé (fourchette indicative 500–1000 €/jour, à confirmer directement) ; titre de poste identique à la spécialité de Salim.</div>
+<div class="actions">
+<a class="btn" href="https://welovesalt.com/jobs/senior-scrum-master-agile-coach-belgium-based-711246" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://welovesalt.com/jobs/senior-scrum-master-agile-coach-belgium-based-711246" target="_blank" rel="noopener">POSTULER</a>
+<span class="btn secondary">CONTACT NON CONFIRMÉ</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunité crédible avec une incertitude importante à lever avant candidature.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">2 Project Managers (m/f) — réf. E00044054 / F00044055 / M00044056</div>
+<div class="tags"><span class="tag warn">Diplôme requis à vérifier</span><span class="tag neutral">Secteur public</span><span class="tag neutral">Luxembourg</span></div>
+</div>
+<div class="score-badge">WARM<small>Fit moyen</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>Administration de la Navigation Aérienne (ANA) — GovJobs Luxembourg</strong></div>
+<div class="field"><small>Localisation</small><strong>Findel, Luxembourg</strong></div>
+<div class="field"><small>Source</small><strong>Portail officiel govjobs.public.lu</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Sous l'autorité du PMO, cohérence des projets aux niveaux opérationnel, réglementaire, budgétaire et organisationnel</div>
+<div class="step"><b>Preuve</b>B / INDEXED — page officielle govjobs.public.lu identifiée ; accès direct bloqué</div>
+<div class="step"><b>Fraîcheur</b>CONFIRMÉE : date visible dans l'URL et le titre = 28 juillet 2026 (~57 jours avant ce rapport — tranche 31–90 jours = à vérifier)</div>
+<div class="step"><b>Fit</b>Moyen : rôle Project Manager / gouvernance PMO cohérent, mais secteur navigation aérienne, hors cœur de cible Agile/transformation</div>
+<div class="step"><b>Écarts</b>Diplôme requis en ingénierie / aviation / systèmes d'information / gestion — non confirmé dans le profil de Salim ; recrutement fonction publique (procédure statutaire, épreuves)</div>
+<div class="step"><b>Contact</b>Statut non confirmé de façon fiable — aucun contact nommé retenu (une mention secondaire non re-confirmée a été écartée)</div>
+<div class="step"><b>Postuler</b>Via la page « Postuler » GovJobs elle-même</div>
+<div class="step"><b>Action</b>Vérifier l'équivalence de diplôme par expérience et le délai de candidature avant tout dépôt</div>
+</div>
+<div class="message">Écart principal : exigence de diplôme non confirmée comme compatible avec le profil de Salim. À traiter en priorité avant toute candidature.</div>
+<div class="actions">
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">POSTULER</a>
+<span class="btn secondary">CONTACT NON CONFIRMÉ</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées — ne compte pas comme opportunité qualifiée.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Head of Transformation — Project Manager</div>
+<div class="tags"><span class="tag warn">Date ancienne (OLD)</span><span class="tag neutral">Luxembourg</span><span class="tag neutral">Banque privée</span></div>
+</div>
+<div class="score-badge">VÉRIF.<small>Fit fort / preuve fragile</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>Banque Lombard Odier & Cie SA (Lombard Odier Group)</strong></div>
+<div class="field"><small>Localisation</small><strong>Luxembourg</strong></div>
+<div class="field"><small>Source</small><strong>jobs.ch (également indexée sur Talentify, Hirebase)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer — offre ancienne selon les métadonnées</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Offre</b>Program leadership, change management, team & stakeholder management</div>
+<div class="step"><b>Preuve</b>B / INDEXED — accès direct bloqué</div>
+<div class="step"><b>Fraîcheur</b>OLD : métadonnées jobs.ch indiquent une publication au 27 août 2024 (plus de 2 ans) → ne peut pas être HOT/WARM en l'état, malgré une réindexation visible sur plusieurs agrégateurs en 2026</div>
+<div class="step"><b>Fit</b>Très fort sur le papier (titre « Head of Transformation », coaching, banque privée Luxembourg) mais fiabilité de l'offre incertaine</div>
+<div class="step"><b>Écarts</b>Impossible de confirmer si le poste est toujours vacant ou s'il s'agit d'un résidu d'indexation</div>
+<div class="step"><b>Contact</b>Vincent Renaud, « Head of Transformation Europe – Project Manager » chez Lombard Odier Group (Luxembourg), profil LinkedIn public identifié — probable titulaire actuel du rôle ou responsable direct de l'équipe Transformation</div>
+<div class="step"><b>Postuler</b>Lien de candidature exact non re-confirmé aujourd'hui — voir lien de l'offre ci-dessous</div>
+<div class="step"><b>Action</b>Vérifier le statut réel avant toute candidature ; privilégier une approche réseau via LinkedIn plutôt qu'une candidature sur une offre potentiellement obsolète</div>
+</div>
+<div class="message">Signal réseau utile : Vincent Renaud occupe un titre quasi identique à l'offre affichée, ce qui suggère soit un poste déjà pourvu, soit un rôle voisin dans la même équipe Transformation Europe.</div>
+<div class="actions">
+<a class="btn" href="https://www.jobs.ch/en/vacancies/detail/61e0e125-9510-49d4-8d4a-87f78a7c92bd/" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn secondary" href="https://lu.linkedin.com/in/vincent-renaud-73a62b42" target="_blank" rel="noopener">CONTACTER (LinkedIn)</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte concrets pouvant ouvrir de futures opportunités.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Clearstream (Deutsche Börse Group) — expansion de l'équipe Transformation Enablement</div>
+<div class="tags"><span class="tag neutral">Luxembourg</span><span class="tag neutral">Signal organisationnel</span></div>
+</div>
+</div>
+<div class="fields">
+<div class="field"><small>Organisation</small><strong>Clearstream Banking S.A. / Deutsche Börse Group</strong></div>
+<div class="field"><small>Période</small><strong>Septembre 2026 (au moment de la recherche)</strong></div>
+<div class="field"><small>Source</small><strong>careers.deutsche-boerse.com (résultats indexés)</strong></div>
+</div>
+<div class="message">Au moins 3 postes distincts liés à la transformation apparaissent simultanément sur le portail carrière officiel de Deutsche Börse Group pour le site de Luxembourg : « Operations Transformation Manager – International Securities Issuance », « Strategy & Transformation Expert » et deux postes de stage (« Intern – Transformation Enablement », « Intern – Transformation Office »). Cette concentration de postes transformation sur un même site en même temps est un signal organisationnel concret d'un effort de transformation en cours chez Clearstream Luxembourg — à surveiller pour de futures ouvertures Agile/coaching/delivery.</div>
+<div class="actions">
+<a class="btn secondary" href="https://careers.deutsche-boerse.com/offer/strategy-transformation-expert-f-m-/9cffa771-3602-4cbc-b389-2ff009d39d60" target="_blank" rel="noopener">VOIR : Strategy & Transformation Expert</a>
+<a class="btn secondary" href="https://careers.deutsche-boerse.com/offer/intern-transformation-enablement-f-/d4d4c6ab-0d4f-4642-85aa-3ab7c402f415" target="_blank" rel="noopener">VOIR : Intern Transformation Enablement</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions — synthèse candidature</h2><p class="meta">Où consulter l'offre, où et comment postuler, pour chaque opportunité HOT et WARM.</p></div></div>
+<table>
+<tr><th>Opportunité</th><th>Entreprise</th><th>Où postuler</th><th>Comment postuler</th></tr>
+<tr><td>Operations Transformation Manager</td><td>Clearstream / Deutsche Börse Group</td><td><a href="https://careers.deutsche-boerse.com/offer/operations-transformation-manager-i/b95e98fe-379e-42af-89b7-369adf9054e5" target="_blank" rel="noopener">Portail carrière Deutsche Börse Group</a></td><td>Bouton de candidature directement sur la page de l'offre (compte candidat à créer)</td></tr>
+<tr><td>Manager Financial Services Industry</td><td>BearingPoint Luxembourg</td><td><a href="https://carrieresluxembourg.bearingpoint.com/jobs/4720923-manager-financial-services-industry-m-f-x" target="_blank" rel="noopener">Portail carrière BearingPoint Luxembourg</a></td><td>Bouton de candidature directement sur la page de l'offre</td></tr>
+<tr><td>Senior Scrum Master / Agile Coach</td><td>Salt (client bancaire, Bruxelles)</td><td><a href="https://welovesalt.com/jobs/senior-scrum-master-agile-coach-belgium-based-711246" target="_blank" rel="noopener">Portail welovesalt.com</a></td><td>Bouton de candidature sur la page de l'offre ; l'agence recontacte ensuite</td></tr>
+<tr><td>2 Project Managers (ANA)</td><td>GovJobs Luxembourg</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">govjobs.public.lu</a></td><td>Dossier de candidature via la procédure fonction publique GovJobs (page « Postuler »)</td></tr>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status no">0 brouillon créé</span></div>
+<div class="cards">
+<div class="card verify">
+<div class="card-top"><div><div class="title">Aucun brouillon Gmail créé aujourd'hui</div></div></div>
+<div class="message">Règle appliquée : ne jamais deviner une adresse email. Aucune adresse email professionnelle vérifiée n'a été trouvée aujourd'hui pour un contact pertinent (recruteur ou hiring manager). Le seul contact nommé identifié — Vincent Renaud (Lombard Odier) — dispose d'un profil LinkedIn public mais d'aucune adresse email confirmée par une source fiable ; les services d'estimation d'email (ex. RocketReach) devinent les adresses et ne constituent pas une preuve suffisante, ils n'ont donc pas été utilisés. Toutes les autres opportunités du jour se candidatent via un portail carrière en ligne (bouton « Postuler »), sans adresse email de contact publiée. Action recommandée : approche LinkedIn directe pour Vincent Renaud plutôt qu'un email.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement interrogées via WebSearch pour construire ce rapport (résultats indexés, niveau de preuve B).</p></div></div>
+<table>
+<tr><th>Source</th><th>Usage</th><th>Résultats exploités</th></tr>
+<tr><td>govjobs.public.lu</td><td>Recherche titre/mot-clé (Priorité 1)</td><td>1 offre WARM retenue (E00044054)</td></tr>
+<tr><td>careers.deutsche-boerse.com</td><td>Recherche titre/mot-clé + signal organisationnel</td><td>1 offre HOT + 2 signaux transformation retenus</td></tr>
+<tr><td>carrieresluxembourg.bearingpoint.com</td><td>Recherche mot-clé transformation bancaire</td><td>1 offre HOT retenue</td></tr>
+<tr><td>welovesalt.com</td><td>Recherche titre Agile Coach / Scrum Master Bruxelles</td><td>1 offre HOT retenue</td></tr>
+<tr><td>jobs.ch / Talentify / Hirebase</td><td>Recherche Head of Transformation Luxembourg</td><td>1 opportunité À VÉRIFIER retenue (date ancienne)</td></tr>
+<tr><td>LinkedIn (profils publics)</td><td>Identification de contact</td><td>1 contact nommé retenu (Vincent Renaud)</td></tr>
+<tr><td>Indeed, Glassdoor, LinkedIn Jobs, StepStone, Jobat, Malt, Freelance-Informatique</td><td>Recherche de contexte marché (niveaux 2–3 de la stratégie)</td><td>Contexte marché uniquement — aucune offre individuelle qualifiée n'en est directement issue</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume — recherche ciblée, non exhaustive.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Requêtes WebSearch exécutées</td><td>~20</td></tr>
+<tr><td>Opportunités HOT</td><td>3</td></tr>
+<tr><td>Opportunités WARM</td><td>1</td></tr>
+<tr><td>Opportunités À VÉRIFIER (non qualifiées)</td><td>1</td></tr>
+<tr><td>Signaux de contexte</td><td>1</td></tr>
+<tr><td>Contacts nommés identifiés</td><td>1 (Vincent Renaud, Lombard Odier)</td></tr>
+<tr><td>Brouillons Gmail créés</td><td>0 / 3 (aucun email vérifié)</td></tr>
+<tr><td>Rapport interne envoyé à salimdulux@gmail.com</td><td>Voir statut d'envoi ci-dessous</td></tr>
+<tr><td>Accès direct aux pages (WebFetch)</td><td>Bloqué par le proxy réseau — 4 tentatives, 4 échecs EGRESS_BLOCKED ; toutes les preuves du jour sont de niveau B</td></tr>
+<tr><td>Entrées dans career-history.csv</td><td>Fichier vide au départ ; 5 lignes ajoutées ce jour</td></tr>
+</table>
+</section>
+
+<footer class="footer">AIgile — aigile.lu · Gomri.coach Career Hunter · Rapport généré automatiquement à partir d'une recherche ciblée, non exhaustive · 23 septembre 2026</footer>
+</main>
+</body>
+</html>
