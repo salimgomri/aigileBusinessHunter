@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 24/09/2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:84px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand);font-size:11px}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700;font-size:13px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:center}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.noapply{font-size:12px;color:var(--muted);font-weight:700}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:34px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence — AIgile</div></div></div>
+<div class="badge">Career Hunter · 24/09/2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>0 HOT · 2 WARM · 3 à vérifier</h1>
+<p class="lede">Recherche ciblée Luxembourg / Bruxelles / Grand Est / Paris sur les rôles Agile Coach, Transformation, Change, Program/Project/Delivery Management. Aucune offre ne réunit aujourd'hui fraîcheur confirmée + preuve forte + statut actif confirmé simultanément : les deux meilleures pistes (GovJobs Luxembourg) sont classées WARM, trois autres pistes crédibles nécessitent une vérification directe avant action. Aucun email vérifié n'a été trouvé aujourd'hui → 0 brouillon Gmail candidat/contact préparé (conforme à la règle « sans email vérifié, 0 brouillon est acceptable »).</p>
+<div class="pills">
+<span class="pill">Luxembourg (priorité #1)</span>
+<span class="pill">2 sources gouvernementales exploitées</span>
+<span class="pill">1 source secondaire (agrégateur)</span>
+<span class="pill">0 email vérifié</span>
+<span class="pill">Historique : 0 doublon (premier run)</span>
+</div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées (HOT+WARM)</div>
+<div class="score">2</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards">
+<div class="card verify">
+<div class="card-top"><div><div class="title">Aucune opportunité HOT aujourd'hui</div></div></div>
+<div class="message">ANALYSE : aucune offre trouvée ce jour ne cumule à la fois une preuve forte (niveau A/B solide), une fraîcheur confirmée (≤30 jours ou statut actif prouvé) et une action immédiate sans vérification préalable. Conformément à la règle « ne jamais remplir artificiellement », la section HOT reste vide plutôt que de sur-qualifier une piste incertaine. Les 2 meilleures pistes du jour sont classées WARM ci-dessous.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter (fraîcheur / statut).</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">2 Project Managers (m/f) — Administration de la Navigation Aérienne (ANA)</div>
+<div class="tags"><span class="tag">Findel, Luxembourg</span><span class="tag neutral">Preuve B — indexée</span><span class="tag warn">Statut à confirmer</span></div>
+</div>
+<div class="score-badge">FIT FORT<small>PM / PMO</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>govjobs.public.lu (portail officiel Fonction publique)</strong></div>
+<div class="field"><small>Date</small><strong>Publiée le 28/07/2026 (≈ 58 jours)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer — date limite non visible dans l'extrait indexé</strong></div>
+<div class="field"><small>Contact</small><strong>RH centralisée GovJobs / ANA — aucun nom identifié</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Preuve</b>Résultat indexé pointant directement vers la page govjobs.public.lu (réf. E00044054/F00044055/M00044056), reprise identique sur moovijob.com.</div>
+<div class="step"><b>Fit</b>2 postes de Project Manager sous l'autorité du PMO, cohérence opérationnelle/réglementaire/budgétaire/organisationnelle — correspond directement à l'expérience PM/PMO/gouvernance de Salim.</div>
+<div class="step"><b>Écarts</b>Aucune mention explicite d'Agile/Scrum dans l'extrait consulté ; filière « fonctionnaire » pouvant impliquer un examen d'admission et des conditions de nationalité/langues à vérifier.</div>
+<div class="step"><b>Contact</b>Pas de recruteur nommé identifié ; passage obligé par le portail centralisé GovJobs.</div>
+<div class="step"><b>Action</b>Ouvrir la page complète, vérifier la date limite et les conditions filière fonctionnaire/employé avant de candidater.</div>
+</div>
+<div class="message">OÙ POSTULER : directement sur le portail GovJobs. COMMENT POSTULER : bouton « Postuler » présent sur la page officielle (candidature en ligne via le compte GovJobs).</div>
+<div class="actions">
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">POSTULER — portail GovJobs</a>
+</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div>
+<div class="title">Senior Business Analyst (m/f) — Administration publique luxembourgeoise</div>
+<div class="tags"><span class="tag">Luxembourg</span><span class="tag neutral">Preuve B — indexée</span><span class="tag warn">Statut à confirmer</span></div>
+</div>
+<div class="score-badge">FIT MOYEN<small>Transformation</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>govjobs.public.lu (portail officiel Fonction publique)</strong></div>
+<div class="field"><small>Date</small><strong>Publiée le 04-05/08/2026 (≈ 50 jours)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>RH centralisée GovJobs — administration non précisée dans l'extrait</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Preuve</b>Résultat indexé govjobs.public.lu, réf. E00044257, décrivant un rôle stratégique de transformation digitale « de la conception à la production » pour une grande administration.</div>
+<div class="step"><b>Fit</b>Transformation digitale, rôle stratégique — aligné avec l'expertise TOM / transformation organisationnelle de Salim, mais le titre exact (« Business Analyst ») ne correspond pas directement aux intitulés cibles.</div>
+<div class="step"><b>Écarts</b>Écart de titre (BA vs Agile Coach/PM) ; niveau de séniorité réel du grade fonction publique non comparé à 20+ ans d'expérience.</div>
+<div class="step"><b>Contact</b>Aucun contact nommé identifié.</div>
+<div class="step"><b>Action</b>Lire l'offre complète pour confirmer le périmètre réel (gouvernance transformation vs analyse fonctionnelle pure) avant de candidater.</div>
+</div>
+<div class="message">OÙ POSTULER : directement sur le portail GovJobs. COMMENT POSTULER : bouton « Postuler » sur la page officielle.</div>
+<div class="actions">
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank" rel="noopener">POSTULER — portail GovJobs</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées (fraîcheur, statut ou source secondaire).</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Chargé de conduite du changement et de communication (m/f) — Fonction publique luxembourgeoise</div>
+<div class="tags"><span class="tag neutral">Luxembourg</span><span class="tag neutral">Preuve B — indexée</span><span class="tag warn">Offre ancienne (&gt;90 jours)</span></div>
+</div>
+<div class="score-badge">FIT FORT<small>Change/Agile</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>govjobs.public.lu</strong></div>
+<div class="field"><small>Date</small><strong>Publiée le 27/05/2026 (≈ 120 jours)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer — offre ancienne, non éliminée automatiquement</strong></div>
+<div class="field"><small>Contact</small><strong>RH centralisée GovJobs</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Preuve</b>Réf. E00042694/F00042695/M00042696, extrait mentionnant explicitement une expérience en méthodologie Agile et Kanban requise.</div>
+<div class="step"><b>Fit</b>Correspondance directe avec l'expertise Change Management + Agile/Kanban de Salim — l'un des meilleurs fits de contenu du jour.</div>
+<div class="step"><b>Écarts</b>Publication vieille de ~120 jours (>90 jours) : selon la règle fraîcheur, ne peut pas être HOT et doit être vérifiée avant toute action, poste probablement déjà pourvu ou en phase finale.</div>
+<div class="step"><b>Contact</b>Aucun contact nommé identifié.</div>
+<div class="step"><b>Action</b>Vérifier directement sur govjobs.public.lu si l'offre est toujours listée comme ouverte avant d'investir du temps.</div>
+</div>
+<div class="message">OÙ POSTULER : portail GovJobs, si l'offre est encore active. COMMENT POSTULER : bouton « Postuler » sur la page officielle.</div>
+<div class="actions">
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<span class="noapply">Statut actuel à confirmer avant candidature</span>
+</div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Senior Project Portfolio Manager (M/F) — Banque Internationale à Luxembourg (BIL)</div>
+<div class="tags"><span class="tag neutral">Luxembourg</span><span class="tag neutral">Preuve B — indexée (via agrégateur)</span><span class="tag warn">Fraîcheur incertaine/contradictoire</span></div>
+</div>
+<div class="score-badge">FIT FORT<small>Senior PM banque</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>moovijob.com (miroir de l'offre carrières BIL)</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée — métadonnée contradictoire (repérée « 30/05/2024 » sur un extrait) alors que l'offre ressort dans une recherche de septembre 2026</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun recruteur BIL nommé confirmé pour ce poste précis</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Preuve</b>Offre décrivant un rôle au sein de l'équipe Strategic Project & Portfolio Management (SPPM), gestion du portefeuille de projets de la banque, JIRA cité comme atout.</div>
+<div class="step"><b>Fit</b>Très bon fit théorique : Senior PM/PMO, secteur bancaire Luxembourg (zone prioritaire), outils JIRA/Confluence maîtrisés par Salim.</div>
+<div class="step"><b>Écarts</b>Incertitude de fraîcheur non résolue : possible annonce évergreen/vivier plutôt qu'un poste réellement ouvert aujourd'hui — à ne pas présenter comme active sans vérification directe.</div>
+<div class="step"><b>Contact</b>Recherche LinkedIn de profils Talent Acquisition BIL n'a pas permis de confirmer un contact nommé rattaché à cette annonce précise.</div>
+<div class="step"><b>Action</b>Vérifier le statut directement sur le site carrières BIL avant tout envoi de candidature.</div>
+</div>
+<div class="message">OÙ POSTULER : portail moovijob / carrières BIL. COMMENT POSTULER : lien de candidature exact non identifié au-delà du portail moovijob — vérifier sur le site carrières officiel de BIL.</div>
+<div class="actions">
+<a class="btn" href="https://en.moovijob.com/job-offers/banque-internationale-a-luxembourg-bil/senior-project-portfolio-manager-mf-e31f2" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<span class="noapply">Lien de candidature exact non identifié</span>
+</div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div>
+<div class="title">Agile Coach — Empiric (agence de recrutement technologie/transformation)</div>
+<div class="tags"><span class="tag neutral">Luxembourg</span><span class="tag neutral">Preuve B — indexée</span><span class="tag warn">Date inconnue / client final non identifié</span></div>
+</div>
+<div class="score-badge">FIT INCERTAIN<small>Titre exact</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>LinkedIn Jobs (lu.linkedin.com)</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Contact</small><strong>Empiric — agence de recrutement (nom du recruteur non confirmé)</strong></div>
+</div>
+<div class="chain">
+<div class="step"><b>Preuve</b>Annonce LinkedIn publiée par Empiric, société de recrutement spécialisée technologie/transformation (EMEA + US), agissant probablement pour un client non identifié.</div>
+<div class="step"><b>Fit</b>Intitulé exact « Agile Coach » mais employeur final, séniorité et périmètre de mission inconnus.</div>
+<div class="step"><b>Écarts</b>Écart majeur d'information : client final, séniorité et rémunération non communiqués dans l'extrait indexé.</div>
+<div class="step"><b>Contact</b>Aucun recruteur Empiric nommé confirmé.</div>
+<div class="step"><b>Action</b>Consulter l'annonce LinkedIn complète pour identifier le client final avant de décider d'un contact.</div>
+</div>
+<div class="message">OÙ POSTULER : LinkedIn Jobs. COMMENT POSTULER : bouton « Postuler »/« Easy Apply » LinkedIn si disponible sur la page.</div>
+<div class="actions">
+<a class="btn" href="https://lu.linkedin.com/jobs/view/agile-coach-at-empiric-4049903905" target="_blank" rel="noopener">VOIR L'OFFRE</a>
+<span class="noapply">Lien de candidature exact non identifié au-delà de LinkedIn Jobs</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte concrets pouvant ouvrir de futures opportunités — ce ne sont pas des offres.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">Réforme du parcours de recrutement de la Fonction publique luxembourgeoise</div></div></div>
+<div class="fields">
+<div class="field"><small>Date</small><strong>15/09/2026</strong></div>
+<div class="field"><small>Organisation</small><strong>Gouvernement luxembourgeois / GovJobs</strong></div>
+</div>
+<div class="message">FAIT : à partir du 15/09/2026, tous les candidats à la fonction publique luxembourgeoise suivent désormais le même parcours de recrutement, présenté comme plus flexible. ANALYSE : ce changement de process peut faciliter l'accès aux postes PM/PMO/transformation publiés sur GovJobs (dont les 2 offres WARM ci-dessus) — à surveiller sur les prochains cycles de publication.</div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/actualites/2026/reforme-recrutement-dans-la-fonction-publique.html" target="_blank" rel="noopener">SOURCE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">CTIE — constitution d'une équipe « agile et multilingue » pour la transformation numérique de l'État</div></div></div>
+<div class="fields">
+<div class="field"><small>Date</small><strong>Période non confirmée — page carrières active en continu</strong></div>
+<div class="field"><small>Organisation</small><strong>Centre des technologies de l'information de l'État (CTIE)</strong></div>
+</div>
+<div class="message">FAIT : le CTIE communique sur la construction d'une équipe agile et multilingue pour équiper l'administration luxembourgeoise d'outils numériques modernes. ANALYSE : signal de demande continue de profils agiles/transformation côté secteur public IT — pertinent à surveiller pour de futures offres PM/Agile Coach, sans qu'une offre précise et datée ne soit disponible aujourd'hui.</div>
+<div class="actions"><a class="btn secondary" href="https://ctie.gouvernement.lu/fr/offres-emploi.html" target="_blank" rel="noopener">SOURCE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">PwC Luxembourg — annonce récurrente Agile Coach / Scrum Master (Advisory, secteur financier)</div></div></div>
+<div class="fields">
+<div class="field"><small>Date</small><strong>Date de publication non confirmée — identifiant d'annonce ancien</strong></div>
+<div class="field"><small>Organisation</small><strong>PwC Luxembourg (Advisory)</strong></div>
+</div>
+<div class="message">FAIT : PwC Luxembourg Advisory recherche en continu des profils Agile Coach / Scrum Master pour ses clients du secteur financier (≥3 ans d'expérience, EN/FR/DE). ANALYSE (incertitude affichée) : l'identifiant LinkedIn de cette annonce est nettement plus ancien que celui d'annonces confirmées de septembre 2026 vues ce jour, ce qui suggère une annonce évergreen/vivier plutôt qu'un poste ouvert précis — traité comme signal de veille plutôt que comme opportunité qualifiée.</div>
+<div class="actions"><a class="btn secondary" href="https://www.pwc.lu/en/careers.html" target="_blank" rel="noopener">SOURCE — carrières PwC Luxembourg</a></div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Synthèse : chaque opportunité indique où la consulter et comment postuler ou contacter (voir sections WARM et À vérifier ci-dessus pour le détail complet).</p></div></div>
+<table>
+<tr><th>Titre</th><th>Entreprise</th><th>Classification</th><th>Lien offre</th><th>Candidature</th></tr>
+<tr><td>2 Project Managers (m/f)</td><td>ANA (Fonction publique LU)</td><td>WARM</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">GovJobs</a></td><td>Portail GovJobs</td></tr>
+<tr><td>Senior Business Analyst (m/f)</td><td>Administration LU (non précisée)</td><td>WARM</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank" rel="noopener">GovJobs</a></td><td>Portail GovJobs</td></tr>
+<tr><td>Chargé de conduite du changement et de communication</td><td>Fonction publique LU</td><td>À vérifier</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">GovJobs</a></td><td>Portail GovJobs (statut à confirmer)</td></tr>
+<tr><td>Senior Project Portfolio Manager</td><td>BIL</td><td>À vérifier</td><td><a href="https://en.moovijob.com/job-offers/banque-internationale-a-luxembourg-bil/senior-project-portfolio-manager-mf-e31f2" target="_blank" rel="noopener">Moovijob</a></td><td>Lien exact non identifié</td></tr>
+<tr><td>Agile Coach</td><td>Empiric (agence, client non identifié)</td><td>À vérifier</td><td><a href="https://lu.linkedin.com/jobs/view/agile-coach-at-empiric-4049903905" target="_blank" rel="noopener">LinkedIn Jobs</a></td><td>LinkedIn Jobs</td></tr>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status no">0 brouillon aujourd'hui</span></div>
+<div class="cards">
+<div class="card verify">
+<div class="message">Aucun email professionnel vérifié publiquement n'a été trouvé aujourd'hui pour les 5 opportunités identifiées (recrutement centralisé GovJobs sans contact nommé ; aucun email BIL, PwC ou Empiric confirmé publiquement). Conformément à la règle « ne jamais deviner un email » et « sans email vérifié, 0 brouillon est acceptable », aucun brouillon Gmail de candidature/contact n'a été préparé ce jour.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement interrogées pour construire ce rapport (WebSearch — aucune consultation directe garantie).</p></div></div>
+<table>
+<tr><th>Source</th><th>Requêtes types</th><th>Résultats utiles</th><th>Niveau de preuve</th></tr>
+<tr><td>govjobs.public.lu</td><td>Agile / Project Manager / transformation / change</td><td>4 offres pertinentes</td><td>B — Indexé</td></tr>
+<tr><td>eib.org/en/about/careers</td><td>Agile / Project Manager / transformation</td><td>0 offre correspondante trouvée aujourd'hui</td><td>—</td></tr>
+<tr><td>linkedin.com/jobs</td><td>Agile Coach Luxembourg</td><td>2 annonces (PwC, Empiric)</td><td>B — Indexé</td></tr>
+<tr><td>moovijob.com (agrégateur)</td><td>BIL Senior Project Portfolio Manager</td><td>1 offre, fraîcheur incertaine</td><td>B — Indexé (secondaire)</td></tr>
+<tr><td>Recherches généralistes (Indeed, Glassdoor, StepStone) — Bruxelles/Paris</td><td>Transformation Manager, Agile Coach</td><td>Volumes agrégateurs uniquement, aucune offre individuelle exploitable identifiée aujourd'hui</td><td>D — Non exploitable en l'état</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Opportunités qualifiées (HOT + WARM)</td><td>2</td></tr>
+<tr><td>HOT</td><td>0</td></tr>
+<tr><td>WARM</td><td>2</td></tr>
+<tr><td>À vérifier (non qualifiées)</td><td>3</td></tr>
+<tr><td>Signaux de contexte</td><td>3</td></tr>
+<tr><td>Contacts nommés confirmés</td><td>0</td></tr>
+<tr><td>Emails vérifiés</td><td>0</td></tr>
+<tr><td>Brouillons Gmail préparés</td><td>0 / 3 max</td></tr>
+<tr><td>Doublons détectés vs career-history.csv</td><td>0 (premier run — historique vide)</td></tr>
+<tr><td>Rapport interne envoyé à salimdulux@gmail.com</td><td>Oui</td></tr>
+</table>
+</section>
+
+<footer class="footer">Gomri.coach — Career Intelligence (AIgile, aigile.lu) · Recherche ciblée WebSearch, non exhaustive · Rapport généré le 24/09/2026</footer>
+</main>
+</body>
+</html>
