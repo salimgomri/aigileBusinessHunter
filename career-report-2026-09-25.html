@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 25 septembre 2026</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1.6px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:16px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:48px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:24px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:17px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px;font-weight:700}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700;font-size:13px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}h1{font-size:34px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence — AIgile</div></div></div>
+<div class="badge">Rapport quotidien · 25 septembre 2026</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Career Intelligence Report</div>
+<h1>1 opportunité HOT, 5 WARM à confirmer aujourd'hui</h1>
+<p class="lede">Recherche ciblée sur ~60 requêtes WebSearch (Luxembourg, Bruxelles, Grand Est, Paris/Île-de-France). Limite technique majeure de cette exécution : l'accès direct (WebFetch) a été bloqué par le proxy réseau de cet environnement pour <strong>tous</strong> les domaines testés (gouvernementaux, LinkedIn, entreprises, job boards). Chaque résultat reste donc au niveau de preuve B — indexé, non consulté directement — et doit être vérifié manuellement avant toute candidature. Meilleur signal du jour : ArcelorMittal (Luxembourg), poste PMO Transformation dont la mise à jour a été rapportée début septembre 2026 par un agrégateur tiers.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Grand Est</span><span class="pill">Paris / IDF</span><span class="pill">WebSearch-first</span><span class="pill">Preuve niveau B uniquement</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Indice d'actionnabilité</div>
+<div class="score">6/10</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>1</strong></div>
+<div class="kpi"><small>WARM</small><strong>5</strong></div>
+<div class="kpi"><small>Contacts</small><strong>2</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">L'opportunité nécessitant une attention immédiate.</p></div></div>
+<div class="cards">
+
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">Senior IT Project Coordinator — PMO Transformation (Global IT)</div>
+<div class="tags"><span class="tag">Luxembourg</span><span class="tag neutral">Preuve B — indexé</span><span class="tag warn">Statut à confirmer</span></div></div>
+<div class="score-badge">Fort<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>ArcelorMittal</strong></div>
+<div class="field"><small>Source</small><strong>Agrégateur freehire.me ; portail carrière ArcelorMittal (Oracle Cloud) probable</strong></div>
+<div class="field"><small>Date</small><strong>Publication rapportée : 23 avril 2026 · Mise à jour rapportée : 7 septembre 2026 (source : agrégateur, non confirmé par accès direct)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer — non vérifié par accès direct à la page</strong></div>
+<div class="field"><small>Points forts</small><strong>PMO, gouvernance de projets, vision de transformation, 10+ ans d'expérience, grade Senior — correspond directement à l'expertise TOM/PMO/transformation de Salim</strong></div>
+<div class="field"><small>Écarts</small><strong>Pas de mention explicite Agile/Scrum/SAFe dans l'extrait disponible ; langue(s) de travail non confirmée(s)</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun recruteur/hiring manager identifié publiquement</strong></div>
+<div class="field"><small>Candidature</small><strong>Lien de candidature exact non identifié directement pour cette offre précise — méthode disponible : portail carrière ArcelorMittal (Oracle Cloud), filtrer par « Luxembourg »</strong></div>
+</div>
+<div class="message">Action : vérifier l'offre directement sur le portail ArcelorMittal (Oracle Cloud) pour confirmer le statut, puis candidater si toujours ouverte. Ne pas se fier uniquement à la date rapportée par l'agrégateur.</div>
+<div class="actions">
+<a class="btn secondary" href="https://freehire.me/jobs/senior-it-project-coordinator-arcelormittal-phsjdbok" target="_blank">VOIR L'OFFRE</a>
+<a class="btn secondary" href="https://emfg.fa.em4.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs?location=Luxembourg" target="_blank">PORTAIL CARRIÈRE ARCELORMITTAL</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude de date, de statut ou de preuve à traiter.</p></div></div>
+<div class="cards">
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Transformation Project Manager (M/F) — CDI</div>
+<div class="tags"><span class="tag">Luxembourg</span><span class="tag neutral">Preuve B — indexé</span><span class="tag warn">Date non confirmée</span></div></div>
+<div class="score-badge">Fort<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>AXA Luxembourg</strong></div>
+<div class="field"><small>Source</small><strong>axa.lu (site carrière de l'entreprise) ; miroir moovijob.com</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer ; type de contrat CDI mentionné dans le titre</strong></div>
+<div class="field"><small>Points forts</small><strong>Rattaché à la « Transformation Direction » d'AXA Luxembourg ; responsable de la préparation et exécution globale de projets (périmètre, planning, budget)</strong></div>
+<div class="field"><small>Écarts</small><strong>Niveau de séniorité exact non confirmé (une variante « Junior Transformation Project Manager » existe aussi chez AXA — ne pas confondre)</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun identifié publiquement</strong></div>
+<div class="field"><small>Candidature</small><strong>Lien de candidature exact non identifié par accès direct — méthode disponible : portail carrière AXA Luxembourg (axa.lu)</strong></div>
+</div>
+<div class="message">Action : consulter directement axa.lu pour confirmer le statut et la procédure de candidature.</div>
+<div class="actions"><a class="btn secondary" href="https://axa.lu/en/jobs/transformation-project-manager-mf-cdi" target="_blank">VOIR L'OFFRE</a></div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Head of Transformation - Project Manager (réf. R0005227)</div>
+<div class="tags"><span class="tag">Luxembourg</span><span class="tag neutral">Preuve B — indexé</span><span class="tag warn">Date non confirmée</span></div></div>
+<div class="score-badge">Fort<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>Lombard Odier Group</strong></div>
+<div class="field"><small>Source</small><strong>LinkedIn (lu.linkedin.com) ; miroirs talentify.io, hirebase.org, jobs.ch</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée (présence sur plusieurs agrégateurs suggérant une annonce déjà ancienne)</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Points forts</small><strong>Leadership de programme, change management, management d'équipe et de parties prenantes — correspond fortement au profil de Salim</strong></div>
+<div class="field"><small>Écarts</small><strong>Responsabilités complètes non vérifiées par accès direct</strong></div>
+<div class="field"><small>Contact</small><strong>Un profil LinkedIn (Vincent Renaud) apparaît comme titulaire actuel du poste équivalent — NON traité comme recruteur/hiring manager confirmé (ambiguïté organigramme vs. poste ouvert)</strong></div>
+<div class="field"><small>Candidature</small><strong>Lien de candidature exact non identifié directement — méthode disponible : LinkedIn Jobs (bouton « Postuler » standard)</strong></div>
+</div>
+<div class="message">Action : vérifier le statut sur LinkedIn et candidater via LinkedIn si l'annonce est toujours active.</div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/head-of-transformation-project-manager-at-lombard-odier-group-4008421842" target="_blank">VOIR L'OFFRE</a></div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Senior Business Analyst (réf. E00044257)</div>
+<div class="tags"><span class="tag">Luxembourg</span><span class="tag neutral">Preuve B — indexé</span><span class="tag warn">~52 jours (estimé)</span></div></div>
+<div class="score-badge">Partiel<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>Gouvernement luxembourgeois (Administration des contributions directes)</strong></div>
+<div class="field"><small>Source</small><strong>govjobs.public.lu (portail direct)</strong></div>
+<div class="field"><small>Date</small><strong>Estimée début août 2026 d'après le chemin d'URL (« 2026/A1/Août ») — non confirmée formellement</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer ; URL située dans la section « postes-ouverts/postes-vacants » du portail</strong></div>
+<div class="field"><small>Points forts</small><strong>« Capacité à assumer un rôle de chef de projet pour des initiatives de taille moyenne » ; contexte de transformation digitale mentionné</strong></div>
+<div class="field"><small>Écarts</small><strong>Rôle principalement Business Analyst, pas Agile Coach / PM à temps plein</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun identifié publiquement</strong></div>
+<div class="field"><small>Candidature</small><strong>Candidature directement sur govjobs.public.lu (l'URL de l'offre est elle-même la page de candidature du portail)</strong></div>
+</div>
+<div class="message">Action : consulter la page pour confirmer le statut et suivre la procédure de candidature en ligne du portail.</div>
+<div class="actions">
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank">VOIR L'OFFRE</a>
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank">POSTULER (govjobs.public.lu)</a>
+</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">2 Project Managers (M/F) — réf. E00044054/F00044055/M00044056</div>
+<div class="tags"><span class="tag">Luxembourg</span><span class="tag neutral">Preuve B — indexé</span><span class="tag warn">~59 jours (estimé)</span></div></div>
+<div class="score-badge">Modéré<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>Gouvernement luxembourgeois (secteur aviation/transport aérien)</strong></div>
+<div class="field"><small>Source</small><strong>govjobs.public.lu (portail direct)</strong></div>
+<div class="field"><small>Date</small><strong>Estimée fin juillet 2026 d'après le chemin d'URL (« 2026/A1/Juillet ») — non confirmée formellement</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer ; section « postes-ouverts/postes-vacants »</strong></div>
+<div class="field"><small>Points forts</small><strong>Poste rattaché à un PMO ; gestion de projet</strong></div>
+<div class="field"><small>Écarts</small><strong>Exigence affichée de 3 ans d'expérience minimum (bien en-deçà des 20+ ans de Salim) ; secteur spécifique aviation ; master requis en ingénierie/aviation/gestion de projet</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun identifié publiquement</strong></div>
+<div class="field"><small>Candidature</small><strong>Candidature directement sur govjobs.public.lu</strong></div>
+</div>
+<div class="message">Action : vérifier le statut ; l'écart de séniorité affiché est souvent indicatif dans la fonction publique, pas strictement éliminatoire — à évaluer au cas par cas.</div>
+<div class="actions">
+<a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank">VOIR L'OFFRE</a>
+<a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank">POSTULER (govjobs.public.lu)</a>
+</div>
+</div>
+
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Change Management Specialist — Accounting and Corporate Services Transformation</div>
+<div class="tags"><span class="tag">Luxembourg</span><span class="tag neutral">Preuve B — indexé</span><span class="tag warn">Date non confirmée</span></div></div>
+<div class="score-badge">Fort<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Entreprise</small><strong>BDO Luxembourg</strong></div>
+<div class="field"><small>Source</small><strong>moovijob.com</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>Points forts</small><strong>Rôle directement lié à un programme interne de transformation (Accounting and Corporate Services) — aligné avec l'expertise change management de Salim</strong></div>
+<div class="field"><small>Écarts</small><strong>Portée exacte (interne BDO vs. clients) et niveau de séniorité non confirmés</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun identifié publiquement</strong></div>
+<div class="field"><small>Candidature</small><strong>Lien de candidature exact non identifié directement — méthode disponible : via moovijob.com</strong></div>
+</div>
+<div class="message">Action : consulter directement pour confirmer le statut et candidater si pertinent.</div>
+<div class="actions"><a class="btn secondary" href="https://en.moovijob.com/job-offers/bdo-luxembourg/change-management-specialist-accounting-and-corporate-services-transformation" target="_blank">VOIR L'OFFRE</a></div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées (date, statut, preuve secondaire ou contact non confirmé).</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Chef de projet « GEPS » (M/F) — réf. E00040866/F00040867/M00040868</div>
+<div class="tags"><span class="tag neutral">Luxembourg</span><span class="tag warn">~210 jours — ancienne</span></div></div>
+<div class="score-badge">Modéré<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>govjobs.public.lu</strong></div>
+<div class="field"><small>Date</small><strong>Estimée fin février 2026 d'après l'URL — largement &gt;90 jours, nécessite vérification du statut, pas d'élimination automatique</strong></div>
+<div class="field"><small>Points forts</small><strong>GDPR, support utilisateurs, gestion de plateforme collaborative, coordination formation, analyse de besoins fonctionnels</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun identifié</strong></div>
+</div>
+<div class="message">Action : vérifier si le poste est toujours vacant malgré l'ancienneté apparente de la publication.</div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Fevrier/20260227-chefdeprojetgepsmfrfe00040866r-448950.html" target="_blank">VOIR L'OFFRE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Agile Transformation Coach (mission)</div>
+<div class="tags"><span class="tag neutral">Bruxelles, Belgique</span><span class="tag warn">Date de publication inconnue</span></div></div>
+<div class="score-badge">Fort<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source / intermédiaire</small><strong>Keystone Solutions (annoncé via wearedevelopers.com)</strong></div>
+<div class="field"><small>Format</small><strong>Mission de conseil, 22 oct. 2026 – 31 oct. 2027 (fenêtre de mission indiquée, pas la date de publication)</strong></div>
+<div class="field"><small>Points forts</small><strong>Évaluations de maturité, traduction de stratégie digitale en initiatives IT concrètes, guidance du management en leadership Agile — compatible avec le positionnement AIgile</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun identifié</strong></div>
+</div>
+<div class="message">Action : vérifier le statut actuel et la procédure de candidature directement auprès de Keystone Solutions.</div>
+<div class="actions"><a class="btn secondary" href="https://www.wearedevelopers.com/jobs/ext/2836382-agile-transformation-coach" target="_blank">VOIR L'OFFRE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Senior Scrum Master / Agile Coach — client bancaire (mission freelance)</div>
+<div class="tags"><span class="tag neutral">Bruxelles (hybride)</span><span class="tag warn">Date inconnue</span></div></div>
+<div class="score-badge">Fort<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source / intermédiaire</small><strong>Salt (agence de recrutement, welovesalt.com) — client bancaire non nommé</strong></div>
+<div class="field"><small>Format</small><strong>Freelance, taux journalier €500–1000, 1-3 jours/mois sur site</strong></div>
+<div class="field"><small>Points forts</small><strong>Coaching d'équipe vers l'auto-organisation, contexte bancaire, compatible avec le modèle AIgile</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun identifié</strong></div>
+</div>
+<div class="message">Action : vérifier le statut auprès de Salt et confirmer le taux/format avant toute démarche.</div>
+<div class="actions"><a class="btn secondary" href="https://welovesalt.com/jobs/senior-scrum-master-agile-coach-belgium-based-711246" target="_blank">VOIR L'OFFRE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Agile Test Coach</div>
+<div class="tags"><span class="tag neutral">Luxembourg</span><span class="tag warn">Date inconnue</span></div></div>
+<div class="score-badge">Partiel<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>keyteo.com (site carrière de l'entreprise)</strong></div>
+<div class="field"><small>Points forts</small><strong>Pratiques de test au sein de cycles agiles (Scrum, Kanban, SAFe)</strong></div>
+<div class="field"><small>Écarts</small><strong>Périmètre spécialisé « test », plus restreint qu'un rôle d'Agile Coach généraliste</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun identifié</strong></div>
+</div>
+<div class="message">Action : vérifier le périmètre exact et le statut avant de positionner une candidature.</div>
+<div class="actions"><a class="btn secondary" href="https://keyteo.com/offers/352/" target="_blank">VOIR L'OFFRE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Project Manager Officer (CDI, cadre) — secteur métallurgie</div>
+<div class="tags"><span class="tag neutral">Haguenau (67), Grand Est</span><span class="tag warn">Date inconnue</span></div></div>
+<div class="score-badge">Modéré<small>FIT</small></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source / intermédiaire</small><strong>MALIA Conseils &amp; Recrutement (via hellowork.com)</strong></div>
+<div class="field"><small>Points forts</small><strong>Pilotage de projets stratégiques transverses (France/Allemagne), structuration des pratiques de gestion de projet ; rémunération indiquée 40 000–51 000 €/an</strong></div>
+<div class="field"><small>Écarts</small><strong>Secteur industriel (métallurgie) plutôt qu'Agile/IT</strong></div>
+<div class="field"><small>Contact</small><strong>Mathilde Lagarde, Célia Duzy — MALIA Conseils &amp; Recrutement (noms publics identifiés, aucun email vérifié)</strong></div>
+</div>
+<div class="message">Action : vérifier le statut et contacter MALIA Conseils si le poste reste pertinent, malgré l'absence d'email vérifié.</div>
+<div class="actions"><a class="btn secondary" href="https://www.hellowork.com/fr-fr/emplois/76520744.html" target="_blank">VOIR L'OFFRE</a></div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte (marché, transformation, organisation) pouvant ouvrir de futures opportunités — ce ne sont pas des offres d'emploi.</p></div></div>
+<div class="cards">
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">« Agile fatigue » — les transformations agiles jugées incomplètes au Luxembourg</div>
+<div class="tags"><span class="tag neutral">Fujitsu Luxembourg (cité)</span><span class="tag warn">~février 2026</span></div></div></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>ITnation.lu</strong></div>
+<div class="field"><small>Pourquoi c'est un signal</small><strong>Article citant des experts de Fujitsu Luxembourg : l'agilité stagne dans de nombreuses organisations, les transformations sont jugées incomplètes et ne doivent pas se limiter à l'IT — point d'entrée naturel pour du coaching Agile senior / repositionnement de transformations bloquées</strong></div>
+</div>
+<div class="actions"><a class="btn secondary" href="https://itnation.lu/news/remettre-la-transformation-agile-sur-de-bons-rails/" target="_blank">VOIR LA SOURCE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">Stratégie Gouvernement numérique Luxembourg 2026-2030</div>
+<div class="tags"><span class="tag neutral">Ministère de la Digitalisation / CTIE</span><span class="tag warn">Adoptée le 17 déc. 2025</span></div></div></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>mindigital.gouvernement.lu</strong></div>
+<div class="field"><small>Pourquoi c'est un signal</small><strong>Programme pluriannuel de transformation numérique du secteur public luxembourgeois (2026-2030) — potentiel de futures missions PMO / change management dans les organismes publics</strong></div>
+</div>
+<div class="actions"><a class="btn secondary" href="https://mindigital.gouvernement.lu/en/dossiers/2025/strategie-gouvernement-numerique-2026-2030.html" target="_blank">VOIR LA SOURCE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">CNS (Caisse Nationale de Santé) en transition vers une organisation agile</div>
+<div class="tags"><span class="tag neutral">Caisse Nationale de Santé</span><span class="tag warn">Date non précisée</span></div></div></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Paperjam.lu</strong></div>
+<div class="field"><small>Pourquoi c'est un signal</small><strong>Organisme public de santé luxembourgeois explicitement engagé dans une bascule vers une organisation agile, avec recrutements dédiés à la gestion de projet stratégique</strong></div>
+</div>
+<div class="actions"><a class="btn secondary" href="https://paperjam.lu/article/c-est-projet-ambitieux-mais-c-" target="_blank">VOIR LA SOURCE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">Partenariat technologique pluriannuel Eurobank / LTIMindtree</div>
+<div class="tags"><span class="tag neutral">Eurobank / Eurobank Luxembourg</span><span class="tag warn">Annoncé 2025, programme jusqu'en 2026+</span></div></div></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>fintechfutures.com</strong></div>
+<div class="field"><small>Pourquoi c'est un signal</small><strong>Centre de delivery global (Pune, Inde) pour la maintenance, migration de données et QA touchant les opérations de banque privée d'Eurobank au Luxembourg — transformation du modèle de delivery en cours</strong></div>
+</div>
+<div class="actions"><a class="btn secondary" href="https://www.fintechfutures.com/partnerships/eurobank-establishes-global-delivery-centre-in-india-with-ltimindtree" target="_blank">VOIR LA SOURCE</a></div>
+</div>
+
+<div class="card verify">
+<div class="card-top"><div><div class="title">Agile Tour Luxembourg 2026</div>
+<div class="tags"><span class="tag neutral">Événement communautaire Agile</span><span class="tag warn">10 juillet 2026</span></div></div></div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>agiletour.lu</strong></div>
+<div class="field"><small>Pourquoi c'est un signal</small><strong>Venue de réseautage directe pour les Agile Coachs au Luxembourg — opportunité de visibilité pour le positionnement AIgile de Salim (pas une offre d'emploi)</strong></div>
+</div>
+<div class="actions"><a class="btn secondary" href="https://agiletour.lu/" target="_blank">VOIR LA SOURCE</a></div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions — récapitulatif</h2><p class="meta">Les 11 opportunités qualifiées de ce jour (1 HOT, 5 WARM, 5 à vérifier) sont détaillées dans les sections ci-dessus. Voir « Priorités », « WARM » et « À vérifier ».</p></div></div>
+<table>
+<tr><th>Titre</th><th>Entreprise</th><th>Lieu</th><th>Classe</th><th>Statut</th></tr>
+<tr><td>Senior IT Project Coordinator — PMO Transformation</td><td>ArcelorMittal</td><td>Luxembourg</td><td>HOT</td><td>À confirmer</td></tr>
+<tr><td>Transformation Project Manager (CDI)</td><td>AXA Luxembourg</td><td>Luxembourg</td><td>WARM</td><td>À confirmer</td></tr>
+<tr><td>Head of Transformation - Project Manager</td><td>Lombard Odier</td><td>Luxembourg</td><td>WARM</td><td>À confirmer</td></tr>
+<tr><td>Senior Business Analyst</td><td>Gouvernement luxembourgeois</td><td>Luxembourg</td><td>WARM</td><td>À confirmer</td></tr>
+<tr><td>2 Project Managers</td><td>Gouvernement luxembourgeois</td><td>Luxembourg</td><td>WARM</td><td>À confirmer</td></tr>
+<tr><td>Change Management Specialist</td><td>BDO Luxembourg</td><td>Luxembourg</td><td>WARM</td><td>À confirmer</td></tr>
+<tr><td>Chef de projet « GEPS »</td><td>Gouvernement luxembourgeois</td><td>Luxembourg</td><td>À vérifier</td><td>Ancienne (~210j)</td></tr>
+<tr><td>Agile Transformation Coach (mission)</td><td>Keystone Solutions</td><td>Bruxelles</td><td>À vérifier</td><td>Inconnu</td></tr>
+<tr><td>Senior Scrum Master / Agile Coach (freelance)</td><td>Salt (client bancaire)</td><td>Bruxelles</td><td>À vérifier</td><td>Inconnu</td></tr>
+<tr><td>Agile Test Coach</td><td>KEYTEO</td><td>Luxembourg</td><td>À vérifier</td><td>Inconnu</td></tr>
+<tr><td>Project Manager Officer</td><td>Client MALIA Conseils</td><td>Haguenau, Grand Est</td><td>À vérifier</td><td>Inconnu</td></tr>
+</table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne envoyé</span></div>
+<div class="cards">
+<div class="card verify">
+<div class="title">0 brouillon créé ce jour</div>
+<div class="message">Aucun email professionnel publiquement vérifié n'a été identifié parmi les opportunités et contacts de ce jour (Mathilde Lagarde et Célia Duzy chez MALIA Conseils sont identifiées par leur nom, sans email public vérifié ; Vincent Renaud chez Lombard Odier est écarté comme contact car son rôle exact vis-à-vis de l'offre est ambigu). Conformément à la règle « sans email vérifié, 0 brouillon est acceptable », aucun brouillon de candidature n'a été préparé aujourd'hui.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources &amp; traçabilité</h2><p class="meta">Sources réellement interrogées via WebSearch pour construire ce rapport (~60 requêtes). Aucun accès direct (WebFetch) n'a pu être établi cette session : le proxy réseau de l'environnement a bloqué toutes les tentatives, quel que soit le domaine.</p></div></div>
+<table>
+<tr><th>Domaine</th><th>Priorité</th><th>Niveau de preuve obtenu</th><th>Résultats exploitables</th></tr>
+<tr><td>govjobs.public.lu</td><td>Très haute</td><td>B (indexé)</td><td>4 offres</td></tr>
+<tr><td>eib.org / eu-careers.europa.eu / ecb.europa.eu</td><td>Très haute</td><td>B (indexé)</td><td>1 offre EU Careers (fit incertain), 0 EIB/ECB direct</td></tr>
+<tr><td>lu.linkedin.com / linkedin.com / be.linkedin.com</td><td>Haute</td><td>B (indexé)</td><td>Lombard Odier, BNP Paribas Fortis, EY (signal), PwC (probablement expirée)</td></tr>
+<tr><td>axa.lu / moovijob.com</td><td>Haute</td><td>B (indexé)</td><td>AXA, BDO, CNS</td></tr>
+<tr><td>welovesalt.com / wearedevelopers.com / keyteo.com</td><td>Moyenne</td><td>B (indexé)</td><td>Salt, Keystone Solutions, KEYTEO</td></tr>
+<tr><td>hellowork.com / apec.fr / lesjeudis.com / jobat.be / welcometothejungle.com</td><td>Moyenne</td><td>B (indexé) / aucun résultat exploitable pour jobat.be</td><td>MALIA Conseils (Haguenau), Maltem, EVEROAD, ManoMano</td></tr>
+<tr><td>stepstone.lu / indeed.com</td><td>Moyenne</td><td>Aucun résultat exploitable indexé sur le domaine ciblé</td><td>0</td></tr>
+<tr><td>itnation.lu / paperjam.lu / mindigital.gouvernement.lu / fintechfutures.com / agiletour.lu</td><td>Signaux de contexte</td><td>B (indexé)</td><td>5 signaux</td></tr>
+</table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table>
+<tr><th>Indicateur</th><th>Valeur</th></tr>
+<tr><td>Requêtes WebSearch exécutées</td><td>~60 (3 agents de recherche en parallèle)</td></tr>
+<tr><td>Tentatives d'accès direct (WebFetch)</td><td>~25 tentatives, 100% bloquées par le proxy réseau de l'environnement (EGRESS_BLOCKED)</td></tr>
+<tr><td>Opportunités qualifiées</td><td>11 (1 HOT, 5 WARM, 5 à vérifier)</td></tr>
+<tr><td>Niveau de preuve atteint</td><td>100% niveau B (indexé) — 0% niveau A (accès direct confirmé)</td></tr>
+<tr><td>Signaux de marché identifiés</td><td>5</td></tr>
+<tr><td>Contacts nommés identifiés (sans email vérifié)</td><td>2 (Mathilde Lagarde, Célia Duzy — MALIA Conseils)</td></tr>
+<tr><td>Emails professionnels vérifiés</td><td>0</td></tr>
+<tr><td>Brouillons Gmail créés</td><td>0 (règle « sans email vérifié, 0 brouillon » respectée)</td></tr>
+<tr><td>Doublons détectés vs. career-history.csv</td><td>0 (historique vide avant cette exécution)</td></tr>
+<tr><td>Rapport interne envoyé à salimdulux@gmail.com</td><td>Oui</td></tr>
+</table>
+</section>
+
+<footer class="footer">Gomri.coach Career Hunter — généré automatiquement le 25 septembre 2026. Aucune donnée inventée. Rapport basé exclusivement sur des résultats de recherche indexés (niveau de preuve B) ; l'accès direct aux pages a été bloqué dans cet environnement pour tous les domaines testés. Vérification manuelle recommandée avant toute candidature.</footer>
+</main>
+</body>
+</html>
