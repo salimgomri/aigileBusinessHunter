@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-09-26</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence — AIgile</div></div></div>
+<div class="badge">Career Hunter · 2026-09-26</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Intelligence de carrière quotidienne</div>
+<h1>8 opportunités qualifiées aujourd'hui</h1>
+<p class="lede">Recherche ciblée menée sur GovJobs, EIB, institutions UE (EPSO/EC/ECB), LinkedIn, Indeed, APEC, Welcome to the Jungle, StepStone, Jobat, Hellowork et LesJeudis (73 requêtes WebSearch). 8 opportunités qualifiées (3 HOT, 5 WARM) et 5 pistes à vérifier. Aucun contact nominatif ni email n'a pu être vérifié publiquement ce jour — 0 brouillon Gmail créé, conformément à la règle de non-invention des contacts. Toutes les preuves proviennent de résultats indexés WebSearch (niveau B) ou d'agrégateurs tiers (niveau C) ; aucune page n'a été consultée directement.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles/Belgique</span><span class="pill">Grand Est</span><span class="pill">Paris/IDF</span><span class="pill">Europe/Remote</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées (HOT+WARM)</div>
+<div class="score">8</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>3</strong></div>
+<div class="kpi"><small>WARM</small><strong>5</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card hot">
+<div class="card-top">
+<div><div class="title">Change Management Specialist – Accounting and Corporate Services Transformation</div><div class="meta">BDO Luxembourg — Cloche d'Or, Luxembourg</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag">Transformation</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">HOT<small>PRIORITÉ 1</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>Portail carrière BDO (ATS Skeeled), indexé via WebSearch</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch, extrait direct du portail employeur</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — listing hébergé sur le portail de candidature actif de BDO</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Rôle central sur "strategic transformation programme" avec change management, stakeholder engagement, communication et transformation monitoring — alignement direct avec l'expertise Change Management / coaching de managers de Salim.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : l'annonce cible "Senior or Assistant Manager level, 4 à 6 ans d'expérience" — niveau d'entrée inférieur aux 20+ ans d'expérience de Salim ; à clarifier directement avec BDO si un rôle senior/leadership existe en parallèle.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert sur portail BDO</div><div class="step"><b>Preuve</b>B — Skeeled ATS</div><div class="step"><b>Fraîcheur</b>Non confirmée</div><div class="step"><b>Fit</b>Fort sur le fond</div><div class="step"><b>Action</b>Candidater + vérifier niveau</div></div>
+<div class="actions"><a class="btn secondary" href="https://app.skeeled.com/offer/c/6a703ebb432df7b7c91c890a" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://app.skeeled.com/offer/c/6a703ebb432df7b7c91c890a" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature directement sur le portail carrière BDO Luxembourg (ATS Skeeled), via le lien de l'offre.</div>
+</div>
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">Senior Change Manager – Process Optimisation &amp; Digitisation (12-month FTC)</div><div class="meta">Aztec Group — Luxembourg</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag">Programme/Projet</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">HOT<small>PRIORITÉ 2</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Exigence rapportée : "10 years' experience in a change environment and Change Management/Programme/Project qualifications" — correspondance quasi directe avec le profil (change management, gestion de programme, 20+ ans d'expérience).</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : contrat à durée déterminée (12 mois) — à évaluer selon les préférences de Salim pour un poste permanent vs mission longue.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert LinkedIn</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Non confirmée</div><div class="step"><b>Fit</b>Très fort</div><div class="step"><b>Action</b>Candidater via LinkedIn</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/senior-change-manager-process-optimisation-digitisation-12-month-ftc-at-aztec-group-3666788486" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/senior-change-manager-process-optimisation-digitisation-12-month-ftc-at-aztec-group-3666788486" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs (bouton de candidature sur la page de l'offre).</div>
+</div>
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">2 Project Managers (m/f) — réf. E00044054/F00044055/M00044056</div><div class="meta">Administration de la Navigation Aérienne (ANA), Ministère de la Mobilité et des Travaux publics — Findel, Luxembourg</div>
+<div class="tags"><span class="tag">Project Management</span><span class="tag neutral">Secteur public</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">HOT<small>PRIORITÉ 3</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>GovJobs Luxembourg (govjobs.public.lu)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch, portail officiel de l'État</strong></div><div class="field"><small>Date</small><strong>Publiée le 28/07/2026</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — ~60 jours depuis publication ; les postes GovJobs ferment généralement sous 3 à 6 semaines, à vérifier directement sur le portail</strong></div><div class="field"><small>Contact</small><strong>PMO mentionné dans l'annonce (rôle, pas de nom)</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : "Acteurs clés de la gestion et de la coordination de projets stratégiques et transversaux liés à la modernisation et à la digitalisation de la navigation aérienne, à l'innovation technologique et à la transformation organisationnelle" — correspond bien à l'expertise Project/Program Management et transformation organisationnelle. Master + 3 ans d'expérience min. (largement dépassé), anglais B2 requis.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : statut d'ouverture non reconfirmé à ce jour (26/09) — vérifier avant de candidater que le poste est toujours listé comme actif.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert GovJobs</div><div class="step"><b>Preuve</b>B — portail officiel</div><div class="step"><b>Fraîcheur</b>60 jours</div><div class="step"><b>Fit</b>Bon</div><div class="step"><b>Action</b>Vérifier statut + candidater</div></div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature directement sur le portail GovJobs Luxembourg via le lien de l'offre.</div>
+</div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm">
+<div class="card-top">
+<div><div class="title">Senior Head of Change Management Programme Unit</div><div class="meta">EIB — European Investment Bank — Luxembourg (siège)</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag">Transformation Groupe</span><span class="tag warn">Statut incertain</span></div></div>
+<div class="score-badge">WARM<small>FIT EXCEPTIONNEL</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>Agrégateurs tiers unjobs.org / unjobnet.org (page eib.org d'origine non retrouvée directement)</strong></div><div class="field"><small>Preuve</small><strong>C — rapporté par une source secondaire, EIB non confirmée directement</strong></div><div class="field"><small>Date</small><strong>Process indiqué : Assessment Centres avril/mai 2026, entretiens mai/juin 2026</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — le calendrier rapporté suggère un processus de recrutement probablement déjà avancé ou clos en septembre 2026</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : "Set the vision and strategic direction for a Group-wide approach to organisational change, ensuring consistent adoption practices, harmonised methodologies and sustainable value realisation across EIB Group transformation programmes" — fit exceptionnel avec transformation organisationnelle, change management à l'échelle groupe et coaching de dirigeants. Grade 6, CDI.</div>
+
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste EIB (grade 6)</div><div class="step"><b>Preuve</b>C — agrégateurs</div><div class="step"><b>Fraîcheur</b>Process probablement clos</div><div class="step"><b>Fit</b>Exceptionnel</div><div class="step"><b>Action</b>Vérifier + réseauter</div></div>
+<div class="actions"><a class="btn secondary" href="https://www.unjobnet.org/jobs/detail/eib-senior-head-of-change-management-programme-unit-based-in-luxembourg-85014023" target="_blank" rel="noopener">VOIR L'OFFRE</a></div><div class="message">Comment postuler : Lien de candidature exact non identifié. Si un nouveau cycle de recrutement s'ouvre, la candidature se ferait via le portail carrière officiel EIB (erecruitment.eib.org) — à consulter directement.</div>
+</div>
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Business Change Manager (CMB)</div><div class="meta">Advisory Key — Luxembourg</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">WARM<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Intitulé "Business Change Manager" — cohérent avec l'expertise Change Management de Salim ; détails de responsabilités non retournés par la recherche, à valider en consultant l'offre complète.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : responsabilités détaillées non retournées par la recherche — à vérifier avant candidature.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert LinkedIn</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Non confirmée</div><div class="step"><b>Fit</b>Bon (à confirmer)</div><div class="step"><b>Action</b>Consulter l'offre complète</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/business-change-manager-cmb-at-advisory-key-4023470658" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/business-change-manager-cmb-at-advisory-key-4023470658" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs.</div>
+</div>
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Project Manager (M/F) – Business Transformation</div><div class="meta">Grant Thornton Luxembourg — Luxembourg</div>
+<div class="tags"><span class="tag">Business Transformation</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Statut incertain</span></div></div>
+<div class="score-badge">WARM<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée — identifiant d'annonce ancien, possiblement expirée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Intitulé directement aligné avec Project Management + Business Transformation, deux piliers du profil de Salim, chez un cabinet d'audit/conseil présent à Luxembourg.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : l'identifiant de l'annonce est relativement ancien : forte probabilité que l'offre soit expirée, à vérifier avant toute action.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste LinkedIn (ancien ?)</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Incertaine</div><div class="step"><b>Fit</b>Bon</div><div class="step"><b>Action</b>Vérifier si toujours active</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/project-manager-m-f-%E2%80%93-business-transformation-at-grant-thornton-luxembourg-2901739363" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/project-manager-m-f-%E2%80%93-business-transformation-at-grant-thornton-luxembourg-2901739363" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs, si l'offre est encore active — sinon consulter directement le site carrières de Grant Thornton Luxembourg.</div>
+</div>
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Business Transformation Manager - Luxembourg</div><div class="meta">Revolut — Luxembourg</div>
+<div class="tags"><span class="tag">Business Transformation</span><span class="tag neutral">Scale-up</span><span class="tag warn">Statut incertain</span></div></div>
+<div class="score-badge">WARM<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée — identifiant d'annonce ancien, possiblement expirée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Intitulé en correspondance directe avec l'expertise transformation de Salim, chez une fintech en forte croissance disposant d'un hub à Luxembourg.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : l'identifiant de l'annonce est relativement ancien : forte probabilité que l'offre soit expirée, à vérifier avant toute action.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste LinkedIn (ancien ?)</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Incertaine</div><div class="step"><b>Fit</b>Bon</div><div class="step"><b>Action</b>Vérifier si toujours active</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/business-transformation-manager-luxembourg-at-revolut-2842525319" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/business-transformation-manager-luxembourg-at-revolut-2842525319" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs, si l'offre est encore active — sinon consulter directement careers.revolut.com.</div>
+</div>
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Service Delivery Manager – Group Security (f/m/d)</div><div class="meta">Deutsche Börse — Luxembourg</div>
+<div class="tags"><span class="tag">Delivery Management</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">WARM<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Delivery Management dans un groupe financier international d'envergure — correspond à l'expertise Delivery Management de Salim ; domaine "Group Security" à valider selon appétence.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : périmètre "Group Security" plus spécialisé/technique que l'expérience Agile/transformation habituelle de Salim — à valider.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert LinkedIn</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Non confirmée</div><div class="step"><b>Fit</b>Correct</div><div class="step"><b>Action</b>Consulter l'offre complète</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/service-delivery-manager-group-security-f-m-d-at-deutsche-b%C3%B6rse-3740471346" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/service-delivery-manager-group-security-f-m-d-at-deutsche-b%C3%B6rse-3740471346" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs.</div>
+</div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify">
+<div class="card-top">
+<div><div class="title">Lead Expert Solution Train Engineer – Digital Euro</div><div class="meta">Banque Centrale Européenne (BCE/ECB), Agile Development Office — Francfort, Allemagne (hors zone prioritaire)</div>
+<div class="tags"><span class="tag">SAFe / RTE</span><span class="tag warn">Clôturée</span></div></div>
+<div class="score-badge">VÉRIF.<small>SIGNAL FUTUR</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>talent.ecb.europa.eu (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Clôture indiquée : 11/12/2025</strong></div><div class="field"><small>Statut</small><strong>Offre très probablement clôturée</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Fit exceptionnel sur le papier ("coordinating multiple Agile Release Trains... facilitating key SAFe Solution Train events") mais poste hors zone géographique prioritaire (Francfort) et très probablement clos. Conservé comme signal : la BCE recrute des profils SAFe/RTE pour son programme Digital Euro — à surveiller pour de futures ouvertures similaires.</div>
+
+<div class="chain"><div class="step"><b>Offre/Signal</b>Signal SAFe/RTE BCE</div><div class="step"><b>Preuve</b>B — indexé</div><div class="step"><b>Fraîcheur</b>Clôturée</div><div class="step"><b>Fit</b>Exceptionnel (papier)</div><div class="step"><b>Action</b>Surveiller talent.ecb.europa.eu</div></div>
+<div class="actions"><a class="btn secondary" href="https://talent.ecb.europa.eu/careers/JobDetail/Lead-Expert-Solution-Train-Engineer-Digital-Euro/12621" target="_blank" rel="noopener">VOIR L'OFFRE</a></div><div class="message">Comment postuler : Lien de candidature exact non identifié pour un poste actif — l'offre listée est clôturée. Surveiller talent.ecb.europa.eu pour de futures ouvertures similaires côté programme Digital Euro.</div>
+</div>
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Project Manager — réf. EC/2025/DIGIT/452011</div><div class="meta">Commission européenne, DIGIT — Bruxelles</div>
+<div class="tags"><span class="tag">Agile / SAFe / PM2</span><span class="tag warn">Clôturée</span></div></div>
+<div class="score-badge">VÉRIF.<small>SIGNAL FUTUR</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>eu-careers.europa.eu (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Deadline indiquée : 31/03/2025</strong></div><div class="field"><small>Statut</small><strong>Offre clôturée</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : "Strong background in Digital Transformation... knowledge of Agile, SAFE and PM2 methodologies" — correspond très bien au profil, mais l'offre elle-même est clôturée depuis 2025. Conservé comme signal du type de profils que DIGIT recrute régulièrement.</div>
+
+<div class="chain"><div class="step"><b>Offre/Signal</b>Signal DIGIT/Commission</div><div class="step"><b>Preuve</b>B — indexé</div><div class="step"><b>Fraîcheur</b>Clôturée</div><div class="step"><b>Fit</b>Très bon (papier)</div><div class="step"><b>Action</b>Surveiller eu-careers.europa.eu</div></div>
+<div class="actions"><a class="btn secondary" href="https://eu-careers.europa.eu/en/job-opportunities/project-manager/ec-2025-digit-452011" target="_blank" rel="noopener">VOIR L'OFFRE</a></div><div class="message">Comment postuler : Lien de candidature exact non identifié pour un poste actif. Surveiller eu-careers.europa.eu (filtrer DIGIT) pour de nouvelles publications similaires.</div>
+</div>
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Project Manager Transformation Digitale (H/F)</div><div class="meta">Cactus SA — Windhof, Luxembourg</div>
+<div class="tags"><span class="tag">Transformation digitale</span><span class="tag warn">Fit modéré</span></div></div>
+<div class="score-badge">VÉRIF.<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>Portail carrière Cactus (ATS Skeeled) / article adada.lu</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Article daté du 18/02/2026 (~7 mois)</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — probablement clôturée</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : "Renforcer son agence de communication interne et accompagner activement sa transformation digitale" — poste orienté marketing/communication interne plutôt qu'IT/Agile at Scale ; fit modéré avec le profil de Salim.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : orientation marketing/communication plus que transformation IT/Agile at Scale ; ancienneté de l'annonce (~7 mois).</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste Cactus SA</div><div class="step"><b>Preuve</b>B — indexé</div><div class="step"><b>Fraîcheur</b>~7 mois</div><div class="step"><b>Fit</b>Modéré</div><div class="step"><b>Action</b>Vérifier avant d'investir du temps</div></div>
+<div class="actions"><a class="btn secondary" href="https://app.skeeled.com/offer/c/697b322f4043d01914fa3de3?show_description=true" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://app.skeeled.com/offer/c/697b322f4043d01914fa3de3?show_description=true" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via le portail carrière Cactus (ATS Skeeled), si l'offre est encore active.</div>
+</div>
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Chargé de conduite du changement et de communication (m/f)</div><div class="meta">Administration des contributions directes (ACD) — Luxembourg</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag warn">Grade junior</span></div></div>
+<div class="score-badge">VÉRIF.<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>GovJobs Luxembourg</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch, portail officiel</strong></div><div class="field"><small>Date</small><strong>Publiée le 27/05/2026 (~4 mois, probablement clôturée)</strong></div><div class="field"><small>Statut</small><strong>Probablement clôturée — grade A2 (niveau bachelor), plus junior que le profil de Salim</strong></div><div class="field"><small>Contact</small><strong>Un "Change Manager" de l'ACD est mentionné dans l'annonce (rôle, pas de nom)</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Le poste lui-même est trop junior (grade A2) pour Salim, mais l'annonce confirme un programme de transformation actif à l'ACD (remplacement du système central COBOL/Mainframe) avec un Change Manager déjà en poste — signal intéressant pour une approche directe/réseau plutôt qu'une candidature à ce poste précis.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : grade A2 (niveau bachelor) — largement en-deçà de la séniorité de Salim.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Signal programme ACD</div><div class="step"><b>Preuve</b>B — portail officiel</div><div class="step"><b>Fraîcheur</b>~4 mois</div><div class="step"><b>Fit</b>Poste junior / signal fort</div><div class="step"><b>Action</b>Networking, pas candidature directe</div></div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">VOIR L'OFFRE</a></div><div class="message">Comment postuler : Ce poste précis (grade A2) n'est pas adapté au niveau de Salim — aucune candidature recommandée sur cette offre. Signal à exploiter via networking direct auprès de l'ACD plutôt que via candidature.</div>
+</div>
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Senior Business Analyst (m/f) — réf. E00044257</div><div class="meta">Non identifié précisément — Luxembourg</div>
+<div class="tags"><span class="tag">Business Analysis</span><span class="tag warn">Détails manquants</span></div></div>
+<div class="score-badge">VÉRIF.<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>GovJobs Luxembourg</strong></div><div class="field"><small>Preuve</small><strong>B — titre indexé uniquement, contenu détaillé non retourné</strong></div><div class="field"><small>Date</small><strong>Publiée le 04/08/2026 (~53 jours)</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Titre "Senior Business Analyst" pourrait être adjacent au profil (analyse de besoins, transformation) mais responsabilités détaillées non retournées par la recherche — fit non déterminable en l'état.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : responsabilités détaillées non retournées par la recherche — fit non qualifiable en l'état.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste GovJobs</div><div class="step"><b>Preuve</b>B — titre seul</div><div class="step"><b>Fraîcheur</b>~53 jours</div><div class="step"><b>Fit</b>Indéterminé</div><div class="step"><b>Action</b>Consulter le détail de l'offre</div></div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature directement sur le portail GovJobs, après consultation du détail complet de l'offre.</div>
+</div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card verify">
+<div class="card-top">
+<div><div class="title">Maxime Aerts nommé CIO de la Bourse de Luxembourg (LuxSE)</div><div class="meta">Luxembourg Stock Exchange (LuxSE)</div></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Paperjam — B, résultat indexé</strong></div>
+<div class="field"><small>Date/période</small><strong>Prise de fonction annoncée au 1er novembre — année exacte non confirmée dans l'extrait</strong></div>
+</div>
+<div class="message">"La nomination d'Aerts... marque la volonté de la Bourse de consolider son avance technologique dans un contexte où la transformation digitale redéfinit les infrastructures de marché."</div>
+<div class="message" style="background:#edf0ee;color:#48554e">Pourquoi cela peut générer une future opportunité : Un nouveau CIO lance typiquement une revue de gouvernance IT et des initiatives de transformation dans les 6-12 mois suivant sa prise de fonction — fenêtre de networking à cibler.</div>
+<div class="actions"><a class="btn secondary" href="https://paperjam.lu/article/maxime-aerts-cio-de-la-bourse-de-luxembourg" target="_blank" rel="noopener">VOIR LA SOURCE</a></div>
+</div>
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Programme de transformation digitale de l'Administration des contributions directes (ACD)</div><div class="meta">ACD — Ministère des Finances, Luxembourg</div></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>GovJobs Luxembourg — B, résultat indexé</strong></div>
+<div class="field"><small>Date/période</small><strong>Non daté précisément — programme actif signalé via une offre de recrutement associée (mai 2026)</strong></div>
+</div>
+<div class="message">"L'ACD lance un programme de transformation digitale majeur pour remplacer son système informatique central basé sur des technologies COBOL/Mainframe par une architecture moderne, souveraine, modulaire et évolutive."</div>
+<div class="message" style="background:#edf0ee;color:#48554e">Pourquoi cela peut générer une future opportunité : Programme pluriannuel de grande ampleur avec un Change Manager déjà en poste — terrain propice à une mission de coaching agile / conduite du changement senior à moyen terme.</div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A2/Mai/20260527-chargdeconduiteduchangementetd-476149.html" target="_blank" rel="noopener">VOIR LA SOURCE</a></div>
+</div>
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Banque de Luxembourg — catégorie "Transformation" active sur le portail carrière</div><div class="meta">Banque de Luxembourg</div></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Portail carrière Banque de Luxembourg — B, résultat indexé</strong></div>
+<div class="field"><small>Date/période</small><strong>Non daté — portail carrière consulté au moment de la recherche</strong></div>
+</div>
+<div class="message">Listing global de postes filtré par métier "Transformation" / "Digital Transformation" (18 à 21 offres tous métiers confondus au moment de la recherche) — détail des postes individuels non retourné par la recherche.</div>
+<div class="message" style="background:#edf0ee;color:#48554e">Pourquoi cela peut générer une future opportunité : Volume significatif de postes actifs sous la filière Transformation suggère une activité de recrutement soutenue dans ce domaine — à explorer directement sur le portail pour identifier des postes de niveau senior.</div>
+<div class="actions"><a class="btn secondary" href="https://jobs.banquedeluxembourg.com/offre-de-emploi/liste-offres.aspx" target="_blank" rel="noopener">VOIR LA SOURCE</a></div>
+</div>
+<div class="card verify">
+<div class="card-top">
+<div><div class="title">Vincent Eggen (Pictet Technologies) élu "CIO of the Year 2026" — gala Golden-i</div><div class="meta">Pictet Technologies / écosystème CIO Luxembourg</div></div>
+</div>
+<div class="fields">
+<div class="field"><small>Source</small><strong>Paperjam / ITnation — B, résultat indexé</strong></div>
+<div class="field"><small>Date/période</small><strong>2026 (gala récent)</strong></div>
+</div>
+<div class="message">"Le dirigeant de Pictet Technologies a reçu le prix de CIO of the Year dans le cadre de la 12e édition du gala Golden-i, qui a eu lieu ce jeudi au siège de PwC Luxembourg."</div>
+<div class="message" style="background:#edf0ee;color:#48554e">Pourquoi cela peut générer une future opportunité : Signal de visibilité dans l'écosystème CIO/tech Luxembourg — opportunité de networking ciblé plutôt qu'une offre d'emploi directe.</div>
+<div class="actions"><a class="btn secondary" href="https://paperjam.lu/article/vincent-eggen-est-nouveau-cio-" target="_blank" rel="noopener">VOIR LA SOURCE</a></div>
+</div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card hot">
+<div class="card-top">
+<div><div class="title">Change Management Specialist – Accounting and Corporate Services Transformation</div><div class="meta">BDO Luxembourg — Cloche d'Or, Luxembourg</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag">Transformation</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">HOT<small>PRIORITÉ 1</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>Portail carrière BDO (ATS Skeeled), indexé via WebSearch</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch, extrait direct du portail employeur</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — listing hébergé sur le portail de candidature actif de BDO</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Rôle central sur "strategic transformation programme" avec change management, stakeholder engagement, communication et transformation monitoring — alignement direct avec l'expertise Change Management / coaching de managers de Salim.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : l'annonce cible "Senior or Assistant Manager level, 4 à 6 ans d'expérience" — niveau d'entrée inférieur aux 20+ ans d'expérience de Salim ; à clarifier directement avec BDO si un rôle senior/leadership existe en parallèle.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert sur portail BDO</div><div class="step"><b>Preuve</b>B — Skeeled ATS</div><div class="step"><b>Fraîcheur</b>Non confirmée</div><div class="step"><b>Fit</b>Fort sur le fond</div><div class="step"><b>Action</b>Candidater + vérifier niveau</div></div>
+<div class="actions"><a class="btn secondary" href="https://app.skeeled.com/offer/c/6a703ebb432df7b7c91c890a" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://app.skeeled.com/offer/c/6a703ebb432df7b7c91c890a" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature directement sur le portail carrière BDO Luxembourg (ATS Skeeled), via le lien de l'offre.</div>
+</div>
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">Senior Change Manager – Process Optimisation &amp; Digitisation (12-month FTC)</div><div class="meta">Aztec Group — Luxembourg</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag">Programme/Projet</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">HOT<small>PRIORITÉ 2</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Exigence rapportée : "10 years' experience in a change environment and Change Management/Programme/Project qualifications" — correspondance quasi directe avec le profil (change management, gestion de programme, 20+ ans d'expérience).</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : contrat à durée déterminée (12 mois) — à évaluer selon les préférences de Salim pour un poste permanent vs mission longue.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert LinkedIn</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Non confirmée</div><div class="step"><b>Fit</b>Très fort</div><div class="step"><b>Action</b>Candidater via LinkedIn</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/senior-change-manager-process-optimisation-digitisation-12-month-ftc-at-aztec-group-3666788486" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/senior-change-manager-process-optimisation-digitisation-12-month-ftc-at-aztec-group-3666788486" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs (bouton de candidature sur la page de l'offre).</div>
+</div>
+<div class="card hot">
+<div class="card-top">
+<div><div class="title">2 Project Managers (m/f) — réf. E00044054/F00044055/M00044056</div><div class="meta">Administration de la Navigation Aérienne (ANA), Ministère de la Mobilité et des Travaux publics — Findel, Luxembourg</div>
+<div class="tags"><span class="tag">Project Management</span><span class="tag neutral">Secteur public</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">HOT<small>PRIORITÉ 3</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>GovJobs Luxembourg (govjobs.public.lu)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch, portail officiel de l'État</strong></div><div class="field"><small>Date</small><strong>Publiée le 28/07/2026</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — ~60 jours depuis publication ; les postes GovJobs ferment généralement sous 3 à 6 semaines, à vérifier directement sur le portail</strong></div><div class="field"><small>Contact</small><strong>PMO mentionné dans l'annonce (rôle, pas de nom)</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : "Acteurs clés de la gestion et de la coordination de projets stratégiques et transversaux liés à la modernisation et à la digitalisation de la navigation aérienne, à l'innovation technologique et à la transformation organisationnelle" — correspond bien à l'expertise Project/Program Management et transformation organisationnelle. Master + 3 ans d'expérience min. (largement dépassé), anglais B2 requis.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : statut d'ouverture non reconfirmé à ce jour (26/09) — vérifier avant de candidater que le poste est toujours listé comme actif.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert GovJobs</div><div class="step"><b>Preuve</b>B — portail officiel</div><div class="step"><b>Fraîcheur</b>60 jours</div><div class="step"><b>Fit</b>Bon</div><div class="step"><b>Action</b>Vérifier statut + candidater</div></div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature directement sur le portail GovJobs Luxembourg via le lien de l'offre.</div>
+</div><div class="card warm">
+<div class="card-top">
+<div><div class="title">Senior Head of Change Management Programme Unit</div><div class="meta">EIB — European Investment Bank — Luxembourg (siège)</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag">Transformation Groupe</span><span class="tag warn">Statut incertain</span></div></div>
+<div class="score-badge">WARM<small>FIT EXCEPTIONNEL</small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>Agrégateurs tiers unjobs.org / unjobnet.org (page eib.org d'origine non retrouvée directement)</strong></div><div class="field"><small>Preuve</small><strong>C — rapporté par une source secondaire, EIB non confirmée directement</strong></div><div class="field"><small>Date</small><strong>Process indiqué : Assessment Centres avril/mai 2026, entretiens mai/juin 2026</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — le calendrier rapporté suggère un processus de recrutement probablement déjà avancé ou clos en septembre 2026</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : "Set the vision and strategic direction for a Group-wide approach to organisational change, ensuring consistent adoption practices, harmonised methodologies and sustainable value realisation across EIB Group transformation programmes" — fit exceptionnel avec transformation organisationnelle, change management à l'échelle groupe et coaching de dirigeants. Grade 6, CDI.</div>
+
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste EIB (grade 6)</div><div class="step"><b>Preuve</b>C — agrégateurs</div><div class="step"><b>Fraîcheur</b>Process probablement clos</div><div class="step"><b>Fit</b>Exceptionnel</div><div class="step"><b>Action</b>Vérifier + réseauter</div></div>
+<div class="actions"><a class="btn secondary" href="https://www.unjobnet.org/jobs/detail/eib-senior-head-of-change-management-programme-unit-based-in-luxembourg-85014023" target="_blank" rel="noopener">VOIR L'OFFRE</a></div><div class="message">Comment postuler : Lien de candidature exact non identifié. Si un nouveau cycle de recrutement s'ouvre, la candidature se ferait via le portail carrière officiel EIB (erecruitment.eib.org) — à consulter directement.</div>
+</div>
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Business Change Manager (CMB)</div><div class="meta">Advisory Key — Luxembourg</div>
+<div class="tags"><span class="tag">Change Management</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">WARM<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Intitulé "Business Change Manager" — cohérent avec l'expertise Change Management de Salim ; détails de responsabilités non retournés par la recherche, à valider en consultant l'offre complète.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : responsabilités détaillées non retournées par la recherche — à vérifier avant candidature.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert LinkedIn</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Non confirmée</div><div class="step"><b>Fit</b>Bon (à confirmer)</div><div class="step"><b>Action</b>Consulter l'offre complète</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/business-change-manager-cmb-at-advisory-key-4023470658" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/business-change-manager-cmb-at-advisory-key-4023470658" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs.</div>
+</div>
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Project Manager (M/F) – Business Transformation</div><div class="meta">Grant Thornton Luxembourg — Luxembourg</div>
+<div class="tags"><span class="tag">Business Transformation</span><span class="tag neutral">Luxembourg</span><span class="tag warn">Statut incertain</span></div></div>
+<div class="score-badge">WARM<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée — identifiant d'annonce ancien, possiblement expirée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Intitulé directement aligné avec Project Management + Business Transformation, deux piliers du profil de Salim, chez un cabinet d'audit/conseil présent à Luxembourg.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : l'identifiant de l'annonce est relativement ancien : forte probabilité que l'offre soit expirée, à vérifier avant toute action.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste LinkedIn (ancien ?)</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Incertaine</div><div class="step"><b>Fit</b>Bon</div><div class="step"><b>Action</b>Vérifier si toujours active</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/project-manager-m-f-%E2%80%93-business-transformation-at-grant-thornton-luxembourg-2901739363" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/project-manager-m-f-%E2%80%93-business-transformation-at-grant-thornton-luxembourg-2901739363" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs, si l'offre est encore active — sinon consulter directement le site carrières de Grant Thornton Luxembourg.</div>
+</div>
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Business Transformation Manager - Luxembourg</div><div class="meta">Revolut — Luxembourg</div>
+<div class="tags"><span class="tag">Business Transformation</span><span class="tag neutral">Scale-up</span><span class="tag warn">Statut incertain</span></div></div>
+<div class="score-badge">WARM<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée — identifiant d'annonce ancien, possiblement expirée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Intitulé en correspondance directe avec l'expertise transformation de Salim, chez une fintech en forte croissance disposant d'un hub à Luxembourg.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : l'identifiant de l'annonce est relativement ancien : forte probabilité que l'offre soit expirée, à vérifier avant toute action.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste LinkedIn (ancien ?)</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Incertaine</div><div class="step"><b>Fit</b>Bon</div><div class="step"><b>Action</b>Vérifier si toujours active</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/business-transformation-manager-luxembourg-at-revolut-2842525319" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/business-transformation-manager-luxembourg-at-revolut-2842525319" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs, si l'offre est encore active — sinon consulter directement careers.revolut.com.</div>
+</div>
+<div class="card warm">
+<div class="card-top">
+<div><div class="title">Service Delivery Manager – Group Security (f/m/d)</div><div class="meta">Deutsche Börse — Luxembourg</div>
+<div class="tags"><span class="tag">Delivery Management</span><span class="tag neutral">Luxembourg</span></div></div>
+<div class="score-badge">WARM<small></small></div>
+</div>
+<div class="fields"><div class="field"><small>Source</small><strong>LinkedIn Jobs (indexé)</strong></div><div class="field"><small>Preuve</small><strong>B — résultat indexé WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Recruteur non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message">Fit : Delivery Management dans un groupe financier international d'envergure — correspond à l'expertise Delivery Management de Salim ; domaine "Group Security" à valider selon appétence.</div>
+<div class="message" style="background:#fff1dc;color:#805000">Écarts : périmètre "Group Security" plus spécialisé/technique que l'expérience Agile/transformation habituelle de Salim — à valider.</div>
+<div class="chain"><div class="step"><b>Offre/Signal</b>Poste ouvert LinkedIn</div><div class="step"><b>Preuve</b>B — LinkedIn</div><div class="step"><b>Fraîcheur</b>Non confirmée</div><div class="step"><b>Fit</b>Correct</div><div class="step"><b>Action</b>Consulter l'offre complète</div></div>
+<div class="actions"><a class="btn secondary" href="https://lu.linkedin.com/jobs/view/service-delivery-manager-group-security-f-m-d-at-deutsche-b%C3%B6rse-3740471346" target="_blank" rel="noopener">VOIR L'OFFRE</a><a class="btn" href="https://lu.linkedin.com/jobs/view/service-delivery-manager-group-security-f-m-d-at-deutsche-b%C3%B6rse-3740471346" target="_blank" rel="noopener">POSTULER</a></div><div class="message">Comment postuler : Candidature via LinkedIn Jobs.</div>
+</div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card verify">
+<div class="card-top"><div><div class="title">Aucun brouillon Gmail préparé aujourd'hui</div><div class="meta">0 email professionnel vérifié identifié durant cette recherche</div></div></div>
+<div class="message">Conformément à la règle « ne jamais deviner un email » et « sans email vérifié : 0 brouillon est acceptable », aucun brouillon de candidature/contact n'a été préparé ce jour. Aucun recruteur, hiring manager ou email professionnel n'a pu être vérifié publiquement sur les opportunités identifiées (seule une agence de recrutement — AP Executive — est citée par son nom sur une offre non retenue, sans contact individuel ni email).</div>
+<div class="message" style="background:#edf0ee;color:#48554e">Recommandation : pour les opportunités HOT (BDO Luxembourg, Aztec Group, GovJobs ANA), candidater directement via les portails de candidature identifiés (boutons POSTULER ci-dessus) plutôt que par email direct, ces canaux n'exposant pas d'adresse de contact individuelle.</div>
+</div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><thead><tr><th>Source</th><th>Domaine</th><th>Niveau de preuve</th><th>Résultats</th></tr></thead><tbody><tr><td>GovJobs Luxembourg</td><td>govjobs.public.lu</td><td>B — indexé WebSearch</td><td>11 résultats (postes + pages contextuelles)</td></tr><tr><td>EIB Careers</td><td>eib.org / agrégateurs unjobs.org, unjobnet.org, impactpool.org</td><td>C — source secondaire (page eib.org non atteinte directement)</td><td>3 résultats</td></tr><tr><td>EPSO / Institutions UE</td><td>eu-careers.europa.eu, talent.ecb.europa.eu</td><td>B — indexé WebSearch</td><td>7 résultats ; curia/eca/consilium/europarl : aucun résultat exploitable</td></tr><tr><td>LinkedIn Jobs</td><td>linkedin.com/jobs (lu/be/fr/uk)</td><td>B — indexé WebSearch</td><td>~30 résultats individuels</td></tr><tr><td>Indeed</td><td>indeed.com</td><td>B — indexé WebSearch (faible couverture)</td><td>2 résultats individuels (Grand Est)</td></tr><tr><td>APEC</td><td>apec.fr</td><td>B — indexé WebSearch</td><td>5 résultats ; aucun résultat individuel Grand Est</td></tr><tr><td>Welcome to the Jungle</td><td>welcometothejungle.com</td><td>B — indexé WebSearch</td><td>6 résultats</td></tr><tr><td>StepStone.lu</td><td>stepstone.lu</td><td>D — aucun résultat exploitable (moteur ne renvoie que stepstone.de)</td><td>0 résultat</td></tr><tr><td>Jobat.be</td><td>jobat.be</td><td>D — aucun résultat exploitable</td><td>0 résultat</td></tr><tr><td>Hellowork</td><td>hellowork.com</td><td>B — indexé WebSearch</td><td>1 résultat individuel Grand Est</td></tr><tr><td>LesJeudis</td><td>lesjeudis.com</td><td>B — indexé WebSearch</td><td>4 résultats (localisation/entreprise non précisées)</td></tr><tr><td>Paperjam / ITnation</td><td>paperjam.lu, itnation.lu</td><td>B — indexé WebSearch</td><td>3 signaux corporate</td></tr><tr><td>Portails carrière employeurs (ATS Skeeled)</td><td>app.skeeled.com (BDO, Cactus)</td><td>B — indexé WebSearch, portail employeur direct</td><td>2 résultats</td></tr></tbody></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><thead><tr><th>Indicateur</th><th>Valeur</th></tr></thead><tbody><tr><td>Requêtes WebSearch exécutées</td><td>73 (30 + 43, deux agents dédiés)</td></tr><tr><td>Opportunités qualifiées (HOT + WARM)</td><td>8</td></tr><tr><td>HOT</td><td>3</td></tr><tr><td>WARM</td><td>5</td></tr><tr><td>À vérifier (hors quota qualifié)</td><td>5</td></tr><tr><td>Signaux de contexte</td><td>4</td></tr><tr><td>Contacts nominatifs vérifiés</td><td>0</td></tr><tr><td>Brouillons Gmail créés</td><td>0</td></tr><tr><td>Emails inventés</td><td>0</td></tr><tr><td>URLs inventées</td><td>0</td></tr></tbody></table>
+</section>
+
+<footer class="footer">Gomri.coach Career Hunter — 2026-09-26 — Rapport généré à partir de sources-career-v2.txt, search-strategy.md, career-history.csv et ai-gile-intelligence-report-template-v3.html. Recherche ciblée, non exhaustive.</footer>
+</main>
+</body>
+</html>
