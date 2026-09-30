@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-09-30</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence · AIgile</div></div></div>
+<div class="badge">Career Hunter · 2026-09-30</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien salarié</div>
+<h1>0 HOT · 1 WARM · 3 à vérifier</h1>
+<p class="lede">Recherche ciblée : aucune opportunité HOT aujourd'hui. Une offre WARM (Agile Coach SAFe, Luxembourg, via EKXEL) au fit solide mais date et statut à confirmer. Trois éléments à vérifier, tous anciens, clôturés ou de fit partiel. Accès direct aux sites bloqué : toutes les preuves sont de niveau B (indexé).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles / Belgique</span><span class="pill">Grand Est</span><span class="pill">Île-de-France</span><span class="pill">Remote Europe</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">OPPORTUNITÉS QUALIFIÉES</div>
+<div class="score">1</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>1</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucune opportunité HOT aujourd'hui</div><p class="meta">Aucune offre ne réunit fit fort, preuve directe et fraîcheur confirmée. Volontairement non remplie.</p></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">Agile Coach (SAFe) — EU Public Institution</div><div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">B / INDEXED</span><span class="tag warn">Date de publication non confirmée</span></div></div></div><div class="fields"><div class="field"><small>Entreprise</small><strong>EKXEL IT Services (client : institution publique européenne, non nommée)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>ekxel.eu (page carrière EKXEL) — résultat indexé</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Aucun recruteur nominatif identifié. Non vérifié — aucun email deviné.</strong></div></div><div class="message"><b>FIT (analyse)</b> — Fort sur le fond : coaching SAFe/Scrum/Kanban, Jira, contexte institutionnel européen, 6–10 ans d&#x27;expérience (Salim : 20+ ans).<br><b>Points forts</b> — Agile at Scale / SAFe, Jira, coaching, seniorité largement au-dessus du seuil.<br><b>Écarts</b> — Certifications SAFe demandées (SASM, POPM, RTE) : non listées au profil (PSM I seulement). Diplôme IT (BSc/MSc) à confirmer. Rôle ESN/sous-traitance, pas un poste interne. Date et statut inconnus.</div><div class="message"><b>COMMENT POSTULER</b> — Lien de candidature exact non identifié. Passer par la page de l&#x27;offre EKXEL (candidature via le portail carrière EKXEL, méthode exacte à confirmer sur la page). Page non consultée directement (accès bloqué).<br><b>Action</b> — Ouvrir l&#x27;offre, confirmer qu&#x27;elle est encore ouverte et la méthode de candidature ; vérifier l&#x27;exigence SAFe avant de postuler.</div><div class="actions"><a class="btn" href="https://www.ekxel.eu/careers/luxembourg/agile-coach/">VOIR L'OFFRE</a><span class="status no">Lien de candidature exact non identifié</span></div></div></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="card-top"><div><div class="title">Gestionnaire de projet expérimenté (m/f) (réf. E00037635 / M00037640)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">B / INDEXED</span><span class="tag warn">Publication indiquée par l&#x27;URL : septemb</span></div></div></div><div class="fields"><div class="field"><small>Entreprise</small><strong>Administration des contributions directes (ACD) — État luxembourgeois</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>govjobs.public.lu — résultat indexé</strong></div><div class="field"><small>Date</small><strong>Publication indiquée par l&#x27;URL : septembre 2025 (&gt;90 jours)</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — ancien, aucune preuve actuelle d&#x27;ouverture</strong></div><div class="field"><small>Contact</small><strong>Non identifié. Non vérifié.</strong></div></div><div class="message"><b>FIT (analyse)</b> — Pilotage de projets de transformation/changement (Agile, Lean, Prosci appréciés).<br><b>Points forts</b> — Conduite du changement, gestion de projet, Agile.<br><b>Écarts</b> — Offre probablement clôturée ; poste public à statut (condition de nationalité UE / concours possible) ; niveau moins stratégique que coach senior.</div><div class="message"><b>COMMENT POSTULER</b> — Lien de candidature exact non identifié. Les offres GovJobs se postulent sur le portail GovJobs depuis la page de l&#x27;offre (statut fonctionnaire/employé : conditions de nationalité et de statut à vérifier).<br><b>Action</b> — Vérifier sur GovJobs si l&#x27;offre est encore ouverte ; sinon surveiller les réouvertures ACD.</div><div class="actions"><a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2025/A2/Septembre/20250910-gestionnairedeprojetexprimentm-409106.html">VOIR L'OFFRE</a><span class="status no">Lien de candidature exact non identifié</span></div></div></div><div class="card verify"><div class="card-top"><div><div class="title">Senior Business Analyst (m/f) (réf. E00044257)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">B / INDEXED</span><span class="tag warn">Publication indiquée par l&#x27;URL : 4 août </span></div></div></div><div class="fields"><div class="field"><small>Entreprise</small><strong>GovJobs Luxembourg (ACD — portefeuille de projets de transformation digitale)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>govjobs.public.lu + moovijob.com — résultats indexés</strong></div><div class="field"><small>Date</small><strong>Publication indiquée par l&#x27;URL : 4 août 2026 (~57 jours)</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié. Non vérifié.</strong></div></div><div class="message"><b>FIT (analyse)</b> — Partiel : rôle d&#x27;analyste sénior avec possible rôle de gestion de projet ; plus éloigné du coaching/transformation.<br><b>Points forts</b> — 5+ ans de projets IT, capacité de gestion de projet, contexte de transformation digitale.<br><b>Écarts</b> — Intitulé Business Analyst (sous-positionnement vs Senior Agile Coach) ; statut employé de l&#x27;État.</div><div class="message"><b>COMMENT POSTULER</b> — Lien de candidature exact non identifié. Postuler via le portail GovJobs depuis la page de l&#x27;offre.<br><b>Action</b> — Basse priorité ; ne postuler que si l&#x27;objectif inclut le secteur public.</div><div class="actions"><a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html">VOIR L'OFFRE</a><span class="status no">Lien de candidature exact non identifié</span></div></div></div><div class="card verify"><div class="card-top"><div><div class="title">Senior Head of Change Management Programme Unit (Job ID 111246)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">C / SECONDARY</span><span class="tag warn">Date limite indiquée : 9 avril 2026</span></div></div></div><div class="fields"><div class="field"><small>Entreprise</small><strong>Banque européenne d&#x27;investissement (EIB) — GIS / Digital Transformation &amp; Innovation</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>unjobs.org / unjobnet.org (relais) — résultat indexé, source secondaire</strong></div><div class="field"><small>Date</small><strong>Date limite indiquée : 9 avril 2026 (dépassée)</strong></div><div class="field"><small>Statut</small><strong>Probablement clôturée — statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié. Non vérifié.</strong></div></div><div class="message"><b>FIT (analyse)</b> — Très fort sur le thème (Enterprise Change Management, transformation Groupe) mais grade 6 / niveau Head à confirmer.<br><b>Points forts</b> — Change Management, transformation organisationnelle, exposition direction.<br><b>Écarts</b> — Deadline passée ; niveau Head of Unit ; source secondaire.</div><div class="message"><b>COMMENT POSTULER</b> — Lien de candidature exact non identifié. Le portail officiel EIB (erecruitment.eib.org) est la voie normale ; l&#x27;offre est probablement close.<br><b>Action</b> — Ne pas postuler. Surveiller une réouverture ou postes similaires sur le portail EIB.</div><div class="actions"><a class="btn" href="https://unjobs.org/vacancies/1775592874914">VOIR L'OFFRE</a><span class="status no">Lien de candidature exact non identifié</span></div></div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Stratégie Gouvernement numérique 2026-2030 (Luxembourg)</div><div class="tags"><span class="tag neutral">Signal</span></div><div class="fields"><div class="field"><small>Période</small><strong>Adoptée par le Conseil de gouvernement le 17 décembre 2025</strong></div><div class="field"><small>Organisation</small><strong>Ministère de la Digitalisation / CTIE</strong></div><div class="field"><small>Source</small><strong>ctie.gouvernement.lu (indexé)</strong></div></div><div class="message">Pourquoi : Programme pluriannuel de services publics 100 % digitaux ; le CTIE annonce recruter pour une équipe IT agile et multilingue — besoin probable en delivery, Agile et conduite du changement.</div><div class="actions"><a class="btn secondary" href="https://ctie.gouvernement.lu/en/dossiers.gouv2024_mindigital+en+dossiers+2025+strategie-gouvernement-numerique-2026-2030.html">VOIR LA SOURCE</a></div></div><div class="card verify"><div class="title">Restructuration IT de l&#x27;ACD (bureau IT, portefeuille, PMO)</div><div class="tags"><span class="tag neutral">Signal</span></div><div class="fields"><div class="field"><small>Période</small><strong>Postes ouverts en 2026 (Senior BA, IT Portfolio Manager)</strong></div><div class="field"><small>Organisation</small><strong>Administration des contributions directes</strong></div><div class="field"><small>Source</small><strong>impotsdirects.public.lu / jobs.lu (indexé)</strong></div></div><div class="message">Pourquoi : Réorganisation de la division IT en cinq unités avec création d&#x27;un IT Office et d&#x27;un PMO : contexte propice à des besoins de transformation, PMO et coaching Agile.</div><div class="actions"><a class="btn secondary" href="https://impotsdirects.public.lu/fr/profil/postes-vacants-govjobs.html">VOIR LA SOURCE</a></div></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<table><tr><th>Offre</th><th>Classe</th><th>Voir l'offre</th><th>Candidature</th></tr><tr><td>Agile Coach (SAFe) — EU Public Institution<br><small>EKXEL IT Services (client : institution publique européenne, non nommée)</small></td><td>WARM</td><td><a href="https://www.ekxel.eu/careers/luxembourg/agile-coach/">Offre</a></td><td>Lien de candidature exact non identifié</td></tr><tr><td>Gestionnaire de projet expérimenté (m/f) (réf. E00037635 / M00037640)<br><small>Administration des contributions directes (ACD) — État luxembourgeois</small></td><td>À VÉRIFIER</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2025/A2/Septembre/20250910-gestionnairedeprojetexprimentm-409106.html">Offre</a></td><td>Lien de candidature exact non identifié</td></tr><tr><td>Senior Business Analyst (m/f) (réf. E00044257)<br><small>GovJobs Luxembourg (ACD — portefeuille de projets de transformation digitale)</small></td><td>À VÉRIFIER</td><td><a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/employes/2026/A1/Aout/20260804-seniorbusinessanalystmfrfe0004-492626.html">Offre</a></td><td>Lien de candidature exact non identifié</td></tr><tr><td>Senior Head of Change Management Programme Unit (Job ID 111246)<br><small>Banque européenne d&#x27;investissement (EIB) — GIS / Digital Transformation &amp; Innovation</small></td><td>À VÉRIFIER</td><td><a href="https://unjobs.org/vacancies/1775592874914">Offre</a></td><td>Lien de candidature exact non identifié</td></tr></table>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card"><div class="title">Aucun brouillon créé</div><p class="meta">Aucun recruteur / hiring manager vérifié et aucun email public confirmé : aucun brouillon simulé. Rapport interne envoyé à salimdulux@gmail.com (statut d'envoi indiqué dans la session).</p></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Recherche</th><th>Preuve</th><th>Résultat</th></tr><tr><td>WebSearch govjobs.public.lu (Agile / chef de projet / transformation)</td><td>B</td><td>4 résultats pertinents, accès direct bloqué</td></tr><tr><td>WebSearch Agile Coach / Agile Transformation Luxembourg</td><td>B</td><td>EKXEL, Baloise, OAT cités par agrégateurs — dates non confirmées</td></tr><tr><td>WebSearch EIB careers</td><td>B/C</td><td>Offre Change Management dépassée (9 avr. 2026)</td></tr><tr><td>WebSearch Transformation / Program / Senior PM Luxembourg + Bruxelles</td><td>B</td><td>Pages agrégateurs (Glassdoor/LinkedIn/Indeed) sans offre individuelle exploitable</td></tr><tr><td>WebSearch SAFe Luxembourg / CIO / signaux</td><td>B</td><td>1 signal exploitable (stratégie numérique 2026-2030)</td></tr><tr><td>WebFetch (govjobs, ekxel, moovijob, unjobs, indeed)</td><td>—</td><td>Tous BLOQUÉS par le proxy : aucune page consultée directement (aucune preuve A)</td></tr><tr><td>Non exploités : Baloise « Senior Agile Coach » et OAT « Agile Coach »</td><td>D</td><td>Mentionnés par agrégateurs mais aucune offre retrouvée : écartés</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>Recherches ciblées</td><td>16 requêtes WebSearch</td></tr><tr><td>Preuves directes (A)</td><td>0 — accès bloqué</td></tr><tr><td>Offres qualifiées</td><td>1 WARM / 0 HOT</td></tr><tr><td>À vérifier</td><td>3</td></tr><tr><td>Contacts vérifiés</td><td>0</td></tr><tr><td>Brouillons Gmail</td><td>0 (aucun contact vérifié)</td></tr><tr><td>Doublons historique</td><td>0 (historique vide)</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach · AIgile — aigile.lu · Recherche ciblée par WebSearch (non exhaustive). Preuves B/INDEXED sauf mention contraire.</footer>
+</main>
+</body>
+</html>
