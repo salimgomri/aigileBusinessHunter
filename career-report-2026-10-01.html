@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-10-01</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">AIgile · Career Intelligence</div></div></div>
+<div class="badge">Career Hunter · 2026-10-01</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Career Intelligence · Salarié</div>
+<h1>0 HOT, 2 WARM : l'EIB à traiter aujourd'hui</h1>
+<p class="lede">Recherche ciblée via WebSearch (preuves indexées, aucune page consultée directement). Priorité : poste EIB Change and Project Manager (Luxembourg), date limite possiblement le 01/10/2026. Deutsche Börse Senior PM en WARM. Aucun lien de candidature exact vérifié.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Preuve B/C</span><span class="pill">0 contact vérifié</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">2</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucune opportunité HOT aujourd'hui</div><p class="meta">Aucune offre ne cumule fit fort, preuve directe, fraîcheur confirmée et lien de candidature exact. Rapport volontairement non rempli. Priorité du jour : offre EIB 111626 (date limite possiblement aujourd'hui) — voir WARM.</p></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">Change and Project Manager – Change Management (Job ID 111626)</div><div class="meta">European Investment Bank (EIB) — GIS / DTI / Change Management Programme Unit · Luxembourg (présentiel régulier)</div></div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">B / INDEXED — page non consultée directement</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>Résultats WebSearch indexés (agrégateurs d&#x27;offres EIB, ex. impactpool/unjobs) — EIB eRecruitment</strong></div><div class="field"><small>Date</small><strong>Publication indexée : 26/08/2026. Date limite : 01/10/2026 selon un extrait, « open until filled » selon un autre → contradictoire</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — la date limite pourrait être AUJOURD&#x27;HUI</strong></div><div class="field"><small>Fit (analyse)</small><strong>Fit solide sur la conduite du changement de programmes de transformation digitale, environnement institutionnel prioritaire. Niveau (grade 5, Managerial &amp; Professional) plutôt mid/senior que Head.</strong></div><div class="field"><small>Points forts</small><strong>Change Management, transformation digitale, gouvernance projet, coaching de managers, environnement multiculturel.</strong></div><div class="field"><small>Écarts</small><strong>Cadre « EIBG Change Management Framework » (Prosci/ADKAR probable, non vérifié) ; exigences linguistiques et diplôme non vérifiés ; poste plus orienté change que Agile.</strong></div><div class="field"><small>Contact</small><strong>Non identifié. Signal : l&#x27;unité CMP recrute aussi un « Senior Head of Change Management Programme Unit » (même unité).</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message" id="how-0">COMMENT POSTULER — Candidature via le portail officiel EIB eRecruitment (recherche « 111626 » ou « Change and Project Manager »). Lien de candidature exact non identifié. À faire AUJOURD&#x27;HUI si encore ouvert.</div>
+<div class="message">ACTION — Ouvrir le portail EIB, confirmer que le poste 111626 accepte encore les candidatures, postuler le jour même.</div>
+<div class="actions"><a class="btn" href="https://erecruitment.eib.org/psc/hr/EIBJOBS/CAREERS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&amp;focus=Applicant">PORTAIL EIB (liste des postes)</a><a class="btn secondary" href="#how-0">COMMENT POSTULER</a></div></div><div class="card warm"><div class="card-top"><div><div class="title">Senior Project Manager, Asset Servicing &amp; Digital CSD Transformation (f/m/d)</div><div class="meta">Deutsche Börse Group / Clearstream · Luxembourg</div></div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">C / SECONDAIRE — page non consultée (accès bloqué)</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>WebSearch — copie secondaire workopia.io (page officielle careers.deutsche-boerse.com non retrouvée)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Fit (analyse)</small><strong>Fit fort sur le rôle : pilotage de programmes de transformation stratégiques, gouvernance, stakeholders, reporting exécutif, Digital CSD / DLT, secteur financier.</strong></div><div class="field"><small>Points forts</small><strong>Senior PM / Program Management, transformation, stakeholders exécutifs, services financiers.</strong></div><div class="field"><small>Écarts</small><strong>Expertise post-trade/custody, DLT/tokenisation et allemand/anglais : exigences détaillées non vérifiées ; Agile non central dans l&#x27;extrait.</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message" id="how-1">COMMENT POSTULER — Postuler via le portail carrières Deutsche Börse Group (careers.deutsche-boerse.com) en cherchant l&#x27;intitulé exact. Lien de candidature exact non identifié.</div>
+<div class="message">ACTION — Retrouver l&#x27;annonce officielle sur careers.deutsche-boerse.com, vérifier statut/date, puis postuler.</div>
+<div class="actions"><a class="btn" href="https://workopia.io/jobs/8f7af1a56995ec76a58d002ad51d09c1">VOIR L&#x27;OFFRE (copie secondaire)</a><a class="btn secondary" href="#how-1">COMMENT POSTULER</a></div></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="card-top"><div><div class="title">Agile Coach with SAFe certification for EU Public Institution</div><div class="meta">EKXEL (ESN) pour une institution publique européenne · Luxembourg</div></div></div>
+<div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">B / INDEXED — page non consultée (accès bloqué)</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>WebSearch — page ekxel.eu indexée + agrégateurs</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Fit (analyse)</small><strong>Rôle Agile Coach / Release Train SAFe, bon alignement technique ; mais poste de consultant via ESN.</strong></div><div class="field"><small>Points forts</small><strong>SAFe, Agile at Scale, facilitation, 20+ ans d&#x27;expérience (au-delà des 6–10 ans demandés).</strong></div><div class="field"><small>Écarts</small><strong>Sur-qualification ; certification SAFe exigée (Salim : PSM I seulement, aucune certification SAFe listée) ; rémunération indexée (2 600–3 200 €/mois, source secondaire) très inférieure au niveau visé ; statut ESN.</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message" id="how-2">COMMENT POSTULER — Candidature via la page carrières EKXEL (formulaire/bouton non vérifié). Lien de candidature exact non identifié.</div>
+<div class="message">ACTION — Ne pas priorité. Vérifier la fourchette de rémunération réelle avant tout contact.</div>
+<div class="actions"><a class="btn" href="https://www.ekxel.eu/careers/luxembourg/agile-coach/">VOIR L&#x27;OFFRE</a><a class="btn secondary" href="#how-2">COMMENT POSTULER</a></div></div><div class="card verify"><div class="card-top"><div><div class="title">Agile Transformation Coach (mission 22/10/2026 → 31/10/2027, 13 mois)</div><div class="meta">Keystone Solutions (client final non identifié) · Bruxelles, Belgique</div></div></div>
+<div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">B / INDEXED — page non consultée</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>WebSearch — wearedevelopers.com</strong></div><div class="field"><small>Date</small><strong>Début de mission : 22/10/2026 ; date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Fit (analyse)</small><strong>Très bon fit métier (transformation IT, coaching), mais c&#x27;est une mission en régie/freelance, pas un poste salarié.</strong></div><div class="field"><small>Points forts</small><strong>Agile Transformation, coaching, IT transformation.</strong></div><div class="field"><small>Écarts</small><strong>Format mission (hors périmètre salarié) ; client et exigences linguistiques non vérifiés.</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message" id="how-3">COMMENT POSTULER — Candidature via la page WeAreDevelopers / Keystone Solutions. Lien de candidature exact non identifié.</div>
+<div class="message">ACTION — À transmettre au flux freelance (Business Hunter) si pertinent.</div>
+<div class="actions"><a class="btn" href="https://www.wearedevelopers.com/jobs/ext/2836382-agile-transformation-coach">VOIR L&#x27;OFFRE</a><a class="btn secondary" href="#how-3">COMMENT POSTULER</a></div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">EIB — recrutement d&#x27;un « Senior Head of Change Management Programme Unit » (Luxembourg)</div><div class="meta">Annonce indexée (unjobs.org / unjobnet.org), date non confirmée</div><p><b>Pourquoi :</b> Même unité (CMP, DTI/GIS) que l&#x27;offre 111626 : l&#x27;EIB structure et renforce son programme de conduite du changement digital ; possible ouverture de postes seniors ou de contacts décisionnels.</p><div class="actions"><a class="btn secondary" href="https://unjobs.org/vacancies/1775592874914">SOURCE</a></div></div><div class="card verify"><div class="title">Helvetia Baloise — création du poste de Chief Technology &amp; Transformation Officer, effectif 01/10/2026</div><div class="meta">ICTjournal, 22/09/2026 (indexé)</div><p><b>Pourquoi :</b> Nouvelle gouvernance transformation au niveau groupe (Baloise est présent au Luxembourg) : un nouveau CTTO lance généralement des chantiers de transformation. Lien avec le Luxembourg non confirmé.</p><div class="actions"><a class="btn secondary" href="https://www.ictjournal.ch/news/2026-09-22/helvetia-baloise-nomme-un-directeur-technologique-et-une-directrice-de-la">SOURCE</a></div></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">Change and Project Manager – Change Management (Job ID 111626)</div><div class="meta">European Investment Bank (EIB) — GIS / DTI / Change Management Programme Unit · Luxembourg (présentiel régulier)</div></div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">B / INDEXED — page non consultée directement</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>Résultats WebSearch indexés (agrégateurs d&#x27;offres EIB, ex. impactpool/unjobs) — EIB eRecruitment</strong></div><div class="field"><small>Date</small><strong>Publication indexée : 26/08/2026. Date limite : 01/10/2026 selon un extrait, « open until filled » selon un autre → contradictoire</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer — la date limite pourrait être AUJOURD&#x27;HUI</strong></div><div class="field"><small>Fit (analyse)</small><strong>Fit solide sur la conduite du changement de programmes de transformation digitale, environnement institutionnel prioritaire. Niveau (grade 5, Managerial &amp; Professional) plutôt mid/senior que Head.</strong></div><div class="field"><small>Points forts</small><strong>Change Management, transformation digitale, gouvernance projet, coaching de managers, environnement multiculturel.</strong></div><div class="field"><small>Écarts</small><strong>Cadre « EIBG Change Management Framework » (Prosci/ADKAR probable, non vérifié) ; exigences linguistiques et diplôme non vérifiés ; poste plus orienté change que Agile.</strong></div><div class="field"><small>Contact</small><strong>Non identifié. Signal : l&#x27;unité CMP recrute aussi un « Senior Head of Change Management Programme Unit » (même unité).</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message" id="how-0">COMMENT POSTULER — Candidature via le portail officiel EIB eRecruitment (recherche « 111626 » ou « Change and Project Manager »). Lien de candidature exact non identifié. À faire AUJOURD&#x27;HUI si encore ouvert.</div>
+<div class="message">ACTION — Ouvrir le portail EIB, confirmer que le poste 111626 accepte encore les candidatures, postuler le jour même.</div>
+<div class="actions"><a class="btn" href="https://erecruitment.eib.org/psc/hr/EIBJOBS/CAREERS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&amp;focus=Applicant">PORTAIL EIB (liste des postes)</a><a class="btn secondary" href="#how-0">COMMENT POSTULER</a></div></div><div class="card warm"><div class="card-top"><div><div class="title">Senior Project Manager, Asset Servicing &amp; Digital CSD Transformation (f/m/d)</div><div class="meta">Deutsche Börse Group / Clearstream · Luxembourg</div></div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">C / SECONDAIRE — page non consultée (accès bloqué)</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>WebSearch — copie secondaire workopia.io (page officielle careers.deutsche-boerse.com non retrouvée)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Fit (analyse)</small><strong>Fit fort sur le rôle : pilotage de programmes de transformation stratégiques, gouvernance, stakeholders, reporting exécutif, Digital CSD / DLT, secteur financier.</strong></div><div class="field"><small>Points forts</small><strong>Senior PM / Program Management, transformation, stakeholders exécutifs, services financiers.</strong></div><div class="field"><small>Écarts</small><strong>Expertise post-trade/custody, DLT/tokenisation et allemand/anglais : exigences détaillées non vérifiées ; Agile non central dans l&#x27;extrait.</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message" id="how-1">COMMENT POSTULER — Postuler via le portail carrières Deutsche Börse Group (careers.deutsche-boerse.com) en cherchant l&#x27;intitulé exact. Lien de candidature exact non identifié.</div>
+<div class="message">ACTION — Retrouver l&#x27;annonce officielle sur careers.deutsche-boerse.com, vérifier statut/date, puis postuler.</div>
+<div class="actions"><a class="btn" href="https://workopia.io/jobs/8f7af1a56995ec76a58d002ad51d09c1">VOIR L&#x27;OFFRE (copie secondaire)</a><a class="btn secondary" href="#how-1">COMMENT POSTULER</a></div></div><div class="card verify"><div class="card-top"><div><div class="title">Agile Coach with SAFe certification for EU Public Institution</div><div class="meta">EKXEL (ESN) pour une institution publique européenne · Luxembourg</div></div></div>
+<div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">B / INDEXED — page non consultée (accès bloqué)</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>WebSearch — page ekxel.eu indexée + agrégateurs</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Fit (analyse)</small><strong>Rôle Agile Coach / Release Train SAFe, bon alignement technique ; mais poste de consultant via ESN.</strong></div><div class="field"><small>Points forts</small><strong>SAFe, Agile at Scale, facilitation, 20+ ans d&#x27;expérience (au-delà des 6–10 ans demandés).</strong></div><div class="field"><small>Écarts</small><strong>Sur-qualification ; certification SAFe exigée (Salim : PSM I seulement, aucune certification SAFe listée) ; rémunération indexée (2 600–3 200 €/mois, source secondaire) très inférieure au niveau visé ; statut ESN.</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message" id="how-2">COMMENT POSTULER — Candidature via la page carrières EKXEL (formulaire/bouton non vérifié). Lien de candidature exact non identifié.</div>
+<div class="message">ACTION — Ne pas priorité. Vérifier la fourchette de rémunération réelle avant tout contact.</div>
+<div class="actions"><a class="btn" href="https://www.ekxel.eu/careers/luxembourg/agile-coach/">VOIR L&#x27;OFFRE</a><a class="btn secondary" href="#how-2">COMMENT POSTULER</a></div></div><div class="card verify"><div class="card-top"><div><div class="title">Agile Transformation Coach (mission 22/10/2026 → 31/10/2027, 13 mois)</div><div class="meta">Keystone Solutions (client final non identifié) · Bruxelles, Belgique</div></div></div>
+<div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">B / INDEXED — page non consultée</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>WebSearch — wearedevelopers.com</strong></div><div class="field"><small>Date</small><strong>Début de mission : 22/10/2026 ; date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Fit (analyse)</small><strong>Très bon fit métier (transformation IT, coaching), mais c&#x27;est une mission en régie/freelance, pas un poste salarié.</strong></div><div class="field"><small>Points forts</small><strong>Agile Transformation, coaching, IT transformation.</strong></div><div class="field"><small>Écarts</small><strong>Format mission (hors périmètre salarié) ; client et exigences linguistiques non vérifiés.</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Aucun email vérifié</strong></div></div>
+<div class="message" id="how-3">COMMENT POSTULER — Candidature via la page WeAreDevelopers / Keystone Solutions. Lien de candidature exact non identifié.</div>
+<div class="message">ACTION — À transmettre au flux freelance (Business Hunter) si pertinent.</div>
+<div class="actions"><a class="btn" href="https://www.wearedevelopers.com/jobs/ext/2836382-agile-transformation-coach">VOIR L&#x27;OFFRE</a><a class="btn secondary" href="#how-3">COMMENT POSTULER</a></div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card"><div class="title">0 brouillon créé</div><p class="meta">Aucun contact (recruteur / hiring manager) ni email public vérifié n'a été identifié : aucun brouillon n'a été créé. Aucun email externe envoyé.</p></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Preuve</th><th>Résultat</th></tr><tr><td>GovJobs (site:govjobs.public.lu)</td><td>B</td><td>Résultats 2025-2026 : postes Business Analyst / gestionnaire de projets / conduite du changement. Aucun poste Agile Coach senior retenu (fit insuffisant ou exigences fonctionnaire).</td></tr><tr><td>EIB (eib.org / eRecruitment)</td><td>B</td><td>Poste Change and Project Manager 111626 identifié (indexé).</td></tr><tr><td>Indeed / Glassdoor / LinkedIn Luxembourg</td><td>B</td><td>Pages de listes agrégées, consultées via extraits uniquement ; offres Foyer (Agile Manager) et Deutsche Börse repérées.</td></tr><tr><td>Foyer — Agile Manager, Leudelange</td><td>C</td><td>Mentionné par un extrait, annonce exacte non retrouvée → non qualifié.</td></tr><tr><td>Bruxelles : Keystone Solutions, Templeton &amp; Partners</td><td>B</td><td>Missions freelance → à vérifier.</td></tr><tr><td>Signaux : ICTjournal, unjobs</td><td>B</td><td>Voir section Signaux.</td></tr><tr><td>EPSO, APEC, WTTJ, StepStone, Jobat, Hellowork, LesJeudis</td><td>—</td><td>Non interrogées dans cette exécution (recherche ciblée, non exhaustive).</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>KPI</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>2</td></tr><tr><td>À vérifier</td><td>2</td></tr><tr><td>Signaux</td><td>2</td></tr><tr><td>Contacts identifiés</td><td>0</td></tr><tr><td>Brouillons Gmail</td><td>0</td></tr><tr><td>Offres avec URL de candidature exacte</td><td>0</td></tr><tr><td>Historique (career-history.csv)</td><td>vide au départ — 4 entrées ajoutées</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach Career Hunter — recherche ciblée, non exhaustive. Faits issus de résultats indexés ; fit = analyse.</footer>
+</main>
+</body>
+</html>
