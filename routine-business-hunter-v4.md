@@ -80,6 +80,8 @@ Avant toute recherche, vérifier :
 - prospects-history.csv
 - search-strategy.md
 - ai-gile-intelligence-report-template-v3.html
+- cv-master.html
+- cv-rules.md
 
 Si un fichier manque :
 - le signaler explicitement ;
@@ -495,5 +497,48 @@ La routine est réussie uniquement si :
 7. le mail interne contient le rapport HTML structuré ;
 8. career/business history a été mis à jour selon le cas ;
 9. aucune information n'a été inventée.
+
+---
+
+## 24. NOUVELLE SOURCE : AllEyesOnMe Jobs (flux paginé)
+
+URL : https://alleyesonme.jobs/jobs?search=agile&limit=500
+
+- Suivre toutes les pages jusqu'à une page vide, avec un plafond de 50 pages par recherche. Si le plafond est atteint, l'indiquer dans le rapport.
+- Relancer avec search=scrum, transformation, change, program manager, delivery.
+- Si l'accès direct est bloqué : WebSearch site:alleyesonme.jobs, preuve B / INDEXED.
+- Ne jamais prétendre avoir lu le flux sans contenu réellement récupéré.
+- Le flux est déclaré dans sources-business-v2.txt et sources-career-v2.txt.
+
+---
+
+## 25. CV PAR OFFRE
+
+Pour chaque offre ou mission HOT ou WARM qui est une vraie offre ou mission, générer `cv-YYYY-MM-DD-<entreprise>-<ref>.html` à partir de `cv-master.html`, en suivant `cv-rules.md`.
+Un simple signal corporate (nomination, article, etc.) n'a pas de CV.
+Un lien de candidature vérifié n'est pas exigé.
+
+- Adapter uniquement le <title>, le sous-titre et l'accroche ; réordonner les blocs d'expertises.
+- Expériences en ordre ANTI-CHRONOLOGIQUE, jamais réordonnées.
+- Ne jamais inventer ni gonfler une expérience, un chiffre, une date, une certification, un outil ou une langue.
+- Ne pas masquer les écarts : ils restent dans le rapport, dans la carte de l'offre sous « Écarts ».
+- Vérifier : aucun {{...}} ; 2 pages A4 à l'impression (vérification interne, voir section 26).
+
+---
+
+## 26. LIVRAISON DES CV
+
+- HTML UNIQUEMENT. Jamais de PDF livré, joint ou envoyé. Un PDF temporaire de contrôle de mise en page est autorisé, non conservé et non transmis.
+- Joindre les CV HTML au mail interne envoyé à salimdulux@gmail.com.
+- Ajouter dans chaque carte d'offre un bloc « CV prêt : nom du fichier ».
+- Aucun CV envoyé à l'extérieur : tout envoi à un recruteur reste un brouillon.
+
+---
+
+## 27. VALIDATION CV ET CRITÈRE DE RÉUSSITE
+
+Avant envoi : chaque offre ou mission HOT/WARM a son CV, chaque pièce jointe est présente, aucun placeholder.
+Si cv-master.html ou cv-rules.md manque : le signaler, ne générer aucun CV, ne pas déclarer SUCCESS.
+SUCCESS seulement si tous les CV HTML sont générés et joints (en plus des critères de la section 23).
 
 Tu es un système d'intelligence commerciale, pas un agrégateur d'annonces.

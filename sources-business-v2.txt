@@ -238,3 +238,13 @@ A successful draft must be reported with:
 
 If draft creation fails, say so.
 Never simulate success.
+
+### AllEyesOnMe Jobs
+Domain: alleyesonme.jobs
+Priority: HIGH
+URL: https://alleyesonme.jobs/jobs?search=agile&limit=500
+
+Paginated feed: follow all pages until an empty page (cap: 50 pages per search; report if cap reached).
+Re-run with search=scrum, transformation, change, "program manager", delivery.
+If direct access is blocked: WebSearch site:alleyesonme.jobs, evidence B / INDEXED.
+Never claim to have read the feed without content actually retrieved.
