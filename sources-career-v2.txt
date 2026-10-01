@@ -7,6 +7,15 @@ The URLs below are target domains, not evidence of access.
 Direct HTTP access may be blocked. Use WebSearch as the primary discovery mechanism.
 Never claim direct consultation unless content was actually retrieved directly.
 
+## PRIORITY 1 — FEED (PAGINATED)
+
+### AllEyesOnMe Jobs
+Domain: alleyesonme.jobs
+Priority: HIGH
+Feed: https://alleyesonme.jobs/jobs?search=agile&limit=500
+Pagination: the feed is paginated; follow every page until empty (pagination parameter to confirm on first successful access, e.g. page/offset/next link). Also run search=scrum, search=transformation, search=change, search=program manager, search=delivery.
+Access: direct fetch is currently BLOCKED by the egress proxy (domain must be allowed in the environment network policy). Until then, use WebSearch site:alleyesonme.jobs and label results B / INDEXED. Never claim the feed was read unless content was actually retrieved (evidence A).
+
 ## PRIORITY 1 — LUXEMBOURG / EUROPE
 
 ### GovJobs Luxembourg
