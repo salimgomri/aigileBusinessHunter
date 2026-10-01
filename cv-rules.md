@@ -4,7 +4,7 @@ Source unique : cv-master.html. Sortie : cv-YYYY-MM-DD-<entreprise>-<ref>.html (
 
 ## Autorisé
 - Adapter le sous-titre, l'accroche (tagline) et le <title>.
-- Réordonner les expériences et les blocs d'expertises.
+- Réordonner les blocs d'expertises, jamais les expériences : ordre ANTI-CHRONOLOGIQUE obligatoire (la plus récente en premier : AIgile 2026, Open Classroom 2021, BIL 2016-2025, puis Financière Média, Kidoria, CRP Henri Tudor, Alten).
 - Reprendre les mots-clés de l'offre uniquement s'ils décrivent un fait présent dans le CV maître.
 - Conserver 2 pages A4 (vérifier à l'impression : pas de page vide, rien de coupé).
 
