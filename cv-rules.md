@@ -16,3 +16,6 @@ Source unique : cv-master.html. Sortie : cv-YYYY-MM-DD-<entreprise>-<ref>.html (
 ## Faits à ne pas dépasser (cv-master.html)
 Langues : français C2, anglais C1 (pas d'allemand). Certifications : Certified SAFe 6 Agilist, PSM I, Professional Coach (ICN).
 Expérience coeur : BIL 2016-12/2025, 1 → 13 équipes, ~110 collaborateurs. Profil coaching/transformation ; pas de Prosci/ADKAR, pas de PMP listés.
+
+## Format de livraison
+- HTML UNIQUEMENT (modifiable). Jamais de PDF livré, joint ou envoyé. Un PDF temporaire peut servir en interne à vérifier la mise en page (2 pages A4), mais il n'est pas conservé ni transmis.
