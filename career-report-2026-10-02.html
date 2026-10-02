@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-10-02</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence · AIgile</div></div></div>
+<div class="badge">Career Hunter · 2026-10-02</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien salarié</div>
+<h1>0 HOT, 2 WARM : à confirmer avant de postuler</h1>
+<p class="lede">Recherche ciblée Luxembourg / Belgique. Aucune offre avec date et statut confirmés ; flux AllEyesOnMe et GovJobs bloqués par le proxy (preuve indexée uniquement). Deux offres WARM avec CV HTML prêts, trois à vérifier.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Preuve B / INDEXED</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">2</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Aucune opportunité HOT aujourd'hui</div><p class="meta">Aucune offre ne cumule fit fort, preuve directe et fraîcheur confirmée. Pas de remplissage artificiel.</p></article></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Agile Transformation Coach — ITS Group S.A.</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">Preuve B / INDEXED</span></div></div><div class="score-badge"><small>Fit</small>Fort</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Bruxelles, Belgique</strong></div><div class="field"><small>Source</small><strong>Indeed Belgique (résultat indexé)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> FAIT (extrait indexé) : mission d&#x27;évaluation de maturité Agile, feuille de route de transformation, gouvernance / operating model, coaching d&#x27;Agile Coaches et de la direction. ANALYSE : correspond au cœur du profil (BIL 1→13 équipes, coaching de managers, 15 SM/coaches accompagnés).<br><b>Écarts :</b> Exigences détaillées (années, langues, certifications) non vues : à confirmer. Poste ESN/conseil (ITS Group) : client final non identifié. Néerlandais éventuellement requis en Belgique : non vérifié (absent du CV).</div>
+<div class="message" id="how-6370"><b>OÙ POSTULER ?</b> <a href="https://emplois.be.indeed.com/q-agile-coach-l-bruxelles-emplois.html">https://emplois.be.indeed.com/q-agile-coach-l-bruxelles-emplois.html</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Page de résultats Indeed Belgique (« Agile Coach, Bruxelles », 1 oct. 2026) : retrouver l&#x27;annonce ITS Group dans la liste et postuler via Indeed ou via le site carrière d&#x27;ITS Group.<br><b>Action :</b> Ouvrir la liste Indeed, retrouver l&#x27;annonce, confirmer date/statut, puis postuler.</div>
+<div class="actions"><a class="btn" href="https://emplois.be.indeed.com/q-agile-coach-l-bruxelles-emplois.html">VOIR L'OFFRE</a><a class="btn secondary" href="#how-6370">COMMENT POSTULER</a><span class="btn secondary">CV PRÊT : cv-2026-10-02-its-group-agile-transformation-coach.html</span></div></article><article class="card warm"><div class="card-top"><div><div class="title">Senior Project Manager (Quapital/Hermes) — MTM Partners</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">Preuve B / INDEXED</span></div></div><div class="score-badge"><small>Fit</small>Moyen</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>alleyesonme.jobs (résultat indexé)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> FAIT (extrait indexé) : 7+ ans en gestion de projet / coordination IT–métier, français et anglais courants. ANALYSE : delivery, coordination de 30+ parties prenantes, anglais C1 / français C2 conformes.<br><b>Écarts :</b> ÉCART : méthodologies Hermes / Quapital non présentes dans le CV maître. Profil plus « PM » que coaching. Détails des missions non consultés.</div>
+<div class="message" id="how-9972"><b>OÙ POSTULER ?</b> <a href="https://alleyesonme.jobs/en/jobs/senior-project-manager-quapital-hermes-mtm-p-c1dc10">https://alleyesonme.jobs/en/jobs/senior-project-manager-quapital-hermes-mtm-p-c1dc10</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Page de l&#x27;offre sur AllEyesOnMe (domaine bloqué par le proxy, non consulté directement) : postuler via le bouton de l&#x27;annonce, ou via mtmpartners.lu/career/.<br><b>Action :</b> Ouvrir l&#x27;annonce, confirmer date/statut et le poids de Hermes/Quapital, puis postuler.</div>
+<div class="actions"><a class="btn" href="https://alleyesonme.jobs/en/jobs/senior-project-manager-quapital-hermes-mtm-p-c1dc10">VOIR L'OFFRE</a><a class="btn secondary" href="#how-9972">COMMENT POSTULER</a><span class="btn secondary">CV PRÊT : cv-2026-10-02-mtm-partners-senior-pm-quapital-hermes.html</span></div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="card-top"><div><div class="title">IT Head of Digital &amp; AI Acceleration Factory — ArcelorMittal</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Preuve C / SECONDAIRE</span></div></div><div class="score-badge"><small>Fit</small>Partiel</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg (ou Munich, Berlin, Paderborn)</strong></div><div class="field"><small>Source</small><strong>dreamworkhq (secondaire)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> Transformation Digital/AI, AI adoption, leadership d&#x27;équipes pluridisciplinaires.<br><b>Écarts :</b> Master informatique/ingénierie/data-AI et 15+ ans demandés (extrait indexé) ; rôle très orienté AI/data/ingénierie ; diplôme à comparer au CV maître.</div>
+<div class="message" id="how-1975"><b>OÙ POSTULER ?</b> <a href="https://www.dreamworkhq.com/job/836ce1c2-b2b6-4c23-8c19-707e6eebec07">https://www.dreamworkhq.com/job/836ce1c2-b2b6-4c23-8c19-707e6eebec07</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié (agrégateur secondaire). Retrouver l&#x27;annonce sur le portail carrière ArcelorMittal.<br><b>Action :</b> Retrouver l&#x27;annonce officielle avant toute décision.</div>
+<div class="actions"><a class="btn" href="https://www.dreamworkhq.com/job/836ce1c2-b2b6-4c23-8c19-707e6eebec07">VOIR L'OFFRE</a><a class="btn secondary" href="#how-1975">COMMENT POSTULER</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">Head of Client Delivery — LuxProvide</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Preuve C / SECONDAIRE</span></div></div><div class="score-badge"><small>Fit</small>Partiel</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Bertrange, Luxembourg</strong></div><div class="field"><small>Source</small><strong>bebee (secondaire)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Joseph Emeras, Chief Solutions &amp; Delivery Officer (LinkedIn) : lien hiérarchique probable mais NON confirmé comme hiring manager</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> Gestion de delivery / programmes (5+ ans demandés), coordination d&#x27;équipes transverses.<br><b>Écarts :</b> Contexte HPC / solutions techniques ; peu d&#x27;éléments sur Agile. Détails non vérifiés.</div>
+<div class="message" id="how-3901"><b>OÙ POSTULER ?</b> <a href="https://bebee.com/lu/jobs/head-of-client-delivery-luxprovide-bertrange--t7xk-753505010">https://bebee.com/lu/jobs/head-of-client-delivery-luxprovide-bertrange--t7xk-753505010</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Page carrière officielle à consulter : https://www.luxprovide.lu/career/ (page non consultée directement).<br><b>Action :</b> Vérifier sur la page carrière officielle.</div>
+<div class="actions"><a class="btn" href="https://bebee.com/lu/jobs/head-of-client-delivery-luxprovide-bertrange--t7xk-753505010">VOIR L'OFFRE</a><a class="btn secondary" href="#how-3901">COMMENT POSTULER</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">2 Project Managers (réf. E00044054 / F00044055 / M00044056) — État luxembourgeois — navigation aérienne (GovJobs)</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Preuve B / INDEXED</span></div></div><div class="score-badge"><small>Fit</small>Moyen</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>govjobs.public.lu (résultat indexé)</strong></div><div class="field"><small>Date</small><strong>Publication d&#x27;après l&#x27;URL : 2026-07-28 (~66 jours, « à vérifier »). Date limite non vue</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> Pilotage de projets stratégiques et transverses, modernisation/digitalisation, transformation organisationnelle.<br><b>Écarts :</b> Exigences linguistiques (luxembourgeois/allemand fréquents dans le secteur public) et statut fonctionnaire non vérifiés ; domaine aviation.</div>
+<div class="message" id="how-9356"><b>OÙ POSTULER ?</b> <a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html">https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. L&#x27;URL est la page « Postuler » de GovJobs : la candidature se fait par le portail GovJobs (page non consultée, domaine bloqué).<br><b>Action :</b> Vérifier clôture et exigences sur GovJobs.</div>
+<div class="actions"><a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html">VOIR L'OFFRE</a><a class="btn secondary" href="#how-9356">COMMENT POSTULER</a></div></article><article class="card verify"><div class="title">Déjà traités (career-history.csv, 2026-10-01) — non requalifiés</div><p class="meta">EIB Change and Project Manager 111626 (publié 2026-08-26, échéance possible 2026-10-01 : probablement clos) · Deutsche Börse/Clearstream Senior PM · EKXEL Agile Coach SAFe · Keystone Solutions Agile Transformation Coach (freelance, hors salarié).</p></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Aucun signal corporate concret exploitable aujourd'hui</div><p class="meta">Les recherches contextuelles n'ont fait remonter aucun événement daté et sourcé (nomination, programme annoncé). Rien n'est présenté pour éviter une phrase générique.</p></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Agile Transformation Coach — ITS Group S.A.</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">Preuve B / INDEXED</span></div></div><div class="score-badge"><small>Fit</small>Fort</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Bruxelles, Belgique</strong></div><div class="field"><small>Source</small><strong>Indeed Belgique (résultat indexé)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> FAIT (extrait indexé) : mission d&#x27;évaluation de maturité Agile, feuille de route de transformation, gouvernance / operating model, coaching d&#x27;Agile Coaches et de la direction. ANALYSE : correspond au cœur du profil (BIL 1→13 équipes, coaching de managers, 15 SM/coaches accompagnés).<br><b>Écarts :</b> Exigences détaillées (années, langues, certifications) non vues : à confirmer. Poste ESN/conseil (ITS Group) : client final non identifié. Néerlandais éventuellement requis en Belgique : non vérifié (absent du CV).</div>
+<div class="message" id="how-6370-b"><b>OÙ POSTULER ?</b> <a href="https://emplois.be.indeed.com/q-agile-coach-l-bruxelles-emplois.html">https://emplois.be.indeed.com/q-agile-coach-l-bruxelles-emplois.html</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Page de résultats Indeed Belgique (« Agile Coach, Bruxelles », 1 oct. 2026) : retrouver l&#x27;annonce ITS Group dans la liste et postuler via Indeed ou via le site carrière d&#x27;ITS Group.<br><b>Action :</b> Ouvrir la liste Indeed, retrouver l&#x27;annonce, confirmer date/statut, puis postuler.</div>
+<div class="actions"><a class="btn" href="https://emplois.be.indeed.com/q-agile-coach-l-bruxelles-emplois.html">VOIR L'OFFRE</a><a class="btn secondary" href="#how-6370">COMMENT POSTULER</a><span class="btn secondary">CV PRÊT : cv-2026-10-02-its-group-agile-transformation-coach.html</span></div></article><article class="card warm"><div class="card-top"><div><div class="title">Senior Project Manager (Quapital/Hermes) — MTM Partners</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">Preuve B / INDEXED</span></div></div><div class="score-badge"><small>Fit</small>Moyen</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>alleyesonme.jobs (résultat indexé)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> FAIT (extrait indexé) : 7+ ans en gestion de projet / coordination IT–métier, français et anglais courants. ANALYSE : delivery, coordination de 30+ parties prenantes, anglais C1 / français C2 conformes.<br><b>Écarts :</b> ÉCART : méthodologies Hermes / Quapital non présentes dans le CV maître. Profil plus « PM » que coaching. Détails des missions non consultés.</div>
+<div class="message" id="how-9972-b"><b>OÙ POSTULER ?</b> <a href="https://alleyesonme.jobs/en/jobs/senior-project-manager-quapital-hermes-mtm-p-c1dc10">https://alleyesonme.jobs/en/jobs/senior-project-manager-quapital-hermes-mtm-p-c1dc10</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Page de l&#x27;offre sur AllEyesOnMe (domaine bloqué par le proxy, non consulté directement) : postuler via le bouton de l&#x27;annonce, ou via mtmpartners.lu/career/.<br><b>Action :</b> Ouvrir l&#x27;annonce, confirmer date/statut et le poids de Hermes/Quapital, puis postuler.</div>
+<div class="actions"><a class="btn" href="https://alleyesonme.jobs/en/jobs/senior-project-manager-quapital-hermes-mtm-p-c1dc10">VOIR L'OFFRE</a><a class="btn secondary" href="#how-9972">COMMENT POSTULER</a><span class="btn secondary">CV PRÊT : cv-2026-10-02-mtm-partners-senior-pm-quapital-hermes.html</span></div></article><article class="card verify"><div class="card-top"><div><div class="title">IT Head of Digital &amp; AI Acceleration Factory — ArcelorMittal</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Preuve C / SECONDAIRE</span></div></div><div class="score-badge"><small>Fit</small>Partiel</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg (ou Munich, Berlin, Paderborn)</strong></div><div class="field"><small>Source</small><strong>dreamworkhq (secondaire)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> Transformation Digital/AI, AI adoption, leadership d&#x27;équipes pluridisciplinaires.<br><b>Écarts :</b> Master informatique/ingénierie/data-AI et 15+ ans demandés (extrait indexé) ; rôle très orienté AI/data/ingénierie ; diplôme à comparer au CV maître.</div>
+<div class="message" id="how-1975-b"><b>OÙ POSTULER ?</b> <a href="https://www.dreamworkhq.com/job/836ce1c2-b2b6-4c23-8c19-707e6eebec07">https://www.dreamworkhq.com/job/836ce1c2-b2b6-4c23-8c19-707e6eebec07</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié (agrégateur secondaire). Retrouver l&#x27;annonce sur le portail carrière ArcelorMittal.<br><b>Action :</b> Retrouver l&#x27;annonce officielle avant toute décision.</div>
+<div class="actions"><a class="btn" href="https://www.dreamworkhq.com/job/836ce1c2-b2b6-4c23-8c19-707e6eebec07">VOIR L'OFFRE</a><a class="btn secondary" href="#how-1975">COMMENT POSTULER</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">Head of Client Delivery — LuxProvide</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Preuve C / SECONDAIRE</span></div></div><div class="score-badge"><small>Fit</small>Partiel</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Bertrange, Luxembourg</strong></div><div class="field"><small>Source</small><strong>bebee (secondaire)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Joseph Emeras, Chief Solutions &amp; Delivery Officer (LinkedIn) : lien hiérarchique probable mais NON confirmé comme hiring manager</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> Gestion de delivery / programmes (5+ ans demandés), coordination d&#x27;équipes transverses.<br><b>Écarts :</b> Contexte HPC / solutions techniques ; peu d&#x27;éléments sur Agile. Détails non vérifiés.</div>
+<div class="message" id="how-3901-b"><b>OÙ POSTULER ?</b> <a href="https://bebee.com/lu/jobs/head-of-client-delivery-luxprovide-bertrange--t7xk-753505010">https://bebee.com/lu/jobs/head-of-client-delivery-luxprovide-bertrange--t7xk-753505010</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Page carrière officielle à consulter : https://www.luxprovide.lu/career/ (page non consultée directement).<br><b>Action :</b> Vérifier sur la page carrière officielle.</div>
+<div class="actions"><a class="btn" href="https://bebee.com/lu/jobs/head-of-client-delivery-luxprovide-bertrange--t7xk-753505010">VOIR L'OFFRE</a><a class="btn secondary" href="#how-3901">COMMENT POSTULER</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">2 Project Managers (réf. E00044054 / F00044055 / M00044056) — État luxembourgeois — navigation aérienne (GovJobs)</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Preuve B / INDEXED</span></div></div><div class="score-badge"><small>Fit</small>Moyen</div></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>govjobs.public.lu (résultat indexé)</strong></div><div class="field"><small>Date</small><strong>Publication d&#x27;après l&#x27;URL : 2026-07-28 (~66 jours, « à vérifier »). Date limite non vue</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Non identifié</strong></div><div class="field"><small>Email</small><strong>Non vérifié</strong></div></div>
+<div class="message"><b>Points forts (fait + analyse) :</b> Pilotage de projets stratégiques et transverses, modernisation/digitalisation, transformation organisationnelle.<br><b>Écarts :</b> Exigences linguistiques (luxembourgeois/allemand fréquents dans le secteur public) et statut fonctionnaire non vérifiés ; domaine aviation.</div>
+<div class="message" id="how-9356-b"><b>OÙ POSTULER ?</b> <a href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html">https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html</a><br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. L&#x27;URL est la page « Postuler » de GovJobs : la candidature se fait par le portail GovJobs (page non consultée, domaine bloqué).<br><b>Action :</b> Vérifier clôture et exigences sur GovJobs.</div>
+<div class="actions"><a class="btn" href="https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants/fonctionnaires/2026/A1/Juillet/20260728-2projectmanagersmfrfe00044054r-490116.html">VOIR L'OFFRE</a><a class="btn secondary" href="#how-9356">COMMENT POSTULER</a></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><article class="card verify"><div class="title">Aucun brouillon créé</div><p class="meta">Aucun contact (recruteur / hiring manager) confirmé avec email vérifié. Aucun email deviné. Aucun envoi externe.</p></article></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Statut / preuve</th></tr><tr><td>alleyesonme.jobs flux paginé</td><td>Accès direct BLOQUÉ (EGRESS_BLOCKED). WebSearch site: uniquement, preuve B. Le domaine doit être autorisé dans la politique réseau.</td></tr><tr><td>govjobs.public.lu</td><td>Accès direct BLOQUÉ (EGRESS_BLOCKED). Résultats indexés (B).</td></tr><tr><td>EIB eRecruitment</td><td>Résultats indexés (B), 111626 déjà dans l&#x27;historique.</td></tr><tr><td>Indeed BE/LU, Glassdoor, LinkedIn, bebee, dreamworkhq</td><td>Résultats indexés (B/C), pages non consultées directement.</td></tr><tr><td>Fichiers lus</td><td>sources-career-v2.txt, career-history.csv, search-strategy.md, template v3, cv-master.html, cv-rules.md : tous présents et lus.</td></tr><tr><td>Couverture</td><td>Recherche ciblée (~15 requêtes) : pas d&#x27;exhaustivité.</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>2</td></tr><tr><td>À vérifier</td><td>3</td></tr><tr><td>CV HTML générés</td><td>2</td></tr><tr><td>Brouillons Gmail</td><td>0</td></tr><tr><td>Emails externes envoyés</td><td>0</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach Career Hunter — généré le 2026-10-02. Recherche ciblée, non exhaustive.</footer>
+</main>
+</body>
+</html>
