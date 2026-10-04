@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-04</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#f4f1e7;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Hunter · aigile.lu</div></div></div>
+<div class="badge">Rapport quotidien · 2026-10-04</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence · Salim Gomri</div>
+<h1>Aucun HOT/WARM aujourd'hui</h1>
+<p class="lede">Recherche ciblée (WebSearch uniquement ; flux AllEyesOnMe bloqué). 3 offres à vérifier, 2 signaux faibles, 3 doublons écartés. Aucun besoin nouveau suffisamment prouvé pour HOT/WARM : pas de remplissage artificiel.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Île-de-France</span><span class="pill">Preuve B / INDEXED</span><span class="pill">Dates non confirmées</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">0</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>0</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucune opportunité HOT ou WARM aujourd'hui</div><div class="message">Recherche ciblée sans besoin nouveau suffisamment prouvé. Pas de remplissage artificiel.</div></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="card-top"><div><div class="title">Agile Coach — CoE Agile (CDI), BGL BNP Paribas Luxembourg</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">Date non confirmée</span><span class="tag">Preuve B / INDEXED</span></div></div><div class="score-badge"><small>Statut</small>?</div></div>
+<div class="fields"><div class="field"><small>Source</small><strong>BNP Paribas Group careers (WebSearch indexed)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Client final</small><strong>Non identifié</strong></div><div class="field"><small>TJM / durée / démarrage</small><strong>Non publiés dans les résultats</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Offre Agile Coach au sein d&#x27;un CoE Agile (contrat CDI, niveau Bac+4/5 indiqué).</div><div class="step"><b>Preuve</b>B / INDEXED — BNP Paribas Group careers (WebSearch indexed)</div><div class="step"><b>Why now</b>Aucun Why Now établi. FAIT : poste permanent, pas une mission freelance. INCERTITUDE : ouverture actuelle non vérifiée.</div><div class="step"><b>Décideur</b>Non confirmé (Head of Agile CoE probable).</div><div class="step"><b>Offre</b>Coaching Agile at Scale / structuration CoE (si format mission possible).</div></div>
+<div class="message">Problème probable (HYPOTHÈSE) : Hypothèse : montée en maturité du CoE Agile de la banque.<br>Comment postuler : Lien de candidature exact non identifié — utiliser la page source. CDI : hors format freelance, à arbitrer par Salim.<br>Écarts : CDI vs freelance ; exigence diplôme à vérifier.</div><div class="actions"><a class="btn" href="https://group.bnpparibas/emploi-carriere/offre-emploi/coach-agile-au-sein-du-coe-agile-h-f-2">VOIR LA MISSION</a><a class="btn secondary" href="https://group.bnpparibas/emploi-carriere/offre-emploi/coach-agile-au-sein-du-coe-agile-h-f-2">COMMENT POSTULER</a></div></div><div class="card verify"><div class="card-top"><div><div class="title">Senior Agile Coach — Product &amp; Engineering Transformation (France, Issy-les-Moulineaux)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">Date non confirmée</span><span class="tag">Preuve B / INDEXED</span></div></div><div class="score-badge"><small>Statut</small>?</div></div>
+<div class="fields"><div class="field"><small>Source</small><strong>free-work.com — Trait d&#x27;Union Consulting (WebSearch indexed)</strong></div><div class="field"><small>Localisation</small><strong>Issy-les-Moulineaux (Île-de-France)</strong></div><div class="field"><small>Client final</small><strong>Non identifié</strong></div><div class="field"><small>TJM / durée / démarrage</small><strong>Non publiés dans les résultats</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Mission freelance Coach Agile : transformation agile à l&#x27;échelle, coaching de managers et d&#x27;équipes produit, contexte international.</div><div class="step"><b>Preuve</b>B / INDEXED — free-work.com — Trait d&#x27;Union Consulting (WebSearch indexed)</div><div class="step"><b>Why now</b>Aucun Why Now établi (date inconnue).</div><div class="step"><b>Décideur</b>Non confirmé (agence Trait d&#x27;Union Consulting).</div><div class="step"><b>Offre</b>Agile at Scale + coaching managers.</div></div>
+<div class="message">Problème probable (HYPOTHÈSE) : Hypothèse : déploiement agile multi-équipes produit.<br>Comment postuler : Lien de candidature exact non identifié — utiliser la page source (free-work.com).<br>Écarts : TJM, durée, démarrage non confirmés ; télétravail non confirmé.</div><div class="actions"><a class="btn" href="https://www.free-work.com/fr/tech-it/autre/job-mission/coach-agile-266">VOIR LA MISSION</a><a class="btn secondary" href="https://www.free-work.com/fr/tech-it/autre/job-mission/coach-agile-266">COMMENT POSTULER</a></div></div><div class="card verify"><div class="card-top"><div><div class="title">Change and Project Manager — Digital Transformation &amp; Innovation, EIB</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">Date non confirmée</span><span class="tag">Preuve B / INDEXED</span></div></div><div class="score-badge"><small>Statut</small>?</div></div>
+<div class="fields"><div class="field"><small>Source</small><strong>EIB careers (WebSearch indexed)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Client final</small><strong>Non identifié</strong></div><div class="field"><small>TJM / durée / démarrage</small><strong>Non publiés dans les résultats</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Poste de coordination du change management d&#x27;une transformation digitale (modèle opérationnel Change Management fédéré).</div><div class="step"><b>Preuve</b>B / INDEXED — EIB careers (WebSearch indexed)</div><div class="step"><b>Why now</b>Aucun Why Now établi. EIB déjà traité côté Career Hunter (cv-2026-10-01-eib-111626).</div><div class="step"><b>Décideur</b>Non confirmé.</div><div class="step"><b>Offre</b>Change management / TOM.</div></div>
+<div class="message">Problème probable (HYPOTHÈSE) : Hypothèse : déploiement d&#x27;un modèle de change fédéré.<br>Comment postuler : URL exacte non identifiée dans les résultats — utiliser la page carrières EIB. Poste salarié (voir Career Hunter).<br>Écarts : Format salarié.</div><div class="actions"><span class="status no">URL exacte non identifiée</span></div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Arendt — Olivier Ramlot (ex-CIO BIL) nommé responsable de la stratégie IT, prise de fonction « 15 octobre »</div><div class="message">B / INDEXED · année de l&#x27;article non confirmée. Signal de nomination seul = faible. Ne pas approcher sans preuve de chantier.</div><div class="actions"><a class="btn secondary" href="https://en.paperjam.lu/article/olivier-ramlot-appointed-cio-of-arendt">VOIR LA SOURCE</a></div></div><div class="card verify"><div class="title">PM-International — Márton Fülöp nommé CTO</div><div class="message">B / INDEXED · date non confirmée · aucun chantier de transformation établi. Signal faible.</div><div class="actions"><a class="btn secondary" href="https://itnation.lu/news/marton-fu%CC%88lop-joins-pm-international-as-chief-technology-officer/">VOIR LA SOURCE</a></div></div><div class="card"><div class="title">emagine Consulting — Senior Agile Coach Product &amp; Engineering (Sanem)</div><div class="message">déjà en historique (2026-09-22, WARM) — non recompté</div></div><div class="card"><div class="title">Wemanity Belgium — Agile Coach / Transfo Lead</div><div class="message">déjà en historique (2026-10-01, WARM) — non recompté</div></div><div class="card"><div class="title">Gentis — Agile Test Coach (Luxembourg)</div><div class="message">déjà en historique (À VÉRIFIER, &gt;90 jours) — non recompté</div></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucune opportunité HOT ou WARM aujourd'hui</div><div class="message">Recherche ciblée sans besoin nouveau suffisamment prouvé. Pas de remplissage artificiel.</div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card"><div class="title">Aucun brouillon de prospection</div><div class="message">Aucun prospect HOT/WARM ; aucun CV généré (aucune offre HOT/WARM).</div></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Statut</th><th>Preuve</th></tr><tr><td>alleyesonme.jobs (flux paginé)</td><td>BLOQUÉ (egress proxy) — non consulté en direct ; WebSearch site: = 10 résultats sans Agile Coach dédié</td><td>B</td></tr><tr><td>free-work.com</td><td>WebSearch ×3</td><td>B</td></tr><tr><td>malt.fr</td><td>WebSearch — profils uniquement, aucune mission Luxembourg</td><td>B</td></tr><tr><td>getyourjob.pro</td><td>WebSearch — aucun résultat Luxembourg</td><td>—</td></tr><tr><td>freelancers.lu</td><td>WebSearch — page missions indexée, contenu non récupéré</td><td>B</td></tr><tr><td>Paperjam / Delano / ITnation</td><td>WebSearch ×4</td><td>B</td></tr><tr><td>SIMAP / TED</td><td>WebSearch — aucun appel d&#x27;offres Luxembourg exploitable (résultats SIMAP suisses)</td><td>—</td></tr><tr><td>Collective.work, FEDIL, Luxinnovation…</td><td>non interrogés ce jour</td><td>—</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>0</td></tr><tr><td>À vérifier (nouveaux)</td><td>3</td></tr><tr><td>Signaux faibles</td><td>2</td></tr><tr><td>Doublons écartés</td><td>3</td></tr><tr><td>Brouillons prospection</td><td>0</td></tr><tr><td>CV générés</td><td>0 (aucun HOT/WARM offre)</td></tr></table>
+</section>
+
+<footer class="footer">AIgile Business Hunter · 2026-10-04 · Recherche ciblée, non exhaustive · FAIT / HYPOTHÈSE / INCERTITUDE distingués</footer>
+</main>
+</body>
+</html>
