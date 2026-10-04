@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-10-04</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence · Salim Gomri</div></div></div>
+<div class="badge">Career Hunter · 2026-10-04</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport salarié du jour</div>
+<h1>2 pistes WARM, aucune HOT</h1>
+<p class="lede">Recherche ciblée (WebSearch, preuve B/C) : flux AllEyesOnMe bloqué par le proxy. 2 offres WARM (Foyer, Banque de Luxembourg) avec CV HTML prêts ; 1 à vérifier (Arhs, néerlandais exigé). Dates et statuts non confirmés.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Preuve B / INDEXED</span><span class="pill">Flux AllEyesOnMe bloqué</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">2</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>1</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><article class="card hot"><div class="title">Aucune opportunité HOT aujourd'hui</div><p class="meta">Aucune offre ne cumule fit fort, date confirmée et statut vérifié (flux AllEyesOnMe inaccessible, preuves B/C uniquement). Pas de remplissage artificiel.</p></article></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Agile Manager (H/F) — Software Factory Digital</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">Foyer Group</span></div></div></div><div class="fields"><div class="field"><small>Localisation</small><strong>Leudelange, Luxembourg</strong></div><div class="field"><small>Source / preuve</small><strong>alleyesonme.jobs (page entreprise) + relais LinkedIn — preuve B / INDEXED</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>FIT (analyse)</small><strong>Rôle de management Agile (équipe Software Factory, excellence opérationnelle) : cœur de métier de Salim.</strong></div><div class="field"><small>Points forts</small><strong>Management d&#x27;équipe Agile ; 1→13 équipes Scrum/SAFe à la BIL ; 15 Scrum Masters/Coaches recrutés et accompagnés ; secteur financier/assurance proche.</strong></div><div class="field"><small>Écarts</small><strong>Exigences détaillées (langues, années, outils) non consultées : page bloquée par le proxy. Secteur assurance absent du CV maître.</strong></div><div class="field"><small>Contact</small><strong>Guillaume Duchossoy-Kieffer (Foyer Group) a relayé l&#x27;offre sur LinkedIn — rôle exact (recruteur / manager) non confirmé. Email : non vérifié.</strong></div></div><div class="message">OÙ POSTULER / COMMENT POSTULER : Lien de candidature exact non identifié. Ouvrir la page des offres Foyer sur alleyesonme.jobs (ou le portail carrière Foyer), repérer « Agile Manager », postuler via le bouton de l&#x27;annonce.</div><div class="message">CV PRÊT : cv-2026-10-04-foyer-agile-manager.html</div><div class="actions"><a class="btn secondary" href="https://alleyesonme.jobs/en/company/foyer/jobs">VOIR L&#x27;OFFRE (Page des offres Foyer (annonce exacte non ouverte))</a><a class="btn secondary" href="https://lu.linkedin.com/in/guillaume-duchossoy-kieffer-b906b75">CONTACTER (LinkedIn)</a></div></article><article class="card warm"><div class="card-top"><div><div class="title">Transformation Office — Senior Project Manager</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">Banque de Luxembourg</span></div></div></div><div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source / preuve</small><strong>LinkedIn (relais indexé) + portail carrières BdL — preuve B / INDEXED</strong></div><div class="field"><small>Date</small><strong>Publiée il y a ~3 semaines selon un extrait indexé (date exacte non confirmée)</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>FIT (analyse)</small><strong>PM senior au sein d&#x27;un Transformation Office bancaire : très proche de l&#x27;expérience BIL de Salim.</strong></div><div class="field"><small>Points forts</small><strong>Banque luxembourgeoise ; pilotage de transformation/delivery ; Scrum/SAFe ; coaching de managers.</strong></div><div class="field"><small>Écarts</small><strong>Exigences détaillées non consultées (portail bloqué). Pas de PMP ni de Prosci/ADKAR dans le CV maître. Langues exactes à vérifier (allemand absent du CV).</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié. Email : non vérifié.</strong></div></div><div class="message">OÙ POSTULER / COMMENT POSTULER : Lien de candidature exact non identifié. Portail carrières Banque de Luxembourg : trouver « Transformation Office - Senior Project Manager » dans la liste et postuler depuis la fiche.</div><div class="message">CV PRÊT : cv-2026-10-04-banque-de-luxembourg-transformation-office-senior-pm.html</div><div class="actions"><a class="btn secondary" href="https://jobs.banquedeluxembourg.com/offre-de-emploi/liste-offres.aspx">VOIR L&#x27;OFFRE (Liste des offres BdL (annonce exacte non ouverte))</a></div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="card-top"><div><div class="title">Agile Coach &amp; Transformation Lead — Data &amp; Analytics</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Arhs Group</span></div></div></div><div class="fields"><div class="field"><small>Localisation</small><strong>Bruxelles, Belgique</strong></div><div class="field"><small>Source / preuve</small><strong>be.jooble.org (secondaire) — preuve C</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>FIT (analyse)</small><strong>Contenu très proche (6 équipes Agile, transformation à grande échelle, governance).</strong></div><div class="field"><small>Points forts</small><strong>—</strong></div><div class="field"><small>Écarts</small><strong>ÉCART MAJEUR : néerlandais courant exigé (absent du CV maître). Affinité Data &amp; Analytics non démontrée dans le CV. 5+ ans de people management : OK.</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié. Email : non vérifié.</strong></div></div><div class="message">OÙ POSTULER / COMMENT POSTULER : Lien de candidature exact non identifié. Retrouver l&#x27;annonce sur le site carrière Arhs ; l&#x27;écart linguistique la rend peu actionnable.</div><div class="actions"><a class="btn secondary" href="https://be.jooble.org/jdp/-1479817056825098716">VOIR L&#x27;OFFRE (annonce relayée Jooble, source secondaire)</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Report : 7 opportunités déjà traitées (1er–3 oct.)</div><p class="meta">EIB 111626, Clearstream, EKXEL (Agile Coach SAFe, institution UE), Keystone Solutions, ITS Group, MTM Partners, SLG, etc. : dédupliquées via career-history.csv, non re-présentées. Aucun nouveau signal corporate concret et daté trouvé aujourd'hui.</p></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Agile Manager (H/F) — Software Factory Digital</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">Foyer Group</span></div></div></div><div class="fields"><div class="field"><small>Localisation</small><strong>Leudelange, Luxembourg</strong></div><div class="field"><small>Source / preuve</small><strong>alleyesonme.jobs (page entreprise) + relais LinkedIn — preuve B / INDEXED</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>FIT (analyse)</small><strong>Rôle de management Agile (équipe Software Factory, excellence opérationnelle) : cœur de métier de Salim.</strong></div><div class="field"><small>Points forts</small><strong>Management d&#x27;équipe Agile ; 1→13 équipes Scrum/SAFe à la BIL ; 15 Scrum Masters/Coaches recrutés et accompagnés ; secteur financier/assurance proche.</strong></div><div class="field"><small>Écarts</small><strong>Exigences détaillées (langues, années, outils) non consultées : page bloquée par le proxy. Secteur assurance absent du CV maître.</strong></div><div class="field"><small>Contact</small><strong>Guillaume Duchossoy-Kieffer (Foyer Group) a relayé l&#x27;offre sur LinkedIn — rôle exact (recruteur / manager) non confirmé. Email : non vérifié.</strong></div></div><div class="message">OÙ POSTULER / COMMENT POSTULER : Lien de candidature exact non identifié. Ouvrir la page des offres Foyer sur alleyesonme.jobs (ou le portail carrière Foyer), repérer « Agile Manager », postuler via le bouton de l&#x27;annonce.</div><div class="message">CV PRÊT : cv-2026-10-04-foyer-agile-manager.html</div><div class="actions"><a class="btn secondary" href="https://alleyesonme.jobs/en/company/foyer/jobs">VOIR L&#x27;OFFRE (Page des offres Foyer (annonce exacte non ouverte))</a><a class="btn secondary" href="https://lu.linkedin.com/in/guillaume-duchossoy-kieffer-b906b75">CONTACTER (LinkedIn)</a></div></article><article class="card warm"><div class="card-top"><div><div class="title">Transformation Office — Senior Project Manager</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">Banque de Luxembourg</span></div></div></div><div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source / preuve</small><strong>LinkedIn (relais indexé) + portail carrières BdL — preuve B / INDEXED</strong></div><div class="field"><small>Date</small><strong>Publiée il y a ~3 semaines selon un extrait indexé (date exacte non confirmée)</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>FIT (analyse)</small><strong>PM senior au sein d&#x27;un Transformation Office bancaire : très proche de l&#x27;expérience BIL de Salim.</strong></div><div class="field"><small>Points forts</small><strong>Banque luxembourgeoise ; pilotage de transformation/delivery ; Scrum/SAFe ; coaching de managers.</strong></div><div class="field"><small>Écarts</small><strong>Exigences détaillées non consultées (portail bloqué). Pas de PMP ni de Prosci/ADKAR dans le CV maître. Langues exactes à vérifier (allemand absent du CV).</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié. Email : non vérifié.</strong></div></div><div class="message">OÙ POSTULER / COMMENT POSTULER : Lien de candidature exact non identifié. Portail carrières Banque de Luxembourg : trouver « Transformation Office - Senior Project Manager » dans la liste et postuler depuis la fiche.</div><div class="message">CV PRÊT : cv-2026-10-04-banque-de-luxembourg-transformation-office-senior-pm.html</div><div class="actions"><a class="btn secondary" href="https://jobs.banquedeluxembourg.com/offre-de-emploi/liste-offres.aspx">VOIR L&#x27;OFFRE (Liste des offres BdL (annonce exacte non ouverte))</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">Agile Coach &amp; Transformation Lead — Data &amp; Analytics</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Arhs Group</span></div></div></div><div class="fields"><div class="field"><small>Localisation</small><strong>Bruxelles, Belgique</strong></div><div class="field"><small>Source / preuve</small><strong>be.jooble.org (secondaire) — preuve C</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>FIT (analyse)</small><strong>Contenu très proche (6 équipes Agile, transformation à grande échelle, governance).</strong></div><div class="field"><small>Points forts</small><strong>—</strong></div><div class="field"><small>Écarts</small><strong>ÉCART MAJEUR : néerlandais courant exigé (absent du CV maître). Affinité Data &amp; Analytics non démontrée dans le CV. 5+ ans de people management : OK.</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié. Email : non vérifié.</strong></div></div><div class="message">OÙ POSTULER / COMMENT POSTULER : Lien de candidature exact non identifié. Retrouver l&#x27;annonce sur le site carrière Arhs ; l&#x27;écart linguistique la rend peu actionnable.</div><div class="actions"><a class="btn secondary" href="https://be.jooble.org/jdp/-1479817056825098716">VOIR L&#x27;OFFRE (annonce relayée Jooble, source secondaire)</a></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><article class="card verify"><div class="title">Aucun brouillon créé</div><p class="meta">Aucun email de contact vérifié : aucun brouillon (règle : ne jamais deviner un email).</p></article></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Résultat</th><th>Preuve</th></tr><tr><td>alleyesonme.jobs (flux paginé search=agile…)</td><td>Accès direct bloqué (EGRESS_BLOCKED / 403). Domaine à autoriser dans la politique réseau. Pages 0/50 lues.</td><td>—</td></tr><tr><td>WebSearch site:alleyesonme.jobs (agile coach, transformation, program/delivery)</td><td>Pages entreprise Foyer, MTM, Deloitte, KPMG…</td><td>B</td></tr><tr><td>WebSearch govjobs.public.lu</td><td>Offres déjà connues (2 PM navigation aérienne, clôture 7 sept. selon extrait)</td><td>B</td></tr><tr><td>WebSearch eib.org</td><td>Aucune offre pertinente nouvelle</td><td>B</td></tr><tr><td>WebSearch Brussels / Banque de Luxembourg / Luxembourg Agile</td><td>Arhs, BdL Transformation Office</td><td>B/C</td></tr><tr><td>Contexte (CIO/CTO transformation Luxembourg)</td><td>Aucun signal exploitable</td><td>—</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>Opportunités qualifiées (HOT+WARM)</td><td>2</td></tr><tr><td>HOT</td><td>0</td></tr><tr><td>À vérifier</td><td>1</td></tr><tr><td>CV HTML générés</td><td>2</td></tr><tr><td>Brouillons Gmail</td><td>0 (aucun email vérifié)</td></tr><tr><td>Doublons écartés</td><td>7+</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach Career Hunter · 2026-10-04 · recherche ciblée, non exhaustive · aucun email externe envoyé</footer>
+</main>
+</body>
+</html>
