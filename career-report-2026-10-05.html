@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-10-05</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence · AIgile</div></div></div>
+<div class="badge">Rapport quotidien · 2026-10-05</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Career Hunter — salarié</div>
+<h1>Journée calme : aucune nouvelle offre HOT</h1>
+<p class="lede">Recherche ciblée sur Luxembourg/Bruxelles : les résultats sont presque tous déjà dans l'historique. Une offre GovJobs à vérifier et deux signaux contextuels. Le flux AllEyesOnMe reste inaccessible (réseau).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">0 HOT</span><span class="pill">0 WARM nouvelle</span><span class="pill">1 À vérifier</span><span class="pill">2 signaux</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">0</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>0</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card hot"><div class="title">Aucune opportunité HOT aujourd'hui</div><p class="meta">Recherche ciblée : aucune offre nouvelle, fraîche et vérifiable avec fit fort. Pas de remplissage artificiel.</p></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="title">Aucune nouvelle opportunité WARM</div><p class="meta">Les WARM du 2026-10-04 (Foyer — Agile Manager ; Banque de Luxembourg — Transformation Office Senior PM) restent à traiter : leurs CV HTML existent déjà dans le dépôt et ne sont pas re-qualifiés (déduplication). Statut actuel à confirmer.</p></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="card-top"><div><div class="title">Gestionnaire de projets – Transformation des processus &amp; Digitalisation (m/f) — réf. E00044043</div>
+<div class="tags"><span class="tag neutral">À vérifier</span><span class="tag warn">Preuve B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div></div></div>
+<div class="fields"><div class="field"><small>Entreprise</small><strong>État luxembourgeois (GovJobs) — administration non identifiée</strong></div><div class="field"><small>Localisation</small><strong>Esch-sur-Alzette (extrait indexé)</strong></div><div class="field"><small>Source</small><strong>govjobs.public.lu via WebSearch (indexé)</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>FAIT</small><strong>Déploiement de nouveaux processus et outils, formation des utilisateurs, adoption des solutions (extrait indexé).</strong></div><div class="field"><small>ANALYSE</small><strong>Rôle de conduite du déploiement/adoption : proche de mon profil change/delivery, moins Agile coaching. Niveau de séniorité non vérifié.</strong></div>
+<div class="field"><small>ÉCARTS</small><strong>Exigences (langues, diplôme, grade) non vues ; page de l'offre non consultée.</strong></div><div class="field"><small>Contact</small><strong>Non identifié — aucun email deviné</strong></div></div>
+<div class="message">OÙ POSTULER ? Candidature via GovJobs (portail officiel). COMMENT ? Rechercher la réf. E00044043 sur le portail ; Lien de candidature exact non identifié. Pas de CV préparé (offre À VÉRIFIER).</div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/rechercher-parmi-offres-emploi.html">VOIR LE PORTAIL GOVJOBS</a><span class="btn secondary">COMMENT POSTULER : chercher la réf. E00044043</span></div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Stratégie Gouvernement numérique 2026-2030 adoptée</div><div class="fields"><div class="field"><small>Événement</small><strong>Stratégie Gouvernement numérique 2026-2030 adoptée</strong></div><div class="field"><small>Date / période</small><strong>Adoptée le 17 décembre 2025 (Conseil de gouvernement)</strong></div><div class="field"><small>Organisation</small><strong>Ministère de la Digitalisation / CTIE</strong></div><div class="field"><small>Source</small><strong>gouvernement.lu (indexé, B)</strong></div></div><div class="message">Pourquoi : programme pluriannuel de transformation numérique de l'État ; source probable de postes chef de projet/transformation à GovJobs en 2026-2027 (analyse, pas un fait d'offre).</div><div class="actions"><a class="btn secondary" href="https://mindigital.gouvernement.lu/en/dossiers/2025/strategie-gouvernement-numerique-2026-2030.html">VOIR LA SOURCE</a></div></div><div class="card"><div class="title">Nouveau CIO de la Bourse de Luxembourg (Maxime Aerts)</div><div class="fields"><div class="field"><small>Événement</small><strong>Nouveau CIO de la Bourse de Luxembourg (Maxime Aerts)</strong></div><div class="field"><small>Date / période</small><strong>Prise de fonction « 1er novembre » — année non confirmée dans l'extrait</strong></div><div class="field"><small>Organisation</small><strong>Luxembourg Stock Exchange</strong></div><div class="field"><small>Source</small><strong>Delano (indexé, B)</strong></div></div><div class="message">Pourquoi : un nouveau CIO avec stratégie de digitalisation accélérée et IA peut ouvrir des besoins de transformation/delivery. Date à confirmer avant toute approche ; aucun contact email vérifié.</div><div class="actions"><a class="btn secondary" href="https://delano.lu/article/maxime-aerts-cio-of-the-luxembourg-stock-exchange">VOIR LA SOURCE</a></div></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="title">Aucune nouvelle opportunité WARM</div><p class="meta">Les WARM du 2026-10-04 (Foyer — Agile Manager ; Banque de Luxembourg — Transformation Office Senior PM) restent à traiter : leurs CV HTML existent déjà dans le dépôt et ne sont pas re-qualifiés (déduplication). Statut actuel à confirmer.</p></div><div class="card verify"><div class="card-top"><div><div class="title">Gestionnaire de projets – Transformation des processus &amp; Digitalisation (m/f) — réf. E00044043</div>
+<div class="tags"><span class="tag neutral">À vérifier</span><span class="tag warn">Preuve B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div></div></div>
+<div class="fields"><div class="field"><small>Entreprise</small><strong>État luxembourgeois (GovJobs) — administration non identifiée</strong></div><div class="field"><small>Localisation</small><strong>Esch-sur-Alzette (extrait indexé)</strong></div><div class="field"><small>Source</small><strong>govjobs.public.lu via WebSearch (indexé)</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div>
+<div class="field"><small>FAIT</small><strong>Déploiement de nouveaux processus et outils, formation des utilisateurs, adoption des solutions (extrait indexé).</strong></div><div class="field"><small>ANALYSE</small><strong>Rôle de conduite du déploiement/adoption : proche de mon profil change/delivery, moins Agile coaching. Niveau de séniorité non vérifié.</strong></div>
+<div class="field"><small>ÉCARTS</small><strong>Exigences (langues, diplôme, grade) non vues ; page de l'offre non consultée.</strong></div><div class="field"><small>Contact</small><strong>Non identifié — aucun email deviné</strong></div></div>
+<div class="message">OÙ POSTULER ? Candidature via GovJobs (portail officiel). COMMENT ? Rechercher la réf. E00044043 sur le portail ; Lien de candidature exact non identifié. Pas de CV préparé (offre À VÉRIFIER).</div>
+<div class="actions"><a class="btn secondary" href="https://govjobs.public.lu/fr/rechercher-parmi-offres-emploi.html">VOIR LE PORTAIL GOVJOBS</a><span class="btn secondary">COMMENT POSTULER : chercher la réf. E00044043</span></div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card"><div class="title">Aucun brouillon Gmail aujourd'hui</div><p class="meta">Aucun contact pertinent vérifié (recruteur/hiring manager) : pas de brouillon simulé. Aucun email externe envoyé.</p></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Accès / remarque</th><th>Preuve</th></tr><tr><td>alleyesonme.jobs (flux paginé)</td><td>Accès direct BLOQUÉ (EGRESS_BLOCKED, proxy). Domaine à autoriser dans la politique réseau. Flux NON lu ; recherches site: via WebSearch</td><td>B / INDEXED</td></tr><tr><td>govjobs.public.lu</td><td>WebSearch site:</td><td>B</td></tr><tr><td>eib.org</td><td>WebSearch : aucune offre EIB retournée</td><td>—</td></tr><tr><td>LinkedIn / Indeed / Glassdoor / Jooble</td><td>WebSearch ; extraits de listes agrégées (ex. LinkedIn « 4 Coach Agile » Luxembourg)</td><td>B / C</td></tr><tr><td>Brussels / Belgique</td><td>WebSearch : Agile Transformation Coach (Keystone), Arhs — déjà dans l'historique</td><td>B / C</td></tr><tr><td>gouvernement.lu, delano.lu</td><td>Signaux contextuels</td><td>B</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>Opportunités qualifiées (HOT+WARM nouvelles)</td><td>0</td></tr><tr><td>À vérifier (nouvelles)</td><td>1</td></tr><tr><td>Signaux</td><td>2</td></tr><tr><td>CV générés</td><td>0 (aucune nouvelle offre HOT/WARM)</td></tr><tr><td>Brouillons Gmail</td><td>0</td></tr><tr><td>Recherche</td><td>Ciblée, non exhaustive ; flux AllEyesOnMe non lu</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach · AIgile — recherche ciblée, non exhaustive. Faits, analyse et incertitudes distingués.</footer>
+</main>
+</body>
+</html>
