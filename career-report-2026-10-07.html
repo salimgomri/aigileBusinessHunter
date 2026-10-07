@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-10-07</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence · AIgile</div></div></div>
+<div class="badge">Rapport carrière · 2026-10-07</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Salim Gomri · Senior Agile Coach | Senior Project Manager</div>
+<h1>2 pistes WARM, aucune HOT</h1>
+<p class="lede">Recherche ciblée (WebSearch, preuves B/INDEXED) : 2 offres WARM à confirmer (Aubay Agile Coach, Randstad Senior PM Data & Digital Transformation), 3 à vérifier. Dates et statuts non confirmés ; flux alleyesonme.jobs inaccessible (proxy).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">2 CV HTML prêts</span><span class="pill">Statuts à confirmer</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">2</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card warm"><div class="title">Aucune opportunité HOT aujourd'hui</div><div class="meta">Aucune offre ne réunit date confirmée, statut confirmé et fit fort. Pas de remplissage artificiel.</div></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">Agile Coach (réf. 305)</div><div class="meta">Aubay Luxembourg · Kirchberg, Luxembourg (hybride)</div><div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div></div><div class="score-badge"><small>FIT</small>Fort</div></div><div class="fields"><div class="field"><small>Source</small><strong>aubay.recruitee.com — via WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Aucun contact vérifié</strong></div></div><div class="message"><b>FAIT</b> — Mission : adapter les méthodes Agile au contexte, déployer les frameworks avec le CIO, coacher les équipes, former de futurs coachs internes, mesurer l&#x27;impact (dashboards), conduire la transition Waterfall → Agile ; IT Banking/Funds/Insurance. Exigence indexée : certification Scrum/Kanban.<br><b>ANALYSE (points forts)</b> — Coaching d&#x27;équipes et de managers, transition vers l&#x27;Agile à l&#x27;échelle (BIL : 1 → 13 équipes, ~110 collaborateurs), recrutement/accompagnement de 15 SM et coachs, PSM I + SAFe 6, contexte bancaire.<br><b>ÉCART</b> — Kanban absent du CV maître (certification Scrum/Kanban demandée : PSM I couvre Scrum seulement). Séniorité / niveau de rémunération (ESN) non vus. Détail des exigences non consulté.</div><div class="message"><b>OÙ POSTULER ?</b> Page de l'offre : https://aubay.recruitee.com/o/agile-coach-ref-305?lang=en<br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Méthode : ouvrir la page de l&#x27;offre sur le portail carrière Aubay (Recruitee) et suivre le bouton de candidature affiché sur la page (non vérifié directement : page non consultée, accès bloqué).<br><b>Action</b> : Ouvrir l&#x27;offre, confirmer qu&#x27;elle est encore ouverte, postuler via le portail Aubay.</div><div class="actions"><a class="btn" href="https://aubay.recruitee.com/o/agile-coach-ref-305?lang=en">VOIR L'OFFRE</a><a class="btn secondary" href="#opportunities">COMMENT POSTULER</a><span class="status ok">CV PRÊT : cv-2026-10-07-aubay-agile-coach-ref305.html</span></div></div><div class="card warm"><div class="card-top"><div><div class="title">Senior Project Manager – Data &amp; Digital Transformation (M/F)</div><div class="meta">Randstad Luxembourg (pour une institution européenne) · Luxembourg</div><div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div></div><div class="score-badge"><small>FIT</small>Moyen-fort</div></div><div class="fields"><div class="field"><small>Source</small><strong>moovijob.com — via WebSearch (relais alleyesonme.jobs indexé)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Aucun contact vérifié (recruteur Randstad non nommé)</strong></div></div><div class="message"><b>FAIT</b> — Rôle temporaire dans l&#x27;équipe Project &amp; Digitalisation Coordination d&#x27;un programme de transformation digitale (modernisation SI, plateformes data, analytics). Expérience data/analytics = « strong advantage » ; expérience de programmes de transformation à grande échelle = « beneficial ».<br><b>ANALYSE (points forts)</b> — Pilotage de transformation, séniorité, facilitation, change, contexte institutionnel/financier.<br><b>ÉCART</b> — Expérience data &amp; analytics absente du CV maître. Contrat temporaire (durée non vue). Langues exigées non vues. Institution et référence non identifiées.</div><div class="message"><b>OÙ POSTULER ?</b> Page de l'offre : https://en.moovijob.com/job-offers/randstad/senior-project-manager-data-digital-transformation-mf<br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Méthode : page de l&#x27;offre Moovijob (annonce Randstad) ; candidature via le formulaire affiché sur la page (non vérifié). Même annonce relayée sur alleyesonme.jobs.<br><b>Action</b> : Ouvrir l&#x27;offre, vérifier durée du contrat, langues et statut, puis postuler.</div><div class="actions"><a class="btn" href="https://en.moovijob.com/job-offers/randstad/senior-project-manager-data-digital-transformation-mf">VOIR L'OFFRE</a><a class="btn secondary" href="#opportunities">COMMENT POSTULER</a><span class="status ok">CV PRÊT : cv-2026-10-07-randstad-senior-pm-data-digital-transformation.html</span></div></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Senior Agile Coach — Emagine S.A.</div><div class="meta">Luxembourg · Freelance (Product &amp; Engineering transformation, coaching PM/Engineering Managers/Scrum Masters)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">B / INDEXED</span></div><div class="message">Mission freelance indexée : hors cible salariée ; date et statut non confirmés.<br><b>Date de publication non confirmée / Statut actuel à confirmer</b> — Lien de candidature exact non identifié.</div><div class="actions"><a class="btn" href="https://www.hellowork.com/fr-fr/emplois/82992815.html">VOIR L'OFFRE</a></div></div><div class="card verify"><div class="title">Scrum Master / Coach — Hays Luxembourg</div><div class="meta">Esch-sur-Alzette · Freelance ou payroll, 10,5–13,5 k€/mois indiqués</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">B / INDEXED</span></div><div class="message">Une annonce porte la mention « Expirée » : probablement clos ; rôle Scrum Master, sous-niveau.<br><b>Date de publication non confirmée / Statut actuel à confirmer</b> — Lien de candidature exact non identifié.</div><div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/hays-luxembourg/scrum-master-hf-6ebdd">VOIR L'OFFRE</a></div></div><div class="card verify"><div class="title">Senior Project Manager — Administration des contributions directes (E00044678)</div><div class="meta">Luxembourg (GovJobs) · Publication 28/08/2026 selon extrait (≈40 jours : à vérifier)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">B / INDEXED</span></div><div class="message">Écart majeur : trois langues administratives (FR/DE/LU) exigées ; Salim : FR C2, EN C1, pas d&#x27;allemand. Citoyenneté UE exigée. Relais Moovijob, pas la page GovJobs.<br><b>Date de publication non confirmée / Statut actuel à confirmer</b> — Lien de candidature exact non identifié.</div><div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/govjobs/gestionnaire-de-projet-experimente-mf-ref-e00044678">VOIR L'OFFRE</a></div></div><div class="card verify"><div class="meta">Rejetée : EIB « Senior Head of Change Management Programme Unit » (clôture indiquée au 06/04/2026, dépassée). Déjà traités les jours précédents (non requalifiés) : EKXEL, ITS Group, Foyer, Banque de Luxembourg, EIB 111626.</div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Aucun signal corporate concret retenu</div><div class="meta">Les recherches par contexte (CIO / programme de transformation) n'ont pas produit de signal daté et sourcé aujourd'hui ; rien n'est inventé.</div></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">Agile Coach (réf. 305)</div><div class="meta">Aubay Luxembourg · Kirchberg, Luxembourg (hybride)</div><div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div></div><div class="score-badge"><small>FIT</small>Fort</div></div><div class="fields"><div class="field"><small>Source</small><strong>aubay.recruitee.com — via WebSearch</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Aucun contact vérifié</strong></div></div><div class="message"><b>FAIT</b> — Mission : adapter les méthodes Agile au contexte, déployer les frameworks avec le CIO, coacher les équipes, former de futurs coachs internes, mesurer l&#x27;impact (dashboards), conduire la transition Waterfall → Agile ; IT Banking/Funds/Insurance. Exigence indexée : certification Scrum/Kanban.<br><b>ANALYSE (points forts)</b> — Coaching d&#x27;équipes et de managers, transition vers l&#x27;Agile à l&#x27;échelle (BIL : 1 → 13 équipes, ~110 collaborateurs), recrutement/accompagnement de 15 SM et coachs, PSM I + SAFe 6, contexte bancaire.<br><b>ÉCART</b> — Kanban absent du CV maître (certification Scrum/Kanban demandée : PSM I couvre Scrum seulement). Séniorité / niveau de rémunération (ESN) non vus. Détail des exigences non consulté.</div><div class="message"><b>OÙ POSTULER ?</b> Page de l'offre : https://aubay.recruitee.com/o/agile-coach-ref-305?lang=en<br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Méthode : ouvrir la page de l&#x27;offre sur le portail carrière Aubay (Recruitee) et suivre le bouton de candidature affiché sur la page (non vérifié directement : page non consultée, accès bloqué).<br><b>Action</b> : Ouvrir l&#x27;offre, confirmer qu&#x27;elle est encore ouverte, postuler via le portail Aubay.</div><div class="actions"><a class="btn" href="https://aubay.recruitee.com/o/agile-coach-ref-305?lang=en">VOIR L'OFFRE</a><a class="btn secondary" href="#opportunities">COMMENT POSTULER</a><span class="status ok">CV PRÊT : cv-2026-10-07-aubay-agile-coach-ref305.html</span></div></div><div class="card warm"><div class="card-top"><div><div class="title">Senior Project Manager – Data &amp; Digital Transformation (M/F)</div><div class="meta">Randstad Luxembourg (pour une institution européenne) · Luxembourg</div><div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div></div><div class="score-badge"><small>FIT</small>Moyen-fort</div></div><div class="fields"><div class="field"><small>Source</small><strong>moovijob.com — via WebSearch (relais alleyesonme.jobs indexé)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>Contact</small><strong>Aucun contact vérifié (recruteur Randstad non nommé)</strong></div></div><div class="message"><b>FAIT</b> — Rôle temporaire dans l&#x27;équipe Project &amp; Digitalisation Coordination d&#x27;un programme de transformation digitale (modernisation SI, plateformes data, analytics). Expérience data/analytics = « strong advantage » ; expérience de programmes de transformation à grande échelle = « beneficial ».<br><b>ANALYSE (points forts)</b> — Pilotage de transformation, séniorité, facilitation, change, contexte institutionnel/financier.<br><b>ÉCART</b> — Expérience data &amp; analytics absente du CV maître. Contrat temporaire (durée non vue). Langues exigées non vues. Institution et référence non identifiées.</div><div class="message"><b>OÙ POSTULER ?</b> Page de l'offre : https://en.moovijob.com/job-offers/randstad/senior-project-manager-data-digital-transformation-mf<br><b>COMMENT POSTULER ?</b> Lien de candidature exact non identifié. Méthode : page de l&#x27;offre Moovijob (annonce Randstad) ; candidature via le formulaire affiché sur la page (non vérifié). Même annonce relayée sur alleyesonme.jobs.<br><b>Action</b> : Ouvrir l&#x27;offre, vérifier durée du contrat, langues et statut, puis postuler.</div><div class="actions"><a class="btn" href="https://en.moovijob.com/job-offers/randstad/senior-project-manager-data-digital-transformation-mf">VOIR L'OFFRE</a><a class="btn secondary" href="#opportunities">COMMENT POSTULER</a><span class="status ok">CV PRÊT : cv-2026-10-07-randstad-senior-pm-data-digital-transformation.html</span></div></div><div class="card verify"><div class="title">Senior Agile Coach — Emagine S.A.</div><div class="meta">Luxembourg · Freelance (Product &amp; Engineering transformation, coaching PM/Engineering Managers/Scrum Masters)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">B / INDEXED</span></div><div class="message">Mission freelance indexée : hors cible salariée ; date et statut non confirmés.<br><b>Date de publication non confirmée / Statut actuel à confirmer</b> — Lien de candidature exact non identifié.</div><div class="actions"><a class="btn" href="https://www.hellowork.com/fr-fr/emplois/82992815.html">VOIR L'OFFRE</a></div></div><div class="card verify"><div class="title">Scrum Master / Coach — Hays Luxembourg</div><div class="meta">Esch-sur-Alzette · Freelance ou payroll, 10,5–13,5 k€/mois indiqués</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">B / INDEXED</span></div><div class="message">Une annonce porte la mention « Expirée » : probablement clos ; rôle Scrum Master, sous-niveau.<br><b>Date de publication non confirmée / Statut actuel à confirmer</b> — Lien de candidature exact non identifié.</div><div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/hays-luxembourg/scrum-master-hf-6ebdd">VOIR L'OFFRE</a></div></div><div class="card verify"><div class="title">Senior Project Manager — Administration des contributions directes (E00044678)</div><div class="meta">Luxembourg (GovJobs) · Publication 28/08/2026 selon extrait (≈40 jours : à vérifier)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">B / INDEXED</span></div><div class="message">Écart majeur : trois langues administratives (FR/DE/LU) exigées ; Salim : FR C2, EN C1, pas d&#x27;allemand. Citoyenneté UE exigée. Relais Moovijob, pas la page GovJobs.<br><b>Date de publication non confirmée / Statut actuel à confirmer</b> — Lien de candidature exact non identifié.</div><div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/govjobs/gestionnaire-de-projet-experimente-mf-ref-e00044678">VOIR L'OFFRE</a></div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card verify"><div class="title">Aucun brouillon créé</div><div class="meta">Aucun contact professionnel public vérifié pour ces offres (« ne jamais deviner un email »). 0/3 brouillons. Aucun envoi externe.</div></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Résultat</th><th>Preuve</th></tr><tr><td>alleyesonme.jobs (flux paginé, 6 recherches)</td><td>Accès direct BLOQUÉ (EGRESS_BLOCKED). Domaine à autoriser dans la politique réseau. Repli WebSearch : 1 requête, résultats peu exploitables.</td><td>—</td></tr><tr><td>WebSearch — Agile Coach/Transformation Luxembourg</td><td>Aubay, Emagine, Hays, EKXEL</td><td>B</td></tr><tr><td>WebSearch — govjobs.public.lu</td><td>ACD E00044678/679, MENJE E00044043/44 (déjà vu)</td><td>B</td></tr><tr><td>WebSearch — eib.org</td><td>Postes EIB change management (clôture dépassée / déjà vus)</td><td>B</td></tr><tr><td>WebSearch — Randstad/alleyesonme</td><td>Senior PM Data &amp; Digital Transformation</td><td>B</td></tr><tr><td>Accès direct tentés : aubay.recruitee.com, hellowork.com, jobs.deloitte.lu, uncareer.net</td><td>Bloqués / injoignables : aucune page d&#x27;offre consultée directement (aucune preuve A)</td><td>—</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>2</td></tr><tr><td>À vérifier</td><td>3</td></tr><tr><td>CV HTML générés</td><td>2 (2 pages A4 vérifiées, aucun PDF conservé)</td></tr><tr><td>Brouillons Gmail</td><td>0</td></tr><tr><td>Flux alleyesonme lu en direct</td><td>Non (bloqué)</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach · rapport interne · recherche ciblée, non exhaustive</footer>
+</main>
+</body>
+</html>
