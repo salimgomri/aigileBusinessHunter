@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-10-08</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence · AIgile</div></div></div>
+<div class="badge">Career Hunter · 2026-10-08</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>1 WARM, 0 HOT : LNDS cherche un Senior Agile Coach SAFe</h1>
+<p class="lede">Recherche ciblée (WebSearch ; flux AllEyesOnMe bloqué). Une nouvelle offre WARM très proche du profil (LNDS, ART/SAFe), quatre offres à vérifier. Aucune date de publication confirmée pour LNDS.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">SAFe</span><span class="pill">Preuve B</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">1</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>1</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucune opportunité HOT aujourd’hui</div><p class="meta">Aucune offre ne cumule fit fort, preuve forte et fraîcheur confirmée. Recherche ciblée par WebSearch (flux AllEyesOnMe bloqué).</p></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">Senior Agile Coach II (fixed-term)</div><div class="meta">LNDS — Luxembourg National Data Service · Luxembourg</div></div><div class="score-badge"><small>FIT</small>Fort</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div>
+<div class="fields"><div class="field"><small>FAIT — Source / statut</small><strong>loxo (WebSearch) · Statut actuel à confirmer</strong></div><div class="field"><small>ANALYSE — Fit</small><strong>Fort sur le périmètre : coaching et facilitation d’un Agile Release Train alignés SAFe (extrait indexé) ; SAFe 6 Agilist, 9 ans de coaching BIL (1→13 équipes).</strong></div><div class="field"><small>Points forts</small><strong>Certified SAFe 6 Agilist ; coaching Scrum/SAFe à l’échelle ; coaching de managers ; anglais C1.</strong></div><div class="field"><small>ÉCARTS / INCERTITUDE</small><strong>Exigences détaillées (langues, années, séniorité exacte, durée du CDD) non vues — page non consultée directement (domaine bloqué). Rôle ART/RTE : pas de titre RTE dans le CV maître.</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié.</strong></div><div class="field"><small>CV prêt</small><strong>cv-2026-10-08-lnds-senior-agile-coach-ii.html</strong></div></div>
+<div class="message">OÙ POSTULER : https://lnds.app.loxo.co/job/MjU5MDQtM3F6dzVoZ3dpdDVvazZjag==<br>COMMENT POSTULER : Lien de candidature exact non identifié : ouvrir la page de l’offre (loxo) et postuler depuis le bouton de la page ; sinon page carrières LNDS.</div>
+<div class="actions"><a class="btn" href="https://lnds.app.loxo.co/job/MjU5MDQtM3F6dzVoZ3dpdDVvazZjag==">VOIR L’OFFRE</a><span class="btn secondary">CV PRÊT : cv-2026-10-08-lnds-senior-agile-coach-ii.html</span></div></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Program Manager (m/f/n)</div><div class="meta">Spuerkeess (BCEE) · Luxembourg · moovijob (indexed)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 18/07/2026 (extrait indexé, ~82 j) — à vérifier</span></div><p>Département Innovation &amp; Project Management ; PPM, MS Project, ateliers. Diplôme/années/langues non vus. Statut actuel à confirmer.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://en.moovijob.com/job-offers/spuerkeess/program-manager-mfn-2fb74">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Transformation Manager — EMEA Asset Management Business Transformation</div><div class="meta">JPMorgan Asset Management · Senningerberg · repostings tiers (builtin, themuse)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Date de publication non confirmée</span></div><p>Secteur asset management absent du CV ; page officielle JPMorgan non trouvée ; titre variable selon sites.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://builtin.com/job/asset-management-business-transformation-project-manager-business-analyst/7445149">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Chef de projet (m/f/d) réf. X26000259</div><div class="meta">Chambre des Députés (administration, IT) · Luxembourg · moovijob relais GovJobs (indexed)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 01/10/2026 (extrait indexé)</span></div><p>Contenu de la mission et langues non vus (trilingue probable en fonction publique : à confirmer).</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://en.moovijob.com/job-offers/govjobs/chef-de-projet-mfd-ref-x26000259">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Gestionnaire de projets – Transformation des processus &amp; Digitalisation (E00044044)</div><div class="meta">MENJE — Digital Learning Hub · Luxembourg · moovijob relais GovJobs (indexed)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 29/07/2026 (extrait) — CDD 19/10/2026–07/03/2028, 50 %</span></div><p>Temps partiel 50 %, 3 langues administratives (dérogation possible), niveau 6 CEC. Variante de E00044043 déjà suivie.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://en.moovijob.com/job-offers/govjobs/gestionnaire-de-projets-transformation-des-processus-digitalisation-mf-ref-e00044044">VOIR L’OFFRE</a></div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Stratégie Gouvernement numérique 2026-2030 (Luxembourg)</div><div class="meta">Adoptée par le Conseil de gouvernement le 17/12/2025 (Ministère de la Digitalisation, CTIE)</div><p>5 objectifs dont digitalisation interne : explique les postes GovJobs « Transformation des processus &amp; Digitalisation ». Aucune mention d’Agile dans l’extrait ; signal de contexte, pas une offre.</p><div class="actions"><a class="btn secondary" href="https://gouvernement.lu/en/dossiers.gouv2024_mindigital+en+dossiers+2025+strategie-gouvernement-numerique-2026-2030.html">VOIR LA SOURCE</a></div></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">Senior Agile Coach II (fixed-term)</div><div class="meta">LNDS — Luxembourg National Data Service · Luxembourg</div></div><div class="score-badge"><small>FIT</small>Fort</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div>
+<div class="fields"><div class="field"><small>FAIT — Source / statut</small><strong>loxo (WebSearch) · Statut actuel à confirmer</strong></div><div class="field"><small>ANALYSE — Fit</small><strong>Fort sur le périmètre : coaching et facilitation d’un Agile Release Train alignés SAFe (extrait indexé) ; SAFe 6 Agilist, 9 ans de coaching BIL (1→13 équipes).</strong></div><div class="field"><small>Points forts</small><strong>Certified SAFe 6 Agilist ; coaching Scrum/SAFe à l’échelle ; coaching de managers ; anglais C1.</strong></div><div class="field"><small>ÉCARTS / INCERTITUDE</small><strong>Exigences détaillées (langues, années, séniorité exacte, durée du CDD) non vues — page non consultée directement (domaine bloqué). Rôle ART/RTE : pas de titre RTE dans le CV maître.</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié.</strong></div><div class="field"><small>CV prêt</small><strong>cv-2026-10-08-lnds-senior-agile-coach-ii.html</strong></div></div>
+<div class="message">OÙ POSTULER : https://lnds.app.loxo.co/job/MjU5MDQtM3F6dzVoZ3dpdDVvazZjag==<br>COMMENT POSTULER : Lien de candidature exact non identifié : ouvrir la page de l’offre (loxo) et postuler depuis le bouton de la page ; sinon page carrières LNDS.</div>
+<div class="actions"><a class="btn" href="https://lnds.app.loxo.co/job/MjU5MDQtM3F6dzVoZ3dpdDVvazZjag==">VOIR L’OFFRE</a><span class="btn secondary">CV PRÊT : cv-2026-10-08-lnds-senior-agile-coach-ii.html</span></div></div><div class="card verify"><div class="title">Program Manager (m/f/n)</div><div class="meta">Spuerkeess (BCEE) · Luxembourg · moovijob (indexed)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 18/07/2026 (extrait indexé, ~82 j) — à vérifier</span></div><p>Département Innovation &amp; Project Management ; PPM, MS Project, ateliers. Diplôme/années/langues non vus. Statut actuel à confirmer.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://en.moovijob.com/job-offers/spuerkeess/program-manager-mfn-2fb74">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Transformation Manager — EMEA Asset Management Business Transformation</div><div class="meta">JPMorgan Asset Management · Senningerberg · repostings tiers (builtin, themuse)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Date de publication non confirmée</span></div><p>Secteur asset management absent du CV ; page officielle JPMorgan non trouvée ; titre variable selon sites.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://builtin.com/job/asset-management-business-transformation-project-manager-business-analyst/7445149">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Chef de projet (m/f/d) réf. X26000259</div><div class="meta">Chambre des Députés (administration, IT) · Luxembourg · moovijob relais GovJobs (indexed)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 01/10/2026 (extrait indexé)</span></div><p>Contenu de la mission et langues non vus (trilingue probable en fonction publique : à confirmer).</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://en.moovijob.com/job-offers/govjobs/chef-de-projet-mfd-ref-x26000259">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Gestionnaire de projets – Transformation des processus &amp; Digitalisation (E00044044)</div><div class="meta">MENJE — Digital Learning Hub · Luxembourg · moovijob relais GovJobs (indexed)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 29/07/2026 (extrait) — CDD 19/10/2026–07/03/2028, 50 %</span></div><p>Temps partiel 50 %, 3 langues administratives (dérogation possible), niveau 6 CEC. Variante de E00044043 déjà suivie.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://en.moovijob.com/job-offers/govjobs/gestionnaire-de-projets-transformation-des-processus-digitalisation-mf-ref-e00044044">VOIR L’OFFRE</a></div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card"><p>Aucun brouillon : aucun contact public vérifié aujourd’hui.</p></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Statut</th></tr><tr><td>alleyesonme.jobs (flux paginé)</td><td>Accès direct BLOQUÉ (EGRESS_BLOCKED) — domaine à autoriser dans la politique réseau ; WebSearch site: sans résultat du domaine. Flux non lu.</td></tr><tr><td>lnds.app.loxo.co, en.moovijob.com</td><td>Fetch direct BLOQUÉ ; contenu via extraits WebSearch (B).</td></tr><tr><td>WebSearch</td><td>Agile Coach/SAFe/Transformation Luxembourg, GovJobs, EIB, banques Luxembourg, Bruxelles, signaux CIO/programme.</td></tr><tr><td>EIB</td><td>Offre 111626 déjà suivie (rapport 10-01) ; aucune page eib.org retournée.</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>KPI</th><th>Valeur</th></tr><tr><td>Offres nouvelles qualifiées</td><td>1 (WARM)</td></tr><tr><td>À vérifier (nouvelles)</td><td>4</td></tr><tr><td>Déjà suivies, non répétées</td><td>EKXEL, Keystone, Emagine, Hays, EIB, Aubay, Randstad…</td></tr><tr><td>CV HTML générés</td><td>1 (2 pages A4 vérifié, aucun PDF)</td></tr><tr><td>Brouillons Gmail</td><td>0 (aucun contact vérifié)</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach · AIgile — recherche ciblée, non exhaustive. Faits, analyse et écarts distingués.</footer>
+</main>
+</body>
+</html>
