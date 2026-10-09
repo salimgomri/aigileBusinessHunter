@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Salim Gomri - Chef de projet transformation (ATP)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+ 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f0f0f0;
+            padding: 20px;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+ 
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #1A1A2E;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+        }
+ 
+        .print-btn:hover {
+            background: #0f0f1e;
+        }
+ 
+        .cv-container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+        }
+ 
+        .page-1 {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            page-break-after: always;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+ 
+        .page-1-top {
+            padding: 45px 45px 0 45px;
+            flex-shrink: 0;
+        }
+ 
+        .page-1-bottom {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            grid-template-rows: auto;
+            /*flex: 1;*/
+            overflow: visible;
+            align-content: flex-start;
+        }
+ 
+        .page-1-bottom .left {
+            grid-column: 1;
+            grid-row: 1;
+            padding: 2px 35px 35px 35px;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+        }
+ 
+        .page-1-bottom .right {
+            grid-column: 2;
+            grid-row: 1;
+            background: #f8f8f8;
+            padding: 2px 25px 35px 25px;
+            overflow: visible;
+        }
+ 
+        .page-2 {
+            width: 210mm;
+            height: 297mm;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            page-break-after: always;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+ 
+        .page-2-header {
+            padding: 28px 45px;
+            flex-shrink: 0;
+        }
+ 
+        .page-2-content {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            grid-template-rows: 1fr;
+            flex: 1;
+            overflow: hidden;
+        }
+ 
+        .page-2 .left {
+            grid-column: 1;
+            grid-row: 1;
+            padding: 28px 45px 45px 45px;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+        }
+ 
+        .page-2 .right {
+            grid-column: 2;
+            grid-row: 1;
+            background: #f8f8f8;
+            padding: 28px 30px 45px 30px;
+            overflow: auto;
+        }
+ 
+        .page-footer {
+            font-size: 10px;
+            color: #999;
+            padding: 15px 45px 15px 45px;
+            border-top: 1px solid #e0e0e0;
+            text-align: left;
+        }
+ 
+ 
+        .header {
+            margin-bottom: 28px;
+        }
+ 
+        .header h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1A1A2E;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+            line-height: 1;
+        }
+ 
+        .header .subtitle {
+            font-size: 11px;
+            font-weight: 700;
+            color: #1A1A2E;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-bottom: 10px;
+        }
+ 
+        .header .divider {
+            width: 50px;
+            height: 3px;
+            background: #00A0AA;
+            margin-bottom: 12px;
+        }
+ 
+        .header .tagline {
+            font-size: 13px;
+            color: #00A0AA;
+            font-weight: 500;
+            line-height: 1.6;
+            text-align: justify;
+        }
+ 
+        .contact-group {
+            margin: 18px 0 24px 0;
+            font-size: 10px;
+            line-height: 1.6;
+            color: #333;
+        }
+ 
+        .contact-line {
+            display: flex;
+            gap: 0;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+ 
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+            padding: 0 12px;
+            border-right: 1px solid #ccc;
+        }
+ 
+        .contact-item:last-child {
+            border-right: none;
+            padding-right: 0;
+        }
+ 
+        .contact-item i {
+            width: 12px;
+            color: #666;
+            font-size: 10px;
+        }
+ 
+        .contact-item a {
+            color: #333;
+            text-decoration: none;
+        }
+ 
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            padding: 20px 0;
+            border-top: 1px solid #d0d0d0;
+            border-bottom: 1px solid #d0d0d0;
+            background: white;
+            margin: 28px 0 12px 0;
+        }
+ 
+        .metric {
+            text-align: center;
+            padding: 0 15px;
+            border-right: 1px solid #d0d0d0;
+        }
+ 
+        .metric:last-child {
+            border-right: none;
+        }
+ 
+        .metric-value {
+            font-size: 28px;
+            font-weight: 900;
+            color: #1A1A2E;
+            margin-bottom: 6px;
+            line-height: 1;
+        }
+ 
+        .metric-label {
+            font-size: 9px;
+            font-weight: 700;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+            line-height: 1.4;
+        }
+ 
+        .section-title {
+            font-size: 11px;
+            font-weight: 900;
+            color: #1A1A2E;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .section-title .divider {
+            width: 35px;
+            height: 2px;
+            background: #00A0AA;
+            margin-right: 12px;
+        }
+ 
+        .experience-item {
+            margin-bottom: 24px;
+        }
+ 
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+ 
+        .exp-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 4px;
+        }
+ 
+        .exp-role {
+            font-size: 11px;
+            color: #00A0AA;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+ 
+        .exp-period {
+            font-size: 10px;
+            color: #666;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+ 
+        .exp-desc {
+            font-size: 11px;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 0;
+            text-align: justify;
+        }
+ 
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 12px 0 12px 0;
+            position: relative;
+            padding: 0 16px;
+        }
+ 
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 16px;
+            right: 16px;
+            height: 1px;
+            background-color: #ddd;
+            z-index: 0;
+        }
+ 
+        .timeline-item {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+ 
+        .timeline-dot {
+            width: 6px;
+            height: 6px;
+            background-color: #999;
+            border: none;
+            border-radius: 50%;
+            margin: 0 auto 6px;
+        }
+ 
+        .timeline-date {
+            font-weight: 600;
+            font-size: 10px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+ 
+        .timeline-label {
+            font-size: 9px;
+            line-height: 1.3;
+            color: #999;
+        }
+ 
+        .bullet-list {
+            font-size: 10px;
+            line-height: 1.5;
+            color: #333;
+            list-style: none;
+            margin: 0;
+            text-align: justify;
+        }
+ 
+        .bullet-list li {
+            margin-bottom: 2px;
+            padding-left: 0;
+        }
+ 
+        .bullet-list li::before {
+            content: "•";
+            color: #1A1A2E;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+ 
+        .right-section {
+            margin-bottom: 26px;
+        }
+ 
+        .right-section-title {
+            font-size: 9px;
+            font-weight: 900;
+            color: #1A1A2E;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .right-section-title .divider {
+            width: 25px;
+            height: 2px;
+            background: #00A0AA;
+            margin-right: 10px;
+        }
+ 
+        .right-subtitle {
+            font-size: 8px;
+            font-weight: 700;
+            color: #00A0AA;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+            margin: 10px 0 8px 0;
+        }
+ 
+        .right-section-list {
+            list-style: none;
+            font-size: 9px;
+            line-height: 1.7;
+            color: #333;
+            margin: 0;
+            text-align: justify;
+        }
+ 
+        .right-section-list li {
+            margin-bottom: 5px;
+            padding-left: 0;
+        }
+ 
+        .right-section-list li::before {
+            content: "•";
+            color: #00A0AA;
+            margin-right: 6px;
+            font-weight: bold;
+        }
+ 
+        .cert-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            font-size: 9px;
+            color: #333;
+        }
+ 
+        .stat-highlight {
+            color: #00A0AA;
+            font-weight: 700;
+        }
+ 
+        .highlight-box {
+            background: #f0f8f9;
+            border-left: 3px solid #00A0AA;
+            padding: 10px 12px;
+            margin: 12px 0;
+            font-size: 9px;
+            line-height: 1.6;
+            color: #333;
+        }
+ 
+        .signature-quote {
+            font-size: 10px;
+            font-style: italic;
+            color: #333;
+            line-height: 1.6;
+            text-align: justify;
+        }
+ 
+        .quote-mark {
+            font-size: 18px;
+            color: #00A0AA;
+            font-weight: bold;
+            margin-bottom: 4px;
+            line-height: 0;
+        }
+ 
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .print-btn {
+                display: none;
+            }
+            .cv-container {
+                box-shadow: none;
+            }
+            .page-1, .page-2 {
+                box-shadow: none;
+                margin-bottom: 0;
+                height: auto;
+                page-break-after: always;
+            }
+            .page-1-bottom, .page-2-content {
+                height: auto;
+            }
+        }
+ 
+        @page {
+            size: A4;
+            margin: 0;
+        }
+    @media print { .page-1{height:297mm !important;overflow:hidden;} .page-2{height:297mm !important;overflow:hidden;} .page-1-top{padding-top:30px !important;} .metrics{margin:14px 0 8px 0 !important;padding:12px 0 !important;} .header{margin-bottom:14px !important;} .experience-item{margin-bottom:14px !important;} .contact-group{margin:10px 0 12px 0 !important;} }
+</style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">📄 Imprimer</button>
+ 
+    <div class="cv-container">
+        <!-- PAGE 1 -->
+        <div class="page-1">
+            <div class="page-1-top">
+                <div class="header">
+                    <h1>SALIM GOMRI</h1>
+                    <div class="subtitle">CHEF DE PROJET | TRANSFORMATION &amp; DIGITALISATION | AGILE | SCRUM | CONDUITE DU CHANGEMENT</div>
+                    <div class="divider"></div>
+                    <div class="tagline">9 ans à la BIL : croissance de 1 à 13 équipes Scrum/SAFe (~110 collaborateurs), conduite de projets et de transformation, coordination des parties prenantes. Je clarifie les priorités, rends le flux visible et renforce le leadership à tous les niveaux.</div>
+                </div>
+ 
+                <div class="contact-group">
+                    <div class="contact-line">
+                        <div class="contact-item"><i class="fas fa-map-marker-alt"></i>Maizières-les-Metz, France</div>
+                        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+33695549502">+33 6 95 54 95 02</a></div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:salim.gomri@gmail.com">salim.gomri@gmail.com</a></div>
+                        <div class="contact-item"><i class="fas fa-link"></i><a href="https://linkedin.com/in/salimgomri" target="_blank">linkedin.com/in/salimgomri</a></div>
+                    </div>
+                </div>
+ 
+                <div class="metrics">
+                    <div class="metric">
+                        <div class="metric-value">23+</div>
+                        <div class="metric-label">ANS<br>D'EXPÉRIENCE</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">1 → 13</div>
+                        <div class="metric-label">ÉQUIPES<br>ACCOMPAGNÉES<br>EN SIMULTANÉ</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">~110</div>
+                        <div class="metric-label">COLLABORATEURS<br>IT & BUSINESS</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">350+</div>
+                        <div class="metric-label">RÉTROSPECTIVES<br>FACILITÉES</div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="page-1-bottom">
+                <div class="left">
+                    <div class="section-title">
+                        <div class="divider"></div>
+                        EXPÉRIENCE PROFESSIONNELLE
+                    </div>
+ 
+                    <!-- AIgile - PREMIÈRE POSITION -->
+                    <div class="experience-item">
+                        <div class="exp-title">AIGILE | 2026 - PRÉSENT</div>
+                        <div class="exp-role">Fondateur & Auteur</div>
+                        <ul class="bullet-list">
+                            <li><strong>Le Système S.A.L.I.M. :</strong> Auteur — 477 pages, 19 chapitres, formalisation de pratiques issues de plus de 20 ans d'expérience en développement, delivery, coaching et transformation. Publié en avril 2026.</li>
+                            <li><strong>Interventions :</strong> Accompagnement de transformations agiles : diagnostic, coaching d'équipes et de leaders, formation en agilité et leadership, facilitation de rétrospectives.</li>
+                        </ul>
+                    </div>
+ 
+                    <!-- OPEN CLASSROOM - MENTORAT ACTUEL -->
+                    <div class="experience-item">
+                        <div class="exp-title">OPEN CLASSROOM | 2021 - PRÉSENT</div>
+                        <div class="exp-role">Mentor Product Manager</div>
+                        <ul class="bullet-list">
+                            <li>Mentorat de Product Managers en formation. Environ 30 étudiants accompagnés depuis février 2021. 3 à 4 sessions hebdomadaires.</li>
+                            <li>Transmission de méthodes de priorisation, roadmapping et leadership produit. Feedback structuré sur les projets de chaque étudiant.</li>
+                        </ul>
+                    </div>
+ 
+                    <!-- BIL - PRINCIPAL -->
+                    <div class="experience-item">
+                        <div class="exp-title">BANQUE INTERNATIONALE À LUXEMBOURG (BIL)</div>
+                        <div class="exp-role">Senior Agile Coach & Transformation Leader</div>
+                        <div class="exp-period">2016 - 12/2025 (9 ans) | Croissance progressive 1 → 13 équipes Scrum/SAFe (~110 collaborateurs)</div>
+                        <div class="exp-desc"><strong>Situation initiale :</strong> flux fragmenté, dépendances découvertes un sprint avant la livraison, livraison imprévisible et planification irréaliste.</div>
+ 
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2016-2019</div>
+                                <div class="timeline-label">Coach Agile<br>1 équipe</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2019-2020</div>
+                                <div class="timeline-label">Coach Agile<br>2 équipes</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2020-2023</div>
+                                <div class="timeline-label">Value Stream<br>9 équipes</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2023-2025</div>
+                                <div class="timeline-label">Coach Org<br>13 équipes</div>
+                            </div>
+                        </div>
+ 
+                        <ul class="bullet-list">
+                            <li><strong>Flux et dépendances :</strong> Mise en place de limites de travail en cours (WIP), visualisation du flux et anticipation des dépendances deux sprints en amont avec les Product Owners et Technical Leads. Résultats : cycle time ramené à 1 à 2 sprints, lead time à 3 à 5 sprints et engagements d'équipe rendus plus prévisibles après 4 à 6 sprints.</li>
+                            <li><strong>Qualité delivery :</strong> Tests automatisés unitaires et end-to-end intégrés à la chaîne CI/CD, traçabilité OmniTracker et circuit accéléré pour les incidents bloquants.</li>
+                            <li><strong>Leadership et transmission :</strong> 350+ rétrospectives facilitées, 28 praticiens Agile accompagnés, 15 Scrum Masters et Agile Coaches recrutés et accompagnés, coordination de plus de 30 parties prenantes IT et métier.</li>
+                        </ul>
+                    </div>
+ 
+ 
+                </div>
+ 
+                <div class="right">
+ 
+ 
+                    <!-- RECOMMANDATIONS LINKEDIN (NOUVEAU) -->
+                    <div class="right-section">
+                        <div class="right-section-title">
+                            <div class="divider"></div>
+                            RECOMMANDATIONS
+                        </div>
+                        <div class="right-section-list" style="font-size: 10px; line-height: 1.7;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>Stefaan Roegiers</strong><br>
+                                Chief Product Manager Digital Banking<br>
+                                <em style="color: #666; font-size: 9px;">"Expertise in agile methodologies for scaled agile approach."</em>
+                            </li>
+                            <li>
+                                <strong>Nicolas Schell</strong><br>
+                                Head of IT Business Platforms, BIL<br>
+                                <em style="color: #666; font-size: 9px;">"Rare combination of technical expertise and interpersonal skills."</em>
+                            </li>
+                        </div>
+                        <div style="font-size: 9px; color: #999; margin-top: 8px;"><em>Recommandations publiées avec accord des auteurs.</em></div>
+                    </div>
+ 
+                    <!-- EXPERTISES CLÉS -->
+                    <div class="right-section">
+                        <div class="right-section-title">
+                            <div class="divider"></div>
+                            EXPERTISES
+                        </div>
+ 
+                        <div class="right-subtitle">COACHING & LEADERSHIP</div>
+                        <ul class="right-section-list">
+                            <li>Coaching d'équipes, de Product Owners, de managers et de leaders</li>
+                            <li>Facilitation de rétrospectives et d'ateliers</li>
+                            <li>Diagnostic de transformation agile</li>
+                        </ul>
+ 
+                        <div class="right-subtitle">FLUX & DELIVERY</div>
+                        <ul class="right-section-list">
+                            <li>Scrum & SAFe</li>
+                            <li>Amélioration du flux : limites de travail en cours, cycle time et lead time</li>
+                            <li>Gestion des dépendances multi-équipes</li>
+                            <li>PI Planning et refinement du backlog</li>
+                        </ul>
+ 
+                        <div class="right-subtitle">CERTIFICATIONS</div>
+                        <ul class="right-section-list">
+                            <li>Certified SAFe 6 Agilist</li>
+                            <li>Professional Scrum Master I</li>
+                            <li>Professional Coach (ICN)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="page-footer"><span style="color: #00A0AA; font-weight: 700;">01</span> | Salim Gomri - Coach Agile Scrum, Auteur Système S.A.L.I.M.</div>
+        </div>
+ 
+        <!-- PAGE 2 -->
+        <div class="page-2">
+            <div class="page-2-header">
+                <div class="header">
+                    <h1>SALIM GOMRI</h1>
+                    <div class="subtitle">EXPÉRIENCE, LEADERSHIP & IMPACT</div>
+                    <div class="divider"></div>
+                </div>
+            </div>
+ 
+            <div class="page-2-content">
+                <div class="left">
+                    <div class="section-title">
+                        <div class="divider"></div>
+                        EXPÉRIENCE ANTÉRIEURE
+                    </div>
+ 
+                    <div class="experience-item">
+                        <div class="exp-title">FINANCIÈRE MÉDIA | 2014–2016</div>
+                        <div class="exp-role">Chef de Projet Agile - Transformation Delivery</div>
+                        <ul class="bullet-list">
+                            <li>Transformation de demandes gérées par email (certaines bloquées 1–2 ans) vers workflow Trello avec rituels Agile. Délai ramené à 2–3 semaines. Coordination de 12 développeurs, 1000+ utilisateurs, 500+ clients, 4 pays.</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="experience-item">
+                        <div class="exp-title">KIDORIA | 2011–2014</div>
+                        <div class="exp-role">CTO & Cofondateur</div>
+                        <ul class="bullet-list">
+                            <li>Coffre-fort numérique familial sécurisé. MVP en 3 mois (Symfony 2, PHP 5, tests Selenium). Audit de sécurité écrit. App iPhone publiée App Store. 50 early adopters.</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="experience-item">
+                        <div class="exp-title">CRP HENRI TUDOR | 2006–2011</div>
+                        <div class="exp-role">Scrum Master & R&D Engineer</div>
+                        <ul class="bullet-list">
+                            <li>Évolution développeur vers Scrum Master sur équipe 7 personnes. Facilitation rétrospectives, formation 100 professionnels et 75 étudiants à Scrum/XP. App iPhone App Store (2010).</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="experience-item">
+                        <div class="exp-title">ALTEN, FRANCE TÉLÉCOM R&D | 2003–2006</div>
+                        <div class="exp-role">Consultant vers Technical Lead & Site Manager</div>
+                        <ul class="bullet-list">
+                            <li>Mission 2 semaines devenue 3,5 ans. Équipe 2 → 12 consultants. Redesign ergonomique app C++/Qt (Odimat), leadership technique, transmission. Refactorings majeurs, standards, pair programming.</li>
+                        </ul>
+                    </div>
+                </div>
+ 
+                <div class="right">
+                    <div class="right-section">
+                        <div class="right-section-title">
+                            <div class="divider"></div>
+                            SIGNATURE
+                        </div>
+                        <div class="quote-mark">"</div>
+                        <div class="signature-quote">Mon rôle : aider vos équipes à devenir autonomes, avec une livraison plus prévisible, moins de dépendances et des leaders mieux outillés.</div>
+                    </div>
+ 
+                    <div class="right-section">
+                        <div class="right-section-title">
+                            <div class="divider"></div>
+                            LEADERSHIP & TRANSMISSION
+                        </div>
+                        <ul class="right-section-list">
+                            <li>28 praticiens Agile accompagnés</li>
+                            <li>350+ rétrospectives facilitées</li>
+                            <li>30+ parties prenantes IT & métier</li>
+                            <li>15 Scrum Masters & Agile Coaches recrutés et accompagnés</li>
+                            <li>Mentorat & formations continues</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="right-section">
+                        <div class="right-section-title">
+                            <div class="divider"></div>
+                            INNOVATION
+                        </div>
+                        <ul class="right-section-list">
+                            <li><strong>Cadre AIgile :</strong> cadre personnel de pratiques agiles sur l'augmentation de Scrum. Voir <a href="https://aigile.lu/framework" target="_blank">aigile.lu/framework</a></li>
+                            <li><strong>AIgile Manifesto :</strong> mai 2025</li>
+                            <li><strong>Le Système S.A.L.I.M. :</strong> 477 pages, avril 2026</li>
+                            <li>Expérimentation de l'IA pour préparer, faciliter et capitaliser les ateliers agiles</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="right-section">
+                        <div class="right-section-title">
+                            <div class="divider"></div>
+                            LANGUES
+                        </div>
+                        <ul class="right-section-list">
+                            <li>Français C2</li>
+                            <li>Anglais C1</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="right-section">
+                        <div class="right-section-title">
+                            <div class="divider"></div>
+                            OUTILS
+                        </div>
+                        <ul class="right-section-list">
+                            <li>Jira | OmniTracker | Confluence</li>
+                            <li>Miro | Mural | Figma | Draw.io</li>
+                            <li>Git | Slack</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="page-footer"><span style="color: #00A0AA; font-weight: 700;">02</span> | Salim Gomri - Coach Agile Scrum, Auteur Système S.A.L.I.M.</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Hunter — 2026-10-09</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence · AIgile</div></div></div>
+<div class="badge">Career Hunter · 2026-10-09</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>2 WARM, 0 HOT : Aubay (Agile at Scale) et ATP (transformation)</h1>
+<p class="lede">Recherche ciblée (WebSearch ; flux AllEyesOnMe bloqué HTTP 429). Deux nouvelles offres WARM, trois à vérifier. Aucune date confirmée pour Aubay ; ATP indexée au 02/10/2026.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">SAFe</span><span class="pill">Preuve B</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">2</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucune opportunité HOT aujourd’hui</div><p class="meta">Aucune offre ne cumule fit fort, preuve forte et fraîcheur confirmée. Recherche ciblée par WebSearch (flux AllEyesOnMe bloqué : HTTP 429).</p></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">Functional IT Project Manager — Agile Transformation @Scale</div><div class="meta">Aubay Luxembourg (pour un client non nommé) · Luxembourg, hybride</div></div><div class="score-badge"><small>FIT</small>Fort</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div>
+<div class="fields"><div class="field"><small>FAIT — Source / statut</small><strong>aubay.recruitee.com (WebSearch) · Statut actuel à confirmer</strong></div><div class="field"><small>ANALYSE — Fit</small><strong>Pilotage de projets stratégiques IT dans une transformation Agile à l’échelle : steering committees, roadmap, dépendances entre streams, déploiement organisationnel ; méthodes V-Model, Agile, SAFe, Scrum ; JIRA, Confluence.</strong></div><div class="field"><small>Points forts</small><strong>SAFe 6 Agilist, PSM I ; 9 ans BIL (1→13 équipes) ; JIRA/Confluence ; coordination IT-métiers.</strong></div><div class="field"><small>ÉCARTS / INCERTITUDE</small><strong>Client et secteur non nommés ; V-Model, MS Project/Excel non vérifiés dans le CV maître ; langues et années exigées non vues. Page non consultée directement (404 au fetch, extrait indexé seul).</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié.</strong></div><div class="field"><small>CV prêt</small><strong>cv-2026-10-09-aubay-functional-it-pm-agile-transformation-at-scale.html</strong></div></div>
+<div class="message">OÙ POSTULER : https://aubay.recruitee.com/o/project-manager-it-fonctionnel?lang=en<br>COMMENT POSTULER : Lien de candidature exact non identifié. Ouvrir l’offre sur le portail Aubay (Recruitee) et postuler depuis la page ; sinon page carrières Aubay Luxembourg. Offre distincte de la réf. 305 déjà suivie.</div>
+<div class="actions"><a class="btn" href="https://aubay.recruitee.com/o/project-manager-it-fonctionnel?lang=en">VOIR L’OFFRE</a><span class="btn secondary">CV PRÊT : cv-2026-10-09-aubay-functional-it-pm-agile-transformation-at-scale.html</span></div></div><div class="card warm"><div class="card-top"><div><div class="title">Chef·fe de projet (m/f/d) — réf. G26000298</div><div class="meta">Administration des transports publics (ATP), service Innovation et Transformation · Luxembourg (GovJobs)</div></div><div class="score-badge"><small>FIT</small>Moyen</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Publiée 02/10/2026 (extrait indexé, non confirmé)</span></div>
+<div class="fields"><div class="field"><small>FAIT — Source / statut</small><strong>moovijob relais GovJobs (WebSearch) · publiée le 02/10/2026 selon l’extrait indexé · Statut actuel à confirmer</strong></div><div class="field"><small>ANALYSE — Fit</small><strong>Pilotage de projets de modernisation et de digitalisation : phases de test, validation, mise en production, relation fournisseurs. Poste de transformation en fonction publique.</strong></div><div class="field"><small>Points forts</small><strong>Gestion de projet et transformation ; coordination de parties prenantes ; Agile.</strong></div><div class="field"><small>ÉCARTS / INCERTITUDE</small><strong>Langues administratives (français/allemand/luxembourgeois, dérogation possible) : allemand absent du CV maître ; conditions de diplôme/statut, date limite et contenu complet non vus. Page moovijob non consultée (403) ; page GovJobs officielle non trouvée.</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié.</strong></div><div class="field"><small>CV prêt</small><strong>cv-2026-10-09-atp-chef-de-projet-g26000298.html</strong></div></div>
+<div class="message">OÙ POSTULER : https://en.moovijob.com/job-offers/govjobs/cheffe-de-projet-mfd-ref-g26000298<br>COMMENT POSTULER : Lien de candidature exact non identifié. Candidature via GovJobs (govjobs.public.lu), référence G26000298 : vérifier la procédure et la date limite sur le site officiel.</div>
+<div class="actions"><a class="btn" href="https://en.moovijob.com/job-offers/govjobs/cheffe-de-projet-mfd-ref-g26000298">VOIR L’OFFRE</a><span class="btn secondary">CV PRÊT : cv-2026-10-09-atp-chef-de-projet-g26000298.html</span></div></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">IT Programme Lead</div><div class="meta">Kepler Search (client financier au Luxembourg) · moovijob</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 13/08/2026 (extrait) — ~57 j</span></div><p>Delivery IT de l’implémentation au go-live ; français/anglais ; droit de travailler au Luxembourg. Statut actuel à confirmer.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://de.moovijob.com/stellenangebote/kepler-search/it-programme-lead">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Chef de projet IA et transformation numérique (E00044670 / E00044667)</div><div class="meta">Direction de la santé · Luxembourg · moovijob relais GovJobs</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 28/08/2026 (extrait)</span></div><p>Projets IT en Agile/Scrum/Waterfall et projets IA ; 3 langues administratives (dérogation possible), ressortissant UE. Absence de background santé/IA dans le CV maître à confirmer. Statut actuel à confirmer.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/govjobs/chef-de-projet-ia-et-transformation-numerique-mf-ref-e00044670-ref-f00044671-ref-m00044672">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Chef de projet (E00044580)</div><div class="meta">Agence pour le développement de l’emploi (ADEM), Process &amp; Project Management Office · moovijob relais GovJobs</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 21/08/2026 (extrait) — ~49 j</span></div><p>Coordination de projets stratégiques avec rôle de coach des équipes qui les mettent en œuvre ; langues et conditions non vues. Statut actuel à confirmer.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/govjobs/chef-de-projet-mf-ref-e00044580">VOIR L’OFFRE</a></div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucun signal corporate concret retenu aujourd’hui</div><p class="meta">Pas de signal daté et sourcé identifié lors de cette recherche ; rien n’est inventé pour remplir la section.</p></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">Functional IT Project Manager — Agile Transformation @Scale</div><div class="meta">Aubay Luxembourg (pour un client non nommé) · Luxembourg, hybride</div></div><div class="score-badge"><small>FIT</small>Fort</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Date de publication non confirmée</span></div>
+<div class="fields"><div class="field"><small>FAIT — Source / statut</small><strong>aubay.recruitee.com (WebSearch) · Statut actuel à confirmer</strong></div><div class="field"><small>ANALYSE — Fit</small><strong>Pilotage de projets stratégiques IT dans une transformation Agile à l’échelle : steering committees, roadmap, dépendances entre streams, déploiement organisationnel ; méthodes V-Model, Agile, SAFe, Scrum ; JIRA, Confluence.</strong></div><div class="field"><small>Points forts</small><strong>SAFe 6 Agilist, PSM I ; 9 ans BIL (1→13 équipes) ; JIRA/Confluence ; coordination IT-métiers.</strong></div><div class="field"><small>ÉCARTS / INCERTITUDE</small><strong>Client et secteur non nommés ; V-Model, MS Project/Excel non vérifiés dans le CV maître ; langues et années exigées non vues. Page non consultée directement (404 au fetch, extrait indexé seul).</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié.</strong></div><div class="field"><small>CV prêt</small><strong>cv-2026-10-09-aubay-functional-it-pm-agile-transformation-at-scale.html</strong></div></div>
+<div class="message">OÙ POSTULER : https://aubay.recruitee.com/o/project-manager-it-fonctionnel?lang=en<br>COMMENT POSTULER : Lien de candidature exact non identifié. Ouvrir l’offre sur le portail Aubay (Recruitee) et postuler depuis la page ; sinon page carrières Aubay Luxembourg. Offre distincte de la réf. 305 déjà suivie.</div>
+<div class="actions"><a class="btn" href="https://aubay.recruitee.com/o/project-manager-it-fonctionnel?lang=en">VOIR L’OFFRE</a><span class="btn secondary">CV PRÊT : cv-2026-10-09-aubay-functional-it-pm-agile-transformation-at-scale.html</span></div></div><div class="card warm"><div class="card-top"><div><div class="title">Chef·fe de projet (m/f/d) — réf. G26000298</div><div class="meta">Administration des transports publics (ATP), service Innovation et Transformation · Luxembourg (GovJobs)</div></div><div class="score-badge"><small>FIT</small>Moyen</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Publiée 02/10/2026 (extrait indexé, non confirmé)</span></div>
+<div class="fields"><div class="field"><small>FAIT — Source / statut</small><strong>moovijob relais GovJobs (WebSearch) · publiée le 02/10/2026 selon l’extrait indexé · Statut actuel à confirmer</strong></div><div class="field"><small>ANALYSE — Fit</small><strong>Pilotage de projets de modernisation et de digitalisation : phases de test, validation, mise en production, relation fournisseurs. Poste de transformation en fonction publique.</strong></div><div class="field"><small>Points forts</small><strong>Gestion de projet et transformation ; coordination de parties prenantes ; Agile.</strong></div><div class="field"><small>ÉCARTS / INCERTITUDE</small><strong>Langues administratives (français/allemand/luxembourgeois, dérogation possible) : allemand absent du CV maître ; conditions de diplôme/statut, date limite et contenu complet non vus. Page moovijob non consultée (403) ; page GovJobs officielle non trouvée.</strong></div><div class="field"><small>Contact</small><strong>Aucun contact identifié.</strong></div><div class="field"><small>CV prêt</small><strong>cv-2026-10-09-atp-chef-de-projet-g26000298.html</strong></div></div>
+<div class="message">OÙ POSTULER : https://en.moovijob.com/job-offers/govjobs/cheffe-de-projet-mfd-ref-g26000298<br>COMMENT POSTULER : Lien de candidature exact non identifié. Candidature via GovJobs (govjobs.public.lu), référence G26000298 : vérifier la procédure et la date limite sur le site officiel.</div>
+<div class="actions"><a class="btn" href="https://en.moovijob.com/job-offers/govjobs/cheffe-de-projet-mfd-ref-g26000298">VOIR L’OFFRE</a><span class="btn secondary">CV PRÊT : cv-2026-10-09-atp-chef-de-projet-g26000298.html</span></div></div><div class="card verify"><div class="title">IT Programme Lead</div><div class="meta">Kepler Search (client financier au Luxembourg) · moovijob</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 13/08/2026 (extrait) — ~57 j</span></div><p>Delivery IT de l’implémentation au go-live ; français/anglais ; droit de travailler au Luxembourg. Statut actuel à confirmer.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://de.moovijob.com/stellenangebote/kepler-search/it-programme-lead">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Chef de projet IA et transformation numérique (E00044670 / E00044667)</div><div class="meta">Direction de la santé · Luxembourg · moovijob relais GovJobs</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 28/08/2026 (extrait)</span></div><p>Projets IT en Agile/Scrum/Waterfall et projets IA ; 3 langues administratives (dérogation possible), ressortissant UE. Absence de background santé/IA dans le CV maître à confirmer. Statut actuel à confirmer.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/govjobs/chef-de-projet-ia-et-transformation-numerique-mf-ref-e00044670-ref-f00044671-ref-m00044672">VOIR L’OFFRE</a></div></div><div class="card verify"><div class="title">Chef de projet (E00044580)</div><div class="meta">Agence pour le développement de l’emploi (ADEM), Process &amp; Project Management Office · moovijob relais GovJobs</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Publiée 21/08/2026 (extrait) — ~49 j</span></div><p>Coordination de projets stratégiques avec rôle de coach des équipes qui les mettent en œuvre ; langues et conditions non vues. Statut actuel à confirmer.</p><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — ouvrir l’offre et suivre la méthode indiquée.</div><div class="actions"><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/govjobs/chef-de-projet-mf-ref-e00044580">VOIR L’OFFRE</a></div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card"><div class="title">Aucun brouillon créé</div><p class="meta">Aucun contact public vérifié identifié ; aucun email deviné. Aucun envoi externe.</p></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Accès</th><th>Preuve</th></tr><tr><td>alleyesonme.jobs (flux agile)</td><td>Fetch direct : HTTP 429, aucun contenu lu ; WebSearch site: sans résultat du domaine</td><td>Non utilisé</td></tr><tr><td>aubay.recruitee.com</td><td>Fetch 404 ; extrait WebSearch</td><td>B / INDEXED</td></tr><tr><td>moovijob (relais GovJobs, Kepler)</td><td>Fetch 403 ; extraits WebSearch</td><td>B / INDEXED</td></tr><tr><td>careers.kpmg.lu</td><td>Page lue : poste différent (Regulatory &amp; Strategy), écarté</td><td>A (rejet)</td></tr><tr><td>mindforest.com</td><td>Page vide au fetch ; Senior Consultant Agile &amp; TOM, consultance, non retenu</td><td>B</td></tr></table><p class="meta">Recherche ciblée, non exhaustive. Fichiers lus : sources-career-v2.txt, career-history.csv, search-strategy.md, template v3, cv-master.html, cv-rules.md. Le domaine alleyesonme.jobs doit être autorisé/dégradé côté réseau (429/proxy).</p>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>HOT / WARM / À vérifier</td><td>0 / 2 / 3</td></tr><tr><td>CV HTML générés</td><td>2 (2 pages A4 vérifiées)</td></tr><tr><td>Brouillons Gmail</td><td>0</td></tr><tr><td>Doublons écartés</td><td>LNDS, EIB 111626, Spuerkeess, JPM, autres déjà suivis</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach · AIgile — rapport interne, aucune donnée inventée.</footer>
+</main>
+</body>
+</html>
