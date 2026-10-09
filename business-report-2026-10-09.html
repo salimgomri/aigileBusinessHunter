@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-09</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Hunter · Salim Gomri</div></div></div>
+<div class="badge">Rapport interne · 2026-10-09</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence</div>
+<h1>Marché calme : 1 mission WARM à Bruxelles, aucun HOT</h1>
+<p class="lede">Recherche ciblée par WebSearch (accès direct bloqué ou partiel). 0 HOT : aucune preuve A, dates inconnues. 1 mission freelance WARM (Agile Coach énergie, Bruxelles) avec écarts de certifications, 4 signaux à vérifier dont le nouveau CTrO de l'ACD. Source AllEyesOnMe non exploitable (429).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Recherche ciblée WebSearch</span><span class="pill">Preuve B majoritaire</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Score de chasse</div>
+<div class="score">3/10</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>1</strong></div>
+<div class="kpi"><small>Contacts</small><strong>1</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card verify">Aucun HOT aujourd'hui : aucune opportunité avec preuve directe, date confirmée et fit fort. Pas de remplissage artificiel.</div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div class="title">Freelance Agile Coach – Energiesector (client final anonyme)</div><div class="score-badge"><small>Preuve</small>B</div></div><div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B · INDEXED</span><span class="tag neutral">Date non confirmée</span><span class="tag neutral">Freelance</span></div><div class="fields"><div class="field"><small>Plateforme / source</small><strong>Bonanza Group (page carrières catsone) — relevé via WebSearch</strong></div><div class="field"><small>Client final</small><strong>Non nommé : « acteur majeur du secteur de l&#x27;énergie »</strong></div><div class="field"><small>Localisation</small><strong>Bruxelles, min. 3 j/semaine sur site + remote</strong></div><div class="field"><small>TJM / durée / démarrage</small><strong>Non publiés (non vus)</strong></div><div class="field"><small>Publication</small><strong>Date non confirmée</strong></div><div class="field"><small>Statut</small><strong>Non vérifié : lecture directe en 404 depuis cet environnement — peut être clôturée</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission : concevoir et déployer un cadre agile à l&#x27;échelle « léger et fédéré » adapté au modèle opérationnel produit existant</div><div class="step"><b>Preuve</b>Résumé WebSearch de la page Bonanza (B)</div><div class="step"><b>Why now</b>Mission publiée sur la page carrières ; date inconnue — aucun Why Now daté</div><div class="step"><b>Décideur</b>Non identifié (probable : Head of Transformation / CIO / Head of Product — hypothèse)</div><div class="step"><b>Offre</b>Programme de scaling agile de bout en bout + delivery enablement Product/Portfolio/IT</div></div><div class="message">Postuler via la page de l&#x27;offre Bonanza Group (plateforme catsone). Lien de candidature distinct non identifié — utiliser la page source.</div><div class="message" style="background:#f9e6e6">Écarts : certifications exigées SAFe SPC, PSM II et ICAgile Agile Team Facilitation absentes du CV (Salim : SAFe 6 Agilist, PSM I) ; « SAFe en contexte multi-pays » non documenté dans le CV maître ; néerlandais non requis si français + anglais.</div><div class="message" style="background:#e4f2e9">CV prêt : cv-2026-10-09-bonanza-group-agile-coach-energie.html</div><div class="actions"><a class="btn" href="https://careers.catsone.com/careers/6885-General/jobs/1060020-Freelance-Agile-Coach-–-Energiesector">VOIR LA MISSION</a><a class="btn secondary" href="https://careers.catsone.com/careers/6885-General/jobs/1060020-Freelance-Agile-Coach-–-Energiesector">COMMENT POSTULER</a></div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">ACD (Administration des contributions directes) — nouveau Chief Transformation Officer</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Signal corporate · Preuve B</span></div><p>FAIT : Noé Berger (ex-McKinsey) nommé CTrO et dirige une nouvelle division « Stratégie et Support organisationnel » qui regroupe TMO, PMO et BPMO ; changement décrit comme accéléré avec plusieurs projets stratégiques. INCERTITUDE : date de l&#x27;annonce non confirmée (texte : communiqué du « lundi 19 janvier », probablement janvier 2026, donc &gt; 90 jours) ; statut actuel des projets non vu. HYPOTHÈSE : besoin de coaching Agile/TOM pour TMO/PMO. Décideur : Noé Berger (CTrO, source publique). Aucun email vérifié → pas de brouillon.</p><p><b>Action :</b> Confirmer la date et les projets en cours ; approche via LinkedIn/appel direct après vérification.</p><div class="actions"><a class="btn secondary" href="https://en.paperjam.lu/article/noe-berger-new-cto-of-the-acd">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">STATEC — Assistance au pilotage d&#x27;un projet de transformation et d&#x27;échanges de données (TED 356136-2026)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Appel d&#x27;offres · Preuve C (secondaire)</span></div><p>FAIT (résumé WebSearch) : avis TED publié le 26 mai 2026, dépôt via le portail pmp.lu. INCERTITUDE : contenu de l&#x27;avis non lu directement (fetch vide), date limite inconnue, probablement dépassée (&gt; 90 jours) ; fit = pilotage de projet, composante agile non confirmée.</p><p><b>Action :</b> Vérifier la date limite sur pmp.lu ; ignorer si clôturé.</p><div class="actions"><a class="btn secondary" href="https://ted.europa.eu/de/notice/356136-2026/pdf">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Expert Agile Coach – Product-centric Transformation (Pauwels Consulting, Bruxelles)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Offre · Preuve B · statut inconnu</span></div><p>FAIT : titre et résumé « client faisant évoluer son département digital vers un modèle opérationnel produit » vus via WebSearch. INCERTITUDE : page directe en 403, contrat (probable CDI ESN) et date inconnus. Non qualifiée WARM faute de preuve.</p><p><b>Action :</b> Vérifier contrat (salarié vs freelance) et date.</p><div class="actions"><a class="btn secondary" href="https://www.pauwelsconsulting.com/job/3ebea477-4ad1-11f1-83ac-87720666aeef/expert-agile-coach-product-centric-transformation">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Agile Coach – Innova (ICTJob, Bruxelles, freelance ou salarié)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Offre · Preuve B · date inconnue</span></div><p>FAIT : Agile Coach hybride Bruxelles (SAFe, Scrum, Kanban, LeSS, DevOps ; néerlandais ou français + anglais), vu via WebSearch ; lecture directe en timeout. INCERTITUDE : date, client, TJM inconnus.</p><p><b>Action :</b> Relire l&#x27;offre avant décision.</p><div class="actions"><a class="btn secondary" href="https://www.ictjob.be/en/job/agile-coach/1-339089">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">emagine — Senior Agile Coach (Sanem)</div><p>Déjà dans l&#x27;historique (22/09). Page HelloWork désormais HTTP 410 Gone → probablement clôturée.</p></div><div class="card verify"><div class="title">Aubay ref 305, LNDS Senior Agile Coach II, EKXEL (CDI)</div><p>Postes salariés traités par le Career Hunter ; non requalifiés ici.</p></div><div class="card verify"><div class="title">Hays Scrum Master (Esch)</div><p>Publiée 14/11/2025, marquée expirée : écartée.</p></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card verify">Aucun HOT aujourd'hui : aucune opportunité avec preuve directe, date confirmée et fit fort. Pas de remplissage artificiel.</div><article class="card warm"><div class="card-top"><div class="title">Freelance Agile Coach – Energiesector (client final anonyme)</div><div class="score-badge"><small>Preuve</small>B</div></div><div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Preuve B · INDEXED</span><span class="tag neutral">Date non confirmée</span><span class="tag neutral">Freelance</span></div><div class="fields"><div class="field"><small>Plateforme / source</small><strong>Bonanza Group (page carrières catsone) — relevé via WebSearch</strong></div><div class="field"><small>Client final</small><strong>Non nommé : « acteur majeur du secteur de l&#x27;énergie »</strong></div><div class="field"><small>Localisation</small><strong>Bruxelles, min. 3 j/semaine sur site + remote</strong></div><div class="field"><small>TJM / durée / démarrage</small><strong>Non publiés (non vus)</strong></div><div class="field"><small>Publication</small><strong>Date non confirmée</strong></div><div class="field"><small>Statut</small><strong>Non vérifié : lecture directe en 404 depuis cet environnement — peut être clôturée</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission : concevoir et déployer un cadre agile à l&#x27;échelle « léger et fédéré » adapté au modèle opérationnel produit existant</div><div class="step"><b>Preuve</b>Résumé WebSearch de la page Bonanza (B)</div><div class="step"><b>Why now</b>Mission publiée sur la page carrières ; date inconnue — aucun Why Now daté</div><div class="step"><b>Décideur</b>Non identifié (probable : Head of Transformation / CIO / Head of Product — hypothèse)</div><div class="step"><b>Offre</b>Programme de scaling agile de bout en bout + delivery enablement Product/Portfolio/IT</div></div><div class="message">Postuler via la page de l&#x27;offre Bonanza Group (plateforme catsone). Lien de candidature distinct non identifié — utiliser la page source.</div><div class="message" style="background:#f9e6e6">Écarts : certifications exigées SAFe SPC, PSM II et ICAgile Agile Team Facilitation absentes du CV (Salim : SAFe 6 Agilist, PSM I) ; « SAFe en contexte multi-pays » non documenté dans le CV maître ; néerlandais non requis si français + anglais.</div><div class="message" style="background:#e4f2e9">CV prêt : cv-2026-10-09-bonanza-group-agile-coach-energie.html</div><div class="actions"><a class="btn" href="https://careers.catsone.com/careers/6885-General/jobs/1060020-Freelance-Agile-Coach-–-Energiesector">VOIR LA MISSION</a><a class="btn secondary" href="https://careers.catsone.com/careers/6885-General/jobs/1060020-Freelance-Agile-Coach-–-Energiesector">COMMENT POSTULER</a></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card verify">Aucun brouillon de prospection créé : aucun email professionnel public vérifié pour un décideur (ne jamais deviner un email). Rapport interne = envoi direct.</div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Accès / constat</th><th>Preuve</th></tr><tr><td>WebSearch site:alleyesonme.jobs</td><td>Accès direct : HTTP 429 (flux non lu) ; WebSearch : aucun résultat du domaine. Source NON exploitée.</td><td>—</td></tr><tr><td>WebSearch free-work / malt / getyourjob / collective</td><td>Aucun résultat des domaines ciblés (filtre site non appliqué) ; profils Malt non pertinents.</td><td>—</td></tr><tr><td>Bonanza Group (catsone)</td><td>Via WebSearch (B) ; fetch direct 404</td><td>B</td></tr><tr><td>Paperjam — ACD</td><td>Fetch direct réussi (A) : contenu lu ; date ambiguë</td><td>A</td></tr><tr><td>TED 356136-2026</td><td>Via WebSearch (C) ; fetch vide</td><td>C</td></tr><tr><td>Pauwels / ICTJob / SALT</td><td>Fetch 403 / timeout / 404 ; résumés WebSearch</td><td>B</td></tr><tr><td>Paperjam/Chronicle CIO-CTO, IA Luxembourg, TOM bancaire</td><td>Recherches de contexte : aucun signal daté 2026 exploitable (LuxSE CIO nov. 2025, BLI CIO janv. 2027 = signaux faibles/anciens)</td><td>B</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>1</td></tr><tr><td>À vérifier</td><td>4</td></tr><tr><td>CV générés</td><td>1</td></tr><tr><td>Brouillons</td><td>0</td></tr><tr><td>Plafond 50 pages AllEyesOnMe</td><td>Non atteint — flux non lu (HTTP 429)</td></tr><tr><td>Employeur actuel exclu</td><td>Aucun prospect concerné</td></tr></table>
+</section>
+
+<footer class="footer">AIgile · aigile.lu · Recherche ciblée — aucune exhaustivité revendiquée.</footer>
+</main>
+</body>
+</html>
