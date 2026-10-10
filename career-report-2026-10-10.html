@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-10-10</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence · AIgile</div></div></div>
+<div class="badge">Career Hunter · 2026-10-10</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>Aucune nouvelle opportunité HOT ou WARM aujourd'hui</h1>
+<p class="lede">Recherche ciblée (non exhaustive) : le marché indexé ne renvoie que des offres déjà connues ou clôturées. 2 éléments à vérifier, 1 signal. Flux alleyesonme.jobs inaccessible (HTTP 429).</p>
+<div class="pills"><span class="pill">0 HOT</span><span class="pill">0 WARM</span><span class="pill">2 à vérifier</span><span class="pill">1 signal</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">0</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>0</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Aucune opportunité HOT aujourd'hui</div><p class="meta">Aucune nouvelle offre ne remplit les critères (fit fort + preuve + fraîcheur). Rien n'est rempli artificiellement. Rappel : les WARM des jours précédents (Aubay réf. 305 et Functional IT PM, LNDS Senior Agile Coach II, Randstad/institution européenne, ATP G26000298, EIB 111626…) restent à confirmer — voir career-history.csv.</p></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Aucune nouvelle WARM</div><p class="meta">Pas de nouvelle offre WARM (dédoublonnage vs career-history.csv). Aucun CV généré.</p></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="card-top"><div class="title">Program Manager – Change Technology Unit (Funds / Asset Managers) — Deloitte Luxembourg</div></div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Preuve B / INDEXED</span></div><div class="fields"><div class="field"><small>Entreprise</small><strong>Deloitte Luxembourg (consultance)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>jobs.deloitte.lu (indexé WebSearch)</strong></div><div class="field"><small>Date</small><strong>Extrait : 25 juin 2026 (version antérieure 30 mars 2026) — date non confirmée sur la page</strong></div><div class="field"><small>Statut</small><strong>Page consultée : « You can't view this job because it's not available at this time » — statut actuel à confirmer, probablement clos</strong></div><div class="field"><small>FAIT</small><strong>Manager CDI, livraison de programmes de transformation complexes (métier, IT, fournisseurs)</strong></div><div class="field"><small>Points forts (analyse)</small><strong>Program/delivery management, transformation</strong></div><div class="field"><small>Écarts</small><strong>Secteur fonds / asset management absent du CV maître; exigences détaillées non vues</strong></div><div class="field"><small>Contact</small><strong>Non identifié — aucun email deviné</strong></div><div class="field"><small>Action</small><strong>Vérifier sur le portail carrière; ne pas postuler tant que la page est indisponible</strong></div></div><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — portail carrière Deloitte Luxembourg (jobs.deloitte.lu) si l'offre est rouverte. Pas de CV généré (À VÉRIFIER).</div><div class="actions"><a class="btn " href="https://jobs.deloitte.lu/job/Luxembourg-Program-Manager-Change-Technology-Unit-%28Funds-Asset-Managers-industry%29/1379159033/">VOIR L'OFFRE</a></div></div><div class="card verify"><div class="card-top"><div class="title">Agile Coach with SAFe certification — EKXEL (client : institution publique européenne, non nommée)</div></div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Preuve A (page lue)</span><span class="tag warn">Déjà vu 2026-10-01</span></div><div class="fields"><div class="field"><small>Entreprise</small><strong>EKXEL IT Services & Financial Engineering</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>taleez.com (page récupérée)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>FAIT</small><strong>CDI temps plein; 6 à 10 ans en gestion de projet Agile ou rôle similaire; certifications SAFe type SASM, POPM, RTE; Scrum, Kanban, SAFe; Jira; BSc/MSc informatique ou équivalent; anglais</strong></div><div class="field"><small>Points forts (analyse)</small><strong>SAFe/Scrum/Jira, coaching Agile</strong></div><div class="field"><small>Écarts</small><strong>SASM / POPM / RTE absents du CV maître (SAFe 6 Agilist seul); diplôme informatique à vérifier; Kanban non listé; sur-qualification et rémunération probablement basse (déjà noté 2026-10-01)</strong></div><div class="field"><small>Contact</small><strong>Non fourni par la page</strong></div><div class="field"><small>Action</small><strong>Basse priorité; aucune nouvelle action</strong></div></div><div class="message">COMMENT POSTULER : bouton APPLY ou « Send by email » sur la page Taleez; URL de candidature distincte non identifiée. Pas de CV (À VÉRIFIER).</div><div class="actions"><a class="btn " href="https://taleez.com/apply/ekxel-agile-coach-with-safe-certification-luxembourg-ekxel-it-services-financial-engineering-cdi">VOIR L'OFFRE</a></div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card verify"><div class="card-top"><div class="title">LuxSE — nouveau CIO Maxime Aerts, stratégie 2026</div></div><div class="tags"><span class="tag neutral">SIGNAL</span><span class="tag neutral">Preuve B</span></div><div class="fields"><div class="field"><small>Événement</small><strong>Maxime Aerts CIO du Luxembourg Stock Exchange depuis le 1er nov. 2025 (CIO par intérim depuis juin 2025); nommé au Comité exécutif en mars 2026 sous réserve d'approbation CSSF</strong></div><div class="field"><small>Organisation</small><strong>Luxembourg Stock Exchange</strong></div><div class="field"><small>Source</small><strong>LuxSE press centre / Paperjam / Mondo Visione (extraits indexés)</strong></div><div class="field"><small>Pourquoi c'est pertinent (ANALYSE)</small><strong>Nouveau CIO + exécution de la stratégie 2026 : contexte possible de besoins en delivery/transformation. Aucune offre ni programme Agile mentionné dans les sources — INCERTITUDE.</strong></div></div><div class="actions"><a class="btn " href="https://luxse.com/about-us/press-centre/Maxime-Aerts-appointed-CIO-of-LuxSE">VOIR LA SOURCE</a></div></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Aucune nouvelle WARM</div><p class="meta">Pas de nouvelle offre WARM (dédoublonnage vs career-history.csv). Aucun CV généré.</p></div><div class="card verify"><div class="card-top"><div class="title">Program Manager – Change Technology Unit (Funds / Asset Managers) — Deloitte Luxembourg</div></div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Preuve B / INDEXED</span></div><div class="fields"><div class="field"><small>Entreprise</small><strong>Deloitte Luxembourg (consultance)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>jobs.deloitte.lu (indexé WebSearch)</strong></div><div class="field"><small>Date</small><strong>Extrait : 25 juin 2026 (version antérieure 30 mars 2026) — date non confirmée sur la page</strong></div><div class="field"><small>Statut</small><strong>Page consultée : « You can't view this job because it's not available at this time » — statut actuel à confirmer, probablement clos</strong></div><div class="field"><small>FAIT</small><strong>Manager CDI, livraison de programmes de transformation complexes (métier, IT, fournisseurs)</strong></div><div class="field"><small>Points forts (analyse)</small><strong>Program/delivery management, transformation</strong></div><div class="field"><small>Écarts</small><strong>Secteur fonds / asset management absent du CV maître; exigences détaillées non vues</strong></div><div class="field"><small>Contact</small><strong>Non identifié — aucun email deviné</strong></div><div class="field"><small>Action</small><strong>Vérifier sur le portail carrière; ne pas postuler tant que la page est indisponible</strong></div></div><div class="message">COMMENT POSTULER : Lien de candidature exact non identifié — portail carrière Deloitte Luxembourg (jobs.deloitte.lu) si l'offre est rouverte. Pas de CV généré (À VÉRIFIER).</div><div class="actions"><a class="btn " href="https://jobs.deloitte.lu/job/Luxembourg-Program-Manager-Change-Technology-Unit-%28Funds-Asset-Managers-industry%29/1379159033/">VOIR L'OFFRE</a></div></div><div class="card verify"><div class="card-top"><div class="title">Agile Coach with SAFe certification — EKXEL (client : institution publique européenne, non nommée)</div></div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Preuve A (page lue)</span><span class="tag warn">Déjà vu 2026-10-01</span></div><div class="fields"><div class="field"><small>Entreprise</small><strong>EKXEL IT Services & Financial Engineering</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source</small><strong>taleez.com (page récupérée)</strong></div><div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Statut</small><strong>Statut actuel à confirmer</strong></div><div class="field"><small>FAIT</small><strong>CDI temps plein; 6 à 10 ans en gestion de projet Agile ou rôle similaire; certifications SAFe type SASM, POPM, RTE; Scrum, Kanban, SAFe; Jira; BSc/MSc informatique ou équivalent; anglais</strong></div><div class="field"><small>Points forts (analyse)</small><strong>SAFe/Scrum/Jira, coaching Agile</strong></div><div class="field"><small>Écarts</small><strong>SASM / POPM / RTE absents du CV maître (SAFe 6 Agilist seul); diplôme informatique à vérifier; Kanban non listé; sur-qualification et rémunération probablement basse (déjà noté 2026-10-01)</strong></div><div class="field"><small>Contact</small><strong>Non fourni par la page</strong></div><div class="field"><small>Action</small><strong>Basse priorité; aucune nouvelle action</strong></div></div><div class="message">COMMENT POSTULER : bouton APPLY ou « Send by email » sur la page Taleez; URL de candidature distincte non identifiée. Pas de CV (À VÉRIFIER).</div><div class="actions"><a class="btn " href="https://taleez.com/apply/ekxel-agile-coach-with-safe-certification-luxembourg-ekxel-it-services-financial-engineering-cdi">VOIR L'OFFRE</a></div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card verify"><div class="title">Aucun brouillon préparé</div><p class="meta">Aucun contact public vérifié pertinent. Aucun email deviné. Aucun envoi externe.</p></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Constat</th><th>Preuve</th></tr><tr><td>alleyesonme.jobs</td><td>Fetch direct : HTTP 429, aucun contenu lu (flux non lu, pagination non parcourue). WebSearch site: : aucun résultat du domaine. Domaine à autoriser/dégrader côté réseau.</td><td>Non utilisé</td></tr><tr><td>taleez.com (EKXEL)</td><td>Page récupérée</td><td>A</td></tr><tr><td>jobs.deloitte.lu</td><td>Page récupérée : offre indisponible; extraits WebSearch</td><td>A (indisponible) / B</td></tr><tr><td>career.deutsche-boerse.com</td><td>Page récupérée : poste pourvu (28 oct. 2025) — écarté</td><td>A (rejet)</td></tr><tr><td>talent.ecb.europa.eu</td><td>Page récupérée : clôturée en 2021 — écarté</td><td>A (rejet)</td></tr><tr><td>esm.europa.eu</td><td>HTTP 410 — écarté (échéance 28 août 2026 dépassée selon extrait)</td><td>B (rejet)</td></tr><tr><td>mindforest.com</td><td>Page vide au fetch (déjà écarté 2026-10-09)</td><td>B</td></tr><tr><td>careers.societegenerale.com</td><td>HTTP 404</td><td>—</td></tr><tr><td>moovijob / govjobs (relais)</td><td>Extraits WebSearch : offres déjà dans l'historique (CTIE, ADEM, X26000259…)</td><td>B / INDEXED</td></tr><tr><td>hellowork, loxo, ictjob, welovesalt, wemanity (Bruxelles)</td><td>Extraits WebSearch, sans date ni fit vérifiable (Bruxelles : néerlandais requis pour plusieurs)</td><td>B / INDEXED</td></tr><tr><td>BGL BNP Paribas VIE Pilotage de la Transformation</td><td>Extrait WebSearch : VIE (volontariat international), profil junior — écarté</td><td>B (rejet)</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>Recherche</td><td>~14 requêtes WebSearch ciblées + 9 fetch; recherche non exhaustive</td></tr><tr><td>HOT / WARM nouvelles</td><td>0 / 0</td></tr><tr><td>À vérifier</td><td>2</td></tr><tr><td>Signaux</td><td>1</td></tr><tr><td>CV générés</td><td>0 (aucune HOT/WARM nouvelle)</td></tr><tr><td>Brouillons Gmail</td><td>0</td></tr><tr><td>Doublons écartés</td><td>Aubay, LNDS, Emagine, Hays, Kepler, GovJobs/moovijob (déjà dans l'historique)</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach Career Hunter — recherche ciblée, non exhaustive. FAIT / ANALYSE / ÉCART / INCERTITUDE distingués. Aucun envoi externe automatique.</footer>
+</main>
+</body>
+</html>
