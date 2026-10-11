@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-11</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Hunter — Salim Gomri</div></div></div>
+<div class="badge">Rapport interne · 2026-10-11</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence</div>
+<h1>0 HOT / 0 WARM — 4 offres à vérifier</h1>
+<p class="lede">Recherche ciblée (WebSearch uniquement, flux AllEyesOnMe bloqué HTTP 429). Aucun besoin ne réunit preuve, fraîcheur et fit suffisants pour HOT/WARM. 4 offres indexées sans date confirmée sont à vérifier, dont un appel d'offres belge (TED 326097-2026). L'offre Emagine suivie en WARM semble retirée (HTTP 410).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Paris</span><span class="pill">Preuve B</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">0</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>0</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><article class="card"><p>Aucune opportunité ne passe le seuil aujourd'hui. Rien n'est rempli artificiellement.</p></article></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card"><p>Aucune opportunité ne passe le seuil aujourd'hui. Rien n'est rempli artificiellement.</p></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="card-top"><div><div class="title">Coach agile / Scrum Master senior (freelance) — programme de transformation agile</div><div class="meta">Collective.work — client final : grande banque (non nommée)</div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="tags"><span class="tag neutral">B — INDEXED</span><span class="tag warn">Date non confirmée</span></div><div class="fields"><div class="field"><small>Plateforme</small><strong>Collective.work (via wizbii, WebSearch)</strong></div><div class="field"><small>Localisation</small><strong>Paris</strong></div><div class="field"><small>TJM/tarif</small><strong>TJM 630 € (indexé)</strong></div><div class="field"><small>Durée</small><strong>Non publiée</strong></div><div class="field"><small>Démarrage</small><strong>Non publié</strong></div><div class="field"><small>Publication</small><strong>Date non confirmée</strong></div><div class="field"><small>Preuve</small><strong>B — INDEXED</strong></div><div class="field"><small>Statut</small><strong>À VÉRIFIER (ouverture non confirmée)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission freelance coach agile / SM senior dans un programme de transformation agile d&#x27;une grande banque (Paris).</div><div class="step"><b>Preuve</b>B — INDEXED — https://www.wizbii.com/company/collective-work/job/coach-agile-scrum-master-senior-freelance</div><div class="step"><b>Why now</b>Date non confirmée — aucun Why Now établi.</div><div class="step"><b>Décideur</b>Non identifié (probable Head of Transformation / Agile)</div><div class="step"><b>Offre</b>Coaching Agile at Scale, équipes + managers.</div></div><div class="message"><b>Problème probable :</b> HYPOTHÈSE : transformation agile en cours côté banque, besoin de coaching d&#x27;équipes.<br><b>Écarts :</b> TJM 630 € sous le niveau cible ; Paris (présence probable) ; date inconnue.<br><b>Comment postuler :</b> Candidature via la plateforme Collective.work. Lien de candidature exact non identifié — utiliser la page source (plateforme Collective.work).<br><b>Action :</b> Ouvrir la page, vérifier date et statut avant toute candidature.</div><div class="actions"><a class="btn" href="https://www.wizbii.com/company/collective-work/job/coach-agile-scrum-master-senior-freelance">VOIR LA MISSION</a><span class="status no">CV non généré : non HOT/WARM</span></div></article><article class="card verify"><div class="card-top"><div><div class="title">TED 326097-2026 — accord-cadre accompagnement, lot 1 : gestion de projet/programme, Product Owner, coach d&#x27;équipe agile</div><div class="meta">Fédération Wallonie-Bruxelles (ministère de la Communauté française) — appel d&#x27;offres</div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="tags"><span class="tag neutral">B — INDEXED</span><span class="tag warn">Avis 2026, date exacte et échéance non confirmées (avis marqué « changement »)</span></div><div class="fields"><div class="field"><small>Plateforme</small><strong>TED Europa (WebSearch)</strong></div><div class="field"><small>Localisation</small><strong>Belgique</strong></div><div class="field"><small>TJM/tarif</small><strong>Non publié</strong></div><div class="field"><small>Durée</small><strong>4 ans (estimée)</strong></div><div class="field"><small>Démarrage</small><strong>Non publié</strong></div><div class="field"><small>Publication</small><strong>Avis 2026, date exacte et échéance non confirmées (avis marqué « changement »)</strong></div><div class="field"><small>Preuve</small><strong>B — INDEXED</strong></div><div class="field"><small>Statut</small><strong>À VÉRIFIER (échéance de dépôt inconnue)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Appel d&#x27;offres compatible : accompagnement en gestion de projet/programme, PO, coaching d&#x27;équipes agiles.</div><div class="step"><b>Preuve</b>B — INDEXED — https://ted.europa.eu/fr/notice/326097-2026/pdf</div><div class="step"><b>Why now</b>Avis TED publié en 2026 ; échéance non vue (texte tronqué).</div><div class="step"><b>Décideur</b>Non identifié (acheteur : ministère FWB)</div><div class="step"><b>Offre</b>Réponse AIgile ou sous-traitance auprès d&#x27;un attributaire.</div></div><div class="message"><b>Problème probable :</b> HYPOTHÈSE : besoin récurrent d&#x27;appui agile en administration, attribué à des prestataires référencés.<br><b>Écarts :</b> Marché-cadre multi-lots : exige capacité administrative/financière d&#x27;une société ; échéance inconnue.<br><b>Comment postuler :</b> Soumission d&#x27;offre via le portail e-Procurement belge indiqué dans l&#x27;avis. Lien de candidature exact non identifié — utiliser la page source (avis TED, dépôt via e-Procurement belge).<br><b>Action :</b> Lire l&#x27;avis complet (échéance, critères) ; décider candidature directe ou sous-traitance.</div><div class="actions"><a class="btn" href="https://ted.europa.eu/fr/notice/326097-2026/pdf">VOIR LA MISSION</a><span class="status no">CV non généré : non HOT/WARM</span></div></article><article class="card verify"><div class="card-top"><div><div class="title">Agile Coach — product-centric transformation (Bruxelles)</div><div class="meta">Keystone Solutions / Pauwels Consulting — client final : groupe d&#x27;infrastructure énergétique</div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="tags"><span class="tag neutral">B — INDEXED</span><span class="tag warn">Date non confirmée</span></div><div class="fields"><div class="field"><small>Plateforme</small><strong>Pauwels Consulting / Keystone / Jooble (WebSearch)</strong></div><div class="field"><small>Localisation</small><strong>Bruxelles (Etterbeek), hybride</strong></div><div class="field"><small>TJM/tarif</small><strong>Non publié</strong></div><div class="field"><small>Durée</small><strong>6 mois + prolongation ≥3 mois (Keystone, indexé)</strong></div><div class="field"><small>Démarrage</small><strong>Non publié</strong></div><div class="field"><small>Publication</small><strong>Date non confirmée</strong></div><div class="field"><small>Preuve</small><strong>B — INDEXED</strong></div><div class="field"><small>Statut</small><strong>À VÉRIFIER (type de contrat incertain : salarié vs freelance)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Transformation vers un modèle opérationnel centré produit dans l&#x27;organisation Digital d&#x27;un groupe énergétique.</div><div class="step"><b>Preuve</b>B — INDEXED — https://www.pauwelsconsulting.com/fr/job/3ebea477-4ad1-11f1-83ac-87720666aeef/expert-agile-coach-product-centric-transformation</div><div class="step"><b>Why now</b>Date non confirmée — aucun Why Now établi.</div><div class="step"><b>Décideur</b>Non identifié (probable Head of Digital)</div><div class="step"><b>Offre</b>Coaching produit + mentoring SM/PO.</div></div><div class="message"><b>Problème probable :</b> HYPOTHÈSE : besoin de coaching de Product teams et de montée en compétence des Scrum Masters/PO.<br><b>Écarts :</b> Néerlandais/français natif requis selon annonce ; contrat possiblement salarié.<br><b>Comment postuler :</b> Candidature via le site Pauwels Consulting / cabinet Keystone. Lien de candidature exact non identifié — utiliser la page source (page non consultée directement : HTTP 403).<br><b>Action :</b> Vérifier statut et mode contractuel via la page source.</div><div class="actions"><a class="btn" href="https://www.pauwelsconsulting.com/fr/job/3ebea477-4ad1-11f1-83ac-87720666aeef/expert-agile-coach-product-centric-transformation">VOIR LA MISSION</a><span class="status no">CV non généré : non HOT/WARM</span></div></article><article class="card verify"><div class="card-top"><div><div class="title">Lead SAFe 6.0 Implementation Consultant — Enterprise Transformation</div><div class="meta">Pauwels Consulting — client non nommé</div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="tags"><span class="tag neutral">B — INDEXED</span><span class="tag warn">Date non confirmée</span></div><div class="fields"><div class="field"><small>Plateforme</small><strong>Pauwels Consulting (WebSearch)</strong></div><div class="field"><small>Localisation</small><strong>Anderlecht, Bruxelles</strong></div><div class="field"><small>TJM/tarif</small><strong>Non publié</strong></div><div class="field"><small>Durée</small><strong>Non publiée</strong></div><div class="field"><small>Démarrage</small><strong>Non publié</strong></div><div class="field"><small>Publication</small><strong>Date non confirmée</strong></div><div class="field"><small>Preuve</small><strong>B — INDEXED</strong></div><div class="field"><small>Statut</small><strong>À VÉRIFIER (statut et contrat incertains)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Implémentation SAFe 6.0 / transformation d&#x27;entreprise (Bruxelles).</div><div class="step"><b>Preuve</b>B — INDEXED — https://www.pauwelsconsulting.com/job/2780e5d4-12f7-11f1-aade-17b99eec029e/lead-safe-60-implementation-consultant-enterprise-transformation</div><div class="step"><b>Why now</b>Date non confirmée — aucun Why Now établi.</div><div class="step"><b>Décideur</b>Non identifié</div><div class="step"><b>Offre</b>SAFe 6 Agilist, Agile at Scale.</div></div><div class="message"><b>Problème probable :</b> HYPOTHÈSE : déploiement SAFe à l&#x27;échelle chez un client.<br><b>Écarts :</b> Rôle « Lead implementation » possiblement au-dessus du CV (SPC non listé) ; contrat probablement salarié.<br><b>Comment postuler :</b> Candidature via le site Pauwels Consulting. Lien de candidature exact non identifié — utiliser la page source (page non consultée directement : HTTP 403).<br><b>Action :</b> Vérifier statut et contrat.</div><div class="actions"><a class="btn" href="https://www.pauwelsconsulting.com/job/2780e5d4-12f7-11f1-aade-17b99eec029e/lead-safe-60-implementation-consultant-enterprise-transformation">VOIR LA MISSION</a><span class="status no">CV non généré : non HOT/WARM</span></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Emagine — Senior Agile Coach (déjà suivi, WARM du 2026-09-22)</div><p>La page hellowork indexée (82992815) renvoie HTTP 410 Gone : l&#x27;offre est probablement retirée. À considérer comme expirée sauf nouvelle preuve. Rétrogradé À VÉRIFIER dans l&#x27;historique.</p><div class="actions"><a class="btn secondary" href="https://www.hellowork.com/fr-fr/emplois/82992815.html">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">BIL — COO Isa Scheunpflug (Paperjam, ~6 oct. 2026)</div><p>Ancien employeur de Salim (2016-2025) : signal conservé pour l&#x27;historique, extrait non daté avec certitude, aucune démarche proposée ici sans Why Now réel.</p><div class="actions"><a class="btn secondary" href="https://en.paperjam.lu/article/luxembourg-stock-exchange-reshuffles-governance-to-accelerate-its-2026-strategy">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">LuxSE — réorganisation de gouvernance (27 mars 2026)</div><p>Signal moyen (COO créé, CIO Maxime Aerts au comité exécutif) mais ancien (&gt;90 jours) : pas de preuve actuelle de besoin.</p><div class="actions"><a class="btn secondary" href="https://luxse.com/about-us/press-centre/LuxSE-announces-strategic-changes-in-its-top-leadership-team">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">BLI — CIO Fabrice Kremer à partir du 1er janv. 2027</div><p>Déjà suivi (2026-10-01) ; prise de fonction future, aucun chantier identifié. Signal faible seul.</p><div class="actions"><a class="btn secondary" href="https://en.paperjam.lu/article/fabrice-kremer-appointed-cio-of-bli">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><article class="card"><p>Aucune opportunité ne passe le seuil aujourd'hui. Rien n'est rempli artificiellement.</p></article><article class="card"><p>Aucune opportunité ne passe le seuil aujourd'hui. Rien n'est rempli artificiellement.</p></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><article class="card"><p>Aucun brouillon de prospection créé (aucun HOT/WARM). Rapport interne envoyé à salimdulux@gmail.com.</p></article></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Accès / résultat</th><th>Preuve</th></tr><tr><td>AllEyesOnMe Jobs (flux paginé)</td><td>WebFetch HTTP 429 → flux NON lu ; WebSearch site:alleyesonme.jobs : aucun résultat exploitable (1 URL Deloitte program-manager hors périmètre). Pagination/50 pages non exécutable.</td><td>Non consulté</td></tr><tr><td>Free-Work / Malt / Collective / Freelancers.lu / GetYourJob</td><td>WebSearch (filtre site: peu fiable). Un résultat Collective.work exploitable.</td><td>B — INDEXED</td></tr><tr><td>Hellowork (Emagine)</td><td>HTTP 410 Gone</td><td>A — réponse directe (offre retirée)</td></tr><tr><td>Pauwels Consulting</td><td>HTTP 403 → pages non consultées</td><td>B — INDEXED</td></tr><tr><td>Paperjam / LuxSE</td><td>WebSearch, extraits</td><td>B — INDEXED</td></tr><tr><td>TED Europa</td><td>WebSearch, extrait</td><td>B — INDEXED</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>0</td></tr><tr><td>À vérifier</td><td>4 offres + 4 signaux</td></tr><tr><td>Brouillons de prospection</td><td>0</td></tr><tr><td>CV générés</td><td>0 (aucun HOT/WARM)</td></tr><tr><td>Contacts décideurs confirmés</td><td>0</td></tr></table>
+</section>
+
+<footer class="footer">AIgile — aigile.lu · Recherche ciblée, non exhaustive · Accent #FEDB10</footer>
+</main>
+</body>
+</html>
