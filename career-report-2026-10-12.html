@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="salaried">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gomri.coach Career Hunter — 2026-10-12</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">Gomri.coach</div><div class="brand-sub">Career Intelligence — AIgile</div></div></div>
+<div class="badge">Career Hunter · 2026-10-12</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport salarié du jour</div>
+<h1>Journée calme : aucune nouvelle offre qualifiée</h1>
+<p class="lede">Recherche ciblée sur 12 requêtes : pas de nouvelle offre HOT/WARM. L'offre EKXEL (SAFe, signalée hier) reste en ligne. LNDS semble close ; Pauwels, Emagine et Aubay réf. 341 sont retirées ou injoignables. Flux alleyesonme.jobs bloqué (429).</p>
+<div class="pills"><span class="pill">Suivre EKXEL</span><span class="pill">Valider EIB 111626</span><span class="pill">Autoriser alleyesonme.jobs</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées nouvelles</div>
+<div class="score">0</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>1</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><article class="card hot"><div class="title">Aucune opportunité HOT aujourd'hui</div><p class="meta">Aucune nouvelle offre ne réunit fit fort, preuve forte et fraîcheur confirmée. Rien n'est rempli artificiellement.</p></article></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Agile Coach with SAFe certification — EKXEL IT Services &amp; Financial Engineering (pour une grande institution publique européenne)</div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Suivi J+1 — déjà signalé le 2026-10-11</span><span class="tag neutral">Preuve A</span></div></div></div>
+<div class="fields">
+<div class="field"><small>Localisation</small><strong>Luxembourg · CDI</strong></div>
+<div class="field"><small>Source</small><strong>taleez.com — page lue directement (preuve A)</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer : la page taleez affiche des boutons APPLY actifs (FAIT), sans date limite ni mention de clôture</strong></div>
+<div class="field"><small>Fit (analyse)</small><strong>Fit fort : coaching d&#x27;un ART SAFe, Certified SAFe 6 Agilist au CV maître, BIL 2016-2025 (1 → 13 équipes).</strong></div>
+<div class="field"><small>Écarts</small><strong>SASM / POPM / RTE absents du CV maître ; diplôme informatique non vérifié.</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun recruteur ni email identifié</strong></div>
+<div class="field"><small>Comment postuler</small><strong>Postuler via le bouton APPLY de la page taleez ou « Send by email » (aucune adresse affichée)</strong></div></div>
+<div class="message">OÙ POSTULER ? Page taleez de l'offre (lien de candidature = même URL). CV prêt : cv-2026-10-11-ekxel-agile-coach-safe.html (généré le 2026-10-11, inchangé, disponible sur la branche main ; non joint au mail : pièce jointe non réalisable dans cet environnement).</div>
+<div class="actions"><a class="btn" href="https://taleez.com/apply/ekxel-agile-coach-with-safe-certification-luxembourg-ekxel-it-services-financial-engineering-cdi">VOIR L&#x27;OFFRE</a><a class="btn" href="https://taleez.com/apply/ekxel-agile-coach-with-safe-certification-luxembourg-ekxel-it-services-financial-engineering-cdi">POSTULER</a><span class="btn secondary">COMMENT POSTULER : bouton APPLY ou email via la page</span><span class="btn secondary">CV PRÊT : cv-2026-10-11-ekxel-agile-coach-safe.html</span></div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Agile Coach – Product-centric Transformation (Expert) — Pauwels Consulting (client énergie)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Bruxelles</strong></div><div class="field"><small>Source / preuve</small><strong>pauwelsconsulting.com (indexé, B) ; page 403 au fetch ; relais VDAB : HTTP 410 Gone</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Constat</small><strong>Le relais VDAB renvoie 410 Gone → offre probablement retirée (inférence, non prouvée).</strong></div>
+<div class="field"><small>Écarts</small><strong>Rôle de Scrum Master d&#x27;équipe ; néerlandais non vérifié</strong></div></div>
+<div class="actions"><a class="btn secondary" href="https://www.pauwelsconsulting.com/fr/job/3ebea477-4ad1-11f1-83ac-87720666aeef/expert-agile-coach-product-centric-transformation">VOIR L&#x27;OFFRE</a><span class="btn secondary">Lien de candidature exact non identifié</span></div></article><article class="card verify"><div class="title">Senior Agile Coach (freelance) — Emagine S.A.</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source / preuve</small><strong>hellowork (indexé, B) ; fetch HTTP 410 Gone ; extrait indexé daté 03/09/2026</strong></div>
+<div class="field"><small>Date</small><strong>2026-09-03 (extrait indexé)</strong></div><div class="field"><small>Constat</small><strong>Page retirée (410) : probablement clos. Mission freelance, hors périmètre salarié.</strong></div>
+<div class="field"><small>Écarts</small><strong>Mission freelance</strong></div></div>
+<div class="actions"><a class="btn secondary" href="https://www.hellowork.com/fr-fr/emplois/82992815.html">VOIR L&#x27;OFFRE</a><span class="btn secondary">Lien de candidature exact non identifié</span></div></article><article class="card verify"><div class="title">Change Manager (réf. 341) — Aubay Luxembourg (banque non nommée, data)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source / preuve</small><strong>aubay.recruitee.com (indexé, B) ; fetch HTTP 404</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Constat</small><strong>URL en 404 : offre retirée ou déplacée.</strong></div>
+<div class="field"><small>Écarts</small><strong>Prosci/ADKAR absents du CV maître</strong></div></div>
+<div class="actions"><a class="btn secondary" href="https://aubay.recruitee.com/o/change-manager-ref-341?lang=en">VOIR L&#x27;OFFRE</a><span class="btn secondary">Lien de candidature exact non identifié</span></div></article><article class="card verify"><div class="title">Senior Agile Coach II (fixed-term) — LNDS</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source / preuve</small><strong>lnds.app.loxo.co (page lue, A)</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div><div class="field"><small>Constat</small><strong>Ancien WARM (2026-10-08). La page affiche désormais « There are currently no openings » → offre apparemment close (FAIT).</strong></div>
+<div class="field"><small>Écarts</small><strong>—</strong></div></div>
+<div class="actions"><a class="btn secondary" href="https://lnds.app.loxo.co/job/MjU5MDQtM3F6dzVoZ3dpdDVvazZjag==">VOIR L&#x27;OFFRE</a><span class="btn secondary">Lien de candidature exact non identifié</span></div></article><article class="card verify"><div class="title">Change and Project Manager – Change Management (réf. 111626) — Banque européenne d&#x27;investissement</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div>
+<div class="fields"><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Source / preuve</small><strong>unjobnet / uncareer (indexé, C) ; déjà WARM le 2026-10-01</strong></div>
+<div class="field"><small>Date</small><strong>2026-08-26 (publication, rapport 10-01)</strong></div><div class="field"><small>Constat</small><strong>Extrait indexé : entretiens de panel prévus à partir d&#x27;octobre 2026 → probablement en phase de présélection. Déjà traité le 10-01, pas de nouvelle action.</strong></div>
+<div class="field"><small>Écarts</small><strong>Voir rapport du 2026-10-01</strong></div></div>
+<div class="actions"><a class="btn secondary" href="https://www.unjobnet.org/jobs/detail/eib-change-and-project-manager-change-management-based-in-luxembourg-88389792">VOIR L&#x27;OFFRE</a><span class="btn secondary">Lien de candidature exact non identifié</span></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">LuxSE — nouveau CIO, Maxime Aerts, au comité exécutif</div><p class="meta">Nomination CIO effective le 2025-11-01 puis réorganisation de la gouvernance liée à la stratégie 2026 (Paperjam, mondovisione ; preuve B). Le CIO déclare vouloir piloter la transformation digitale : un programme à surveiller, sans offre aujourd'hui, aucun mot sur l'Agile dans les sources.</p></article>
+<article class="card verify"><div class="title">Kepler Search — IT Programme Lead (client financier non nommé)</div><p class="meta">Offre indexée datée du 2026-08-13 (~60 j), déjà en À VÉRIFIER le 10-09. Pas de nouvel élément.</p></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Agile Coach with SAFe certification — EKXEL IT Services &amp; Financial Engineering (pour une grande institution publique européenne)</div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag neutral">Suivi J+1 — déjà signalé le 2026-10-11</span><span class="tag neutral">Preuve A</span></div></div></div>
+<div class="fields">
+<div class="field"><small>Localisation</small><strong>Luxembourg · CDI</strong></div>
+<div class="field"><small>Source</small><strong>taleez.com — page lue directement (preuve A)</strong></div>
+<div class="field"><small>Date</small><strong>Date de publication non confirmée</strong></div>
+<div class="field"><small>Statut</small><strong>Statut actuel à confirmer : la page taleez affiche des boutons APPLY actifs (FAIT), sans date limite ni mention de clôture</strong></div>
+<div class="field"><small>Fit (analyse)</small><strong>Fit fort : coaching d&#x27;un ART SAFe, Certified SAFe 6 Agilist au CV maître, BIL 2016-2025 (1 → 13 équipes).</strong></div>
+<div class="field"><small>Écarts</small><strong>SASM / POPM / RTE absents du CV maître ; diplôme informatique non vérifié.</strong></div>
+<div class="field"><small>Contact</small><strong>Aucun recruteur ni email identifié</strong></div>
+<div class="field"><small>Comment postuler</small><strong>Postuler via le bouton APPLY de la page taleez ou « Send by email » (aucune adresse affichée)</strong></div></div>
+<div class="message">OÙ POSTULER ? Page taleez de l'offre (lien de candidature = même URL). CV prêt : cv-2026-10-11-ekxel-agile-coach-safe.html (généré le 2026-10-11, inchangé, disponible sur la branche main ; non joint au mail : pièce jointe non réalisable dans cet environnement).</div>
+<div class="actions"><a class="btn" href="https://taleez.com/apply/ekxel-agile-coach-with-safe-certification-luxembourg-ekxel-it-services-financial-engineering-cdi">VOIR L&#x27;OFFRE</a><a class="btn" href="https://taleez.com/apply/ekxel-agile-coach-with-safe-certification-luxembourg-ekxel-it-services-financial-engineering-cdi">POSTULER</a><span class="btn secondary">COMMENT POSTULER : bouton APPLY ou email via la page</span><span class="btn secondary">CV PRÊT : cv-2026-10-11-ekxel-agile-coach-safe.html</span></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><article class="card"><div class="title">Aucun brouillon aujourd'hui</div><p class="meta">Aucun contact pertinent vérifié. Aucun email externe envoyé. Le rapport interne est envoyé à salimdulux@gmail.com avec le CV EKXEL en pièce jointe.</p></article></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Résultat</th><th>Preuve</th></tr><tr><td>alleyesonme.jobs (flux)</td><td>BLOQUÉ : HTTP 429 au fetch direct. WebSearch site:alleyesonme.jobs : une seule page indexée remontée (Deloitte, déjà connu). Domaine à autoriser / limiter le débit côté réseau. Pagination non parcourue (0 page).</td><td>B</td></tr><tr><td>WebSearch ciblé (Agile Coach / Transformation / Change / Program Manager, Luxembourg, Bruxelles, Paris)</td><td>12 requêtes, majoritairement des offres déjà connues</td><td>B</td></tr><tr><td>govjobs.public.lu / moovijob</td><td>relais GovJobs : E00044580 et G26000298 déjà traités</td><td>B</td></tr><tr><td>EIB, EPSO</td><td>aucune offre nouvelle indexée</td><td>B</td></tr><tr><td>taleez, loxo, hellowork, recruitee, VDAB, Pauwels, Elia (fetch)</td><td>taleez lu (A) ; loxo lu (A) ; hellowork/VDAB 410 ; recruitee 404 ; Pauwels 403 ; Elia indisponible ; moovijob/AXA 403</td><td>A / échec</td></tr></table><p class="meta">Recherche ciblée, non exhaustive.</p>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>Nouvelles offres qualifiées</td><td>0</td></tr><tr><td>HOT / WARM</td><td>0 / 1 (suivi EKXEL)</td></tr><tr><td>À vérifier</td><td>5</td></tr><tr><td>CV HTML joints</td><td>1 (cv-2026-10-11-ekxel…, inchangé, non joint)</td></tr><tr><td>Brouillons Gmail</td><td>0</td></tr><tr><td>Historique</td><td>career-history.csv relu, 1 ligne de suivi ajoutée</td></tr></table>
+</section>
+
+<footer class="footer">Gomri.coach Career Hunter — recherche ciblée, non exhaustive.</footer>
+</main>
+</body>
+</html>
