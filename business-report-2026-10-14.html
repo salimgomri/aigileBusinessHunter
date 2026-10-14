@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-14</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Hunter · aigile.lu</div></div></div>
+<div class="badge">Rapport quotidien · 2026-10-14</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence</div>
+<h1>Journée calme : 0 HOT, 0 WARM</h1>
+<p class="lede">Recherche ciblée du 14/10/2026 : aucune opportunité HOT ou WARM exploitable. 4 signaux à vérifier (Arendt, ACD, Allianz Benelux, Kepler Search) ; la mission Emagine déjà suivie en WARM (22/09) n'est pas recomptée. Le flux AllEyesOnMe n'a pas pu être lu (HTTP 429).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Recherche ciblée — non exhaustive</span><span class="pill">Sans CV (0 HOT/WARM)</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">HUNT SCORE</div>
+<div class="score">0 / 8</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>0</strong></div>
+<div class="kpi"><small>Contacts</small><strong>3</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucun HOT / WARM aujourd'hui</div><p class="meta">Aucun besoin concret avec preuve suffisante et fraîcheur confirmée. Les quotas ne sont jamais remplis artificiellement.</p></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="card-top"><div class="title">Arendt (Luxembourg)</div></div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div><div class="fields"><div class="field"><small>Preuve</small><strong>A/B — page Paperjam consultée (WebFetch) + résultat indexé lexgo.lu</strong></div><div class="field"><small>Fraîcheur</small><strong>ANCIEN — la date d&#x27;affichage Paperjam (14/10/2026) est la date de consultation ; lexgo indique une prise de poste au 15/10/2025 (≈12 mois)</strong></div><div class="field"><small>Date du signal</small><strong>2025-10-15 (non confirmé par la page Paperjam)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Nomination d&#x27;Olivier Ramlot (ex-CIO BIL) comme CIO d&#x27;Arendt : feuille de route IT, évolution des pratiques d&#x27;équipes, stabilité opérationnelle, digitalisation ; l&#x27;associé gérant parle de « renforcer la gouvernance IT et accélérer la transformation digitale ».</div><div class="step"><b>Why now</b>Aucun Why Now actuel prouvé : signal vieux d&#x27;environ un an.</div><div class="step"><b>Problème (hypothèse)</b>HYPOTHÈSE : phase de structuration IT/gouvernance sous le nouveau CIO, possible besoin de coaching delivery/pratiques d&#x27;équipes.</div><div class="step"><b>Décideur</b>Olivier Ramlot — CIO Arendt (donnée publique Paperjam)</div><div class="step"><b>Offre</b>À définir si preuve d&#x27;activité 2026 (recrutement, projet) apparaît.</div></div><div class="message">APPROCHE : Ne pas approcher sur ce seul signal. Salim a été chez BIL jusqu&#x27;en 12/2025 ; Ramlot y était CIO (avril 2023+) : lien éventuel à vérifier par Salim lui-même.<br>ACTION : Chercher une preuve d&#x27;activité 2026 (offres Arendt Digital Services, communication récente) avant tout contact.</div><div class="actions"><a class="btn" href="https://en.paperjam.lu/article/olivier-ramlot-appointed-cio-of-arendt">VOIR LA SOURCE</a> <a class="btn secondary" href="https://www.lexgo.lu/en/news-and-articles/14396-arendt-appoints-new-cio">SOURCE 2</a></div></article><article class="card verify"><div class="card-top"><div class="title">Administration des contributions directes (ACD), Luxembourg</div></div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div><div class="fields"><div class="field"><small>Preuve</small><strong>A — page Paperjam consultée (WebFetch)</strong></div><div class="field"><small>Fraîcheur</small><strong>À VÉRIFIER/ANCIEN — communiqué du 19/01/2026 (&gt;90 jours) ; la date affichée 14/10/2026 est la date de consultation</strong></div><div class="field"><small>Date du signal</small><strong>2026-01-19</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Noé Berger (ex-McKinsey, 10 ans) nommé Chief Transformation Officer ; nouvelle division « stratégie et appui organisationnel » regroupant TMO, PMO et BPMO ; plusieurs projets stratégiques en cours ou planifiés (e-filing 85 %, nouveau directeur transformation digitale en 11/2025).</div><div class="step"><b>Why now</b>Pas de besoin daté et prouvé en octobre 2026 ; contexte de transformation réel mais ancien de ~9 mois.</div><div class="step"><b>Problème (hypothèse)</b>HYPOTHÈSE : coordination de portefeuille de projets / conduite du changement à renforcer ; achats éventuels via marchés publics.</div><div class="step"><b>Décideur</b>Noé Berger — Chief Transformation Officer ACD (donnée publique Paperjam)</div><div class="step"><b>Offre</b>Programme/Change/Delivery management, appui PMO/TMO (à confirmer).</div></div><div class="message">APPROCHE : Vérifier d&#x27;abord un marché public ou une offre sur SIMAP/guichet.lu avant d&#x27;approcher.<br>ACTION : Recherche ciblée SIMAP « ACD » / « transformation » ; sinon surveiller.</div><div class="actions"><a class="btn" href="https://en.paperjam.lu/article/noe-berger-new-cto-of-the-acd">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="card-top"><div class="title">Allianz Benelux (Bruxelles)</div></div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div><div class="fields"><div class="field"><small>Preuve</small><strong>B — résultat indexé (efinancialcareers / Allianz internal careers), non consulté directement</strong></div><div class="field"><small>Fraîcheur</small><strong>DATE NON CONFIRMÉE</strong></div><div class="field"><small>Date du signal</small><strong>Date non confirmée</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Poste « Head of AI Strategy &amp; Transformation » : possède la stratégie IA, le modèle opérationnel et « l&#x27;AI Transformation Program », rattaché au Chief Data, Analytics &amp; AI Officer.</div><div class="step"><b>Why now</b>Aucun Why Now daté ; poste salarié (CDI probable, non confirmé), pas une mission freelance.</div><div class="step"><b>Problème (hypothèse)</b>HYPOTHÈSE : programme de transformation IA en structuration, besoin d&#x27;adoption côté métiers/managers.</div><div class="step"><b>Décideur</b>Chief Data, Analytics &amp; AI Officer Allianz Benelux (nom non identifié)</div><div class="step"><b>Offre</b>AI adoption / coaching managers (hypothèse).</div></div><div class="message">APPROCHE : Ne pas approcher avant d&#x27;identifier le décideur et la date du poste.<br>ACTION : Identifier le titulaire du poste de CDAO ; vérifier si le poste est encore ouvert.</div><div class="actions"><a class="btn" href="https://www.efinancialcareers.com/jobs-Belgium-Brussels-Head_of_AI_Strategy__Transformation.id24610623">VOIR LA SOURCE</a> <a class="btn secondary" href="https://internal-careers.allianz.com/job/Bruxelles-Head-of-AI-Strategy-&amp;-Transformation-1210/1420430233/">SOURCE 2</a></div></article><article class="card verify"><div class="card-top"><div class="title">Client financier non nommé (via Kepler Search), Luxembourg</div></div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div><div class="fields"><div class="field"><small>Preuve</small><strong>B — résultat indexé moovijob ; consultation directe impossible (HTTP 403)</strong></div><div class="field"><small>Fraîcheur</small><strong>Publication 13/08/2026 selon le moteur (≈62 jours) — non confirmée directement</strong></div><div class="field"><small>Date du signal</small><strong>2026-08-13 (indexé)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>« IT Programme Lead » : pilotage d&#x27;un programme de transformation IT en services financiers, de l&#x27;implémentation au go-live ; français + anglais requis.</div><div class="step"><b>Why now</b>Annonce de 2 mois, statut actuel inconnu ; type de contrat non confirmé.</div><div class="step"><b>Problème (hypothèse)</b>HYPOTHÈSE : programme IT en cours nécessitant un pilote delivery/programme.</div><div class="step"><b>Décideur</b>Non identifié (cabinet Kepler Search)</div><div class="step"><b>Offre</b>Program/Delivery management (fit partiel à confirmer).</div></div><div class="message">APPROCHE : Contact via le cabinet si l&#x27;annonce est confirmée ouverte.<br>ACTION : Ouvrir la page source manuellement, vérifier statut/contrat/TJM.</div><div class="actions"><a class="btn" href="https://en.moovijob.com/job-offers/kepler-search/it-programme-lead">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Doublon (non recompté) — Emagine — Senior Agile Coach Product &amp; Engineering (Luxembourg)</div><p class="meta">Déjà en historique (2026-09-22, WARM). Mission free-work publiée 2026-07-23 (≈83 jours) : statut à revérifier. Nouvelle URL indexée non datée : https://www.hellowork.com/fr-fr/emplois/82992815.html (HTTP 410 en consultation directe). Non recompté.</p></div><div class="card"><div class="title">Écarté</div><p class="meta">Hays Luxembourg Agile Coach/Scrum Master (Esch) : annonce expirée (14/11/2025).</p></div><div class="card"><div class="title">Écarté</div><p class="meta">EKXEL Agile Coach SAFe : CDI, déjà traité par la routine Career.</p></div><div class="card"><div class="title">Écarté</div><p class="meta">Aubay Agile Coach ref305 : cabinet (CDI), déjà traité par la routine Career.</p></div><div class="card"><div class="title">Écarté</div><p class="meta">Collective.work Consultant IT Transformation CIO Office : offre « n&#x27;est plus disponible ».</p></div><div class="card"><div class="title">Écarté</div><p class="meta">LuxSE COO (dates contradictoires 27/01 vs 27/03/2026), eSST COO (02/2026), Spuerkeess COO (LinkedIn sans nom ni date) : signaux faibles, non qualifiés.</p></div><div class="card"><div class="title">Écarté</div><p class="meta">Fidelity (Inde), Montefiore (USA) etc. : hors zone.</p></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card"><div class="title">Aucun HOT / WARM aujourd'hui</div><p class="meta">Aucun besoin concret avec preuve suffisante et fraîcheur confirmée. Les quotas ne sont jamais remplis artificiellement.</p></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card"><p class="meta">Aucun brouillon de prospection créé (aucun HOT/WARM). Rapport interne envoyé séparément à salimdulux@gmail.com.</p></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Constat</th></tr><tr><td>AllEyesOnMe Jobs (flux paginé, search=agile)</td><td>Accès direct : HTTP 429, aucun contenu lu. WebSearch site:alleyesonme.jobs : 0 résultat. Autres recherches (scrum, transformation, change, program manager, delivery) non exécutées faute d&#x27;accès — flux NON lu.</td></tr><tr><td>Malt / Free-Work / GetYourJob / Collective.work</td><td>WebSearch site: : aucune mission indexée sur ces domaines (profils Malt seulement). Aucune mission datée octobre 2026 trouvée.</td></tr><tr><td>Paperjam / ITnation</td><td>Nominations Arendt et ACD consultées / indexées.</td></tr><tr><td>Recherches contextuelles</td><td>Agile/transformation/AI Luxembourg, Bruxelles, Paris : peu de résultats exploitables. Recherche ciblée, non exhaustive.</td></tr><tr><td>Fichiers</td><td>Utilisés : sources-business-v2.txt, prospects-history.csv, search-strategy.md, ai-gile-intelligence-report-template-v3.html, cv-master.html, cv-rules.md (présents). Aucun CV généré : 0 HOT/WARM de type offre.</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Source</th><th>Constat</th></tr><tr><td>Prospects qualifiés HOT/WARM</td><td>0</td></tr><tr><td>À vérifier (nouveaux)</td><td>4</td></tr><tr><td>Doublons</td><td>1</td></tr><tr><td>CV générés</td><td>0 (aucun HOT/WARM offre)</td></tr><tr><td>Brouillons de prospection</td><td>0</td></tr><tr><td>Accès AllEyesOnMe</td><td>Bloqué (429)</td></tr></table>
+</section>
+
+<footer class="footer">AIgile Business Hunter · 2026-10-14 · Recherche ciblée via WebSearch, non exhaustive.</footer>
+</main>
+</body>
+</html>
