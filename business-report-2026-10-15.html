@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-15</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Sales Intelligence · aigile.lu</div></div></div>
+<div class="badge">Rapport quotidien · 2026-10-15</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Business Hunter</div>
+<h1>1 mission WARM à Bruxelles, aucun HOT</h1>
+<p class="lede">Recherche ciblée (WebSearch, preuve B uniquement ; accès direct bloqué). Une mission freelance exploitable — Agile Coach, secteur énergie, Bruxelles — mais date et statut non confirmés et plusieurs certifications exigées absentes du CV. Aucun contact public vérifié : 0 brouillon. Le flux AllEyesOnMe n'a pas pu être lu (HTTP 429).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Preuve B</span><span class="pill">Aucun envoi externe</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">1</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>1</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><article class="card"><p>Aucun HOT aujourd'hui : aucune opportunité ne réunit preuve suffisante, date confirmée et fit fort.</p></article></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Freelance Agile Coach – Energiesector</div><div class="tags"><span class="tag">WARM</span><span class="tag">Mission freelance</span><span class="tag">Preuve B / INDEXED</span><span class="tag warn">Date non confirmée</span><span class="tag warn">Statut non vérifié</span></div></div><div class="score-badge">WARM<small>proof B</small></div></div><div class="fields"><div class="field"><small>Plateforme / source</small><strong>Bonanza Group — page carrières (catsone), résultat indexé</strong></div><div class="field"><small>Client final</small><strong>Non nommé (secteur énergie)</strong></div><div class="field"><small>Localisation</small><strong>Bruxelles — min. 3 j/semaine sur site + remote</strong></div><div class="field"><small>TJM / tarif</small><strong>Non publié dans les extraits</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés dans les extraits</strong></div><div class="field"><small>Date de publication</small><strong>Date non confirmée</strong></div><div class="field"><small>Statut</small><strong>Non vérifié — accès direct impossible (HTTP 404 à la consultation) ; existence connue via l&#x27;index uniquement</strong></div><div class="field"><small>Méthode de candidature</small><strong>Via la page source Bonanza Group. Lien de candidature exact non identifié — utiliser la page source.</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission Agile Coach : conception et déploiement d&#x27;un framework agile à l&#x27;échelle « léger / fédéré » (extraits indexés)</div><div class="step"><b>Preuve</b>B / INDEXED — extraits WebSearch de la page Bonanza Group, non consultée directement</div><div class="step"><b>Why now</b>Offre indexée ; date non confirmée — aucun déclencheur daté établi</div><div class="step"><b>Décideur</b>Non identifié. Hypothèse : responsable delivery / transformation du client, via le recruteur Bonanza Group</div><div class="step"><b>Offre</b>Coaching Agile at Scale (SAFe), cadrage d&#x27;un framework fédéré, coaching managers, facilitation</div></div><div class="message">HYPOTHÈSE : le client énergie cherche à industrialiser un mode de delivery agile à l&#x27;échelle sans framework lourd.</div><div class="message" style="background:#f9e6e6">Écarts : certifications exigées SPC, PSM II et ICP-ATF absentes du CV maître (SAFe 6 Agilist, PSM I, Professional Coach ICN) ; secteur énergie non documenté au CV ; présence sur site 3 j/semaine à Bruxelles à confirmer ; néerlandais « et/ou » français : français C2 OK.</div><div class="message">CV prêt : cv-2026-10-15-bonanza-group-freelance-agile-coach-energie.html</div><div class="actions"><a class="btn" href="https://careers.catsone.com/careers/6885-General/jobs/1060020-Freelance-Agile-Coach-–-Energiesector">VOIR LA MISSION</a><a class="btn secondary" href="https://careers.catsone.com/careers/6885-General/jobs/1060020-Freelance-Agile-Coach-–-Energiesector">COMMENT POSTULER : via la page source Bonanza Group</a></div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">MindForest — Senior Consultant Agile Transformation &amp; Target Operating Model (REF MFATTOM-01)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Poste salarié (cabinet)</span><span class="tag neutral">Preuve B</span><span class="tag neutral">Date non confirmée</span></div><p>FAIT : annonce indexée décrivant diagnostic organisationnel, conception de TOM et transformations Agile (SAFe, Scrum, Kanban). INCERTITUDE : date, localisation de l&#x27;annonce et statut non confirmés ; consultation directe vide. ANALYSE : poste salarié, relève du Career Hunter ; piste de partenariat/sous-traitance = hypothèse, sans décideur identifié.</p><div class="actions"><a class="btn secondary" href="https://www.mindforest.com/en/?p=35192">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Foyer Group — passage de l&#x27;expérimentation à l&#x27;industrialisation de l&#x27;IA</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Signal corporate</span><span class="tag neutral">Preuve B / C</span><span class="tag neutral">Plus de 90 jours</span></div><p>FAIT : la CEO de Foyer décrit (SCynergy 2026) un passage de l&#x27;expérimentation à l&#x27;industrialisation de l&#x27;IA ; Foyer présent à l&#x27;événement Paperjam 10x6 du 20/01/2026. INCERTITUDE : aucun programme, recrutement ni décideur de transformation confirmé ; date du propos non confirmée. Signal moyen à faible seul : ne pas approcher.</p><div class="actions"><a class="btn secondary" href="https://paperjam.lu/article/leadership-et-ia-cinq-enseignements-a-retenir-pour-les-dirigeants">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card"><div class="title">Emagine — Senior Agile Coach (Luxembourg)</div><p>Déjà en historique (WARM, 2026-09-22). Aucune nouvelle preuve de statut : non requalifié.</p><div class="actions"><a class="btn secondary" href="https://www.hellowork.com/fr-fr/emplois/82992815.html">VOIR LA SOURCE</a></div></article><article class="card"><div class="title">Bourse de Luxembourg — CIO Maxime Aerts</div><p>Nomination effective 1er nov. 2025, « nouvelle phase de transformation digitale » : signal de plus de 90 jours, historique. Non prospectable sans preuve actuelle.</p><div class="actions"><a class="btn secondary" href="https://en.paperjam.lu/article/maxime-aerts-cio-of-the-luxembourg-stock-exchange">VOIR LA SOURCE</a></div></article><article class="card"><div class="title">AI4LUX (État luxembourgeois)</div><p>Campagne lancée le 4 mars 2026, partenariat Mistral AI de 40 M€ pour l&#x27;administration : contexte, plus de 90 jours, pas d&#x27;acheteur identifié.</p><div class="actions"><a class="btn secondary" href="https://media.alleyesonme.jobs/en/article-titles/ai4lux-lintelligence-artificielle-sinvite-dans-les-organisations-luxembourgeoises">VOIR LA SOURCE</a></div></article><article class="card"><div class="title">BLI — Fabrice Kremer</div><p>Déjà en historique. Précision indexée : CIO au sens investissement (« Chief Investment Officer »), prise de poste au 1er janv. 2027 : sans lien transformation IT. Classé sans suite.</p><div class="actions"><a class="btn secondary" href="https://paperjam.lu/article/fabrice-kremer-nomme-cio-de-bli">VOIR LA SOURCE</a></div></article><p class="meta">Écartés : Pauwels Consulting Lead SAFe 6.0 (durée annoncée jusqu&#x27;à sept. 2026), Smals Scrum Master (contrat 01/07–31/12/2026, statut non vérifié), Wemanity Brussels (CDI), Hays Scrum Master (publiés 14/11/2025 et 10/02/2026, une copie marquée expirée), Gentis (historique).</p></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><article class="card"><p>Aucun HOT aujourd'hui : aucune opportunité ne réunit preuve suffisante, date confirmée et fit fort.</p></article><article class="card warm"><div class="card-top"><div><div class="title">Freelance Agile Coach – Energiesector</div><div class="tags"><span class="tag">WARM</span><span class="tag">Mission freelance</span><span class="tag">Preuve B / INDEXED</span><span class="tag warn">Date non confirmée</span><span class="tag warn">Statut non vérifié</span></div></div><div class="score-badge">WARM<small>proof B</small></div></div><div class="fields"><div class="field"><small>Plateforme / source</small><strong>Bonanza Group — page carrières (catsone), résultat indexé</strong></div><div class="field"><small>Client final</small><strong>Non nommé (secteur énergie)</strong></div><div class="field"><small>Localisation</small><strong>Bruxelles — min. 3 j/semaine sur site + remote</strong></div><div class="field"><small>TJM / tarif</small><strong>Non publié dans les extraits</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés dans les extraits</strong></div><div class="field"><small>Date de publication</small><strong>Date non confirmée</strong></div><div class="field"><small>Statut</small><strong>Non vérifié — accès direct impossible (HTTP 404 à la consultation) ; existence connue via l&#x27;index uniquement</strong></div><div class="field"><small>Méthode de candidature</small><strong>Via la page source Bonanza Group. Lien de candidature exact non identifié — utiliser la page source.</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission Agile Coach : conception et déploiement d&#x27;un framework agile à l&#x27;échelle « léger / fédéré » (extraits indexés)</div><div class="step"><b>Preuve</b>B / INDEXED — extraits WebSearch de la page Bonanza Group, non consultée directement</div><div class="step"><b>Why now</b>Offre indexée ; date non confirmée — aucun déclencheur daté établi</div><div class="step"><b>Décideur</b>Non identifié. Hypothèse : responsable delivery / transformation du client, via le recruteur Bonanza Group</div><div class="step"><b>Offre</b>Coaching Agile at Scale (SAFe), cadrage d&#x27;un framework fédéré, coaching managers, facilitation</div></div><div class="message">HYPOTHÈSE : le client énergie cherche à industrialiser un mode de delivery agile à l&#x27;échelle sans framework lourd.</div><div class="message" style="background:#f9e6e6">Écarts : certifications exigées SPC, PSM II et ICP-ATF absentes du CV maître (SAFe 6 Agilist, PSM I, Professional Coach ICN) ; secteur énergie non documenté au CV ; présence sur site 3 j/semaine à Bruxelles à confirmer ; néerlandais « et/ou » français : français C2 OK.</div><div class="message">CV prêt : cv-2026-10-15-bonanza-group-freelance-agile-coach-energie.html</div><div class="actions"><a class="btn" href="https://careers.catsone.com/careers/6885-General/jobs/1060020-Freelance-Agile-Coach-–-Energiesector">VOIR LA MISSION</a><a class="btn secondary" href="https://careers.catsone.com/careers/6885-General/jobs/1060020-Freelance-Agile-Coach-–-Energiesector">COMMENT POSTULER : via la page source Bonanza Group</a></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><article class="card"><p>Aucun brouillon de prospection créé : aucun contact professionnel public vérifié. Aucun email externe envoyé.</p></article></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Requête</th><th>Résultat</th><th>Preuve</th></tr><tr><td>site:alleyesonme.jobs agile coach</td><td>0 résultat du domaine ; accès direct HTTP 429 — flux paginé NON lu (0 page)</td><td>—</td></tr><tr><td>Agile Coach Luxembourg freelance 2026</td><td>Emagine, Hays, Aubay, EKXEL (déjà traités en historique/Career)</td><td>B</td></tr><tr><td>SAFe / Agile transformation Luxembourg free-work</td><td>0 page free-work.com ; MindForest, EKXEL</td><td>B</td></tr><tr><td>Nouveau CIO Luxembourg / transformation</td><td>LuxSE (2025), BLI : historiques</td><td>B</td></tr><tr><td>malt / getyourjob / collective.work Luxembourg transformation</td><td>Pages génériques Malt ; rien de daté</td><td>B</td></tr><tr><td>Paperjam transformation digitale Luxembourg</td><td>SG Luxembourg (date non confirmée), rien de 2026 confirmé</td><td>B</td></tr><tr><td>Bruxelles Agile Coach SAFe freelance</td><td>Bonanza Group (retenu), Pauwels, Smals, Wemanity</td><td>B</td></tr><tr><td>AI transformation Luxembourg banque/assurance</td><td>AI4LUX, Foyer : contexte</td><td>B/C</td></tr><tr><td>Foyer IA industrialisation</td><td>Aucun décideur confirmé</td><td>B</td></tr></table><p class="meta">Recherche ciblée, non exhaustive. Pages cibles non consultées directement (404/429/vide).</p>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>1</td></tr><tr><td>À vérifier</td><td>2</td></tr><tr><td>Signaux historiques</td><td>4</td></tr><tr><td>Brouillons</td><td>0</td></tr><tr><td>CV HTML générés</td><td>1</td></tr><tr><td>Flux AllEyesOnMe lu</td><td>Non (HTTP 429)</td></tr></table>
+</section>
+
+<footer class="footer">AIgile Business Hunter — 2026-10-15 — FAIT / HYPOTHÈSE / INCERTITUDE distingués dans chaque carte.</footer>
+</main>
+</body>
+</html>
