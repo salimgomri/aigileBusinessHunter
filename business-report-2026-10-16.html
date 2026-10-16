@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-16</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Sales Intelligence · aigile.lu</div></div></div>
+<div class="badge">Business Hunter · 2026-10-16</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien interne</div>
+<h1>Aucune opportunité HOT ou WARM aujourd'hui</h1>
+<p class="lede">Recherche ciblée par WebSearch : aucune offre fraîche et qualifiée. 2 pistes À VÉRIFIER (Kepler Search IT Programme Lead, appel d'offres STATEC). Le flux AllEyesOnMe n'a pas pu être lu (HTTP 429, aucun résultat indexé). Pas de remplissage artificiel.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Preuve B / INDEXED</span><span class="pill">Statut : PARTIEL</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">0</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>0</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card"><div class="meta">Aucun HOT : aucun besoin concret avec preuve suffisante et fraîcheur confirmée.</div></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card"><div class="meta">Aucun WARM.</div></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="card-top"><div><div class="title">IT Programme Lead — Financial Services Transformation</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">Preuve B / INDEXED</span><span class="tag neutral">Date non confirmée à la source</span></div></div></div>
+<div class="fields"><div class="field"><small>CLIENT / SOURCE</small><strong>Kepler Search (client final non nommé)</strong></div><div class="field"><small>LOCALISATION</small><strong>Luxembourg</strong></div><div class="field"><small>PUBLICATION</small><strong>13/08/2026 (affichée par l&#x27;index — 64 jours, à vérifier)</strong></div><div class="field"><small>TJM / DURÉE / DÉMARRAGE</small><strong>Non publiés</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Programme de transformation d&#x27;opérations et de technologie, lead delivery IT (implémentation, tests, go-live).</div><div class="step"><b>Preuve</b>Moovijob (WebSearch, preuve B / INDEXED)</div><div class="step"><b>Why now</b>Offre indexée datée du 13/08/2026. Statut d&#x27;ouverture non confirmé.</div><div class="step"><b>Décideur</b>Non identifié (recruteur Kepler Search ; sponsor probable CIO/COO du client).</div><div class="step"><b>Offre</b>Programme/Delivery management ; fit partiel (poste de lead IT delivery banque).</div></div>
+<div class="message"><b>Problème probable :</b> HYPOTHÈSE : programme complexe avec coordination métiers/fournisseurs, besoin de gouvernance de delivery.<br><b>Écarts :</b> Expérience delivery bancaire à confirmer dans le CV maître ; type de contrat (CDI/freelance) non publié ; TJM, durée, démarrage non publiés.<br><b>Comment postuler :</b> Lien de candidature exact non identifié — utiliser la page source (Moovijob).</div>
+<div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/kepler-search/it-programme-lead">VOIR LA MISSION</a><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/kepler-search/it-programme-lead">COMMENT POSTULER</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">STATEC — appel d&#x27;offres pilotage projet (Lot 1 : senior project manager)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">Preuve B / INDEXED</span><span class="tag neutral">Date non confirmée à la source</span></div></div></div>
+<div class="fields"><div class="field"><small>CLIENT / SOURCE</small><strong>STATEC (Luxembourg)</strong></div><div class="field"><small>LOCALISATION</small><strong>Luxembourg</strong></div><div class="field"><small>PUBLICATION</small><strong>26/05/2026 (141 jours — ancien, échéance non vérifiée)</strong></div><div class="field"><small>TJM / DURÉE / DÉMARRAGE</small><strong>Non publiés</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Soutien au pilotage d&#x27;un projet de transformation des échanges de données 2026-2027 ; 2 lots (senior PM, senior BA).</div><div class="step"><b>Preuve</b>TED notice 356136-2026 (WebSearch, preuve B / INDEXED)</div><div class="step"><b>Why now</b>Avis publié mai 2026 ; la date limite de dépôt est inconnue et probablement dépassée.</div><div class="step"><b>Décideur</b>Non identifié (pouvoir adjudicateur STATEC).</div><div class="step"><b>Offre</b>Senior Project Manager (via structure candidate à l&#x27;appel d&#x27;offres).</div></div>
+<div class="message"><b>Problème probable :</b> HYPOTHÈSE : besoin de renfort PM sur un projet de transformation de données.<br><b>Écarts :</b> Réponse à marché public = société soumissionnaire, références exigées ; échéance à vérifier.<br><b>Comment postuler :</b> Lien de candidature exact non identifié — utiliser la page source (avis TED).</div>
+<div class="actions"><a class="btn" href="https://ted.europa.eu/de/notice/356136-2026/pdf">VOIR LA MISSION</a><a class="btn secondary" href="https://ted.europa.eu/de/notice/356136-2026/pdf">COMMENT POSTULER</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card"><div class="meta">Nominations CIO/CTO indexées sans date ni chantier confirmés (LuxSE, Bâloise, Post) : signaux faibles, non qualifiés.</div></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card"><div class="meta">Aucun HOT : aucun besoin concret avec preuve suffisante et fraîcheur confirmée.</div></div><div class="card"><div class="meta">Aucun WARM.</div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card"><div class="meta">Aucun brouillon de prospection créé. Rapport interne envoyé par Gmail à salimdulux@gmail.com (statut dans la réponse du run).</div></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Méthode</th><th>Résultat</th></tr><tr><td>alleyesonme.jobs (flux agile/scrum/…)</td><td>WebFetch → HTTP 429 ; WebSearch site: → 0 résultat du domaine</td><td>Non lu — aucune annonce AllEyesOnMe exploitable</td></tr><tr><td>free-work.com / malt.fr / collective.work / getyourjob.pro</td><td>WebSearch site: → 0 résultat du domaine (résultats d&#x27;autres sites)</td><td>Non exploitable</td></tr><tr><td>Moovijob (Hays, Kepler Search, TLI)</td><td>WebSearch</td><td>Hays Agile Coach/Scrum Master daté 14/11/2025 (ancien) ; Kepler 13/08/2026 retenu en À VÉRIFIER</td></tr><tr><td>TED / SIMAP</td><td>WebSearch</td><td>1 avis STATEC (TED 356136-2026) retenu en À VÉRIFIER ; SIMAP : rien d&#x27;indexé</td></tr><tr><td>Paperjam / Delano / Chronicle</td><td>WebSearch</td><td>Nominations CIO/CTO (Aerts LuxSE, Volders Bâloise, Zimmer Post) sans date confirmée ni chantier : signaux faibles, non qualifiés</td></tr><tr><td>Belgique (Bruxelles)</td><td>WebSearch</td><td>Agile Coach Innova/ictjob.be sans date ; profils Malt (pas des missions) : non qualifié</td></tr><tr><td>Déjà suivi (historique)</td><td>prospects-history.csv</td><td>Emagine Senior Agile Coach (22/09, WARM) : réapparu sur hellowork.com (indexé), statut non revérifié ; Aubay Ref 305 et EKXEL : déjà traités (CV du 07/10 et 11/10), EKXEL = CDI</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><td>Nouveaux HOT</td><td><b>0</b></td></tr><tr><td>Nouveaux WARM</td><td><b>0</b></td></tr><tr><td>À vérifier</td><td><b>2</b></td></tr><tr><td>Brouillons de prospection</td><td><b>0</b></td></tr><tr><td>CV générés</td><td><b>0 (aucun HOT/WARM)</b></td></tr></table>
+</section>
+
+<footer class="footer">AIgile — Business Hunter · rapport interne 2026-10-16</footer>
+</main>
+</body>
+</html>
