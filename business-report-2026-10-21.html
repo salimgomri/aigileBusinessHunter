@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-21</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Hunter · aigile.lu</div></div></div>
+<div class="badge">Rapport quotidien · 2026-10-21</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence</div>
+<h1>Aucun HOT ni WARM aujourd'hui</h1>
+<p class="lede">Recherche ciblée via WebSearch : aucune mission ni signal récent suffisamment prouvé et compatible. 3 éléments sont conservés « À vérifier » (1 offre CDI TMC avec écart SPC, 2 signaux corporate anciens). Le flux AllEyesOnMe n'a pas pu être lu (HTTP 429). Aucune exhaustivité revendiquée.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">0 HOT</span><span class="pill">0 WARM</span><span class="pill">3 À vérifier</span><span class="pill">Flux AllEyesOnMe non lu</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">0</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>0</strong></div>
+<div class="kpi"><small>Contacts</small><strong>2</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><p class="meta">Aucun HOT aujourd'hui.</p></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><p class="meta">Aucun WARM aujourd'hui.</p></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="card-top"><div><div class="title">TMC Luxembourg — Release Train Engineer (RTE) - H/F</div><div class="tags"><span class="tag neutral">Offre CDI (pas une mission freelance)</span><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Preuve B — INDEXED</span></div></div></div>
+<div class="fields"><div class="field"><small>Plateforme / source</small><strong>Moovijob (WebSearch indexé)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>TJM / tarif</small><strong>Non publié</strong></div><div class="field"><small>Durée</small><strong>CDI (contrat permanent)</strong></div><div class="field"><small>Démarrage</small><strong>Non publié</strong></div><div class="field"><small>Date de publication</small><strong>16 octobre 2026 (indiqué par le résumé de recherche — récent, non vérifié en accès direct)</strong></div><div class="field"><small>Statut</small><strong>À VÉRIFIER — ouverture non confirmée ; contrat salarié</strong></div><div class="field"><small>Méthode de candidature</small><strong>Lien de candidature exact non identifié — utiliser la page source.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Recrutement RTE SAFe (PI Planning, ART Sync, Inspect &amp; Adapt).</div><div class="step"><b>Preuve</b>B — INDEXED — 16 octobre 2026 (indiqué par le résumé de recherche — récent, non vérifié en accès direct)</div><div class="step"><b>Why now</b>Offre publiée le 16/10/2026 selon l&#x27;index (FAIT, preuve B). Page directe bloquée (HTTP 403) : non consultée directement.</div><div class="step"><b>Décideur</b>Non identifié (HYPOTHÈSE : Head of Delivery / Talent Acquisition TMC).</div><div class="step"><b>Offre</b>Intervention SAFe / Release Train — seulement si Salim accepte un CDI.</div></div>
+<div class="message"><b>Problème probable :</b> HYPOTHÈSE : TMC structure ou étend un train SAFe et manque de pilotage de programme.</div>
+<div class="message"><b>Écarts :</b> Exige SAFe SPC (ou équivalent) + 3 ans RTE/Scrum Master programme. Le CV maître liste Certified SAFe 6 Agilist, PAS SPC → écart. Contrat permanent ≠ mission. Aucun CV généré (non HOT/WARM).</div>
+<div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/tmc-luxembourg/release-train-engineer-rte-hf">VOIR LA MISSION</a><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/tmc-luxembourg/release-train-engineer-rte-hf">COMMENT POSTULER</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">Direction de l&#x27;ACD (Administration des contributions directes) — Noé Berger — Chief Transformation Officer</div><div class="tags"><span class="tag neutral">Signal corporate (secteur public)</span><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Preuve B — INDEXED</span></div></div></div>
+<div class="fields"><div class="field"><small>Plateforme / source</small><strong>Paperjam (WebSearch indexé + extrait de page)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>TJM / tarif</small><strong>—</strong></div><div class="field"><small>Durée</small><strong>—</strong></div><div class="field"><small>Démarrage</small><strong>—</strong></div><div class="field"><small>Date de publication</small><strong>19 janvier 2026 (communiqué, via extrait) — plus de 90 jours</strong></div><div class="field"><small>Statut</small><strong>À VÉRIFIER — signal ancien (&gt; 90 j)</strong></div><div class="field"><small>Méthode de candidature</small><strong>Pas d&#x27;offre : prospect corporate. Voir la source.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Nomination d&#x27;un Chief Transformation Officer ; nouvelle division « strategy and organisational support » regroupant TMO, PMO et BPMO.</div><div class="step"><b>Preuve</b>B — INDEXED — 19 janvier 2026 (communiqué, via extrait) — plus de 90 jours</div><div class="step"><b>Why now</b>Aucun déclencheur récent trouvé : le fait date de janvier 2026 (≈ 9 mois). Pas de Why Now actuel fabriqué.</div><div class="step"><b>Décideur</b>Noé Berger, Chief Transformation Officer ACD (selon la source ; à confirmer).</div><div class="step"><b>Offre</b>Coaching delivery / PMO-TMO, mise en place d&#x27;une gouvernance agile des projets stratégiques.</div></div>
+<div class="message"><b>Problème probable :</b> HYPOTHÈSE : coordination de projets stratégiques et modernisation des processus nécessitant du coaching delivery/portfolio.</div>
+<div class="message"><b>Écarts :</b> Statut actuel inconnu ; marchés publics éventuels à rechercher (SIMAP/TED) avant toute approche.</div>
+<div class="actions"><a class="btn" href="https://en.paperjam.lu/article/noe-berger-new-cto-of-the-acd">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">Arendt — Olivier Ramlot — nouveau CIO</div><div class="tags"><span class="tag neutral">Signal corporate</span><span class="tag warn">À VÉRIFIER</span><span class="tag neutral">Preuve B — INDEXED</span></div></div></div>
+<div class="fields"><div class="field"><small>Plateforme / source</small><strong>Arendt.com + Paperjam (WebSearch indexé)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>TJM / tarif</small><strong>—</strong></div><div class="field"><small>Durée</small><strong>—</strong></div><div class="field"><small>Démarrage</small><strong>—</strong></div><div class="field"><small>Date de publication</small><strong>Prise de fonction 15 octobre 2025 — plus de 90 jours</strong></div><div class="field"><small>Statut</small><strong>À VÉRIFIER — signal ancien (&gt; 90 j)</strong></div><div class="field"><small>Méthode de candidature</small><strong>Pas d&#x27;offre : prospect corporate. Voir la source.</strong></div></div>
+<div class="chain"><div class="step"><b>Signal</b>Arrivée d&#x27;un CIO (ex-CIO de BIL) chargé de la roadmap IT, de l&#x27;évolution des pratiques des équipes et de la digitalisation.</div><div class="step"><b>Preuve</b>B — INDEXED — Prise de fonction 15 octobre 2025 — plus de 90 jours</div><div class="step"><b>Why now</b>Aucun fait récent : arrivée il y a ≈ 12 mois. Pas de Why Now actuel.</div><div class="step"><b>Décideur</b>Olivier Ramlot, CIO Arendt (selon la source).</div><div class="step"><b>Offre</b>Coaching de pratiques d&#x27;équipes IT et gouvernance de delivery.</div></div>
+<div class="message"><b>Problème probable :</b> HYPOTHÈSE : structuration de la gouvernance IT et des pratiques d&#x27;équipe sous le nouveau CIO.</div>
+<div class="message"><b>Écarts :</b> HYPOTHÈSE de réseau : Salim a travaillé chez BIL 2016–2025 (cv-rules.md), Ramlot y était CIO — relation de travail non confirmée.</div>
+<div class="actions"><a class="btn" href="https://www.arendt.com/news-insights/news/arendt-appoints-olivier-ramlot-as-chief-information-officer/">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Post Luxembourg</div><p>Pierre Zimmer annoncé CIO — date non confirmée (probablement ancien)</p><p class="meta">Date non confirmée ; écarté.</p><div class="actions"><a class="btn secondary" href="https://paperjam.lu/article/communique-pierre-zimmer-nouveau-cio-de-post-luxembourg">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Hays Luxembourg</div><p>Annonces Scrum Master freelance/portage (fév.–juin 2026)</p><p class="meta">Publiées il y a plus de 90 jours ; client non nommé ; à vérifier avant tout usage.</p><div class="actions"><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/hays-luxembourg/scrum-master-mf-62235">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Ekxel / Aubay / emagine</div><p>Déjà traités (historique Career/Business Hunter)</p><p class="meta">Dédupliqués : voir prospects-history.csv et career-history.csv.</p><div class="actions"><a class="btn secondary" href="https://taleez.com/apply/ekxel-agile-coach-with-safe-certification-luxembourg-ekxel-it-services-financial-engineering-cdi">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><p class="meta">Aucun HOT aujourd'hui.</p><p class="meta">Aucun WARM aujourd'hui.</p></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><p class="meta">Aucun brouillon de prospection créé. Aucun envoi externe.</p></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Méthode</th><th>Résultat / limite</th></tr><tr><td>alleyesonme.jobs (flux search=agile&amp;limit=500)</td><td>WebFetch → HTTP 429 ; WebSearch site: → 0 résultat du domaine</td><td>Aucun contenu récupéré. Flux NON lu. Les autres recherches (scrum, transformation, change, program manager, delivery) non relancées (même blocage).</td></tr><tr><td>free-work.com / malt.fr / getyourjob.pro</td><td>WebSearch site: → 0 résultat du domaine</td><td>Aucune mission indexée exploitable.</td></tr><tr><td>collective.work / freelancers.lu / freelancescope</td><td>Non interrogés (budget de la recherche)</td><td>Non couverts.</td></tr><tr><td>Paperjam / Delano / ITnation</td><td>Paperjam interrogé (WebSearch + WebFetch partiel)</td><td>Delano et ITnation non interrogés.</td></tr><tr><td>SIMAP / TED / FEDIL / Luxinnovation</td><td>Non interrogés</td><td>Non couverts.</td></tr><tr><td>Moovijob</td><td>WebSearch indexé ; WebFetch 403</td><td>Preuve B.</td></tr></table><p class="meta">Fichiers présents et lus : sources-business-v2.txt, prospects-history.csv, search-strategy.md, ai-gile-intelligence-report-template-v3.html, cv-master.html (présent, non utilisé — aucun CV requis), cv-rules.md. Mapping couleur : « #FAEDB10 » n&#x27;est pas un code hexadécimal valide (7 chiffres) ; interprété comme #FEDB10, accent déjà défini dans le template.</p>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>Sources interrogées</td><td>6 / ≈ 20 de la liste</td></tr><tr><td>Prospects HOT</td><td>0</td></tr><tr><td>Prospects WARM</td><td>0</td></tr><tr><td>À vérifier</td><td>3</td></tr><tr><td>Brouillons de prospection</td><td>0</td></tr><tr><td>CV générés</td><td>0 (aucun HOT/WARM)</td></tr><tr><td>Contacts décideurs nommés</td><td>2 (selon sources, non vérifiés)</td></tr></table>
+</section>
+
+<footer class="footer">AIgile Business Hunter · 2026-10-21 · recherche ciblée, non exhaustive</footer>
+</main>
+</body>
+</html>
