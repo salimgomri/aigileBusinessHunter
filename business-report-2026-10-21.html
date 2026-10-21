@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-21</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Hunter · aigile.lu</div></div></div>
+<div class="badge">Rapport quotidien · 2026-10-21</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence</div>
+<h1>0 HOT · 0 WARM aujourd'hui</h1>
+<p class="lede">Aucune opportunité n'atteint le niveau HOT/WARM aujourd'hui. Les 4 pistes retenues sont À VÉRIFIER (annonces anciennes, dates ou statuts non confirmés). Aucune candidature recommandée sans reconfirmation. Recherche ciblée via WebSearch ; couverture partielle, non exhaustive. Présents : sources-business-v2.txt, prospects-history.csv, search-strategy.md, ai-gile-intelligence-report-template-v3.html, cv-master.html, cv-rules.md.</p>
+<div class="pills"><span class="pill">4 à vérifier</span><span class="pill">2 signaux</span><span class="pill">alleyesonme : flux non lu (429)</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">HUNT SCORE</div>
+<div class="score">—</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>0</strong></div>
+<div class="kpi"><small>Contacts</small><strong>1</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><article class="card"><div class="title">Aucun HOT aujourd'hui</div><p>Aucune opportunité ne réunit besoin concret, preuve suffisante et fraîcheur.</p></article></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card"><div class="title">Aucun WARM aujourd'hui</div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="card-top"><div><div class="title">Emagine Consulting — Senior Agile Coach (Product &amp; Engineering Transformation)</div><div class="tags"><span class="tag warn">Mission freelance</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Date : 17/07/2026 selon l&#x27;index (≈96 j) — non confirmée</span><span class="tag neutral">Déjà en historique (22/09)</span></div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="fields"><div class="field"><small>Plateforme</small><strong>free-work.com (aussi HelloWork)</strong></div><div class="field"><small>Client final</small><strong>Masqué par l&#x27;agence emagine</strong></div><div class="field"><small>Localisation</small><strong>Sanem, Luxembourg</strong></div><div class="field"><small>TJM / durée</small><strong>800–900 €/j, 11 mois (relevé 22/09, non revérifié)</strong></div><div class="field"><small>Statut</small><strong>Ouverture NON confirmée — annonce ancienne</strong></div><div class="field"><small>Méthode</small><strong>Candidature via la page source (plateforme)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission Senior Agile Coach, rollout d&#x27;un modèle opérationnel Product/Engineering</div><div class="step"><b>Preuve</b>Résultat indexé free-work.com + HelloWork</div><div class="step"><b>Why now</b>Non établi — annonce &gt;90 j</div><div class="step"><b>Décideur</b>Non nommé (agence)</div><div class="step"><b>Offre</b>Coaching at scale Product/Engineering + KPIs flow</div></div><div class="message">Écarts : Rétrogradé WARM → À VÉRIFIER (annonce &gt;90 jours). CV non généré (hors HOT/WARM). Ne pas présenter comme ouverte sans reconfirmation.</div><div class="message" style="background:#f4f1e7">COMMENT POSTULER : Lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/coach-agile/senior-agile-coach-h-f">VOIR LA MISSION</a><a class="btn secondary" href="https://www.hellowork.com/fr-fr/emplois/82992815.html">Version HelloWork</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">ACD (Administration des contributions directes) — Chief Transformation Officer Noé Berger</div><div class="tags"><span class="tag warn">Signal corporate</span><span class="tag neutral">Preuve A (article) + B (offres)</span><span class="tag neutral">Signal : 19/01/2026 (≈9 mois)</span><span class="tag neutral">Non qualifié</span></div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="fields"><div class="field"><small>Source</small><strong>Paperjam (en.paperjam.lu) — consulté directement</strong></div><div class="field"><small>Décideur probable</small><strong>Noé Berger, CTO ACD (donnée publique)</strong></div><div class="field"><small>Division</small><strong>Nouvelle division « strategy and organisational support » (TMO+PMO+BPMO)</strong></div><div class="field"><small>Offres liées</small><strong>2 postes « Conseiller en transformation » (réf. E00044655/E00044656), publiés 27/08/2026 (indexé, salarié)</strong></div><div class="field"><small>Statut</small><strong>Page offre non consultée (403) — ouverture non confirmée</strong></div><div class="field"><small>Contact</small><strong>Aucun email public vérifié</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Nomination d&#x27;un CTO et regroupement TMO/PMO/BPMO</div><div class="step"><b>Preuve</b>Article Paperjam (A) ; offres via moovijob (B)</div><div class="step"><b>Why now</b>Recrutements transformation publiés fin août 2026 (B)</div><div class="step"><b>Décideur</b>Noé Berger (hypothèse : propriétaire du problème)</div><div class="step"><b>Offre</b>Hypothèse : coaching de la TMO/PMO, passage à l&#x27;échelle agile</div></div><div class="message">Écarts : Signal de nomination vieux de 9 mois ; aucun besoin externe/mission prouvé. Les postes salariés relèvent du Career Hunter. Hypothèse seulement : le besoin de renfort externe n&#x27;est pas démontré.</div><div class="message" style="background:#f4f1e7">COMMENT POSTULER : Ne pas approcher sur ce seul signal.</div><div class="actions"><a class="btn" href="https://en.paperjam.lu/article/noe-berger-new-cto-of-the-acd">VOIR LA SOURCE</a><a class="btn secondary" href="https://lu.linkedin.com/in/noe-berger">VOIR LE CONTACT</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">STATEC — assistance au pilotage d&#x27;un projet de transformation (avis TED 356136-2026)</div><div class="tags"><span class="tag warn">Appel d&#x27;offres</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Publié 26/05/2026 (≈5 mois)</span><span class="tag neutral">Contenu non lu</span></div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="fields"><div class="field"><small>Acheteur</small><strong>STATEC (Luxembourg)</strong></div><div class="field"><small>Objet (indexé)</small><strong>Assistance au pilotage d&#x27;un projet de transformation et d&#x27;échanges de données, 2026–2027</strong></div><div class="field"><small>Agilité / change</small><strong>Non mentionnés explicitement dans l&#x27;extrait</strong></div><div class="field"><small>Échéance</small><strong>Inconnue — probablement dépassée</strong></div><div class="field"><small>Statut</small><strong>PDF TED non exploitable — non lu</strong></div><div class="field"><small>Méthode</small><strong>Voir l&#x27;avis TED</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Marché d&#x27;assistance au pilotage de projet</div><div class="step"><b>Preuve</b>Extrait indexé de l&#x27;avis TED</div><div class="step"><b>Why now</b>Non établi</div><div class="step"><b>Décideur</b>Non identifié</div><div class="step"><b>Offre</b>PMO / pilotage — fit partiel</div></div><div class="message">Écarts : Fit partiel (pilotage plutôt qu&#x27;agile), échéance inconnue, cahier des charges non lu. Marché public : peu adapté à un freelance sans structure.</div><div class="message" style="background:#f4f1e7">COMMENT POSTULER : Lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://ted.europa.eu/de/notice/356136-2026/pdf">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">Pauwels Consulting — Expert Agile Coach, Product-Centric Transformation (Bruxelles)</div><div class="tags"><span class="tag warn">Offre consultance</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Date non confirmée</span><span class="tag neutral">Statut inconnu</span></div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="fields"><div class="field"><small>Source</small><strong>pauwelsconsulting.com (indexé, page non consultée : 403)</strong></div><div class="field"><small>Localisation</small><strong>Etterbeek / Bruxelles, hybride (indexé)</strong></div><div class="field"><small>Client final</small><strong>Groupe d&#x27;infrastructure énergétique (indexé)</strong></div><div class="field"><small>Contrat</small><strong>Consultance salariée probable — non confirmé</strong></div><div class="field"><small>Date</small><strong>Non confirmée (l&#x27;identifiant d&#x27;annonce suggère mai 2026 : inférence, non preuve)</strong></div><div class="field"><small>Méthode</small><strong>Page source</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Agile Coach senior pour transformation à grande échelle</div><div class="step"><b>Preuve</b>Extrait indexé</div><div class="step"><b>Why now</b>Non établi</div><div class="step"><b>Décideur</b>Non identifié</div><div class="step"><b>Offre</b>Coaching Agile at Scale</div></div><div class="message">Écarts : Date, statut, type de contrat et tarif inconnus ; zone Belgique (fit géographique secondaire).</div><div class="message" style="background:#f4f1e7">COMMENT POSTULER : Lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://www.pauwelsconsulting.com/fr/job/3ebea477-4ad1-11f1-83ac-87720666aeef/expert-agile-coach-product-centric-transformation">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card"><div class="title">LuxSE — Maxime Aerts nommé CIO (1er nov. 2025)</div><p>Signal &gt;90 jours, aucun programme de transformation associé. Faible seul.</p><div class="actions"><a class="btn secondary" href="https://luxse.com/about-us/press-centre/Maxime-Aerts-appointed-CIO-of-LuxSE">VOIR LA SOURCE</a></div></article><article class="card"><div class="title">AI4LUX — partenariat 40 M€ avec Mistral AI pour l&#x27;administration publique (4 mars 2026)</div><p>Contexte AI adoption côté secteur public ; aucun propriétaire ni besoin externe identifié. Signal de contexte.</p><div class="actions"><a class="btn secondary" href="https://chronicle.lu/category/ict/59904-luxembourg-launches-ai4lux-campaign-to-advance-artificial-intelligence-strategy">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><article class="card verify"><div class="card-top"><div><div class="title">Emagine Consulting — Senior Agile Coach (Product &amp; Engineering Transformation)</div><div class="tags"><span class="tag warn">Mission freelance</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Date : 17/07/2026 selon l&#x27;index (≈96 j) — non confirmée</span><span class="tag neutral">Déjà en historique (22/09)</span></div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="fields"><div class="field"><small>Plateforme</small><strong>free-work.com (aussi HelloWork)</strong></div><div class="field"><small>Client final</small><strong>Masqué par l&#x27;agence emagine</strong></div><div class="field"><small>Localisation</small><strong>Sanem, Luxembourg</strong></div><div class="field"><small>TJM / durée</small><strong>800–900 €/j, 11 mois (relevé 22/09, non revérifié)</strong></div><div class="field"><small>Statut</small><strong>Ouverture NON confirmée — annonce ancienne</strong></div><div class="field"><small>Méthode</small><strong>Candidature via la page source (plateforme)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission Senior Agile Coach, rollout d&#x27;un modèle opérationnel Product/Engineering</div><div class="step"><b>Preuve</b>Résultat indexé free-work.com + HelloWork</div><div class="step"><b>Why now</b>Non établi — annonce &gt;90 j</div><div class="step"><b>Décideur</b>Non nommé (agence)</div><div class="step"><b>Offre</b>Coaching at scale Product/Engineering + KPIs flow</div></div><div class="message">Écarts : Rétrogradé WARM → À VÉRIFIER (annonce &gt;90 jours). CV non généré (hors HOT/WARM). Ne pas présenter comme ouverte sans reconfirmation.</div><div class="message" style="background:#f4f1e7">COMMENT POSTULER : Lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/coach-agile/senior-agile-coach-h-f">VOIR LA MISSION</a><a class="btn secondary" href="https://www.hellowork.com/fr-fr/emplois/82992815.html">Version HelloWork</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">ACD (Administration des contributions directes) — Chief Transformation Officer Noé Berger</div><div class="tags"><span class="tag warn">Signal corporate</span><span class="tag neutral">Preuve A (article) + B (offres)</span><span class="tag neutral">Signal : 19/01/2026 (≈9 mois)</span><span class="tag neutral">Non qualifié</span></div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="fields"><div class="field"><small>Source</small><strong>Paperjam (en.paperjam.lu) — consulté directement</strong></div><div class="field"><small>Décideur probable</small><strong>Noé Berger, CTO ACD (donnée publique)</strong></div><div class="field"><small>Division</small><strong>Nouvelle division « strategy and organisational support » (TMO+PMO+BPMO)</strong></div><div class="field"><small>Offres liées</small><strong>2 postes « Conseiller en transformation » (réf. E00044655/E00044656), publiés 27/08/2026 (indexé, salarié)</strong></div><div class="field"><small>Statut</small><strong>Page offre non consultée (403) — ouverture non confirmée</strong></div><div class="field"><small>Contact</small><strong>Aucun email public vérifié</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Nomination d&#x27;un CTO et regroupement TMO/PMO/BPMO</div><div class="step"><b>Preuve</b>Article Paperjam (A) ; offres via moovijob (B)</div><div class="step"><b>Why now</b>Recrutements transformation publiés fin août 2026 (B)</div><div class="step"><b>Décideur</b>Noé Berger (hypothèse : propriétaire du problème)</div><div class="step"><b>Offre</b>Hypothèse : coaching de la TMO/PMO, passage à l&#x27;échelle agile</div></div><div class="message">Écarts : Signal de nomination vieux de 9 mois ; aucun besoin externe/mission prouvé. Les postes salariés relèvent du Career Hunter. Hypothèse seulement : le besoin de renfort externe n&#x27;est pas démontré.</div><div class="message" style="background:#f4f1e7">COMMENT POSTULER : Ne pas approcher sur ce seul signal.</div><div class="actions"><a class="btn" href="https://en.paperjam.lu/article/noe-berger-new-cto-of-the-acd">VOIR LA SOURCE</a><a class="btn secondary" href="https://lu.linkedin.com/in/noe-berger">VOIR LE CONTACT</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">STATEC — assistance au pilotage d&#x27;un projet de transformation (avis TED 356136-2026)</div><div class="tags"><span class="tag warn">Appel d&#x27;offres</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Publié 26/05/2026 (≈5 mois)</span><span class="tag neutral">Contenu non lu</span></div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="fields"><div class="field"><small>Acheteur</small><strong>STATEC (Luxembourg)</strong></div><div class="field"><small>Objet (indexé)</small><strong>Assistance au pilotage d&#x27;un projet de transformation et d&#x27;échanges de données, 2026–2027</strong></div><div class="field"><small>Agilité / change</small><strong>Non mentionnés explicitement dans l&#x27;extrait</strong></div><div class="field"><small>Échéance</small><strong>Inconnue — probablement dépassée</strong></div><div class="field"><small>Statut</small><strong>PDF TED non exploitable — non lu</strong></div><div class="field"><small>Méthode</small><strong>Voir l&#x27;avis TED</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Marché d&#x27;assistance au pilotage de projet</div><div class="step"><b>Preuve</b>Extrait indexé de l&#x27;avis TED</div><div class="step"><b>Why now</b>Non établi</div><div class="step"><b>Décideur</b>Non identifié</div><div class="step"><b>Offre</b>PMO / pilotage — fit partiel</div></div><div class="message">Écarts : Fit partiel (pilotage plutôt qu&#x27;agile), échéance inconnue, cahier des charges non lu. Marché public : peu adapté à un freelance sans structure.</div><div class="message" style="background:#f4f1e7">COMMENT POSTULER : Lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://ted.europa.eu/de/notice/356136-2026/pdf">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="card-top"><div><div class="title">Pauwels Consulting — Expert Agile Coach, Product-Centric Transformation (Bruxelles)</div><div class="tags"><span class="tag warn">Offre consultance</span><span class="tag neutral">Preuve B / INDEXED</span><span class="tag neutral">Date non confirmée</span><span class="tag neutral">Statut inconnu</span></div></div><div class="score-badge"><small>STATUT</small>À VÉRIFIER</div></div><div class="fields"><div class="field"><small>Source</small><strong>pauwelsconsulting.com (indexé, page non consultée : 403)</strong></div><div class="field"><small>Localisation</small><strong>Etterbeek / Bruxelles, hybride (indexé)</strong></div><div class="field"><small>Client final</small><strong>Groupe d&#x27;infrastructure énergétique (indexé)</strong></div><div class="field"><small>Contrat</small><strong>Consultance salariée probable — non confirmé</strong></div><div class="field"><small>Date</small><strong>Non confirmée (l&#x27;identifiant d&#x27;annonce suggère mai 2026 : inférence, non preuve)</strong></div><div class="field"><small>Méthode</small><strong>Page source</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Agile Coach senior pour transformation à grande échelle</div><div class="step"><b>Preuve</b>Extrait indexé</div><div class="step"><b>Why now</b>Non établi</div><div class="step"><b>Décideur</b>Non identifié</div><div class="step"><b>Offre</b>Coaching Agile at Scale</div></div><div class="message">Écarts : Date, statut, type de contrat et tarif inconnus ; zone Belgique (fit géographique secondaire).</div><div class="message" style="background:#f4f1e7">COMMENT POSTULER : Lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://www.pauwelsconsulting.com/fr/job/3ebea477-4ad1-11f1-83ac-87720666aeef/expert-agile-coach-product-centric-transformation">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><article class="card"><div class="title">Aucun brouillon de prospection créé</div><p>Aucun prospect ne justifie une approche. Aucun email externe envoyé.</p></article></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Méthode</th><th>Preuve</th><th>Résultat</th></tr><tr><td>free-work.com</td><td>WebSearch</td><td>B</td><td>Emagine indexé ; aucun autre résultat direct</td></tr><tr><td>malt.fr</td><td>WebSearch</td><td>B</td><td>Uniquement profils de freelances, aucune mission</td></tr><tr><td>getyourjob.pro / collective.work</td><td>WebSearch</td><td>—</td><td>Aucun résultat indexé du domaine</td></tr><tr><td>alleyesonme.jobs</td><td>Accès direct : HTTP 429 ; WebSearch site: : aucun résultat</td><td>—</td><td>Flux NON lu — 0 page récupérée (plafond 50 pages non atteint)</td></tr><tr><td>Paperjam / Delano</td><td>WebSearch + lecture directe d&#x27;un article</td><td>A / B</td><td>Article ACD lu directement (A)</td></tr><tr><td>SIMAP / TED</td><td>WebSearch</td><td>B</td><td>1 avis TED indexé (non lu)</td></tr><tr><td>freelancers.lu, FEDIL, Luxinnovation, LBR, Luxembourg for Finance</td><td>Non interrogés ce jour</td><td>—</td><td>Couverture partielle — pas d&#x27;exhaustivité</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>0</td></tr><tr><td>À vérifier</td><td>4</td></tr><tr><td>Signaux</td><td>2</td></tr><tr><td>Contacts</td><td>1</td></tr><tr><td>Brouillons</td><td>0</td></tr><tr><td>CV générés</td><td>0 (aucun HOT/WARM)</td></tr></table>
+</section>
+
+<footer class="footer">AIgile Business Hunter · rapport interne · FAIT / HYPOTHÈSE distingués dans chaque carte</footer>
+</main>
+</body>
+</html>
