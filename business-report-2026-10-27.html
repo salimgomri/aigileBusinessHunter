@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-27</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Intelligence — Salim Gomri</div></div></div>
+<div class="badge">Business Hunter · 2026-10-27</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence</div>
+<h1>0 HOT · 2 WARM : un seul besoin freelance concret (RTE SAFe)</h1>
+<p class="lede">Recherche ciblée Luxembourg. Une mission freelance SAFe RTE (Tessero) mérite un examen, mais l'écart de certification SPC/RTE la maintient en WARM. Aucun HOT : non rempli artificiellement.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">SAFe</span><span class="pill">Preuves A/B</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">2</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><article class="card"><div class="title">Aucun HOT aujourd'hui</div><p>Aucune opportunité ne réunit besoin concret, preuve suffisante, fit fort et décideur identifié. Non rempli artificiellement.</p></article></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Senior Release Train Engineer (SAFe) — Tessero Luxembourg</div><div class="tags"><span class="tag">WARM</span><span class="tag">Preuve B / INDEXED</span><span class="tag">Récent : publié 21/10/2026 (indexé)</span><span class="tag">Mission freelance</span><span class="tag warn">Fit partiel</span></div></div><div class="score-badge">WARM<small>HOT max 3</small></div></div><div class="fields"><div class="field"><small>Client final</small><strong>Non nommé (client de Tessero, Luxembourg)</strong></div><div class="field"><small>Plateforme / source</small><strong>Moovijob (annonce Tessero) — fetch direct 403, extrait via WebSearch</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg, principalement sur site</strong></div><div class="field"><small>TJM</small><strong>Non publié (« daily rate competitive selon expérience »)</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés dans l&#x27;extrait</strong></div><div class="field"><small>Statut</small><strong>Ouverture non reverifiée — « Récemment indexé », date 21/10/2026 d&#x27;après l&#x27;extrait</strong></div><div class="field"><small>Méthode de candidature</small><strong>Via la page Moovijob de l&#x27;annonce (bouton de candidature de la plateforme)</strong></div><div class="field"><small>Lien candidature distinct</small><strong>Lien de candidature exact non identifié — utiliser la page source.</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission freelance Senior RTE SAFe, Luxembourg</div><div class="step"><b>Preuve</b>Moovijob (extrait WebSearch, B)</div><div class="step"><b>Why now</b>Publiée 21/10/2026 ; lien déclaré à un programme de transformation business/IT à grande échelle (extrait indexé)</div><div class="step"><b>Décideur</b>Non identifié — probable Program/Transformation Director du client (HYPOTHÈSE)</div><div class="step"><b>Offre</b>Coaching Agile at Scale / animation ART : PI Planning, I&amp;A, gestion des dépendances</div></div><div class="message">HYPOTHÈSE : le programme manque d&#x27;un RTE senior pour synchroniser plusieurs équipes SAFe.<br>Écarts : certification SPC/RTE demandée, absente du CV (Certified SAFe 6 Agilist, PSM I) ; rôle formel « RTE » non listé dans le CV (13 équipes Scrum/SAFe coachées chez BIL) ; TJM inconnu.<br>Angle : 13 équipes Scrum/SAFe synchronisées chez BIL, dépendances rendues visibles ; transparence sur l&#x27;absence de certification SPC.</div><div class="message" style="background:#eef4f0">CV prêt : cv-2026-10-27-tessero-senior-rte-safe.html</div><div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">VOIR LA MISSION</a><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">POSTULER (page source)</a><span class="btn secondary">COMMENT POSTULER : voir fiche</span></div></article><article class="card warm"><div class="card-top"><div><div class="title">Manager Technology Strategy and Transformation — Deloitte Luxembourg</div><div class="tags"><span class="tag">WARM</span><span class="tag">Preuve A (annonce lue, résumé)</span><span class="tag">Exploitable : daté 30/09/2026 (date non qualifiée)</span><span class="tag warn">CDI — pas une mission</span><span class="tag warn">Fit partiel</span></div></div><div class="score-badge">WARM<small>HOT max 3</small></div></div><div class="fields"><div class="field"><small>Client final</small><strong>Deloitte Tax &amp; Consulting</strong></div><div class="field"><small>Plateforme / source</small><strong>alleyesonme.jobs (agrégateur), page de l&#x27;annonce récupérée</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg, sur site</strong></div><div class="field"><small>TJM</small><strong>Sans objet (CDI temps plein)</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés</strong></div><div class="field"><small>Statut</small><strong>Date 30/09/2026 affichée, non qualifiée (publication ou clôture) — ouverture non confirmée</strong></div><div class="field"><small>Méthode de candidature</small><strong>Bouton « Je postule » ; CV en anglais demandé</strong></div><div class="field"><small>Lien candidature distinct</small><strong>Lien de candidature exact non identifié — utiliser la page source.</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Poste Manager : stratégie IT, design de modèle opérationnel, transformation cloud/DC</div><div class="step"><b>Preuve</b>Annonce alleyesonme.jobs (A)</div><div class="step"><b>Why now</b>Annonce affichée 30/09/2026 (date non qualifiée) ; Deloitte recrute sur la practice Technology Strategy</div><div class="step"><b>Décideur</b>Non identifié — Partner/Director de la practice (HYPOTHÈSE)</div><div class="step"><b>Offre</b>Operating model + Agile ways of working + conduite de projets de transformation</div></div><div class="message">HYPOTHÈSE : renfort de la practice sur des missions clients de transformation/operating model.<br>Écarts : 6 ans minimum en conseil/implémentation technologie et IT strategy/infra/cloud (CV orienté coaching, pas stratégie IT) ; master en informatique exigé (non vérifié dans le CV maître) ; allemand « strong asset » absent (CV : FR C2, EN C1) ; CDI et non freelance ; expérience Big Four souhaitée, absente.<br>Angle : coaching Agile at Scale et pilotage de transformation comme composante du modèle opérationnel.</div><div class="message" style="background:#eef4f0">CV prêt : cv-2026-10-27-deloitte-manager-technology-strategy-transformation.html</div><div class="actions"><a class="btn" href="https://alleyesonme.jobs/jobs/manager-technology-strategy-and-transformation-deloi-ff3679">VOIR LA MISSION</a><a class="btn secondary" href="https://alleyesonme.jobs/jobs/manager-technology-strategy-and-transformation-deloi-ff3679">POSTULER (page source)</a><span class="btn secondary">COMMENT POSTULER : voir fiche</span></div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="card-top"><div class="title">Group PMO — Landewyck Tobacco SA (Luxembourg)</div><span class="tag neutral">À VÉRIFIER</span></div><p>Annonce du 15/10/2026 (alleyesonme.jobs, A). CDI ; 10 ans PMO exigés ; Agile = certification « avantage ». Fit PMO/gouvernance partiel, CV non orienté PMO. Pas de CV généré (non WARM).</p><div class="actions"><a class="btn secondary" href="https://alleyesonme.jobs/jobs/group-pmo-project-management-officer-lande-df5b70">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="card-top"><div class="title">Signal : Hôpitaux Robert Schuman — Directeur Transformation Digitale &amp; Innovation en Santé</div><span class="tag neutral">SIGNAL</span></div><p>Annonce 23/10/2026 (A, date non qualifiée). Création/renouvellement d&#x27;une direction transformation digitale + IA, rattachée à la Direction Générale. Poste non accessible (formation médicale, FR/DE/EN requis) ; signal contextuel : le propriétaire du sujet est la Direction Générale HRS (nom non identifié). Aucune action sans preuve d&#x27;un besoin de coaching.</p><div class="actions"><a class="btn secondary" href="https://alleyesonme.jobs/jobs/directeur-de-la-transformation-digitale-et-de-linnovation-en-sante-hopit-400a6b">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="card-top"><div class="title">Release Train Engineer — TMC Luxembourg (déjà suivi)</div><span class="tag neutral">DÉJÀ SUIVI</span></div><p>Annonce du 16/10/2026 (B). CDI via modèle « Employeneurship », SPC ou équivalent exigé, atout assurance : écarts bloquants. Déjà dans career-history ; aucun nouveau fait.</p><div class="actions"><a class="btn secondary" href="https://en.moovijob.com/job-offers/tmc-luxembourg/release-train-engineer-rte-hf">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="card-top"><div class="title">Senior Consultant Agile Transformation &amp; TOM — MindForest (déjà suivi)</div><span class="tag neutral">DÉJÀ SUIVI</span></div><p>Réf. MFATTOM-01 ; fit TOM/SAFe potentiellement fort mais date et lieu non confirmés, offre non lue directement (B). Déjà dans career-history.</p><div class="actions"><a class="btn secondary" href="https://www.mindforest.com/en/?p=35192">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Contexte</div><p>Nominations CIO LuxSE (Maxime Aerts, 31/10/2025) et Creos (juillet 2025) : &gt;90 jours, aucune preuve d'activité 2026 — non qualifiés. Aucun CIO nommé en 2026 retrouvé dans les résultats indexés.</p></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><article class="card"><div class="title">Aucun HOT aujourd'hui</div><p>Aucune opportunité ne réunit besoin concret, preuve suffisante, fit fort et décideur identifié. Non rempli artificiellement.</p></article><article class="card warm"><div class="card-top"><div><div class="title">Senior Release Train Engineer (SAFe) — Tessero Luxembourg</div><div class="tags"><span class="tag">WARM</span><span class="tag">Preuve B / INDEXED</span><span class="tag">Récent : publié 21/10/2026 (indexé)</span><span class="tag">Mission freelance</span><span class="tag warn">Fit partiel</span></div></div><div class="score-badge">WARM<small>HOT max 3</small></div></div><div class="fields"><div class="field"><small>Client final</small><strong>Non nommé (client de Tessero, Luxembourg)</strong></div><div class="field"><small>Plateforme / source</small><strong>Moovijob (annonce Tessero) — fetch direct 403, extrait via WebSearch</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg, principalement sur site</strong></div><div class="field"><small>TJM</small><strong>Non publié (« daily rate competitive selon expérience »)</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés dans l&#x27;extrait</strong></div><div class="field"><small>Statut</small><strong>Ouverture non reverifiée — « Récemment indexé », date 21/10/2026 d&#x27;après l&#x27;extrait</strong></div><div class="field"><small>Méthode de candidature</small><strong>Via la page Moovijob de l&#x27;annonce (bouton de candidature de la plateforme)</strong></div><div class="field"><small>Lien candidature distinct</small><strong>Lien de candidature exact non identifié — utiliser la page source.</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission freelance Senior RTE SAFe, Luxembourg</div><div class="step"><b>Preuve</b>Moovijob (extrait WebSearch, B)</div><div class="step"><b>Why now</b>Publiée 21/10/2026 ; lien déclaré à un programme de transformation business/IT à grande échelle (extrait indexé)</div><div class="step"><b>Décideur</b>Non identifié — probable Program/Transformation Director du client (HYPOTHÈSE)</div><div class="step"><b>Offre</b>Coaching Agile at Scale / animation ART : PI Planning, I&amp;A, gestion des dépendances</div></div><div class="message">HYPOTHÈSE : le programme manque d&#x27;un RTE senior pour synchroniser plusieurs équipes SAFe.<br>Écarts : certification SPC/RTE demandée, absente du CV (Certified SAFe 6 Agilist, PSM I) ; rôle formel « RTE » non listé dans le CV (13 équipes Scrum/SAFe coachées chez BIL) ; TJM inconnu.<br>Angle : 13 équipes Scrum/SAFe synchronisées chez BIL, dépendances rendues visibles ; transparence sur l&#x27;absence de certification SPC.</div><div class="message" style="background:#eef4f0">CV prêt : cv-2026-10-27-tessero-senior-rte-safe.html</div><div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">VOIR LA MISSION</a><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">POSTULER (page source)</a><span class="btn secondary">COMMENT POSTULER : voir fiche</span></div></article><article class="card warm"><div class="card-top"><div><div class="title">Manager Technology Strategy and Transformation — Deloitte Luxembourg</div><div class="tags"><span class="tag">WARM</span><span class="tag">Preuve A (annonce lue, résumé)</span><span class="tag">Exploitable : daté 30/09/2026 (date non qualifiée)</span><span class="tag warn">CDI — pas une mission</span><span class="tag warn">Fit partiel</span></div></div><div class="score-badge">WARM<small>HOT max 3</small></div></div><div class="fields"><div class="field"><small>Client final</small><strong>Deloitte Tax &amp; Consulting</strong></div><div class="field"><small>Plateforme / source</small><strong>alleyesonme.jobs (agrégateur), page de l&#x27;annonce récupérée</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg, sur site</strong></div><div class="field"><small>TJM</small><strong>Sans objet (CDI temps plein)</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés</strong></div><div class="field"><small>Statut</small><strong>Date 30/09/2026 affichée, non qualifiée (publication ou clôture) — ouverture non confirmée</strong></div><div class="field"><small>Méthode de candidature</small><strong>Bouton « Je postule » ; CV en anglais demandé</strong></div><div class="field"><small>Lien candidature distinct</small><strong>Lien de candidature exact non identifié — utiliser la page source.</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Poste Manager : stratégie IT, design de modèle opérationnel, transformation cloud/DC</div><div class="step"><b>Preuve</b>Annonce alleyesonme.jobs (A)</div><div class="step"><b>Why now</b>Annonce affichée 30/09/2026 (date non qualifiée) ; Deloitte recrute sur la practice Technology Strategy</div><div class="step"><b>Décideur</b>Non identifié — Partner/Director de la practice (HYPOTHÈSE)</div><div class="step"><b>Offre</b>Operating model + Agile ways of working + conduite de projets de transformation</div></div><div class="message">HYPOTHÈSE : renfort de la practice sur des missions clients de transformation/operating model.<br>Écarts : 6 ans minimum en conseil/implémentation technologie et IT strategy/infra/cloud (CV orienté coaching, pas stratégie IT) ; master en informatique exigé (non vérifié dans le CV maître) ; allemand « strong asset » absent (CV : FR C2, EN C1) ; CDI et non freelance ; expérience Big Four souhaitée, absente.<br>Angle : coaching Agile at Scale et pilotage de transformation comme composante du modèle opérationnel.</div><div class="message" style="background:#eef4f0">CV prêt : cv-2026-10-27-deloitte-manager-technology-strategy-transformation.html</div><div class="actions"><a class="btn" href="https://alleyesonme.jobs/jobs/manager-technology-strategy-and-transformation-deloi-ff3679">VOIR LA MISSION</a><a class="btn secondary" href="https://alleyesonme.jobs/jobs/manager-technology-strategy-and-transformation-deloi-ff3679">POSTULER (page source)</a><span class="btn secondary">COMMENT POSTULER : voir fiche</span></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><article class="card"><div class="title">0 brouillon de prospection</div><p>Aucun email de décideur public vérifié : aucun brouillon créé. Aucun email externe envoyé.</p></article></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source / requête</th><th>Résultat</th><th>Preuve</th></tr><tr><td>alleyesonme.jobs ?search=agile</td><td>1 page récupérée (89 offres) — pagination non suivie ; plafond 50 pages non atteint</td><td>A</td></tr><tr><td>alleyesonme.jobs ?search=transformation</td><td>158 offres lues sur ~230, contenu tronqué (offset 100000 non lu)</td><td>A partielle</td></tr><tr><td>alleyesonme.jobs ?search=scrum</td><td>18 offres</td><td>A</td></tr><tr><td>alleyesonme.jobs ?search=program manager</td><td>106 offres lues, tronqué</td><td>A partielle</td></tr><tr><td>alleyesonme.jobs search=change / delivery</td><td>NON EXÉCUTÉ dans ce run</td><td>—</td></tr><tr><td>WebSearch free-work / malt / alleyesonme (site:)</td><td>Aucun résultat free-work ni malt Luxembourg exploitable ; alleyesonme non indexé</td><td>—</td></tr><tr><td>WebSearch Agile transformation Lux / CIO Lux / RTE Lux / MindForest</td><td>Tessero RTE, TMC RTE, MindForest, nominations CIO 2025 (LuxSE : 31/10/2025, trop ancien)</td><td>B</td></tr><tr><td>Moovijob Tessero / TMC (fetch direct)</td><td>HTTP 403 — contenu non lu directement</td><td>—</td></tr></table><p class="meta">Recherche ciblée, non exhaustive. Employeur actuel : aucun des prospects n'a été identifié comme tel.</p>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>KPI</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>2</td></tr><tr><td>À vérifier / signaux / déjà suivis</td><td>4</td></tr><tr><td>Nouveaux prospects qualifiés</td><td>2 (max 8)</td></tr><tr><td>CV HTML générés</td><td>2</td></tr><tr><td>Brouillons prospection</td><td>0</td></tr></table>
+</section>
+
+<footer class="footer">AIgile — aigile.lu · Rapport interne généré le 2026-10-27 · Faits, hypothèses et incertitudes distingués</footer>
+</main>
+</body>
+</html>
