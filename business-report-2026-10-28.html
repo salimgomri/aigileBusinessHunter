@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-28</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Sales Intelligence · Salim Gomri</div></div></div>
+<div class="badge">Business Hunter · 2026-10-28</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien</div>
+<h1>Journée calme : 1 signal WARM, aucun HOT.</h1>
+<p class="lede">Recherche ciblée (AllEyesOnMe lu en 6 requêtes, WebSearch en complément). Aucune mission Agile Coach/SAFe datée d'octobre 2026 identifiée à Luxembourg. Un signal corporate crédible : HRS recrute un Directeur de la Transformation Digitale. Trois pistes restent à vérifier.</p>
+<div class="pills"><span class="pill">0 HOT</span><span class="pill">1 WARM</span><span class="pill">3 À vérifier</span><span class="pill">Luxembourg</span><span class="pill">Preuves A/B</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Prospects qualifiés</div>
+<div class="score">1/8</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>1</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><article class="card"><div class="title">Aucun HOT aujourd'hui</div><p>Aucun besoin concret avec preuve suffisante, fit fort et action immédiate. Ne pas remplir artificiellement.</p></article></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Hôpitaux Robert Schuman (HRS) — Direction de la Transformation Digitale &amp; Innovation en Santé</div><div class="tags"><span class="tag warn">WARM</span><span class="tag">Signal corporate</span><span class="tag">Preuve A (page lue)</span><span class="tag">Date non libellée (23/10/2026 affichée)</span></div></div><div class="score-badge"><small>Statut</small>WARM</div></div><div class="fields"><div class="field"><small>Source</small><strong>alleyesonme.jobs — page de l&#x27;offre lue (contenu récupéré)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Fraîcheur</small><strong>23/10/2026 affiché, non libellé publication/clôture — à confirmer</strong></div><div class="field"><small>Statut</small><strong>Recrutement CDI affiché ; ouverture actuelle non confirmée</strong></div><div class="field"><small>Décideur probable</small><strong>Direction Générale HRS (le poste siège au Conseil de Direction et reporte à la DG) — nom non confirmé</strong></div><div class="field"><small>Candidature</small><strong>Sans objet : poste CDI exigeant formation santé + allemand ; l&#x27;angle est une mission de transformation, pas une candidature</strong></div></div><div class="chain"><div class="step"><b>Signal</b>HRS recrute un Directeur de la Transformation Digitale et de l&#x27;Innovation en Santé (stratégie digitale, IA, conduite du changement)</div><div class="step"><b>Preuve</b>Page de l&#x27;offre lue sur alleyesonme.jobs (A)</div><div class="step"><b>Why now</b>Offre affichée au 23/10/2026 (date non libellée) ; le poste couvre aussi l&#x27;AI Act</div><div class="step"><b>Problème (hypothèse)</b>Chantier de transformation digitale/IA sans pilote en poste ; vacance possible de 3 à 6 mois</div><div class="step"><b>Offre</b>Cadrage de la transformation, gouvernance Agile, coaching du Conseil de Direction, adoption IA</div></div><div class="message">Écarts / incertitudes : Aucune relation établie. Contact nominatif non vérifié, aucun email public vérifié → aucun brouillon. HYPOTHÈSE : un appui intérimaire est utile avant l&#x27;arrivée du futur directeur.</div><div class="message">Action : identifier la Direction Générale / DRH HRS sur sources publiques (LinkedIn, site HRS), puis préparer une approche « appui à la transition » — ne pas candidater au poste.</div><div class="message">CV prêt : aucun (signal corporate, pas une offre à laquelle postuler)</div><div class="actions"><a class="btn" href="https://alleyesonme.jobs/jobs/directeur-de-la-transformation-digitale-et-de-linnovation-en-sante-hopit-400a6b">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Resultance (Strassen) — Business Transformation &amp; Operational Excellence (2 postes affichés 26/10/2026)</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag">Preuve B (liste lue, page non ouverte)</span></div><p>FAIT : 2 annonces (Consultant et Senior Consultant) listées avec la date 26/10/2026. INCERTITUDE : contenu des annonces non lu ; cabinet de conseil, donc plutôt angle sous-traitance/partenariat. Prochaine étape : ouvrir l&#x27;annonce et identifier un dirigeant.</p><div class="actions"><a class="btn" href="https://alleyesonme.jobs/jobs/senior-consultant-business-transformation-operational-excellence-h-resul-ed94e8">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">EngiFlex — Scrum Master Agile Delivery, Bruxelles (freelance possible)</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag">Preuve B / INDEXED</span><span class="tag">Date non confirmée</span></div><p>FAIT (extrait indexé) : 4 équipes Scrum, planification trimestrielle SAFe, évolution RTE prévue en 2027. INCERTITUDE : la page jooble n&#x27;a pas pu être lue (aucun contenu d&#x27;offre récupéré), date, TJM et client inconnus. Niveau Scrum Master, en dessous du profil senior. Lien de candidature exact non identifié — utiliser la page source.</p><div class="actions"><a class="btn" href="https://be.jooble.org/jdp/-2827223733818812932">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Police grand-ducale — Expert en organisation (réf. G26000639), Findel</div><div class="tags"><span class="tag warn">À VÉRIFIER</span><span class="tag">Preuve A (page lue)</span><span class="tag">Écart de langue</span></div><p>FAIT : poste de facilitation de workshops, innovation et change management ; affiché 27/10/2026 (non libellé). ÉCART : luxembourgeois écrit/parlé exigé, nationalité UE, statut fonctionnaire/employé de l&#x27;État. Fit de contenu fort, fit de conditions faible. Candidature : bouton « Je postule » sur la page, lien distinct non identifié.</p><div class="actions"><a class="btn" href="https://alleyesonme.jobs/jobs/expert-en-organisation-m-f-d-ref-g26000639-govjo-23878a">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Proximus Luxembourg — « Scrum Master » (21/10/2026)</div><p>ÉCARTÉ. Le titre ne correspond pas aux missions : le texte décrit un System Engineer Windows/Citrix. Erreur d&#x27;annonce probable (analyse). Aucune opportunité Agile.</p></article><article class="card verify"><div class="title">SNCFL — IT Change Manager (publié 22/10/2026, clôture 06/11/2026)</div><p>ÉCARTÉ. Rôle ITIL/CAB, luxembourgeois parlé exigé, extrait de casier, CDI avec stage probatoire. Contact recruteur public sur la page : jobs@cfl.lu (non utilisé).</p></article><article class="card verify"><div class="title">Deloitte, Landewyck, Sanofi, BNP Paribas Fortis, ITS4U, EKXEL</div><p>Déjà traités par la routine carrière (career-history.csv). Non repris comme prospects commerciaux.</p></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><article class="card"><div class="title">Aucun HOT aujourd'hui</div><p>Aucun besoin concret avec preuve suffisante, fit fort et action immédiate. Ne pas remplir artificiellement.</p></article><article class="card warm"><div class="card-top"><div><div class="title">Hôpitaux Robert Schuman (HRS) — Direction de la Transformation Digitale &amp; Innovation en Santé</div><div class="tags"><span class="tag warn">WARM</span><span class="tag">Signal corporate</span><span class="tag">Preuve A (page lue)</span><span class="tag">Date non libellée (23/10/2026 affichée)</span></div></div><div class="score-badge"><small>Statut</small>WARM</div></div><div class="fields"><div class="field"><small>Source</small><strong>alleyesonme.jobs — page de l&#x27;offre lue (contenu récupéré)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Fraîcheur</small><strong>23/10/2026 affiché, non libellé publication/clôture — à confirmer</strong></div><div class="field"><small>Statut</small><strong>Recrutement CDI affiché ; ouverture actuelle non confirmée</strong></div><div class="field"><small>Décideur probable</small><strong>Direction Générale HRS (le poste siège au Conseil de Direction et reporte à la DG) — nom non confirmé</strong></div><div class="field"><small>Candidature</small><strong>Sans objet : poste CDI exigeant formation santé + allemand ; l&#x27;angle est une mission de transformation, pas une candidature</strong></div></div><div class="chain"><div class="step"><b>Signal</b>HRS recrute un Directeur de la Transformation Digitale et de l&#x27;Innovation en Santé (stratégie digitale, IA, conduite du changement)</div><div class="step"><b>Preuve</b>Page de l&#x27;offre lue sur alleyesonme.jobs (A)</div><div class="step"><b>Why now</b>Offre affichée au 23/10/2026 (date non libellée) ; le poste couvre aussi l&#x27;AI Act</div><div class="step"><b>Problème (hypothèse)</b>Chantier de transformation digitale/IA sans pilote en poste ; vacance possible de 3 à 6 mois</div><div class="step"><b>Offre</b>Cadrage de la transformation, gouvernance Agile, coaching du Conseil de Direction, adoption IA</div></div><div class="message">Écarts / incertitudes : Aucune relation établie. Contact nominatif non vérifié, aucun email public vérifié → aucun brouillon. HYPOTHÈSE : un appui intérimaire est utile avant l&#x27;arrivée du futur directeur.</div><div class="message">Action : identifier la Direction Générale / DRH HRS sur sources publiques (LinkedIn, site HRS), puis préparer une approche « appui à la transition » — ne pas candidater au poste.</div><div class="message">CV prêt : aucun (signal corporate, pas une offre à laquelle postuler)</div><div class="actions"><a class="btn" href="https://alleyesonme.jobs/jobs/directeur-de-la-transformation-digitale-et-de-linnovation-en-sante-hopit-400a6b">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><article class="card"><div class="title">Aucun brouillon créé</div><p>Aucun contact nominatif ni email public vérifié pour HRS. Aucun email externe envoyé.</p></article></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Preuve</th><th>Remarque</th></tr><tr><td>alleyesonme.jobs — search=agile, transformation, scrum, program manager, delivery, change</td><td>A (contenu récupéré)</td><td>6 pages de résultats lues. Pagination non confirmée : page=2 renvoie la même liste. Plusieurs listes tronquées par l&#x27;outil de lecture (transformation, delivery, change : ~100 000 caractères lus sur 101–152 k). Plafond de 50 pages non atteint.</td></tr><tr><td>alleyesonme.jobs — pages d&#x27;offres HRS, Police grand-ducale, SNCFL, Proximus</td><td>A</td><td>Pages individuelles lues, extraction automatisée.</td></tr><tr><td>WebSearch — missions Agile Coach / SAFe Luxembourg, Bruxelles ; CIO / Transformation Luxembourg</td><td>B / INDEXED</td><td>Aucune mission Luxembourg datée d&#x27;octobre 2026 trouvée ; seulement des annonces anciennes (Gentis, 11/11/2025). Le filtre site:alleyesonme.jobs n&#x27;a pas été respecté par le moteur.</td></tr><tr><td>Non interrogées dans ce run</td><td>—</td><td>Malt, Collective.work, freelancers.lu, GetYourJob.pro, Paperjam, Delano, ITnation, SIMAP, TED : recherche ciblée limitée, aucune exhaustivité revendiquée.</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>Recherches AllEyesOnMe lues</td><td>6 / 6 relancées</td></tr><tr><td>Prospects qualifiés</td><td>1 (WARM)</td></tr><tr><td>HOT / WARM / À vérifier</td><td>0 / 1 / 3</td></tr><tr><td>Brouillons de prospection</td><td>0 (aucun contact vérifié)</td></tr><tr><td>CV générés</td><td>0 (aucune offre HOT/WARM — HRS est un signal corporate)</td></tr><tr><td>Fichiers de référence</td><td>6 / 6 présents</td></tr></table>
+</section>
+
+<footer class="footer">AIgile — aigile.lu · Recherche ciblée, aucune exhaustivité revendiquée · Rapport interne, aucun envoi externe.</footer>
+</main>
+</body>
+</html>
