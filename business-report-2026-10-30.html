@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-10-30</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile Business Hunter</div><div class="brand-sub">Sales Intelligence — Salim Gomri · aigile.lu</div></div></div>
+<div class="badge">Rapport quotidien · 2026-10-30</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Signal → Preuve → Why now → Décideur → Offre → Action</div>
+<h1>0 HOT · 2 WARM : missions SAFe / transformation</h1>
+<p class="lede">Recherche ciblée (WebSearch uniquement, accès direct bloqué) : 0 HOT, 2 WARM, 3 à vérifier. Meilleur signal : mission freelance RTE SAFe (Tessero, Luxembourg, 21/10/2026) et Agile Transformation Coach (Keystone Solutions, Bruxelles, statut à confirmer). Le flux AllEyesOnMe n&#x27;a pas pu être lu (HTTP 429).</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Preuve B / INDEXED</span><span class="pill">AllEyesOnMe : 429</span><span class="pill">0 envoi externe</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">2</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><p class="meta">Aucune opportunité HOT aujourd'hui : aucune combinaison besoin concret + preuve directe + statut confirmé. Non rempli artificiellement.</p></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">SAFe Release Train Engineer (RTE) M/F — Tessero (client final non nommé)</div><div class="meta">Moovijob (WebSearch, preuve B / INDEXED)</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">B — INDEXED</span><span class="tag neutral">Freelance</span></div></div><div class="score-badge">WARM<small>B</small></div></div><div class="fields"><div class="field"><small>Titre exact</small><strong>SAFe Release Train Engineer (RTE) M/F</strong></div><div class="field"><small>Plateforme</small><strong>Moovijob (WebSearch, preuve B / INDEXED)</strong></div><div class="field"><small>Client final</small><strong>Non nommé</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg — surtout sur site (la méta de la page EN indique « Remote working » : à confirmer)</strong></div><div class="field"><small>TJM</small><strong>Non publié (« competitive daily rate »)</strong></div><div class="field"><small>Durée</small><strong>Non publiée</strong></div><div class="field"><small>Démarrage</small><strong>Non publié</strong></div><div class="field"><small>Publication</small><strong>21/10/2026 (page EN indexée) — exploitable (9 jours)</strong></div><div class="field"><small>Statut</small><strong>Statut d&#x27;ouverture non reverifié (accès direct 403)</strong></div><div class="field"><small>URL de la mission</small><strong>https://en.moovijob.com/job-offers/tessero-luxembourg/safe-release-train-engineer-rte-mf</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission freelance RTE SAFe pour un client basé au Luxembourg (Tessero = intermédiaire).</div><div class="step"><b>Preuve</b>B — INDEXED — https://en.moovijob.com/job-offers/tessero-luxembourg/safe-release-train-engineer-rte-mf</div><div class="step"><b>Why now</b>FAIT : annonce publiée le 21/10/2026 (indexée). Le client pilote un train SAFe (PI Planning, ART Sync, Inspect &amp; Adapt).</div><div class="step"><b>Problème probable</b>HYPOTHÈSE : ART à cadencer / structurer ou RTE à remplacer ; besoin de facilitation de PI Planning et de gouvernance Jira/Confluence.</div><div class="step"><b>Décideur</b>Non confirmé — probable Program Director / Head of Delivery du client final (non nommé).</div></div><div class="message"><b>Offre :</b> Facilitation des cérémonies SAFe (PI Planning, I&amp;A), coaching des Scrum Masters/PO, gouvernance backlog Jira/Confluence.<br><b>Approche :</b> Mettre en avant 9 ans BIL : 1→13 équipes Scrum/SAFe (~110 collaborateurs), PI Planning, Certified SAFe 6 Agilist, Jira/Confluence.<br><b>Action :</b> Candidater via Moovijob avec le CV prêt ; vérifier au préalable TJM et ouverture auprès de Tessero.</div><div class="message" style="background:#f9e6e6"><b>Écarts :</b> Annonce demande ≥3 ans comme RTE / Agile Program Manager : rôle RTE non listé dans le CV (profil Agile Coach SAFe). SAFe RTE/SPC non certifié (Agilist uniquement). Rôle plus « pilotage de train » que coaching pur.</div><div class="message"><b>CV prêt :</b> cv-2026-10-30-tessero-safe-release-train-engineer.html (HTML, joint au rapport quand l'outil le permet ; sinon dans le dépôt)</div><div class="message"><b>COMMENT POSTULER :</b> Candidature via la plateforme Moovijob (page source). Lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://en.moovijob.com/job-offers/tessero-luxembourg/safe-release-train-engineer-rte-mf">VOIR LA MISSION</a></div></article><article class="card warm"><div class="card-top"><div><div class="title">Agile Transformation Coach — Keystone Solutions (client final non nommé)</div><div class="meta">Jooble Belgique / agrégateur (WebSearch, preuve B / INDEXED)</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">B — INDEXED</span><span class="tag neutral">Freelance</span></div></div><div class="score-badge">WARM<small>B</small></div></div><div class="fields"><div class="field"><small>Titre exact</small><strong>Agile Transformation Coach</strong></div><div class="field"><small>Plateforme</small><strong>Jooble Belgique / agrégateur (WebSearch, preuve B / INDEXED)</strong></div><div class="field"><small>Client final</small><strong>Non nommé</strong></div><div class="field"><small>Localisation</small><strong>Bruxelles, Belgique — sur site client</strong></div><div class="field"><small>TJM</small><strong>Non publié</strong></div><div class="field"><small>Durée</small><strong>13 mois, temps plein (22/10/2026 → 31/10/2027)</strong></div><div class="field"><small>Démarrage</small><strong>22/10/2026 (date déjà passée → statut à vérifier)</strong></div><div class="field"><small>Publication</small><strong>Date non confirmée (annonce indexée « environ un mois »)</strong></div><div class="field"><small>Statut</small><strong>Statut incertain : démarrage annoncé déjà dépassé</strong></div><div class="field"><small>URL de la mission</small><strong>https://be.jooble.org/jdp/906478447910058010</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission de conseil : Agile Transformation Coach (coaching de l&#x27;équipe d&#x27;Agile Coaches, coaching du management, leadership agile) chez un client à Bruxelles.</div><div class="step"><b>Preuve</b>B — INDEXED — https://be.jooble.org/jdp/906478447910058010</div><div class="step"><b>Why now</b>FAIT : mission couvrant 22/10/2026–31/10/2027, 13 mois. Incertitude : publication non datée, démarrage déjà atteint.</div><div class="step"><b>Problème probable</b>HYPOTHÈSE : transformation agile à l&#x27;échelle où le management et l&#x27;équipe de coaches internes ont besoin d&#x27;un coach senior.</div><div class="step"><b>Décideur</b>Non confirmé — probable Head of Transformation / COO / CIO du client final (non nommé).</div></div><div class="message"><b>Offre :</b> Coaching d&#x27;une équipe d&#x27;Agile Coaches et de managers ; leadership agile ; Agile at Scale.<br><b>Approche :</b> Coaching de managers/leaders, recrutement et accompagnement de 15 Scrum Masters et Agile Coaches, 350+ rétrospectives, 28 praticiens accompagnés.<br><b>Action :</b> Contacter Keystone Solutions pour confirmer l&#x27;ouverture, le TJM et le démarrage avant de candidater avec le CV prêt.</div><div class="message" style="background:#f9e6e6"><b>Écarts :</b> Mission à Bruxelles sur site (résidence Maizières-lès-Metz). Statut/ouverture et TJM non confirmés. Annonces Keystone voisines exigent 10+ ans d&#x27;agilité dont 5 comme Enterprise/Lead Agile Coach (à vérifier pour cette mission). Langues néerlandais non au CV (FR C2, EN C1).</div><div class="message"><b>CV prêt :</b> cv-2026-10-30-keystone-agile-transformation-coach.html (HTML, joint au rapport quand l'outil le permet ; sinon dans le dépôt)</div><div class="message"><b>COMMENT POSTULER :</b> Via la page source (Jooble) puis Keystone Solutions. URL exacte non confirmée : la page Jooble ci-contre est la page indexée probable ; lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://be.jooble.org/jdp/906478447910058010">VOIR LA MISSION</a></div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Pauwels Consulting — Expert Agile Coach, Product-Centric Transformation (Etterbeek, Bruxelles)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div><p>FAIT (B/INDEXED) : poste consultancy hybride, client groupe d&#x27;infrastructure énergétique évoluant vers un modèle produit ; exige 10 ans d&#x27;agilité dont 5 en Enterprise/Lead Agile Coach et 8+ ans de LeSS. Démarrage indiqué 25/05/2026 (probablement clos) ; une copie VDAB serait en ligne. Écart : LeSS non au CV. Statut/date non confirmés. → À VÉRIFIER — statut incertain, fit partiel (LeSS), pas de CV généré.</p><div class="actions"><a class="btn secondary" href="https://www.pauwelsconsulting.com/job/3ebea477-4ad1-11f1-83ac-87720666aeef/expert-agile-coach-product-centric-transformation">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Kepler Search — IT Programme Lead, Financial Services Transformation (Luxembourg)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div><p>FAIT (B/INDEXED) : publié le 13/08/2026 sur Moovijob (78 jours, « à vérifier »), delivery IT d&#x27;un programme de transformation (build, SIT, UAT, go-live) ; FR+EN requis. Type de contrat non confirmé. Fit partiel : profil delivery/programme plutôt que coaching. → À VÉRIFIER — ancienneté 78 jours, contrat non confirmé.</p><div class="actions"><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/kepler-search/it-programme-lead">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">emagine Consulting SARL — Senior Agile Coach, Product &amp; Engineering transformation (Sanem)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span></div><p>DÉJÀ DANS L&#x27;HISTORIQUE (WARM du 2026-09-22). FAIT (B) : Free-Work indique une publication au 17/07/2026 et un résumé de recherche indique 03/09/2026 — dates contradictoires. Statut non revérifié. Pas de nouvelle donnée : non recomptée dans les nouveaux prospects. → SUIVI — doublon, statut à revérifier.</p><div class="actions"><a class="btn secondary" href="https://www.free-work.com/fr/tech-it/job-mission/coach-agile/senior-agile-coach-h-f">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">LuxSE — nomination de Maxime Aerts comme CIO (effectif 01/11/2025)</div><p>Signal de gouvernance IT mais &gt; 90 jours, aucune preuve d&#x27;activité 2026. Non approchable seul.</p><p class="meta">Preuve : C — SECONDARY / B</p><div class="actions"><a class="btn secondary" href="https://chronicle.lu/category/jobs-appointments/57712-maxime-aerts-appointed-cio-of-luxse">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Luxembourg — Stratégie Gouvernement numérique 2026-2030 (adoptée 17/12/2025)</div><p>Contexte de transformation publique ; stratégie, pas un programme nominal ni un décideur identifié.</p><p class="meta">Preuve : B — INDEXED</p><div class="actions"><a class="btn secondary" href="https://gouvernement.lu/de/dossiers.gouv2024_mindigital%2Bde%2Bdossiers%2B2025%2Bstrategie-gouvernement-numerique-2026-2030.html">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">AI4LUX — campagne lancée le 04/03/2026, partenariat 40 M€ avec Mistral AI pour l&#x27;administration (résumé de recherche)</div><p>Signal AI adoption côté secteur public ; aucun besoin d&#x27;accompagnement identifié pour Salim à ce stade. Faible seul.</p><p class="meta">Preuve : B — INDEXED (URL = AI Experience Centre LHoFT)</p><div class="actions"><a class="btn secondary" href="https://ai4lux.public.lu/en/projets/finance.html">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><p class="meta">Aucune opportunité HOT aujourd'hui : aucune combinaison besoin concret + preuve directe + statut confirmé. Non rempli artificiellement.</p><article class="card warm"><div class="card-top"><div><div class="title">SAFe Release Train Engineer (RTE) M/F — Tessero (client final non nommé)</div><div class="meta">Moovijob (WebSearch, preuve B / INDEXED)</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">B — INDEXED</span><span class="tag neutral">Freelance</span></div></div><div class="score-badge">WARM<small>B</small></div></div><div class="fields"><div class="field"><small>Titre exact</small><strong>SAFe Release Train Engineer (RTE) M/F</strong></div><div class="field"><small>Plateforme</small><strong>Moovijob (WebSearch, preuve B / INDEXED)</strong></div><div class="field"><small>Client final</small><strong>Non nommé</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg — surtout sur site (la méta de la page EN indique « Remote working » : à confirmer)</strong></div><div class="field"><small>TJM</small><strong>Non publié (« competitive daily rate »)</strong></div><div class="field"><small>Durée</small><strong>Non publiée</strong></div><div class="field"><small>Démarrage</small><strong>Non publié</strong></div><div class="field"><small>Publication</small><strong>21/10/2026 (page EN indexée) — exploitable (9 jours)</strong></div><div class="field"><small>Statut</small><strong>Statut d&#x27;ouverture non reverifié (accès direct 403)</strong></div><div class="field"><small>URL de la mission</small><strong>https://en.moovijob.com/job-offers/tessero-luxembourg/safe-release-train-engineer-rte-mf</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission freelance RTE SAFe pour un client basé au Luxembourg (Tessero = intermédiaire).</div><div class="step"><b>Preuve</b>B — INDEXED — https://en.moovijob.com/job-offers/tessero-luxembourg/safe-release-train-engineer-rte-mf</div><div class="step"><b>Why now</b>FAIT : annonce publiée le 21/10/2026 (indexée). Le client pilote un train SAFe (PI Planning, ART Sync, Inspect &amp; Adapt).</div><div class="step"><b>Problème probable</b>HYPOTHÈSE : ART à cadencer / structurer ou RTE à remplacer ; besoin de facilitation de PI Planning et de gouvernance Jira/Confluence.</div><div class="step"><b>Décideur</b>Non confirmé — probable Program Director / Head of Delivery du client final (non nommé).</div></div><div class="message"><b>Offre :</b> Facilitation des cérémonies SAFe (PI Planning, I&amp;A), coaching des Scrum Masters/PO, gouvernance backlog Jira/Confluence.<br><b>Approche :</b> Mettre en avant 9 ans BIL : 1→13 équipes Scrum/SAFe (~110 collaborateurs), PI Planning, Certified SAFe 6 Agilist, Jira/Confluence.<br><b>Action :</b> Candidater via Moovijob avec le CV prêt ; vérifier au préalable TJM et ouverture auprès de Tessero.</div><div class="message" style="background:#f9e6e6"><b>Écarts :</b> Annonce demande ≥3 ans comme RTE / Agile Program Manager : rôle RTE non listé dans le CV (profil Agile Coach SAFe). SAFe RTE/SPC non certifié (Agilist uniquement). Rôle plus « pilotage de train » que coaching pur.</div><div class="message"><b>CV prêt :</b> cv-2026-10-30-tessero-safe-release-train-engineer.html (HTML, joint au rapport quand l'outil le permet ; sinon dans le dépôt)</div><div class="message"><b>COMMENT POSTULER :</b> Candidature via la plateforme Moovijob (page source). Lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://en.moovijob.com/job-offers/tessero-luxembourg/safe-release-train-engineer-rte-mf">VOIR LA MISSION</a></div></article><article class="card warm"><div class="card-top"><div><div class="title">Agile Transformation Coach — Keystone Solutions (client final non nommé)</div><div class="meta">Jooble Belgique / agrégateur (WebSearch, preuve B / INDEXED)</div><div class="tags"><span class="tag ">WARM</span><span class="tag neutral">B — INDEXED</span><span class="tag neutral">Freelance</span></div></div><div class="score-badge">WARM<small>B</small></div></div><div class="fields"><div class="field"><small>Titre exact</small><strong>Agile Transformation Coach</strong></div><div class="field"><small>Plateforme</small><strong>Jooble Belgique / agrégateur (WebSearch, preuve B / INDEXED)</strong></div><div class="field"><small>Client final</small><strong>Non nommé</strong></div><div class="field"><small>Localisation</small><strong>Bruxelles, Belgique — sur site client</strong></div><div class="field"><small>TJM</small><strong>Non publié</strong></div><div class="field"><small>Durée</small><strong>13 mois, temps plein (22/10/2026 → 31/10/2027)</strong></div><div class="field"><small>Démarrage</small><strong>22/10/2026 (date déjà passée → statut à vérifier)</strong></div><div class="field"><small>Publication</small><strong>Date non confirmée (annonce indexée « environ un mois »)</strong></div><div class="field"><small>Statut</small><strong>Statut incertain : démarrage annoncé déjà dépassé</strong></div><div class="field"><small>URL de la mission</small><strong>https://be.jooble.org/jdp/906478447910058010</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission de conseil : Agile Transformation Coach (coaching de l&#x27;équipe d&#x27;Agile Coaches, coaching du management, leadership agile) chez un client à Bruxelles.</div><div class="step"><b>Preuve</b>B — INDEXED — https://be.jooble.org/jdp/906478447910058010</div><div class="step"><b>Why now</b>FAIT : mission couvrant 22/10/2026–31/10/2027, 13 mois. Incertitude : publication non datée, démarrage déjà atteint.</div><div class="step"><b>Problème probable</b>HYPOTHÈSE : transformation agile à l&#x27;échelle où le management et l&#x27;équipe de coaches internes ont besoin d&#x27;un coach senior.</div><div class="step"><b>Décideur</b>Non confirmé — probable Head of Transformation / COO / CIO du client final (non nommé).</div></div><div class="message"><b>Offre :</b> Coaching d&#x27;une équipe d&#x27;Agile Coaches et de managers ; leadership agile ; Agile at Scale.<br><b>Approche :</b> Coaching de managers/leaders, recrutement et accompagnement de 15 Scrum Masters et Agile Coaches, 350+ rétrospectives, 28 praticiens accompagnés.<br><b>Action :</b> Contacter Keystone Solutions pour confirmer l&#x27;ouverture, le TJM et le démarrage avant de candidater avec le CV prêt.</div><div class="message" style="background:#f9e6e6"><b>Écarts :</b> Mission à Bruxelles sur site (résidence Maizières-lès-Metz). Statut/ouverture et TJM non confirmés. Annonces Keystone voisines exigent 10+ ans d&#x27;agilité dont 5 comme Enterprise/Lead Agile Coach (à vérifier pour cette mission). Langues néerlandais non au CV (FR C2, EN C1).</div><div class="message"><b>CV prêt :</b> cv-2026-10-30-keystone-agile-transformation-coach.html (HTML, joint au rapport quand l'outil le permet ; sinon dans le dépôt)</div><div class="message"><b>COMMENT POSTULER :</b> Via la page source (Jooble) puis Keystone Solutions. URL exacte non confirmée : la page Jooble ci-contre est la page indexée probable ; lien de candidature exact non identifié — utiliser la page source.</div><div class="actions"><a class="btn" href="https://be.jooble.org/jdp/906478447910058010">VOIR LA MISSION</a></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><p class="meta">Aucun brouillon de prospection créé : aucun email professionnel public vérifié. Aucun email externe envoyé.</p></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Statut réel</th></tr><tr><td>AllEyesOnMe Jobs (flux paginé)</td><td>WebFetch direct : HTTP 429. Relance via WebSearch site:alleyesonme.jobs : aucun résultat du domaine. Flux NON lu — 0 page parcourue.</td></tr><tr><td>Moovijob / Hellowork / Free-Work (WebSearch)</td><td>Pages directes en 403/410 ; contenus issus des extraits indexés (preuve B).</td></tr><tr><td>Collective.work (WebFetch)</td><td>Offre « Consultant IT Transformation – CIO Office » : page consultée, « plus disponible » — écartée.</td></tr><tr><td>Pauwels, Keystone, Wemanity Bruxelles (WebSearch)</td><td>Extraits indexés uniquement.</td></tr><tr><td>Paperjam / Chronicle / gouvernement.lu (WebSearch)</td><td>Signaux de contexte, extraits indexés.</td></tr><tr><td>Fichiers de travail</td><td>Lus : search-strategy.md, sources-business-v2.txt, prospects-history.csv, template v3, cv-master.html, cv-rules.md. Remarque : cv-rules.md cite salimdulux@gmail.com ; l&#x27;adresse du prompt (salim.gocoach@gmail.com) a été retenue. cv-master.html imprime 3 pages ; les CV sont dérivés de la version compactée 2 pages déjà utilisée (cv-2026-10-29-ekxel…) — vérifié 2 pages A4.</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>Recherches WebSearch/WebFetch</td><td>≈ 14</td></tr><tr><td>Nouveaux prospects qualifiés</td><td>2 (0 HOT / 2 WARM)</td></tr><tr><td>À vérifier</td><td>3 (dont 1 doublon)</td></tr><tr><td>Preuves A / B</td><td>0 / 5</td></tr><tr><td>Brouillons créés</td><td>0 (aucun contact public vérifié)</td></tr><tr><td>CV HTML générés</td><td>2 (2 pages A4)</td></tr><tr><td>Plafond 50 pages AllEyesOnMe</td><td>Non atteint — flux inaccessible</td></tr></table>
+</section>
+
+<footer class="footer">AIgile Business Hunter — 2026-10-30 — FAIT / HYPOTHÈSE / INCERTITUDE distingués. Recherche ciblée, non exhaustive.</footer>
+</main>
+</body>
+</html>
