@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-11-03</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Hunter · aigile.lu</div></div></div>
+<div class="badge">Rapport quotidien · 2026-11-03</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence</div>
+<h1>0 HOT · 0 WARM — signaux à vérifier</h1>
+<p class="lede">Recherche ciblée via WebSearch (flux AllEyesOnMe bloqué : HTTP 429 ; free-work/Malt non indexés par le moteur). 0 HOT, 0 WARM, 5 signaux À VÉRIFIER dont 1 doublon d'historique. Aucun CV généré (aucune offre HOT/WARM). Aucun brouillon de prospection.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">Bruxelles</span><span class="pill">Preuve B</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Score de chasse</div>
+<div class="score">—</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>0</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card"><div class="message">Aucune opportunité HOT ou WARM aujourd'hui : preuves insuffisantes (source B uniquement, statuts non confirmés). Pas de remplissage artificiel.</div></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card"><div class="message">Aucun WARM.</div></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="card-top"><div><div class="title">Release Train Engineer (SAFe) — Tessero Luxembourg</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">B</span></div></div></div>
+<div class="fields"><div class="field"><small>SIGNAL</small><strong>Mission freelance RTE, Luxembourg (surtout sur site), publiée le 21/10/2026 d&#x27;après le résumé indexé ; ≥3 ans d&#x27;expérience RTE requis.</strong></div><div class="field"><small>PREUVE</small><strong>B — INDEXED. Page non consultable (HTTP 403) ; une 2e recherche n&#x27;a pas retrouvé l&#x27;annonce.</strong></div><div class="field"><small>WHY NOW</small><strong>Annonce récente (≈13 j) mais statut non confirmé.</strong></div><div class="field"><small>ÉCARTS</small><strong>Écarts : pas d&#x27;expérience RTE explicite dans le CV maître (SAFe 6 Agilist, PSM I) ; TJM, durée, démarrage, client final non publiés/non confirmés.</strong></div></div>
+<div class="message">ACTION : Ouvrir la page source, confirmer statut/TJM ; candidater via Moovijob/Tessero seulement si le fit RTE est assumé. Lien de candidature exact non identifié — utiliser la page source.</div>
+<div class="actions"><a class="btn" href="https://en.moovijob.com/job-offers/tessero-luxembourg/safe-release-train-engineer-rte-mf">VOIR LA SOURCE</a></div></div><div class="card verify"><div class="card-top"><div><div class="title">IT Programme Lead — Financial Services Transformation (Kepler Search)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">B</span></div></div></div>
+<div class="fields"><div class="field"><small>SIGNAL</small><strong>Poste de pilotage du volet IT d&#x27;un grand programme de transformation (banque/finance, Luxembourg), publié le 13/08/2026 (≈82 jours). FR+EN, droit de travailler au Luxembourg.</strong></div><div class="field"><small>PREUVE</small><strong>B — INDEXED. Client non nommé ; type de contrat (CDI/freelance) non confirmé.</strong></div><div class="field"><small>WHY NOW</small><strong>Annonce de 31–90 jours : à vérifier.</strong></div><div class="field"><small>ÉCARTS</small><strong>Écart probable : exigence &#x27;IT delivery leadership&#x27; hands-on build/test/go-live (fit partiel avec profil coaching).</strong></div></div>
+<div class="message">ACTION : Vérifier si l&#x27;offre est encore ouverte et le type de contrat. Lien de candidature exact non identifié — utiliser la page source.</div>
+<div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/kepler-search/it-programme-lead">VOIR LA SOURCE</a></div></div><div class="card verify"><div class="card-top"><div><div class="title">Emagine — Senior Agile Coach (Product &amp; Engineering transformation)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">B</span></div></div></div>
+<div class="fields"><div class="field"><small>SIGNAL</small><strong>Mission freelance Luxembourg déjà suivie (historique 2026-09-22, WARM). Aucune date de publication visible.</strong></div><div class="field"><small>PREUVE</small><strong>B — INDEXED. Date non confirmée.</strong></div><div class="field"><small>WHY NOW</small><strong>Doublon d&#x27;historique — non compté comme nouveau.</strong></div><div class="field"><small>ÉCARTS</small><strong>Statut d&#x27;ouverture toujours non reverifié depuis le 22/09.</strong></div></div>
+<div class="message">ACTION : Contacter emagine pour confirmer le statut ; pas de nouveau brouillon (déjà traité).</div>
+<div class="actions"><a class="btn" href="https://www.hellowork.com/fr-fr/emplois/82992815.html">VOIR LA SOURCE</a></div></div><div class="card verify"><div class="card-top"><div><div class="title">ACD (Administration des contributions directes) — Chief Transformation Officer Noé Berger</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">B</span></div></div></div>
+<div class="fields"><div class="field"><small>SIGNAL</small><strong>Nomination d&#x27;un chief transformation officer à l&#x27;ACD ; date non confirmée.</strong></div><div class="field"><small>PREUVE</small><strong>B — INDEXED, date non confirmée. Aucun besoin de mission constaté.</strong></div><div class="field"><small>WHY NOW</small><strong>Signal faible seul.</strong></div><div class="field"><small>ÉCARTS</small><strong>Signal de gouvernance seul : pas de recrutement/AO identifié.</strong></div></div>
+<div class="message">ACTION : Chercher date et chantier concret avant toute approche (propriétaire probable du problème : Noé Berger — hypothèse).</div>
+<div class="actions"><a class="btn" href="https://en.paperjam.lu/article/noe-berger-new-cto-of-the-acd">VOIR LA SOURCE</a></div></div><div class="card verify"><div class="card-top"><div><div class="title">LuxSE — CIO Maxime Aerts / réorganisation de gouvernance (stratégie 2026)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag warn">B/C</span></div></div></div>
+<div class="fields"><div class="field"><small>SIGNAL</small><strong>CIO nommé 1er nov. 2025 ; nouveau COO et ExCo remaniée. Signal de ≈12 mois.</strong></div><div class="field"><small>PREUVE</small><strong>B/C — corps de l&#x27;article non lu.</strong></div><div class="field"><small>WHY NOW</small><strong>Signal ancien.</strong></div><div class="field"><small>ÉCARTS</small><strong>Aucune preuve d&#x27;activité 2026 (recrutement, AO) ; signal ancien (&gt;90 j).</strong></div></div>
+<div class="message">ACTION : Ne pas approcher sur ce seul signal ; revalider si preuve de chantier 2026.</div>
+<div class="actions"><a class="btn" href="https://en.paperjam.lu/article/luxembourg-stock-exchange-reshuffles-governance-to-accelerate-its-2026-strategy">VOIR LA SOURCE</a></div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card"><div class="message">Voir « À vérifier ».</div></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card"><div class="message">Aucune opportunité HOT ou WARM aujourd'hui : preuves insuffisantes (source B uniquement, statuts non confirmés). Pas de remplissage artificiel.</div></div><div class="card"><div class="message">Aucun WARM.</div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card"><div class="message">Aucun brouillon de prospection créé. Aucun CV généré (aucune offre HOT/WARM).</div></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Statut</th></tr><tr><td>AllEyesOnMe /jobs?search=agile</td><td>Accès direct : HTTP 429 — flux non lu ; WebSearch site: sans résultat du domaine</td></tr><tr><td>free-work.com (site:)</td><td>Aucun résultat indexé</td></tr><tr><td>WebSearch général Luxembourg/Bruxelles</td><td>Résultats B — INDEXED, listés ci-dessus</td></tr><tr><td>Moovijob Tessero</td><td>HTTP 403 — page non consultée directement</td></tr><tr><td>Paperjam / LuxSE</td><td>Extraits indexés uniquement</td></tr><tr><td>Fichiers</td><td>cv-master.html, cv-rules.md, search-strategy.md, sources-business-v2.txt, prospects-history.csv, template v3 : présents. Note : cv-rules.md mentionne salimdulux@gmail.com, le prompt impose salim.gocoach@gmail.com (prompt suivi).</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>0</td></tr><tr><td>À vérifier</td><td>5</td></tr><tr><td>Brouillons</td><td>0</td></tr><tr><td>CV générés</td><td>0</td></tr></table>
+</section>
+
+<footer class="footer">AIgile Business Hunter — rapport généré le 2026-11-03</footer>
+</main>
+</body>
+</html>
