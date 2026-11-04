@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-11-04</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Business Hunter — aigile.lu</div></div></div>
+<div class="badge">Rapport quotidien · 2026-11-04</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence</div>
+<h1>Aucun HOT aujourd'hui : 2 WARM, dont 1 mission RTE à Luxembourg et 1 signal Spuerkeess</h1>
+<p class="lede">Recherche ciblée (WebSearch). AllEyesOnMe Jobs bloqué (HTTP 429) : flux non lu. Meilleur signal : Spuerkeess (nouveau CEO le 1er oct., nouvelle COO le 1er nov. 2026, Plan 2030), preuve A, mais aucun besoin publié. Seule mission nouvelle : RTE SAFe freelance Tessero (21/10/2026), avec un écart de certification SPC/RTE.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">SAFe / RTE</span><span class="pill">Transformation banque</span><span class="pill">Preuve : 1 A, reste B</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">4</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>2</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Aucun HOT aujourd'hui</div><p>Aucune opportunité ne réunit besoin concret, preuve suffisante et statut vérifié.</p></div></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">SAFe Release Train Engineer (RTE) M/F</div><div class="meta">Tessero Luxembourg (client final non identifié)</div></div><div class="score-badge"><small>SCORE</small>72</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag">Mission freelance</span><span class="tag">Preuve B / INDEXED</span><span class="tag">Publiée 21/10/2026 (indexée)</span></div>
+<div class="fields"><div class="field"><small>Plateforme / source</small><strong>Moovijob (annonce Tessero Luxembourg)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg — principalement sur site</strong></div><div class="field"><small>TJM / tarif</small><strong>Non chiffré (« daily rate based on experience »)</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés</strong></div><div class="field"><small>Date de publication</small><strong>21/10/2026 (extrait indexé, page non consultée : HTTP 403)</strong></div><div class="field"><small>Statut</small><strong>Non reverifié — ne pas présumer ouvert</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission RTE freelance pour un programme de transformation business + IT</div><div class="step"><b>Preuve</b>B — extrait WebSearch Moovijob</div><div class="step"><b>Why now</b>Annonce indexée du 21/10/2026 (14 jours)</div><div class="step"><b>Décideur</b>Programme Director / Head of Transformation du client (hypothèse)</div><div class="step"><b>Offre</b>Coaching Scrum Masters &amp; POs, PI Planning, dépendances multi-équipes</div></div>
+<p><b>PROBLÈME PROBABLE / FAIT :</b> HYPOTHÈSE : le programme a besoin d&#x27;un RTE pour piloter les ARTs et coacher SM/PO. FAIT : l&#x27;annonce demande 3+ ans de RTE ou rôle Agile niveau programme, SAFe (PI Planning, ART Sync, Inspect &amp; Adapt).</p><p><b>Écarts :</b> Certification SPC / RTE « highly desirable » : non détenue (Certified SAFe 6 Agilist + PSM I). Titre RTE formel non listé dans le CV maître ; s&#x27;appuyer sur BIL 2016-2025 (1 → 13 équipes Scrum/SAFe, PI Planning). Client et TJM inconnus.</p><div class="message">COMMENT POSTULER / AGIR : Plateforme : Moovijob. Lien de candidature exact non identifié — utiliser la page source.</div><div class="message">CV prêt : cv-2026-11-04-tessero-safe-release-train-engineer.html</div>
+<div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">VOIR LA MISSION</a><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">POSTULER (via la page source)</a></div></div><div class="card warm"><div class="card-top"><div><div class="title">Spuerkeess — nouveau CEO + nouvelle COO, Plan stratégique 2030</div><div class="meta">Spuerkeess (Banque et Caisse d&#x27;Epargne de l&#x27;Etat), Luxembourg</div></div><div class="score-badge"><small>SCORE</small>66</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag">Signal corporate</span><span class="tag">Preuve A / DIRECT (Paperjam FR)</span><span class="tag">Date : décision du 2 oct. 2026</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>Paperjam — article consulté directement</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Dates (faits)</small><strong>Benoît Elvinger CEO depuis le 1er oct. 2026 ; Gaëlle Haag COO depuis le 1er nov. 2026</strong></div><div class="field"><small>Contexte (fait)</small><strong>Plan stratégique 2030, « transformation continue », renouvellement générationnel</strong></div><div class="field"><small>Offre d&#x27;emploi ?</small><strong>Aucune identifiée — signal, pas une mission</strong></div><div class="field"><small>Contact email</small><strong>Non vérifié — aucun email deviné</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Deux arrivées au sommet en un mois, mandat de transformation</div><div class="step"><b>Preuve</b>A — Paperjam consulté</div><div class="step"><b>Why now</b>COO en poste depuis 4 jours, remit : tech, cyber, conformité</div><div class="step"><b>Décideur</b>Gaëlle Haag (COO) ; Benoît Elvinger (CEO)</div><div class="step"><b>Offre</b>Diagnostic TOM / Agile at Scale + coaching managers</div></div>
+<p><b>PROBLÈME PROBABLE / FAIT :</b> HYPOTHÈSE (non confirmée) : un nouveau comité de direction chargé d&#x27;accélérer la transformation peut avoir besoin d&#x27;aligner IT, opérations et métiers. Aucun besoin publié.</p><p><b>Écarts :</b> Aucune mission ouverte ni budget connu ; décideur proposé, pas confirmé comme propriétaire du sujet Agile. Approche à froid via canal professionnel public (LinkedIn) ; pas d&#x27;email.</p><div class="message">COMMENT POSTULER / AGIR : Pas de candidature. Action : message LinkedIn court à la COO (angle : premiers 100 jours, diagnostic de la gouvernance delivery). Aucun brouillon email : pas d&#x27;adresse vérifiée.</div>
+<div class="actions"><a class="btn" href="https://paperjam.lu/article/gaelle-haag-devient-coo-de-la-spuerkeess">VOIR LA SOURCE</a><a class="btn secondary" href="https://en.paperjam.lu/article/gaelle-haag-has-been-appointed-coo-of-spuerkeess">VOIR LA SOURCE (EN)</a></div></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">Release Train Engineer (RTE) - H/F — TMC Luxembourg</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Preuve B</span><span class="tag neutral">Publiée 16/10/2026 (indexée)</span></div><p>Page Moovijob non consultée (403). Type de contrat, client, TJM inconnus : ne pas présumer freelance.</p><div class="actions"><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/tmc-luxembourg/release-train-engineer-rte-hf">VOIR LA MISSION</a></div></div><div class="card verify"><div class="title">Senior Agile Coach — Emagine S.A. (freelance, Product &amp; Engineering)</div><div class="tags"><span class="tag neutral">À VÉRIFIER</span><span class="tag neutral">Preuve B</span><span class="tag neutral">Publiée 03/09/2026 (indexée) — 62 jours</span><span class="tag neutral">Déjà dans l&#x27;historique (22/09)</span></div><p>Dédoublonné : même mission que la ligne WARM du 22/09. Ancienneté 31-90 jours, statut non reverifié → rétrogradée.</p><div class="actions"><a class="btn secondary" href="https://www.hellowork.com/fr-fr/emplois/82992815.html">VOIR LA MISSION</a></div></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><div class="card verify"><p>Arendt : Olivier Ramlot CIO depuis le 15/10/2025 — signal ancien (&gt;90 jours), faible, sans preuve d&#x27;activité récente.</p></div><div class="card verify"><p>Advisory Board on AI in Finance (Luxembourg), 1re réunion le 16/01/2026 — contexte AI adoption, pas un besoin identifié.</p></div><div class="card verify"><p>Creos : offre CIO archivée au 07/10/2025 — ancien, non exploitable.</p></div></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">SAFe Release Train Engineer (RTE) M/F</div><div class="meta">Tessero Luxembourg (client final non identifié)</div></div><div class="score-badge"><small>SCORE</small>72</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag">Mission freelance</span><span class="tag">Preuve B / INDEXED</span><span class="tag">Publiée 21/10/2026 (indexée)</span></div>
+<div class="fields"><div class="field"><small>Plateforme / source</small><strong>Moovijob (annonce Tessero Luxembourg)</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg — principalement sur site</strong></div><div class="field"><small>TJM / tarif</small><strong>Non chiffré (« daily rate based on experience »)</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés</strong></div><div class="field"><small>Date de publication</small><strong>21/10/2026 (extrait indexé, page non consultée : HTTP 403)</strong></div><div class="field"><small>Statut</small><strong>Non reverifié — ne pas présumer ouvert</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission RTE freelance pour un programme de transformation business + IT</div><div class="step"><b>Preuve</b>B — extrait WebSearch Moovijob</div><div class="step"><b>Why now</b>Annonce indexée du 21/10/2026 (14 jours)</div><div class="step"><b>Décideur</b>Programme Director / Head of Transformation du client (hypothèse)</div><div class="step"><b>Offre</b>Coaching Scrum Masters &amp; POs, PI Planning, dépendances multi-équipes</div></div>
+<p><b>PROBLÈME PROBABLE / FAIT :</b> HYPOTHÈSE : le programme a besoin d&#x27;un RTE pour piloter les ARTs et coacher SM/PO. FAIT : l&#x27;annonce demande 3+ ans de RTE ou rôle Agile niveau programme, SAFe (PI Planning, ART Sync, Inspect &amp; Adapt).</p><p><b>Écarts :</b> Certification SPC / RTE « highly desirable » : non détenue (Certified SAFe 6 Agilist + PSM I). Titre RTE formel non listé dans le CV maître ; s&#x27;appuyer sur BIL 2016-2025 (1 → 13 équipes Scrum/SAFe, PI Planning). Client et TJM inconnus.</p><div class="message">COMMENT POSTULER / AGIR : Plateforme : Moovijob. Lien de candidature exact non identifié — utiliser la page source.</div><div class="message">CV prêt : cv-2026-11-04-tessero-safe-release-train-engineer.html</div>
+<div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">VOIR LA MISSION</a><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">POSTULER (via la page source)</a></div></div><div class="card warm"><div class="card-top"><div><div class="title">Spuerkeess — nouveau CEO + nouvelle COO, Plan stratégique 2030</div><div class="meta">Spuerkeess (Banque et Caisse d&#x27;Epargne de l&#x27;Etat), Luxembourg</div></div><div class="score-badge"><small>SCORE</small>66</div></div>
+<div class="tags"><span class="tag warn">WARM</span><span class="tag">Signal corporate</span><span class="tag">Preuve A / DIRECT (Paperjam FR)</span><span class="tag">Date : décision du 2 oct. 2026</span></div>
+<div class="fields"><div class="field"><small>Source</small><strong>Paperjam — article consulté directement</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg</strong></div><div class="field"><small>Dates (faits)</small><strong>Benoît Elvinger CEO depuis le 1er oct. 2026 ; Gaëlle Haag COO depuis le 1er nov. 2026</strong></div><div class="field"><small>Contexte (fait)</small><strong>Plan stratégique 2030, « transformation continue », renouvellement générationnel</strong></div><div class="field"><small>Offre d&#x27;emploi ?</small><strong>Aucune identifiée — signal, pas une mission</strong></div><div class="field"><small>Contact email</small><strong>Non vérifié — aucun email deviné</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Deux arrivées au sommet en un mois, mandat de transformation</div><div class="step"><b>Preuve</b>A — Paperjam consulté</div><div class="step"><b>Why now</b>COO en poste depuis 4 jours, remit : tech, cyber, conformité</div><div class="step"><b>Décideur</b>Gaëlle Haag (COO) ; Benoît Elvinger (CEO)</div><div class="step"><b>Offre</b>Diagnostic TOM / Agile at Scale + coaching managers</div></div>
+<p><b>PROBLÈME PROBABLE / FAIT :</b> HYPOTHÈSE (non confirmée) : un nouveau comité de direction chargé d&#x27;accélérer la transformation peut avoir besoin d&#x27;aligner IT, opérations et métiers. Aucun besoin publié.</p><p><b>Écarts :</b> Aucune mission ouverte ni budget connu ; décideur proposé, pas confirmé comme propriétaire du sujet Agile. Approche à froid via canal professionnel public (LinkedIn) ; pas d&#x27;email.</p><div class="message">COMMENT POSTULER / AGIR : Pas de candidature. Action : message LinkedIn court à la COO (angle : premiers 100 jours, diagnostic de la gouvernance delivery). Aucun brouillon email : pas d&#x27;adresse vérifiée.</div>
+<div class="actions"><a class="btn" href="https://paperjam.lu/article/gaelle-haag-devient-coo-de-la-spuerkeess">VOIR LA SOURCE</a><a class="btn secondary" href="https://en.paperjam.lu/article/gaelle-haag-has-been-appointed-coo-of-spuerkeess">VOIR LA SOURCE (EN)</a></div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><div class="card verify"><div class="title">Aucun brouillon de prospection</div><p>Aucun email vérifié disponible. Rapport interne envoyé à salim.gocoach@gmail.com (voir statut d'envoi dans la conversation).</p></div></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:Arial,sans-serif;"><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;color:#68756e;font-size:10px;font-weight:bold;">SOURCE</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;color:#68756e;font-size:10px;font-weight:bold;">PREUVE</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;color:#68756e;font-size:10px;font-weight:bold;">NOTE</td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">WebSearch (6 requêtes ciblées)</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;"><b>B</b></td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">Luxembourg Agile/SAFe/RTE/AI/CIO, Bruxelles agile</td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">Paperjam FR (Spuerkeess)</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;"><b>A</b></td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">Consulté directement</td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">AllEyesOnMe Jobs</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;"><b>—</b></td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">ÉCHEC : HTTP 429, flux non lu ; recherche site: sans résultat du domaine</td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">Moovijob (Tessero, TMC)</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;"><b>B</b></td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">HTTP 403, extraits indexés seulement</td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">Pauwels / collective.work / catsone</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;"><b>—</b></td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">403 / offre fermée / 404 : non exploitables</td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">Malt, Free-Work, Collective, Freelancers.lu, GetYourJob</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;"><b>—</b></td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;vertical-align:top;">Aucun résultat indexé exploitable dans cette session : non couverts</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:Arial,sans-serif;"><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;">Requêtes WebSearch ciblées</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;"><b>6 (+ 8 consultations directes, dont 4 en échec)</b></td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;">Nouveaux prospects qualifiés</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;"><b>4 (2 WARM, 2 À VÉRIFIER)</b></td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;">HOT</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;"><b>0 — aucune preuve + statut suffisants</b></td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;">CV HTML générés</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;"><b>1 (Tessero RTE)</b></td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;">Brouillons prospection</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;"><b>0</b></td></tr><tr><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;">Envoi externe automatique</td><td style="padding:8px;border-bottom:1px solid #dce5df;font-size:12px;"><b>0</b></td></tr></table>
+</section>
+
+<footer class="footer">AIgile Business Hunter — recherche ciblée, non exhaustive. FAIT / HYPOTHÈSE distingués.</footer>
+</main>
+</body>
+</html>
