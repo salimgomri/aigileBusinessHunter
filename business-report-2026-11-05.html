@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-11-05</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#3BA66B;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile</div><div class="brand-sub">Sales Intelligence · Salim Gomri</div></div></div>
+<div class="badge">Business Hunter · 2026-11-05</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Sales Intelligence quotidienne</div>
+<h1>0 HOT, 2 WARM : une mission RTE SAFe et un signal de transformation à l'ACD</h1>
+<p class="lede">Recherche ciblée (non exhaustive). Flux AllEyesOnMe bloqué (HTTP 429). Aucune opportunité ne satisfait HOT (preuve indexée, statut non confirmé). Deux pistes WARM exploitables.</p>
+<div class="pills"><span class="pill">Luxembourg</span><span class="pill">SAFe</span><span class="pill">Transformation publique</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Opportunités qualifiées</div>
+<div class="score">2</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>1</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><p class="meta">Aucun HOT aujourd'hui — pas de remplissage artificiel.</p></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><div class="card warm"><div class="card-top"><div><div class="title">SAFe Release Train Engineer (RTE) M/F — Tessero Luxembourg (client final non nommé)</div><div class="tags"><span class="tag">WARM</span><span class="tag">Mission freelance/consulting</span><span class="tag">Preuve B · INDEXED</span><span class="tag">Publié 21/10/2026 (exploitable)</span></div></div></div><div class="fields"><div class="field"><small>Plateforme / source</small><strong>Moovijob (annonce de Tessero Luxembourg) — page non consultée directement (HTTP 403)</strong></div><div class="field"><small>Client final</small><strong>Non identifié</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg, surtout sur site</strong></div><div class="field"><small>TJM / tarif</small><strong>Non publié (« selon expérience »)</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés</strong></div><div class="field"><small>Date de publication</small><strong>21/10/2026 (selon extrait indexé)</strong></div><div class="field"><small>Statut</small><strong>À vérifier — ouverture non confirmée</strong></div><div class="field"><small>Méthode de candidature</small><strong>Via la page Moovijob / Tessero — lien de candidature exact non identifié, utiliser la page source</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission RTE SAFe pour un programme de transformation business &amp; IT à grande échelle</div><div class="step"><b>Preuve</b>Moovijob, extrait indexé (B)</div><div class="step"><b>Why now</b>Publiée le 21/10/2026 (15 jours)</div><div class="step"><b>Problème probable (hypothèse)</b>Synchroniser plusieurs trains / équipes, coacher SM, PO et leads techniques</div><div class="step"><b>Décideur</b>Non identifié (client masqué par l&#x27;agence)</div></div><div class="message"><b>OFFRE :</b> Rôle de RTE / coaching Agile at Scale : cadence PI, synchronisation des équipes, coaching SM/PO/leads techniques — appuyé sur 1 → 13 équipes Scrum/SAFe au sein d&#x27;une banque (~110 collaborateurs).</div><div class="message" style="background:#fff1dc"><b>Écarts :</b> Annonce exigeant ≥3 ans en RTE / Agile Program Manager : le CV maître ne mentionne ni titre RTE ni certification RTE (SAFe 6 Agilist, PSM I, Professional Coach). Client, TJM, durée inconnus. Annonce non lue directement.</div><div class="message"><b>CV prêt :</b> cv-2026-11-05-tessero-rte-safe-transformation.html (joint au mail interne)</div><div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">VOIR LA MISSION</a><a class="btn secondary" href="https://en.moovijob.com/job-offers/tessero-luxembourg/safe-release-train-engineer-rte-mf">POSTULER / COMMENT POSTULER (page source)</a></div></div><div class="card warm"><div class="card-top"><div><div class="title">Administration des contributions directes (ACD) — nouveau Chief Transformation Officer</div><div class="tags"><span class="tag">WARM</span><span class="tag">Signal corporate</span><span class="tag">Preuve A (Paperjam) + B (LinkedIn indexé)</span><span class="tag">Date non confirmée</span></div></div></div><div class="fields"><div class="field"><small>Source</small><strong>Paperjam — « Noé Berger, new CTO of the ACD » (contenu récupéré) ; extrait indexé d&#x27;un post LinkedIn ACD</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg (secteur public)</strong></div><div class="field"><small>Décideur probable</small><strong>Noé Berger, Chief Transformation Officer ACD (nommé publiquement) ; directeur : Jean-Paul Olinger</strong></div><div class="field"><small>Date</small><strong>Date non confirmée (l&#x27;article mentionne un communiqué ACD du 19 janvier 2026)</strong></div><div class="field"><small>Contexte légal</small><strong>Projet de loi 8655 : 5e directeur adjoint pour la transformation digitale (rapport de commission, indexé)</strong></div><div class="field"><small>Contact</small><strong>Aucun email vérifié — ne pas en deviner un</strong></div><div class="field"><small>Statut</small><strong>Mission/budget non confirmés</strong></div><div class="field"><small>Brouillon</small><strong>Non créé (pas de contact email vérifié)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Création d&#x27;une division « Stratégie et support organisationnel » intégrant TMO, PMO, BPMO ; recrutement de 3 Transformation Management Officers (LinkedIn, indexé)</div><div class="step"><b>Preuve</b>Paperjam (A) ; LinkedIn ACD via WebSearch (B)</div><div class="step"><b>Why now</b>« Accelerated change », plusieurs projets stratégiques en cours ou prévus (Paperjam)</div><div class="step"><b>Problème probable (hypothèse)</b>Gouvernance et pilotage de multiples projets de transformation, besoin de méthode delivery/portefeuille</div><div class="step"><b>Décideur</b>Noé Berger (CTO ACD)</div></div><div class="message"><b>OFFRE :</b> Coaching du TMO/PMO/BPMO, mise en place d&#x27;une gouvernance de transformation et de delivery agile, coaching des managers de projets stratégiques.</div><div class="message" style="background:#fff1dc"><b>Écarts :</b> Secteur public : l&#x27;accès passe probablement par appel d&#x27;offres (SIMAP/TED) ou prestataire — non vérifié. Aucun besoin explicite de coach Agile publié. Pas d&#x27;offre à postuler : pas de CV généré.</div><div class="actions"><a class="btn" href="https://en.paperjam.lu/article/noe-berger-new-cto-of-the-acd">VOIR LA SOURCE</a></div></div></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><div class="card verify"><div class="title">IT Programme Lead — Kepler Search (programme de modernisation, services financiers)</div><p>Publié 13/08/2026 (84 jours, à vérifier), preuve B, client non nommé, poste probablement permanent, fit partiel (pilotage de programme). Source : moovijob.com/offres-emploi/kepler-search/it-programme-lead (HTTP 403 en accès direct). Ne pas approcher sans confirmation du statut.</p><div class="actions"><a class="btn secondary" href="https://www.moovijob.com/offres-emploi/kepler-search/it-programme-lead">VOIR LA SOURCE</a></div></div><div class="card verify"><div class="title">Brussels — DevOps Coach / Scrum Master expert (contrats jusqu&#x27;à fin 2026)</div><p>Résultats indexés non datés avec précision, fit partiel (DevOps), contrats proches de l&#x27;échéance : non qualifiés.</p></div></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><p class="meta">Aubay Agile Coach ref 305, EKXEL Agile Coach SAFe, LNDS : déjà traités par le Career Hunter (CDI/offres salariées) — hors périmètre business, non dupliqués. LuxSE (CIO Maxime Aerts, 1/11/2025), Arendt (CIO Olivier Ramlot, 10/2025), Chambre de Commerce (CTO Cindy Tereba, 09/2024) : signaux &gt; 90 jours sans preuve d&#x27;activité actuelle — non qualifiés. Collective.work « Consultant IT Transformation – CIO Office » : annonce indiquée comme n&#x27;étant plus disponible.</p></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><p class="meta">Aucun HOT aujourd'hui — pas de remplissage artificiel.</p><div class="card warm"><div class="card-top"><div><div class="title">SAFe Release Train Engineer (RTE) M/F — Tessero Luxembourg (client final non nommé)</div><div class="tags"><span class="tag">WARM</span><span class="tag">Mission freelance/consulting</span><span class="tag">Preuve B · INDEXED</span><span class="tag">Publié 21/10/2026 (exploitable)</span></div></div></div><div class="fields"><div class="field"><small>Plateforme / source</small><strong>Moovijob (annonce de Tessero Luxembourg) — page non consultée directement (HTTP 403)</strong></div><div class="field"><small>Client final</small><strong>Non identifié</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg, surtout sur site</strong></div><div class="field"><small>TJM / tarif</small><strong>Non publié (« selon expérience »)</strong></div><div class="field"><small>Durée / démarrage</small><strong>Non publiés</strong></div><div class="field"><small>Date de publication</small><strong>21/10/2026 (selon extrait indexé)</strong></div><div class="field"><small>Statut</small><strong>À vérifier — ouverture non confirmée</strong></div><div class="field"><small>Méthode de candidature</small><strong>Via la page Moovijob / Tessero — lien de candidature exact non identifié, utiliser la page source</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission RTE SAFe pour un programme de transformation business &amp; IT à grande échelle</div><div class="step"><b>Preuve</b>Moovijob, extrait indexé (B)</div><div class="step"><b>Why now</b>Publiée le 21/10/2026 (15 jours)</div><div class="step"><b>Problème probable (hypothèse)</b>Synchroniser plusieurs trains / équipes, coacher SM, PO et leads techniques</div><div class="step"><b>Décideur</b>Non identifié (client masqué par l&#x27;agence)</div></div><div class="message"><b>OFFRE :</b> Rôle de RTE / coaching Agile at Scale : cadence PI, synchronisation des équipes, coaching SM/PO/leads techniques — appuyé sur 1 → 13 équipes Scrum/SAFe au sein d&#x27;une banque (~110 collaborateurs).</div><div class="message" style="background:#fff1dc"><b>Écarts :</b> Annonce exigeant ≥3 ans en RTE / Agile Program Manager : le CV maître ne mentionne ni titre RTE ni certification RTE (SAFe 6 Agilist, PSM I, Professional Coach). Client, TJM, durée inconnus. Annonce non lue directement.</div><div class="message"><b>CV prêt :</b> cv-2026-11-05-tessero-rte-safe-transformation.html (joint au mail interne)</div><div class="actions"><a class="btn" href="https://www.moovijob.com/offres-emploi/tessero-luxembourg/safe-release-train-engineer-rte-mf">VOIR LA MISSION</a><a class="btn secondary" href="https://en.moovijob.com/job-offers/tessero-luxembourg/safe-release-train-engineer-rte-mf">POSTULER / COMMENT POSTULER (page source)</a></div></div><div class="card warm"><div class="card-top"><div><div class="title">Administration des contributions directes (ACD) — nouveau Chief Transformation Officer</div><div class="tags"><span class="tag">WARM</span><span class="tag">Signal corporate</span><span class="tag">Preuve A (Paperjam) + B (LinkedIn indexé)</span><span class="tag">Date non confirmée</span></div></div></div><div class="fields"><div class="field"><small>Source</small><strong>Paperjam — « Noé Berger, new CTO of the ACD » (contenu récupéré) ; extrait indexé d&#x27;un post LinkedIn ACD</strong></div><div class="field"><small>Localisation</small><strong>Luxembourg (secteur public)</strong></div><div class="field"><small>Décideur probable</small><strong>Noé Berger, Chief Transformation Officer ACD (nommé publiquement) ; directeur : Jean-Paul Olinger</strong></div><div class="field"><small>Date</small><strong>Date non confirmée (l&#x27;article mentionne un communiqué ACD du 19 janvier 2026)</strong></div><div class="field"><small>Contexte légal</small><strong>Projet de loi 8655 : 5e directeur adjoint pour la transformation digitale (rapport de commission, indexé)</strong></div><div class="field"><small>Contact</small><strong>Aucun email vérifié — ne pas en deviner un</strong></div><div class="field"><small>Statut</small><strong>Mission/budget non confirmés</strong></div><div class="field"><small>Brouillon</small><strong>Non créé (pas de contact email vérifié)</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Création d&#x27;une division « Stratégie et support organisationnel » intégrant TMO, PMO, BPMO ; recrutement de 3 Transformation Management Officers (LinkedIn, indexé)</div><div class="step"><b>Preuve</b>Paperjam (A) ; LinkedIn ACD via WebSearch (B)</div><div class="step"><b>Why now</b>« Accelerated change », plusieurs projets stratégiques en cours ou prévus (Paperjam)</div><div class="step"><b>Problème probable (hypothèse)</b>Gouvernance et pilotage de multiples projets de transformation, besoin de méthode delivery/portefeuille</div><div class="step"><b>Décideur</b>Noé Berger (CTO ACD)</div></div><div class="message"><b>OFFRE :</b> Coaching du TMO/PMO/BPMO, mise en place d&#x27;une gouvernance de transformation et de delivery agile, coaching des managers de projets stratégiques.</div><div class="message" style="background:#fff1dc"><b>Écarts :</b> Secteur public : l&#x27;accès passe probablement par appel d&#x27;offres (SIMAP/TED) ou prestataire — non vérifié. Aucun besoin explicite de coach Agile publié. Pas d&#x27;offre à postuler : pas de CV généré.</div><div class="actions"><a class="btn" href="https://en.paperjam.lu/article/noe-berger-new-cto-of-the-acd">VOIR LA SOURCE</a></div></div></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><p class="meta">Aucun brouillon de prospection créé (aucun contact email vérifié). Rapport interne : voir statut d'envoi dans la sortie de la routine.</p></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Résultat</th></tr><tr><td>AllEyesOnMe Jobs (search=agile&amp;limit=500)</td><td>BLOQUÉ — HTTP 429, aucun contenu récupéré. Autres recherches (scrum, transformation, change, program manager, delivery) non lancées pour ne pas insister. 1 résultat indexé (trainee, hors cible).</td></tr><tr><td>Free-Work / Malt / GetYourJob.pro (site:)</td><td>WebSearch : aucun résultat du domaine ciblé. Aucune mission confirmée.</td></tr><tr><td>Moovijob (Tessero, Kepler)</td><td>WebSearch (B) ; accès direct 403</td></tr><tr><td>Paperjam / ACD</td><td>WebFetch OK (A) + WebSearch (B)</td></tr><tr><td>Collective.work</td><td>WebFetch OK : offre expirée</td></tr><tr><td>Autres sources de sources-business-v2 (Delano, ITnation, SIMAP, TED, FEDIL, Luxinnovation…)</td><td>Non interrogées individuellement : recherche ciblée, non exhaustive</td></tr></table><ul><li>Fichiers vérifiés : sources-business-v2.txt ✔, prospects-history.csv ✔, search-strategy.md ✔, template v3 ✔, cv-master.html ✔, cv-rules.md ✔ (tous présents).</li><li>Contrôle CV : cv-master.html donne 3 pages en rendu headless Chromium ; le CV généré donne le même résultat (seuls titre, sous-titre, accroche changés) — 2 pages A4 non vérifiables de façon indépendante dans cet environnement.</li><li>Employeur actuel : non précisé dans le prompt, aucune exclusion appliquée.</li></ul>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>KPI</th><th>Valeur</th></tr><tr><td>HOT</td><td>0</td></tr><tr><td>WARM</td><td>2</td></tr><tr><td>À vérifier</td><td>2</td></tr><tr><td>Brouillons prospection</td><td>0</td></tr><tr><td>CV générés</td><td>1</td></tr><tr><td>Doublons évités</td><td>3 (voir exclusions)</td></tr></table><p class="meta">Aubay Agile Coach ref 305, EKXEL Agile Coach SAFe, LNDS : déjà traités par le Career Hunter (CDI/offres salariées) — hors périmètre business, non dupliqués. | LuxSE (CIO Maxime Aerts, 1/11/2025), Arendt (CIO Olivier Ramlot, 10/2025), Chambre de Commerce (CTO Cindy Tereba, 09/2024) : signaux &gt; 90 jours sans preuve d&#x27;activité actuelle — non qualifiés. | Collective.work « Consultant IT Transformation – CIO Office » : annonce indiquée comme n&#x27;étant plus disponible.</p>
+</section>
+
+<footer class="footer">AIgile · aigile.lu — Faits / hypothèses distingués ; recherche ciblée, non exhaustive.</footer>
+</main>
+</body>
+</html>
