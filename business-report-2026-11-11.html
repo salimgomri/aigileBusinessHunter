@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr" data-report-type="freelance">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIgile Business Hunter — 2026-11-11</title>
+<style>
+:root{
+--bg:#f7f8f6;--surface:#ffffff;--surface2:#eef4f0;--text:#17251e;--muted:#68756e;
+--line:#dce5df;--accent:#FEDB10;--accent-soft:#e5f3eb;--brand:#18543A;
+--warning:#a76a00;--danger:#b33b3b;--shadow:0 12px 36px rgba(24,84,58,.08);--radius:18px;
+--font:Arial,Helvetica,sans-serif;
+}
+html[data-report-type="freelance"]{
+--accent:#FEDB10;--accent-soft:#fff7cc;--brand:#0F2240;--surface2:#f4f1e7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5}
+a{color:var(--brand);font-weight:700}
+.container{max-width:1120px;margin:auto;padding:18px}
+.hero{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.brand-row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brand-name{font-size:20px;font-weight:900;color:var(--brand)}
+.brand-sub{font-size:13px;color:var(--muted);font-weight:700}
+.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--brand);border:1px solid var(--line);font-size:12px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;margin-top:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900;color:var(--brand)}
+h1{font-size:48px;line-height:1;letter-spacing:-1.8px;margin:8px 0 14px;max-width:720px}
+.lede{font-size:17px;color:var(--muted);max-width:760px}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.pill{padding:7px 10px;background:var(--surface2);border-radius:999px;font-size:12px;font-weight:800}
+.score-card{background:var(--brand);color:#fff;border-radius:20px;padding:20px}
+.score-label{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+.score{font-size:54px;font-weight:900;line-height:1;margin:6px 0 20px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:11px;border-radius:12px}
+.kpi small{display:block;color:rgba(255,255,255,.68);font-size:10px}.kpi strong{font-size:18px}
+nav{background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;white-space:nowrap}
+.nav a.primary{background:var(--brand);color:#fff}
+.section{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}
+h2{margin:0;color:var(--brand);font-size:26px;letter-spacing:-.6px}
+.meta{margin:3px 0 0;color:var(--muted);font-size:13px}
+.cards{display:grid;gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card.hot{border-left:5px solid var(--accent)}
+.card.warm{border-left:5px solid var(--warning)}
+.card.verify{border-left:5px solid #8b9690}
+.card-top{display:flex;justify-content:space-between;gap:14px}
+.title{font-size:18px;font-weight:900;color:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:10px;text-transform:uppercase;font-weight:900;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--brand)}.tag.warn{background:#fff1dc;color:#805000}.tag.neutral{background:#edf0ee;color:#48554e}
+.score-badge{min-width:74px;text-align:center;padding:8px;border-radius:12px;background:var(--accent-soft);font-weight:900;color:var(--brand)}.score-badge small{display:block;font-size:9px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.field{background:var(--surface2);padding:10px;border-radius:11px;border:1px solid var(--line)}.field small{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:3px}.field strong{font-size:13px}
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.step{background:var(--surface2);padding:9px;border-radius:10px;font-size:12px}.step b{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}
+.message{margin-top:12px;background:var(--accent-soft);padding:12px;border-radius:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:10px;background:var(--brand);color:#fff;font-size:12px;font-weight:900}
+.btn.secondary{background:var(--surface2);color:var(--brand);border:1px solid var(--line)}
+.status{display:inline-block;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.status.ok{background:#e4f2e9;color:#27784d}.status.no{background:#f9e6e6;color:#a33b3b}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;text-transform:uppercase;color:var(--muted)}
+.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.chain{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+@media(max-width:520px){.container{padding:10px}.hero,.section{padding:16px}.brand-row{flex-direction:column}.card-top{flex-direction:column}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+<div class="brand-row">
+<div class="brand"><div class="logo">AI</div><div><div class="brand-name">AIgile Business Hunter</div><div class="brand-sub">Sales Intelligence · aigile.lu</div></div></div>
+<div class="badge">Freelance & Business · 2026-11-11</div>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Rapport quotidien — Salim Gomri</div>
+<h1>Deux missions SAFe à vérifier, aucun HOT</h1>
+<p class="lede">Marché freelance calme. Deux missions SAFe lues directement sur Free-Work (Comet en Île-de-France, Hays dans le Grand Est), aucune au Luxembourg. La mission emagine de Luxembourg est retirée. Côté corporate, pas de déclencheur frais : à surveiller, la stratégie numérique de l&#x27;État 2026-2030 et l&#x27;agrément Fit 4 AI comme canal pour AIgile.</p>
+<div class="pills"><span class="pill">2 WARM freelance SAFe</span><span class="pill">0 HOT</span><span class="pill">AllEyesOnMe : HTTP 429</span><span class="pill">emagine : CLOS</span><span class="pill">Correction BLI</span></div>
+</div>
+<aside class="score-card">
+<div class="score-label">Hunt score</div>
+<div class="score">48</div>
+<div class="kpis">
+<div class="kpi"><small>HOT</small><strong>0</strong></div>
+<div class="kpi"><small>WARM</small><strong>2</strong></div>
+<div class="kpi"><small>Contacts</small><strong>0</strong></div>
+<div class="kpi"><small>Brouillons</small><strong>0</strong></div>
+</div>
+</aside>
+</div>
+</header>
+</div>
+
+<nav><div class="nav-inner">
+<a class="primary" href="#priorites">Priorités</a>
+<a href="#warm">WARM</a>
+<a href="#verify">À vérifier</a>
+<a href="#signals">Signaux</a>
+<a href="#opportunities">Offres / Missions</a>
+<a href="#drafts">Gmail</a>
+<a href="#sources">Sources</a>
+<a href="#kpis">KPIs</a>
+</div></nav>
+
+<main class="container">
+<section class="section" id="priorites">
+<div class="section-head"><div><h2>Priorités du jour</h2><p class="meta">Les opportunités nécessitant une attention immédiate.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Aucun HOT aujourd'hui</div><p>Aucune opportunité ne réunit à la fois un besoin confirmé, une date fraîche, un fit fort et un décideur joignable. Aucun remplissage artificiel.</p></article></div>
+</section>
+
+<section class="section" id="warm">
+<div class="section-head"><div><h2>WARM</h2><p class="meta">Opportunités crédibles avec une incertitude à traiter.</p></div></div>
+<div class="cards"><article class="card warm"><div class="card-top"><div><div class="title">Coach SAFe — mission freelance</div>
+<div class="tags"><span class="tag">WARM</span><span class="tag neutral">Freelance</span><span class="tag warn">Preuve A</span></div></div>
+<div class="score-badge">70<small>score</small></div></div>
+<div class="fields"><div class="field"><small>Plateforme</small><strong>Free-Work (annonce publiée par Comet)</strong></div><div class="field"><small>Client final</small><strong>Non précisé — « organisation engagée dans une transformation Agile à l&#x27;échelle »</strong></div><div class="field"><small>Localisation</small><strong>Île-de-France — télétravail partiel</strong></div><div class="field"><small>TJM</small><strong>400–620 €/j</strong></div><div class="field"><small>Durée</small><strong>218 jours renouvelable (mission longue)</strong></div><div class="field"><small>Démarrage</small><strong>Dès que possible</strong></div><div class="field"><small>Publication</small><strong>23/09/2026 (49 jours — à vérifier)</strong></div><div class="field"><small>Preuve</small><strong>A — DIRECT (page lue le 11/11/2026)</strong></div><div class="field"><small>Statut</small><strong>Aucune mention d&#x27;expiration sur la page le 11/11/2026 — ouverture non confirmée par le recruteur</strong></div><div class="field"><small>URL mission</small><strong>https://www.free-work.com/fr/tech-it/job-mission/coach-agile/coach-safe-8</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission de coaching SAFe multi-ART : coaching SM/PO, facilitation PI Planning et Inspect &amp; Adapt, accompagnement RTE / Product Management / Business Owners.</div><div class="step"><b>Why now</b>FAIT : annonce publiée le 23/09/2026, démarrage « dès que possible », toujours en ligne le 11/11/2026.</div><div class="step"><b>Problème probable</b>HYPOTHÈSE : déploiement SAFe en cours avec plusieurs trains et un besoin de stabiliser les cadences et la coordination inter-ART.</div><div class="step"><b>Décideur</b>Recruteur Comet (nom non identifié) ; côté client : probablement RTE / Head of Transformation — non confirmé.</div><div class="step"><b>Offre</b>Coaching Agile at Scale SAFe : PI Planning, dépendances multi-équipes, coaching SM/PO, visualisation du flux.</div></div>
+<div class="message">Approche : Mettre en avant la croissance de 1 à 13 équipes Scrum/SAFe à la BIL et la pratique PI Planning.<br>Action : Vérifier l&#x27;ouverture sur Free-Work, puis postuler avec le CV adapté avant le 14/11.</div>
+<div class="field" style="margin-top:10px" id="how-cv-2026-11-11-comet-coach-safe-8"><small>OÙ / COMMENT POSTULER</small><strong>Bouton « Postuler » sur Free-Work (compte Free-Work requis). Lien de candidature exact non identifié — utiliser la page source.</strong></div>
+<div class="field" style="margin-top:8px"><small>Écarts</small><strong>Certification SPC « ou équivalent » demandée : Salim a Certified SAFe 6 Agilist, pas SPC. TJM plafond 620 €/j potentiellement sous le positionnement. Île-de-France (zone 4).</strong></div>
+<div class="field" style="margin-top:8px"><small>CV prêt</small><strong>cv-2026-11-11-comet-coach-safe-8.html</strong></div>
+<div class="actions"><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/coach-agile/coach-safe-8">VOIR LA MISSION</a><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/coach-agile/coach-safe-8">POSTULER (page source)</a><a class="btn secondary" href="#how-cv-2026-11-11-comet-coach-safe-8">COMMENT POSTULER</a></div></article><article class="card warm"><div class="card-top"><div><div class="title">SCRUM MASTER SAFE</div>
+<div class="tags"><span class="tag">WARM</span><span class="tag neutral">Freelance</span><span class="tag warn">Preuve A</span></div></div>
+<div class="score-badge">62<small>score</small></div></div>
+<div class="fields"><div class="field"><small>Plateforme</small><strong>Free-Work (annonce publiée par HAYS France)</strong></div><div class="field"><small>Client final</small><strong>Non précisé — « environnement industriel international »</strong></div><div class="field"><small>Localisation</small><strong>Grand Est — hybride 3 j site / 2 j télétravail</strong></div><div class="field"><small>TJM</small><strong>Non publié</strong></div><div class="field"><small>Durée</small><strong>1 an renouvelable</strong></div><div class="field"><small>Démarrage</small><strong>Dès que possible</strong></div><div class="field"><small>Publication</small><strong>26/10/2026 (16 jours — exploitable)</strong></div><div class="field"><small>Preuve</small><strong>A — DIRECT (page lue le 11/11/2026)</strong></div><div class="field"><small>Statut</small><strong>Bouton « Postuler » actif, aucune mention d&#x27;expiration le 11/11/2026 — ouverture non confirmée par le recruteur</strong></div><div class="field"><small>URL mission</small><strong>https://www.free-work.com/fr/tech-it/job-mission/scrum-master/scrum-master-safe-81</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Programme de transformation Agile à grande échelle : plusieurs équipes, cérémonies Scrum, PI Planning, coordination métiers/parties prenantes.</div><div class="step"><b>Why now</b>FAIT : publication du 26/10/2026, démarrage dès que possible, mission d&#x27;1 an.</div><div class="step"><b>Problème probable</b>HYPOTHÈSE : industriel en cours de passage à SAFe ayant besoin de Scrum Masters seniors pour tenir les cadences du train.</div><div class="step"><b>Décideur</b>Consultant HAYS France (nom non identifié) ; côté client : RTE / responsable du programme — non confirmé.</div><div class="step"><b>Offre</b>Scrum Master SAFe senior multi-équipes, avec ensuite un potentiel rôle de coach.</div></div>
+<div class="message">Approche : Insister sur la séniorité (20+ ans, SAFe depuis la BIL) et l&#x27;anglais C1.<br>Action : Postuler via Free-Work, puis demander à HAYS le TJM et le site exact en Grand Est.</div>
+<div class="field" style="margin-top:10px" id="how-cv-2026-11-11-hays-scrum-master-safe-81"><small>OÙ / COMMENT POSTULER</small><strong>Bouton « Postuler » sur Free-Work (connexion requise). Lien de candidature exact non identifié — utiliser la page source.</strong></div>
+<div class="field" style="margin-top:8px"><small>Écarts</small><strong>Expérience en environnement industriel et en logiciel embarqué demandée : non présente dans le CV maître. Rôle Scrum Master (en dessous du positionnement coach). TJM inconnu.</strong></div>
+<div class="field" style="margin-top:8px"><small>CV prêt</small><strong>cv-2026-11-11-hays-scrum-master-safe-81.html</strong></div>
+<div class="actions"><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/scrum-master/scrum-master-safe-81">VOIR LA MISSION</a><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/scrum-master/scrum-master-safe-81">POSTULER (page source)</a><a class="btn secondary" href="#how-cv-2026-11-11-hays-scrum-master-safe-81">COMMENT POSTULER</a></div></article></div>
+</section>
+
+<section class="section" id="verify">
+<div class="section-head"><div><h2>À vérifier</h2><p class="meta">Informations intéressantes mais insuffisamment confirmées.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Agile Coach — French Speaking (DWI Consulting Ltd)</div><p>freelancermap.ch, page lue (A). 100 % remote, 6 mois, démarrage ASAP, français natif/courant requis. Date de publication et TJM non indiqués : <b>Date non confirmée</b>. Méthode : bouton « Bewerben » sur freelancermap. Lien de candidature exact non identifié — utiliser la page source.</p><div class="actions"><a class="btn secondary" href="https://www.freelancermap.ch/projekt/agile-coach-french-speaking-2739090">VOIR LA MISSION</a></div></article><article class="card verify"><div class="title">Agile Coach (Innova) — Bruxelles, hybride</div><p>ictjob.be, indexé (B), page non chargée (timeout). Freelance ou salarié, mot-clé SAFe. <b>Date non confirmée.</b></p><div class="actions"><a class="btn secondary" href="https://www.ictjob.be/en/job/agile-coach/1-339089">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Historique — emagine — Senior Agile Coach Product & Engineering (Luxembourg)</div><p>hellowork.com renvoie HTTP 410 Gone le 11/11 : offre retirée. Statut historique → CLOS.</p></article><article class="card verify"><div class="title">Historique — BLI — Fabrice Kremer</div><p>CORRECTION : il s'agit d'un Chief <b>Investment</b> Officer (à partir du 01/01/2027), pas d'un DSI. Ce n'est pas un signal IT → retiré du suivi.</p></article><article class="card verify"><div class="title">Historique — Gentis — Agile Test Coach</div><p>Offre expirée (validité 10/01/2026) → CLOS.</p></article><article class="card verify"><div class="title">Historique — Freelance Agile Coach — énergie, Bonanza Group (Bruxelles)</div><p>Page catsone en 404 le 11/11 → non retenu.</p></article><article class="card verify"><div class="title">Historique — Creos / Wemanity / Vivid Resourcing</div><p>Aucune nouvelle preuve ce jour : statut inchangé.</p></article></div>
+</section>
+
+<section class="section" id="signals">
+<div class="section-head"><div><h2>Signaux</h2><p class="meta">Signaux de contexte qui peuvent ouvrir de futures opportunités.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Luxembourg — Stratégie Gouvernement numérique 2026-2030 (Ministère de la Digitalisation / CTIE)</div><p>FAIT (B, indexé) : objectif d'un « État plus agile, efficace et résilient ». ANALYSE : de futurs marchés publics (SIMAP/TED) d'accompagnement agile ou de PMO sont possibles. Aucun appel d'offres identifié aujourd'hui. Action : surveiller SIMAP.</p><div class="actions"><a class="btn secondary" href="https://gouvernement.lu/en/actualites/toutes_actualites.gouv2024_mindigital+en+actualites+dossiers+2025+strategie-gouvernement-numerique-2026-2030.html">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Fit 4 AI (Luxinnovation) — consultants agréés</div><p>FAIT (B) : programme d'aide à l'adoption de l'IA, avec des prestataires agréés (PwC, TeamIA AI…). ANALYSE : AIgile pourrait demander l'agrément pour proposer de l'accompagnement AI adoption subventionné. Signal de canal, pas un prospect.</p><div class="actions"><a class="btn secondary" href="https://www.pwc.lu/en/generative-ai/fit4ai.html">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">LuxSE — refonte de l&#x27;ExCo (nouveau COO, CIO au comité exécutif)</div><p>FAIT (B) : annonce de mars 2026 (environ 228 jours, donc ancienne). Aucun chantier de transformation agile identifié. Conservé pour suivi uniquement.</p><div class="actions"><a class="btn secondary" href="https://luxse.com/about-us/press-centre/LuxSE-announces-strategic-changes-in-its-top-leadership-team">VOIR LA SOURCE</a></div></article><article class="card verify"><div class="title">Arendt — Olivier Ramlot CIO depuis le 15/10/2025</div><p>FAIT (B) : il a pour mandat de renforcer la gouvernance IT et d'accélérer la transformation digitale. Signal de plus d'un an : ne pas approcher sur cette seule base.</p><div class="actions"><a class="btn secondary" href="https://www.arendt.com/news-insights/news/arendt-appoints-olivier-ramlot-as-chief-information-officer/">VOIR LA SOURCE</a></div></article></div>
+</section>
+
+<section class="section" id="opportunities">
+<div class="section-head"><div><h2>Offres / Missions</h2><p class="meta">Chaque opportunité doit indiquer où la consulter et comment postuler ou contacter.</p></div></div>
+<div class="cards"><article class="card verify"><div class="title">Aucun HOT aujourd'hui</div><p>Aucune opportunité ne réunit à la fois un besoin confirmé, une date fraîche, un fit fort et un décideur joignable. Aucun remplissage artificiel.</p></article><article class="card warm"><div class="card-top"><div><div class="title">Coach SAFe — mission freelance</div>
+<div class="tags"><span class="tag">WARM</span><span class="tag neutral">Freelance</span><span class="tag warn">Preuve A</span></div></div>
+<div class="score-badge">70<small>score</small></div></div>
+<div class="fields"><div class="field"><small>Plateforme</small><strong>Free-Work (annonce publiée par Comet)</strong></div><div class="field"><small>Client final</small><strong>Non précisé — « organisation engagée dans une transformation Agile à l&#x27;échelle »</strong></div><div class="field"><small>Localisation</small><strong>Île-de-France — télétravail partiel</strong></div><div class="field"><small>TJM</small><strong>400–620 €/j</strong></div><div class="field"><small>Durée</small><strong>218 jours renouvelable (mission longue)</strong></div><div class="field"><small>Démarrage</small><strong>Dès que possible</strong></div><div class="field"><small>Publication</small><strong>23/09/2026 (49 jours — à vérifier)</strong></div><div class="field"><small>Preuve</small><strong>A — DIRECT (page lue le 11/11/2026)</strong></div><div class="field"><small>Statut</small><strong>Aucune mention d&#x27;expiration sur la page le 11/11/2026 — ouverture non confirmée par le recruteur</strong></div><div class="field"><small>URL mission</small><strong>https://www.free-work.com/fr/tech-it/job-mission/coach-agile/coach-safe-8</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Mission de coaching SAFe multi-ART : coaching SM/PO, facilitation PI Planning et Inspect &amp; Adapt, accompagnement RTE / Product Management / Business Owners.</div><div class="step"><b>Why now</b>FAIT : annonce publiée le 23/09/2026, démarrage « dès que possible », toujours en ligne le 11/11/2026.</div><div class="step"><b>Problème probable</b>HYPOTHÈSE : déploiement SAFe en cours avec plusieurs trains et un besoin de stabiliser les cadences et la coordination inter-ART.</div><div class="step"><b>Décideur</b>Recruteur Comet (nom non identifié) ; côté client : probablement RTE / Head of Transformation — non confirmé.</div><div class="step"><b>Offre</b>Coaching Agile at Scale SAFe : PI Planning, dépendances multi-équipes, coaching SM/PO, visualisation du flux.</div></div>
+<div class="message">Approche : Mettre en avant la croissance de 1 à 13 équipes Scrum/SAFe à la BIL et la pratique PI Planning.<br>Action : Vérifier l&#x27;ouverture sur Free-Work, puis postuler avec le CV adapté avant le 14/11.</div>
+<div class="field" style="margin-top:10px" id="how-cv-2026-11-11-comet-coach-safe-8"><small>OÙ / COMMENT POSTULER</small><strong>Bouton « Postuler » sur Free-Work (compte Free-Work requis). Lien de candidature exact non identifié — utiliser la page source.</strong></div>
+<div class="field" style="margin-top:8px"><small>Écarts</small><strong>Certification SPC « ou équivalent » demandée : Salim a Certified SAFe 6 Agilist, pas SPC. TJM plafond 620 €/j potentiellement sous le positionnement. Île-de-France (zone 4).</strong></div>
+<div class="field" style="margin-top:8px"><small>CV prêt</small><strong>cv-2026-11-11-comet-coach-safe-8.html</strong></div>
+<div class="actions"><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/coach-agile/coach-safe-8">VOIR LA MISSION</a><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/coach-agile/coach-safe-8">POSTULER (page source)</a><a class="btn secondary" href="#how-cv-2026-11-11-comet-coach-safe-8">COMMENT POSTULER</a></div></article><article class="card warm"><div class="card-top"><div><div class="title">SCRUM MASTER SAFE</div>
+<div class="tags"><span class="tag">WARM</span><span class="tag neutral">Freelance</span><span class="tag warn">Preuve A</span></div></div>
+<div class="score-badge">62<small>score</small></div></div>
+<div class="fields"><div class="field"><small>Plateforme</small><strong>Free-Work (annonce publiée par HAYS France)</strong></div><div class="field"><small>Client final</small><strong>Non précisé — « environnement industriel international »</strong></div><div class="field"><small>Localisation</small><strong>Grand Est — hybride 3 j site / 2 j télétravail</strong></div><div class="field"><small>TJM</small><strong>Non publié</strong></div><div class="field"><small>Durée</small><strong>1 an renouvelable</strong></div><div class="field"><small>Démarrage</small><strong>Dès que possible</strong></div><div class="field"><small>Publication</small><strong>26/10/2026 (16 jours — exploitable)</strong></div><div class="field"><small>Preuve</small><strong>A — DIRECT (page lue le 11/11/2026)</strong></div><div class="field"><small>Statut</small><strong>Bouton « Postuler » actif, aucune mention d&#x27;expiration le 11/11/2026 — ouverture non confirmée par le recruteur</strong></div><div class="field"><small>URL mission</small><strong>https://www.free-work.com/fr/tech-it/job-mission/scrum-master/scrum-master-safe-81</strong></div></div><div class="chain"><div class="step"><b>Signal</b>Programme de transformation Agile à grande échelle : plusieurs équipes, cérémonies Scrum, PI Planning, coordination métiers/parties prenantes.</div><div class="step"><b>Why now</b>FAIT : publication du 26/10/2026, démarrage dès que possible, mission d&#x27;1 an.</div><div class="step"><b>Problème probable</b>HYPOTHÈSE : industriel en cours de passage à SAFe ayant besoin de Scrum Masters seniors pour tenir les cadences du train.</div><div class="step"><b>Décideur</b>Consultant HAYS France (nom non identifié) ; côté client : RTE / responsable du programme — non confirmé.</div><div class="step"><b>Offre</b>Scrum Master SAFe senior multi-équipes, avec ensuite un potentiel rôle de coach.</div></div>
+<div class="message">Approche : Insister sur la séniorité (20+ ans, SAFe depuis la BIL) et l&#x27;anglais C1.<br>Action : Postuler via Free-Work, puis demander à HAYS le TJM et le site exact en Grand Est.</div>
+<div class="field" style="margin-top:10px" id="how-cv-2026-11-11-hays-scrum-master-safe-81"><small>OÙ / COMMENT POSTULER</small><strong>Bouton « Postuler » sur Free-Work (connexion requise). Lien de candidature exact non identifié — utiliser la page source.</strong></div>
+<div class="field" style="margin-top:8px"><small>Écarts</small><strong>Expérience en environnement industriel et en logiciel embarqué demandée : non présente dans le CV maître. Rôle Scrum Master (en dessous du positionnement coach). TJM inconnu.</strong></div>
+<div class="field" style="margin-top:8px"><small>CV prêt</small><strong>cv-2026-11-11-hays-scrum-master-safe-81.html</strong></div>
+<div class="actions"><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/scrum-master/scrum-master-safe-81">VOIR LA MISSION</a><a class="btn" href="https://www.free-work.com/fr/tech-it/job-mission/scrum-master/scrum-master-safe-81">POSTULER (page source)</a><a class="btn secondary" href="#how-cv-2026-11-11-hays-scrum-master-safe-81">COMMENT POSTULER</a></div></article></div>
+</section>
+
+<section class="section" id="drafts">
+<div class="section-head"><div><h2>Gmail — actions préparées</h2><p class="meta">Brouillons uniquement. Aucun envoi externe automatique.</p></div><span class="status ok">Rapport interne</span></div>
+<div class="cards"><article class="card verify"><div class="title">0 brouillon de prospection</div><p>Aucun email professionnel public vérifié pour les recruteurs des missions retenues : les candidatures passent par la plateforme Free-Work. Aucun email deviné, aucun envoi externe.</p></article></div>
+</section>
+
+<section class="section" id="sources">
+<div class="section-head"><div><h2>Sources & traçabilité</h2><p class="meta">Sources réellement utilisées pour construire le rapport.</p></div></div>
+<table><tr><th>Source</th><th>Usage / résultat</th><th>Preuve</th></tr><tr><td>alleyesonme.jobs (6 flux : agile, scrum, transformation, change, program manager, delivery)</td><td>Direct — HTTP 429 sur la page 1 de chaque flux. 0 page lue, plafond de 50 pages non atteint. WebSearch site: → aucun résultat du domaine.</td><td>—</td></tr><tr><td>free-work.com</td><td>WebSearch + 3 pages lues (1 offre expirée, 2 actives)</td><td>A / B</td></tr><tr><td>freelancermap.ch / .de</td><td>WebSearch + 1 page lue</td><td>A / B</td></tr><tr><td>hellowork.com (emagine)</td><td>Page en 410 Gone</td><td>A (clos)</td></tr><tr><td>ictjob.be, jobera.com, catsone</td><td>Timeout / 404</td><td>B / clos</td></tr><tr><td>Malt, Collective.work</td><td>WebSearch : uniquement des profils freelances, aucune mission</td><td>—</td></tr><tr><td>TED / op.europa.eu</td><td>WebSearch ; page op.europa.eu en 403. Aucun appel d'offres agile au Luxembourg confirmé</td><td>B</td></tr><tr><td>Paperjam, Delano, gouvernement.lu, luxse.com, arendt.com</td><td>WebSearch (signaux corporate)</td><td>B</td></tr></table>
+</section>
+
+<section class="section" id="kpis">
+<div class="section-head"><div><h2>KPIs</h2><p class="meta">Qualité et actionnabilité plutôt que volume.</p></div></div>
+<table><tr><th>Indicateur</th><th>Valeur</th></tr><tr><td>Requêtes WebSearch</td><td>17</td></tr><tr><td>Pages lues en direct</td><td>6 (dont 3 closes ou en erreur)</td></tr><tr><td>Nouvelles opportunités qualifiées</td><td>2 WARM + 2 à vérifier</td></tr><tr><td>HOT</td><td>0</td></tr><tr><td>CV générés</td><td>2 (HTML, 2 pages A4 vérifiées)</td></tr><tr><td>Brouillons de prospection</td><td>0</td></tr><tr><td>Historique mis à jour</td><td>5 lignes revues, 6 ajoutées</td></tr></table>
+</section>
+
+<footer class="footer">AIgile — aigile.lu · « On mesure la vélocité. Je rends visible la solidité. » · Recherche ciblée, non exhaustive · Rapport interne</footer>
+</main>
+</body>
+</html>
